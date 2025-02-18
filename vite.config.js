@@ -4,6 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
+  base: './',
   server: {
     port: 3000,
     host: true,
@@ -33,6 +34,9 @@ export default defineConfig({
           vendor: ['react', 'react-dom', 'react-router-dom'],
           deck: ['deck.gl', '@deck.gl/core', '@deck.gl/layers', '@deck.gl/react'],
         },
+        assetFileNames: 'assets/[name].[hash][extname]',
+        chunkFileNames: 'assets/[name].[hash].js',
+        entryFileNames: 'assets/[name].[hash].js'
       },
     },
   },

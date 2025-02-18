@@ -18,7 +18,7 @@
   color: var(--tblr-body-color);
 }
 
-[data-bs-theme="dark"] .chart-tooltip {
+[data-bs-theme='dark'] .chart-tooltip {
   background: var(--tblr-dark);
   border-color: var(--tblr-border-color);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
@@ -26,4 +26,4 @@
 
 .apexcharts-marker {
   transition: all 0.15s ease;
-} 
+}

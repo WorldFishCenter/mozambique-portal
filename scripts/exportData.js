@@ -1,21 +1,69 @@
 const { MongoClient } = require('mongodb');
 const fs = require('fs');
 const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '..', '.env.development') });
+
+// Load environment variables, trying different .env files in order
+const envFiles = ['.env.development', '.env.production', '.env'];
+for (const envFile of envFiles) {
+  const envPath = path.join(__dirname, '..', envFile);
+  if (fs.existsSync(envPath)) {
+    require('dotenv').config({ path: envPath });
+    console.log(`Loaded environment from ${envFile}`);
+    break;
+  }
+}
 
 // MongoDB configuration
-const MONGODB_URI = process.env.REACT_APP_MONGODB_URI;
+const MONGODB_URI = process.env.REACT_APP_MONGODB_URI || process.env.MONGODB_URI;
 if (!MONGODB_URI) {
-  console.error('Error: REACT_APP_MONGODB_URI environment variable is not set');
+  console.error('Error: Neither REACT_APP_MONGODB_URI nor MONGODB_URI environment variable is set');
   process.exit(1);
 }
 
-const DB_NAME = 'zanzibar-dev';
+const DB_NAME = 'mozambique-dev';
+
+// Define collections to export
+const COLLECTIONS_TO_EXPORT = [
+  {
+    name: 'monthly-metrics',
+    query: { type: { $ne: "metadata" } },  // Exclude metadata documents
+    filename: 'monthly-metrics.json'
+  },
+  {
+    name: 'sites-stats',
+    query: {},
+    filename: 'sites-stats.json'
+  },
+  {
+    name: 'taxa-length',
+    query: {},
+    filename: 'taxa-length.json'
+  },
+  {
+    name: 'taxa-sites',
+    query: {},
+    filename: 'taxa-sites.json'
+  }
+];
 
 // Ensure data directory exists
 const DATA_DIR = path.join(__dirname, '..', 'src', 'data');
 if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
+}
+
+async function exportCollection(db, collectionConfig) {
+  console.log(`Exporting ${collectionConfig.name} data...`);
+  const collection = db.collection(collectionConfig.name);
+  const data = await collection.find(collectionConfig.query).toArray();
+  
+  // Write the data file
+  fs.writeFileSync(
+    path.join(DATA_DIR, collectionConfig.filename),
+    JSON.stringify(data, null, 2)
+  );
+  console.log(`Exported ${data.length} records from ${collectionConfig.name}`);
+  return data.length;
 }
 
 async function exportData() {
@@ -39,49 +87,10 @@ async function exportData() {
     await client.connect();
     const db = client.db(DB_NAME);
 
-    // Export gear metrics data
-    console.log('Exporting gear metrics data...');
-    const gearMetricsCollection = db.collection('gear_metrics');
-    const gearMetricsData = await gearMetricsCollection.find({}).toArray();
-    
-    fs.writeFileSync(
-      path.join(DATA_DIR, 'gear-metrics.json'),
-      JSON.stringify(gearMetricsData, null, 2)
-    );
-    console.log(`Exported ${gearMetricsData.length} gear metrics records`);
-
-    // Export monthly metrics data
-    console.log('Exporting monthly metrics data...');
-    const monthlyMetricsCollection = db.collection('monthly_metrics');
-    const monthlyMetricsData = await monthlyMetricsCollection.find({}).toArray();
-    
-    fs.writeFileSync(
-      path.join(DATA_DIR, 'monthly-metrics.json'),
-      JSON.stringify(monthlyMetricsData, null, 2)
-    );
-    console.log(`Exported ${monthlyMetricsData.length} monthly metrics records`);
-
-    // Export taxa proportions data
-    console.log('Exporting taxa proportions data...');
-    const taxaProportionsCollection = db.collection('taxa_proportions');
-    const taxaProportionsData = await taxaProportionsCollection.find({}).toArray();
-    
-    fs.writeFileSync(
-      path.join(DATA_DIR, 'taxa-proportions.json'),
-      JSON.stringify(taxaProportionsData, null, 2)
-    );
-    console.log(`Exported ${taxaProportionsData.length} taxa proportions records`);
-
-    // Export effort map data
-    console.log('Exporting effort map data...');
-    const effortMapCollection = db.collection('effort-map');
-    const effortMapData = await effortMapCollection.find({}).toArray();
-    
-    fs.writeFileSync(
-      path.join(DATA_DIR, 'effort-map.json'),
-      JSON.stringify(effortMapData, null, 2)
-    );
-    console.log(`Exported ${effortMapData.length} effort map records`);
+    // Export all collections
+    for (const collectionConfig of COLLECTIONS_TO_EXPORT) {
+      await exportCollection(db, collectionConfig);
+    }
 
     console.log('Data export completed successfully!');
   } catch (error) {

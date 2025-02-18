@@ -4,7 +4,7 @@ export const generateTimeSeriesData = (() => {
 
   return (days = 30, baseValue = 100, volatility = 0.2) => {
     const cacheKey = `${days}-${baseValue}-${volatility}`;
-    
+
     if (cache.has(cacheKey)) {
       return cache.get(cacheKey);
     }
@@ -12,10 +12,10 @@ export const generateTimeSeriesData = (() => {
     const data = Array.from({ length: days }, (_, i) => {
       const date = new Date();
       date.setDate(date.getDate() - (days - i));
-      const value = baseValue + (baseValue * volatility * (Math.random() - 0.5));
+      const value = baseValue + baseValue * volatility * (Math.random() - 0.5);
       return {
         x: date.getTime(),
-        y: Math.round(value)
+        y: Math.round(value),
       };
     });
 
@@ -31,7 +31,7 @@ export const generateTimeSeriesData = (() => {
 })();
 
 // Format numbers with appropriate units (K, M, B)
-export const formatNumber = (number) => {
+export const formatNumber = number => {
   if (number >= 1000000000) {
     return (number / 1000000000).toFixed(1) + 'B';
   }
@@ -45,12 +45,12 @@ export const formatNumber = (number) => {
 };
 
 // Format currency values
-export const formatCurrency = (value, currency = 'TZS') => {
-  return new Intl.NumberFormat('en-TZ', {
+export const formatCurrency = (value, currency = 'MT') => {
+  return new Intl.NumberFormat('en-MZ', {
     style: 'currency',
     currency,
     minimumFractionDigits: 0,
-    maximumFractionDigits: 0
+    maximumFractionDigits: 0,
   }).format(value);
 };
 
@@ -65,4 +65,4 @@ export const debounce = (func, wait) => {
     clearTimeout(timeout);
     timeout = setTimeout(later, wait);
   };
-}; 
+};

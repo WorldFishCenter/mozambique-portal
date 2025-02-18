@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 
+/** @returns {{theme: string, toggleTheme: () => void}} */
 export const useTheme = () => {
   const [theme, setTheme] = useState(() => {
     // Get theme from localStorage or default to light
@@ -13,7 +14,7 @@ export const useTheme = () => {
 
     // Update theme when system preference changes
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleChange = (e) => {
+    const handleChange = e => {
       if (!localStorage.getItem('theme')) {
         setTheme(e.matches ? 'dark' : 'light');
       }
@@ -24,8 +25,8 @@ export const useTheme = () => {
   }, [theme]);
 
   const toggleTheme = useCallback(() => {
-    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
   }, []);
 
-  return [theme, toggleTheme];
-}; 
+  return { theme, toggleTheme };
+};

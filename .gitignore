@@ -34,4 +34,4 @@ yarn-error.log*
 .vercel
 
 # Tabler demo reference
-/demo/ 
+/demo/ .DS_Store

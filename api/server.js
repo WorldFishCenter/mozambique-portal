@@ -1,6 +1,7 @@
 const express = require('express');
 const { MongoClient } = require('mongodb');
 const cors = require('cors');
+require('dotenv').config({ path: '../.env' });
 
 // Initialize express app
 const app = express();
@@ -13,10 +14,9 @@ const connectToDatabase = async () => {
   }
 
   try {
-    // Use REACT_APP_MONGODB_URI to match Vercel environment variable
-    const MONGODB_URI = process.env.REACT_APP_MONGODB_URI;
+    const MONGODB_URI = process.env.VITE_MONGODB_URI;
     if (!MONGODB_URI) {
-      throw new Error('REACT_APP_MONGODB_URI is not defined');
+      throw new Error('VITE_MONGODB_URI is not defined');
     }
 
     console.log('Connecting to MongoDB...'); // Debug log
@@ -27,7 +27,7 @@ const connectToDatabase = async () => {
       maxPoolSize: 10
     });
 
-    const db = client.db('zanzibar-dev');
+    const db = client.db('mozambique-dev');
     cachedDb = db;
     
     console.log('Successfully connected to MongoDB'); // Debug log
@@ -200,4 +200,31 @@ app.use((err, req, res, next) => {
 });
 
 // Export the Express API
-module.exports = app; 
+module.exports = app;
+
+// Start the server if this file is run directly
+if (require.main === module) {
+  const PORT = process.env.PORT || 3001;
+  const server = app.listen(PORT, () => {
+    console.log(`API Server running on http://localhost:${PORT}`);
+  });
+
+  server.on('error', (error) => {
+    if (error.code === 'EADDRINUSE') {
+      console.error(`Port ${PORT} is already in use. Please free up the port and try again.`);
+      process.exit(1);
+    } else {
+      console.error('Server error:', error);
+      process.exit(1);
+    }
+  });
+
+  // Handle graceful shutdown
+  process.on('SIGTERM', () => {
+    console.log('SIGTERM signal received: closing HTTP server');
+    server.close(() => {
+      console.log('HTTP server closed');
+      process.exit(0);
+    });
+  });
+} 

@@ -3,6 +3,7 @@ import monthlyMetrics from '../data/monthly-metrics.json';
 import gearMetrics from '../data/gear-metrics.json';
 import taxaProportions from '../data/taxa-proportions.json';
 import effortMapData from '../data/effort-map.json';
+import taxaLength from '../data/taxa-length.json';
 import { LANDING_SITES } from '../constants/landingSites';
 
 // Cache configuration with memory limits
@@ -20,8 +21,9 @@ const withCache = (key, fetchFn) => {
 
     // Clear old cache entries if we hit the size limit
     if (cache.size >= MAX_CACHE_SIZE) {
-      const oldestKey = Array.from(cache.entries())
-        .sort(([, a], [, b]) => a.timestamp - b.timestamp)[0][0];
+      const oldestKey = Array.from(cache.entries()).sort(
+        ([, a], [, b]) => a.timestamp - b.timestamp
+      )[0][0];
       cache.delete(oldestKey);
     }
 
@@ -29,7 +31,7 @@ const withCache = (key, fetchFn) => {
     if (data !== undefined && data !== null) {
       cache.set(key, {
         timestamp: Date.now(),
-        data
+        data,
       });
     }
 
@@ -48,35 +50,30 @@ const withCache = (key, fetchFn) => {
 
 // Filter metrics data by type
 const filterMetricsByType = (data, metricType) => {
-  return data.filter(record => 
-    record.type !== 'metadata' && 
-    record.metric === metricType
-  );
+  return data.filter(record => record.type !== 'metadata' && record.metric === metricType);
 };
 
 // Fetch catch data for landing sites
-export const getCatchData = async (selectedLandingSite) => {
+export const getCatchData = async selectedLandingSite => {
   try {
-    const data = withCache(
-      `catch-${selectedLandingSite}`,
-      () => {
-        // Get data for all individual sites
-        const allSitesData = LANDING_SITES.map(site => ({
-          site,
-          data: processSingleSiteData(monthlyMetrics, site, 'median_cpue')
-        }));
+    const data = withCache(`catch-${selectedLandingSite}`, () => {
+      // Get data for all individual sites
+      const allSitesData = LANDING_SITES.map(site => ({
+        site,
+        data: processSingleSiteData(monthlyMetrics, site, 'median_cpue'),
+      }));
 
-        // Get aggregated data if 'all' is selected
-        const selectedData = selectedLandingSite === 'all' 
+      // Get aggregated data if 'all' is selected
+      const selectedData =
+        selectedLandingSite === 'all'
           ? processAllSitesData(monthlyMetrics, 'median_cpue')
           : allSitesData.find(d => d.site === selectedLandingSite)?.data || [];
 
-        return {
-          selectedData,
-          allSitesData
-        };
-      }
-    );
+      return {
+        selectedData,
+        allSitesData,
+      };
+    });
 
     return data;
   } catch (error) {
@@ -86,28 +83,26 @@ export const getCatchData = async (selectedLandingSite) => {
 };
 
 // Fetch revenue data for landing sites
-export const getRevenueData = async (selectedLandingSite) => {
+export const getRevenueData = async selectedLandingSite => {
   try {
-    const data = withCache(
-      `revenue-${selectedLandingSite}`,
-      () => {
-        // Get data for all individual sites
-        const allSitesData = LANDING_SITES.map(site => ({
-          site,
-          data: processSingleSiteData(monthlyMetrics, site, 'median_rpue')
-        }));
+    const data = withCache(`revenue-${selectedLandingSite}`, () => {
+      // Get data for all individual sites
+      const allSitesData = LANDING_SITES.map(site => ({
+        site,
+        data: processSingleSiteData(monthlyMetrics, site, 'median_rpue'),
+      }));
 
-        // Get aggregated data if 'all' is selected
-        const selectedData = selectedLandingSite === 'all' 
+      // Get aggregated data if 'all' is selected
+      const selectedData =
+        selectedLandingSite === 'all'
           ? processAllSitesData(monthlyMetrics, 'median_rpue')
           : allSitesData.find(d => d.site === selectedLandingSite)?.data || [];
 
-        return {
-          selectedData,
-          allSitesData
-        };
-      }
-    );
+      return {
+        selectedData,
+        allSitesData,
+      };
+    });
 
     return data;
   } catch (error) {
@@ -126,10 +121,10 @@ const processAllSitesData = (data, metricType) => {
   try {
     const filteredData = filterMetricsByType(data, metricType);
     const combinedData = new Map();
-    
+
     filteredData.forEach(record => {
       if (!record.date) return;
-      
+
       const timestamp = new Date(record.date).getTime();
       if (isNaN(timestamp)) {
         console.warn('Invalid date found:', record.date);
@@ -140,13 +135,18 @@ const processAllSitesData = (data, metricType) => {
         combinedData.set(timestamp, {
           x: timestamp,
           total: 0,
-          count: 0
+          count: 0,
         });
       }
-      
+
       const combined = combinedData.get(timestamp);
-      if (record.hasOwnProperty('value') && record.value !== null && 
-          record.value !== undefined && !isNaN(record.value) && record.n > 0) {
+      if (
+        record.hasOwnProperty('value') &&
+        record.value !== null &&
+        record.value !== undefined &&
+        !isNaN(record.value) &&
+        record.n > 0
+      ) {
         combined.total += Number(record.value);
         combined.count++;
       }
@@ -155,7 +155,7 @@ const processAllSitesData = (data, metricType) => {
     return Array.from(combinedData.values())
       .map(record => ({
         x: record.x,
-        y: record.count > 0 ? Number((record.total / record.count).toFixed(2)) : null
+        y: record.count > 0 ? Number((record.total / record.count).toFixed(2)) : null,
       }))
       .sort((a, b) => a.x - b.x);
   } catch (error) {
@@ -173,7 +173,7 @@ const processSingleSiteData = (data, landingSite, metricType) => {
 
   try {
     return filterMetricsByType(data, metricType)
-      .filter(record => record.landing_site === landingSite)
+      .filter(record => record.district?.toLowerCase() === landingSite.toLowerCase())
       .map(record => {
         const timestamp = new Date(record.date).getTime();
         if (isNaN(timestamp)) {
@@ -182,9 +182,13 @@ const processSingleSiteData = (data, landingSite, metricType) => {
         }
         return {
           x: timestamp,
-          y: (!record.hasOwnProperty('value') || record.value === null || record.value === undefined || record.n === 0) 
-            ? null 
-            : Number(record.value)
+          y:
+            !record.hasOwnProperty('value') ||
+            record.value === null ||
+            record.value === undefined ||
+            record.n === 0
+              ? null
+              : Number(record.value),
         };
       })
       .filter(record => record !== null)
@@ -196,20 +200,21 @@ const processSingleSiteData = (data, landingSite, metricType) => {
 };
 
 // Get district data
-export const getDistrictData = (landingSite) => {
-  const metrics = filterMetricsByType(monthlyMetrics, 'median_cpue')
-    .filter(record => record.landing_site === landingSite);
-  
+export const getDistrictData = landingSite => {
+  const metrics = filterMetricsByType(monthlyMetrics, 'median_cpue').filter(
+    record => record.district?.toLowerCase() === landingSite.toLowerCase()
+  );
+
   const stats = {
     avgValue: metrics.reduce((sum, record) => sum + (record.value || 0), 0) / (metrics.length || 1),
-    count: metrics.length
+    count: metrics.length,
   };
 
   return {
     id: landingSite,
     label: landingSite.charAt(0).toUpperCase() + landingSite.slice(1).replace('_', ' '),
     bounds: [39.1977, -6.1659], // Default to Zanzibar center coordinates
-    stats
+    stats,
   };
 };
 
@@ -226,4 +231,9 @@ export const getTaxaProportions = () => {
 // Get effort map data
 export const getEffortMapData = () => {
   return effortMapData;
-}; 
+};
+
+// Get taxa length data
+export const getTaxaLength = () => {
+  return taxaLength;
+};

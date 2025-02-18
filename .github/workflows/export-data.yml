@@ -25,12 +25,18 @@ jobs:
           cache: 'npm'
       
       - name: Install dependencies
-        run: npm install mongodb
+        run: |
+          npm ci
+          npm install mongodb dotenv
+      
+      - name: Create .env file
+        run: |
+          echo "MONGODB_URI=${{ secrets.MONGODB_URI }}" > .env
       
       - name: Export data from MongoDB
         run: node scripts/exportData.js
         env:
-          REACT_APP_MONGODB_URI: ${{ secrets.REACT_APP_MONGODB_URI }}
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
       
       - name: Configure Git
         run: |

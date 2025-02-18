@@ -5,7 +5,9 @@ export const useTooltip = () => {
     // Initialize tooltips with a small delay to ensure DOM is ready
     const timer = setTimeout(() => {
       const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-      [...tooltipTriggerList].map(tooltipTriggerEl => new window.bootstrap.Tooltip(tooltipTriggerEl));
+      [...tooltipTriggerList].map(
+        tooltipTriggerEl => new window.bootstrap.Tooltip(tooltipTriggerEl)
+      );
     }, 100);
 
     // Cleanup tooltips on unmount
@@ -20,4 +22,4 @@ export const useTooltip = () => {
       });
     };
   }, []);
-}; 
+};

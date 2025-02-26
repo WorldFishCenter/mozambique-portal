@@ -115,10 +115,8 @@ const Catch = ({ theme, landingSite }) => {
   // Memoized display data calculation
   const displayData = useMemo(() => {
     if (!catchData?.selectedData) return [];
-    return viewMode === 'yearly'
-      ? aggregateToYearly(catchData.selectedData)
-      : catchData.selectedData;
-  }, [catchData, viewMode, aggregateToYearly]);
+    return catchData.selectedData;
+  }, [catchData]);
 
   // Memoized valid data filtering
   const validData = useMemo(() => {
@@ -128,46 +126,28 @@ const Catch = ({ theme, landingSite }) => {
 
   // Memoized latest value calculation
   const latestValue = useMemo(() => {
-    if (viewMode === 'yearly') {
-      const yearlyData = aggregateToYearly(catchData?.selectedData || []);
-      return yearlyData.length > 0 ? yearlyData[yearlyData.length - 1].y : 0;
-    }
     return validData.length > 0 ? validData[validData.length - 1].y : 0;
-  }, [viewMode, catchData, validData, aggregateToYearly]);
+  }, [validData]);
 
   // Memoized percentage change calculation
   const percentChange = useMemo(() => {
-    if (viewMode === 'yearly') {
-      const yearlyData = aggregateToYearly(catchData?.selectedData || []);
-      if (yearlyData.length < 2) return null;
+    if (validData.length < 2) return null;
 
-      const latest = yearlyData[yearlyData.length - 1];
-      const previous = yearlyData[yearlyData.length - 2];
+    const latest = validData[validData.length - 1];
+    const previous = validData[validData.length - 2];
 
-      return {
-        change: (((latest.y - previous.y) / previous.y) * 100).toFixed(1),
-        currentPeriod: new Date(latest.x).getFullYear().toString(),
-        previousPeriod: new Date(previous.x).getFullYear().toString(),
-      };
-    } else {
-      if (validData.length < 2) return null;
-
-      const latest = validData[validData.length - 1];
-      const previous = validData[validData.length - 2];
-
-      return {
-        change: (((latest.y - previous.y) / previous.y) * 100).toFixed(1),
-        currentPeriod: new Date(latest.x).toLocaleString('default', {
-          month: 'short',
-          year: 'numeric',
-        }),
-        previousPeriod: new Date(previous.x).toLocaleString('default', {
-          month: 'short',
-          year: 'numeric',
-        }),
-      };
-    }
-  }, [viewMode, catchData, validData, aggregateToYearly]);
+    return {
+      change: (((latest.y - previous.y) / previous.y) * 100).toFixed(1),
+      currentPeriod: new Date(latest.x).toLocaleString('default', {
+        month: 'short',
+        year: 'numeric',
+      }),
+      previousPeriod: new Date(previous.x).toLocaleString('default', {
+        month: 'short',
+        year: 'numeric',
+      }),
+    };
+  }, [validData]);
 
   // Memoized gear metrics data processing
   const processedGearMetrics = useMemo(() => {
@@ -371,10 +351,10 @@ const Catch = ({ theme, landingSite }) => {
               </button>
               <button
                 type="button"
-                className={`btn ${viewMode === 'yearly' ? 'btn-primary' : 'btn-outline-primary'}`}
-                onClick={() => setViewMode('yearly')}
+                className={`btn ${viewMode === 'differenced' ? 'btn-primary' : 'btn-outline-primary'}`}
+                onClick={() => setViewMode('differenced')}
               >
-                Yearly
+                Differenced
               </button>
             </div>
           </div>

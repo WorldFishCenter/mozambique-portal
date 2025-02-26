@@ -11,11 +11,25 @@ const TimeSeriesChart = ({
   formatValue,
   currency = null,
 }) => {
-  // Extract unit from formatValue function by calling it with a test value
+  // Extract unit from formatValue function
   const unit = useMemo(() => {
     const testValue = formatValue ? formatValue(1) : '1';
     return testValue.replace(/[\d.,]+\s?/, '').trim();
   }, [formatValue]);
+
+  // Calculate mean and differences for differenced view
+  const { transformedData, mean } = useMemo(() => {
+    if (!data?.length || viewMode !== 'differenced') return { transformedData: [], mean: 0 };
+    const validValues = data.filter(d => d.y !== null && !isNaN(d.y)).map(d => d.y);
+    const mean = validValues.reduce((a, b) => a + b, 0) / validValues.length;
+    
+    const transformedData = data.map(d => ({
+      x: d.x,
+      y: d.y !== null ? Number((d.y - mean).toFixed(2)) : null
+    }));
+    
+    return { transformedData, mean: Number(mean.toFixed(2)) };
+  }, [data, viewMode]);
 
   const options = useMemo(
     () => ({
@@ -23,6 +37,7 @@ const TimeSeriesChart = ({
       chart: {
         ...chartConfig.chart,
         height,
+        type: 'bar',
         sparkline: {
           enabled: false,
         },
@@ -40,15 +55,7 @@ const TimeSeriesChart = ({
         },
       },
       dataLabels: {
-        enabled: viewMode === 'yearly',
-        style: {
-          fontSize: '12px',
-          fontWeight: 500,
-        },
-        formatter: function (val) {
-          if (val === null || val === undefined) return '';
-          return formatValue ? formatValue(val) : val.toFixed(2);
-        },
+        enabled: false,
       },
       stroke: {
         width: 0,
@@ -61,7 +68,20 @@ const TimeSeriesChart = ({
         bar: {
           borderRadius: 8,
           columnWidth: '60%',
-          colors: {
+          colors: viewMode === 'differenced' ? {
+            ranges: [
+              {
+                from: -Infinity,
+                to: 0,
+                color: theme === 'dark' ? '#ef4444' : '#dc2626'
+              },
+              {
+                from: 0,
+                to: Infinity,
+                color: theme === 'dark' ? '#22c55e' : '#16a34a'
+              }
+            ]
+          } : {
             ranges: [
               {
                 from: 0,
@@ -73,18 +93,13 @@ const TimeSeriesChart = ({
         },
       },
       xaxis: {
-        type: 'category',
+        type: 'datetime',
         labels: {
           style: {
             fontSize: '12px',
           },
-          formatter: function(value) {
-            if (!value) return '';
-            const date = new Date(value);
-            return new Intl.DateTimeFormat('en-US', { month: 'short', year: 'numeric' }).format(date);
-          },
-          rotateAlways: false,
-          hideOverlappingLabels: true,
+          format: 'MMM yyyy',
+          datetimeUTC: false,
         },
         axisBorder: {
           show: false,
@@ -92,18 +107,12 @@ const TimeSeriesChart = ({
         axisTicks: {
           show: false,
         },
-        tickPlacement: 'on',
-        group: {
-          groups: [],
-          style: {
-            colors: [],
-            fontSize: '12px',
-          }
-        },
       },
       yaxis: {
         title: {
-          text: unit,
+          text: viewMode === 'differenced' ? 
+            `Difference from mean (${mean} ${unit})` : 
+            unit,
           style: {
             fontSize: '13px',
             fontWeight: 400,
@@ -116,7 +125,6 @@ const TimeSeriesChart = ({
           },
           formatter: function (val) {
             if (val === null || val === undefined) return '';
-            // Just return the number without the unit
             return val.toFixed(2);
           },
         },
@@ -126,13 +134,18 @@ const TimeSeriesChart = ({
       tooltip: {
         theme: theme === 'dark' ? 'dark' : 'light',
         x: {
-          format: viewMode === 'yearly' ? 'yyyy' : 'dd MMM yyyy',
+          format: 'dd MMM yyyy'
         },
         y: {
           formatter: function (val) {
-            return val == null ? 'No data' : formatValue ? formatValue(val) : val.toFixed(2);
-          },
-        },
+            if (val === null) return 'No data';
+            if (viewMode === 'differenced') {
+              const actualValue = val + mean;
+              return `Actual: ${formatValue ? formatValue(actualValue) : actualValue.toFixed(2)}\nDiff from mean: ${val > 0 ? '+' : ''}${val.toFixed(2)} ${unit}`;
+            }
+            return formatValue ? formatValue(val) : val.toFixed(2);
+          }
+        }
       },
       grid: {
         show: true,
@@ -145,23 +158,18 @@ const TimeSeriesChart = ({
           left: 10,
         },
       },
-      markers: {
-        size: 0,
-      },
     }),
-    [chartConfig, theme, viewMode, height, formatValue, unit]
+    [chartConfig, theme, viewMode, height, formatValue, mean, unit]
   );
 
   return (
     <Chart
       key={`${viewMode}-${currency || ''}`}
       options={options}
-      series={[
-        {
-          name: title,
-          data: data,
-        },
-      ]}
+      series={[{
+        name: title,
+        data: viewMode === 'differenced' ? transformedData : data
+      }]}
       type="bar"
       height={height}
     />

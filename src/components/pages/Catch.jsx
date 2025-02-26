@@ -386,7 +386,7 @@ const Catch = ({ theme, landingSite }) => {
                   <h1 className="h1 mb-0 me-2">
                     {typeof latestValue === 'number' ? latestValue.toFixed(2) : 'No data'}
                   </h1>
-                  <span className="text-muted fs-4">kg/fisher/day</span>
+                  <span className="text-muted fs-4">kg/fisher/hour</span>
                 </div>
               </div>
               {percentChange && (
@@ -404,7 +404,7 @@ const Catch = ({ theme, landingSite }) => {
                     <i
                       className={`ti ti-trend-${parseFloat(percentChange.change) >= 0 ? 'up' : 'down'} me-1`}
                     ></i>
-                    <span className="fw-medium">{Math.abs(percentChange.change)}%</span>
+                    <span className="fw-medium">{Math.abs(parseFloat(percentChange.change))}%</span>
                   </div>
                 </div>
               )}
@@ -417,14 +417,14 @@ const Catch = ({ theme, landingSite }) => {
                   data={displayData}
                   viewMode={viewMode}
                   title={landingSite === 'all' ? 'All Landing Sites' : landingSite}
-                  formatValue={val => `${val.toFixed(2)} kg/fisher/day`}
+                  formatValue={val => `${val.toFixed(2)} kg/fisher/hour`}
                 />
               </div>
               <div className="col-4">
                 <SeasonalChart
                   theme={theme}
                   data={seasonalData}
-                  formatValue={val => `${val.toFixed(2)} kg/fisher/day`}
+                  formatValue={val => `${val.toFixed(2)} kg/fisher/hour`}
                 />
               </div>
             </div>
@@ -445,7 +445,7 @@ const Catch = ({ theme, landingSite }) => {
                 series={processedGearMetrics.series}
                 gearTypes={processedGearMetrics.gearTypes}
                 colorRanges={colorRanges}
-                formatValue={val => `${val.toFixed(2)} kg/fisher/day`}
+                formatValue={val => `${val.toFixed(2)} kg/fisher/hour`}
               />
             ) : (
               <div className="d-flex align-items-center justify-content-center h-100 text-muted">

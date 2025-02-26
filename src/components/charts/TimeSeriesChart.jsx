@@ -9,7 +9,7 @@ const TimeSeriesChart = ({
   title,
   height = 350,
   formatValue,
-  currency,
+  currency = null,
 }) => {
   // Extract unit from formatValue function by calling it with a test value
   const unit = useMemo(() => {
@@ -51,22 +51,11 @@ const TimeSeriesChart = ({
         },
       },
       stroke: {
-        curve: 'smooth',
-        width: viewMode === 'yearly' ? 0 : 2,
-        lineCap: 'round',
+        width: 0,
       },
       fill: {
-        opacity: viewMode === 'yearly' ? 1 : 0.2,
-        type: viewMode === 'yearly' ? 'solid' : 'gradient',
-        gradient:
-          viewMode === 'yearly'
-            ? undefined
-            : {
-                shadeIntensity: 1,
-                opacityFrom: 0.7,
-                opacityTo: 0.3,
-                stops: [0, 90, 100],
-              },
+        opacity: 1,
+        type: 'solid',
       },
       plotOptions: {
         bar: {
@@ -84,18 +73,32 @@ const TimeSeriesChart = ({
         },
       },
       xaxis: {
-        type: viewMode === 'yearly' ? 'category' : 'datetime',
+        type: 'category',
         labels: {
           style: {
             fontSize: '12px',
           },
-          format: viewMode === 'yearly' ? undefined : 'MMM yyyy',
+          formatter: function(value) {
+            if (!value) return '';
+            const date = new Date(value);
+            return new Intl.DateTimeFormat('en-US', { month: 'short', year: 'numeric' }).format(date);
+          },
+          rotateAlways: false,
+          hideOverlappingLabels: true,
         },
         axisBorder: {
           show: false,
         },
         axisTicks: {
           show: false,
+        },
+        tickPlacement: 'on',
+        group: {
+          groups: [],
+          style: {
+            colors: [],
+            fontSize: '12px',
+          }
         },
       },
       yaxis: {
@@ -143,12 +146,7 @@ const TimeSeriesChart = ({
         },
       },
       markers: {
-        size: viewMode === 'yearly' ? 0 : 4,
-        strokeWidth: 2,
-        strokeColors: theme === 'dark' ? '#3b82f6' : '#60a5fa',
-        hover: {
-          size: 6,
-        },
+        size: 0,
       },
     }),
     [chartConfig, theme, viewMode, height, formatValue, unit]
@@ -164,7 +162,7 @@ const TimeSeriesChart = ({
           data: data,
         },
       ]}
-      type={viewMode === 'yearly' ? 'bar' : 'area'}
+      type="bar"
       height={height}
     />
   );

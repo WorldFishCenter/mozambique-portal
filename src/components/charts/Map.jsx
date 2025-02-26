@@ -1,5 +1,5 @@
 /// <reference types="vite/client" />
-import React, { useState, useMemo, useCallback, memo } from 'react';
+import React, { useState, useMemo, useCallback, memo, useEffect } from 'react';
 import { DeckGL } from '@deck.gl/react';
 import { Map as MapGL } from 'react-map-gl';
 import { GridLayer } from '@deck.gl/aggregation-layers';
@@ -7,6 +7,7 @@ import { GeoJsonLayer } from '@deck.gl/layers';
 import mapboxgl from 'mapbox-gl';
 import { IconSatellite, IconMap } from '@tabler/icons-react';
 import effortMapData from '../../data/effort-map.json';
+import palmaAreaRaw from '../../data/palma_area.geojson?url';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import {
   TIME_BREAKS,
@@ -363,9 +364,9 @@ const Map = memo(({ theme }) => {
   const [isSatellite, setIsSatellite] = useState(true);
   const [palmaArea, setPalmaArea] = useState(null);
 
-  // Add useEffect to fetch GeoJSON
-  React.useEffect(() => {
-    fetch('/src/data/palma_area.geojson')
+  // Load GeoJSON data
+  useEffect(() => {
+    fetch(palmaAreaRaw)
       .then(response => response.json())
       .then(data => setPalmaArea(data))
       .catch(error => console.error('Error loading GeoJSON:', error));
@@ -426,7 +427,7 @@ const Map = memo(({ theme }) => {
     const filteredData = transformedData;
     
     return [
-      palmaArea && new GeoJsonLayer({
+      new GeoJsonLayer({
         id: 'geojson-layer',
         data: palmaArea,
         pickable: true,

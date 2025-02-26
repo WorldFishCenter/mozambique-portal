@@ -20,8 +20,9 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
       'mapbox-gl': 'mapbox-gl',
     },
-    extensions: ['.js', '.jsx', '.json']
+    extensions: ['.js', '.jsx', '.json', '.geojson']
   },
+  assetsInclude: ['**/*.geojson'],
   optimizeDeps: {
     include: ['mapbox-gl']
   },

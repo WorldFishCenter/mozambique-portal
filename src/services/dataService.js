@@ -1,6 +1,6 @@
 // Import static data
 import monthlyMetrics from '../data/monthly-metrics.json';
-import gearMetrics from '../data/gear-metrics.json';
+import gearHabitatMetrics from '../data/gear-habitat-metrics.json';
 import taxaProportions from '../data/taxa-proportions.json';
 import effortMapData from '../data/effort-map.json';
 import taxaLength from '../data/taxa-length.json';
@@ -125,7 +125,8 @@ const processAllSitesData = (data, metricType) => {
     filteredData.forEach(record => {
       if (!record.date) return;
 
-      const timestamp = new Date(record.date).getTime();
+      const date = new Date(record.date);
+      const timestamp = date.getTime();
       if (isNaN(timestamp)) {
         console.warn('Invalid date found:', record.date);
         return;
@@ -175,20 +176,19 @@ const processSingleSiteData = (data, landingSite, metricType) => {
     return filterMetricsByType(data, metricType)
       .filter(record => record.district?.toLowerCase() === landingSite.toLowerCase())
       .map(record => {
-        const timestamp = new Date(record.date).getTime();
-        if (isNaN(timestamp)) {
+        const date = new Date(record.date);
+        if (isNaN(date.getTime())) {
           console.warn(`Invalid date found for landing site ${landingSite}:`, record.date);
           return null;
         }
         return {
-          x: timestamp,
-          y:
-            !record.hasOwnProperty('value') ||
-            record.value === null ||
-            record.value === undefined ||
-            record.n === 0
-              ? null
-              : Number(record.value),
+          x: date.getTime(),
+          y: !record.hasOwnProperty('value') ||
+             record.value === null ||
+             record.value === undefined ||
+             record.n === 0
+            ? null
+            : Number(record.value),
         };
       })
       .filter(record => record !== null)
@@ -220,7 +220,7 @@ export const getDistrictData = landingSite => {
 
 // Get gear metrics data
 export const getGearMetrics = () => {
-  return gearMetrics;
+  return gearHabitatMetrics;
 };
 
 // Get taxa proportions data

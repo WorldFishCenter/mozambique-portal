@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { getChartConfig } from '../../utils/chartConfigs';
 import { getRevenueData } from '../../services/dataService';
-import gearMetricsData from '../../data/gear-metrics.json';
+import gearHabitatMetrics from '../../data/gear-habitat-metrics.json';
 import TimeSeriesChart from '../charts/TimeSeriesChart';
 import SeasonalChart from '../charts/SeasonalChart';
 import GearMetricsHeatmap from '../charts/GearMetricsHeatmap';
@@ -166,159 +166,6 @@ const Revenue = ({ theme, landingSite, currency }) => {
     };
   }, [validData]);
 
-  // Memoized gear metrics data processing
-  const processedGearMetrics = useMemo(() => {
-    if (!Array.isArray(gearMetricsData) || gearMetricsData.length === 0) {
-      console.warn('No gear metrics data available');
-      return {
-        series: [],
-        gearTypes: [],
-      };
-    }
-
-    try {
-      // Filter for revenue metrics only and exclude metadata
-      const revenueData = gearMetricsData.filter(
-        d =>
-          d.metric === 'median_rpue' &&
-          !d.type &&
-          typeof d.value === 'number' &&
-          d.landing_site &&
-          d.gear
-      );
-
-      if (revenueData.length === 0) {
-        console.warn('No revenue data found in gear metrics');
-        return {
-          series: [],
-          gearTypes: [],
-        };
-      }
-
-      // Calculate total revenue for each gear type and landing site
-      const gearTotals = {};
-      const siteTotals = {};
-
-      revenueData.forEach(d => {
-        const convertedValue = convertCurrency(d.value || 0);
-        if (!gearTotals[d.gear]) gearTotals[d.gear] = 0;
-        if (!siteTotals[d.landing_site]) siteTotals[d.landing_site] = 0;
-        gearTotals[d.gear] += convertedValue;
-        siteTotals[d.landing_site] += convertedValue;
-      });
-
-      // Sort gear types by highest revenue first
-      const gearTypes = Object.keys(gearTotals).sort((a, b) => gearTotals[b] - gearTotals[a]);
-      // Sort landing sites by lowest revenue first (so highest revenue will be at the top)
-      const landingSites = Object.keys(siteTotals).sort((a, b) => siteTotals[a] - siteTotals[b]);
-
-      // Transform data into series format
-      const series = landingSites.map(site => ({
-        name: site.replace(/_/g, ' '),
-        data: gearTypes.map(gear => {
-          const match = revenueData.find(d => d.landing_site === site && d.gear === gear);
-          return match && match.value ? convertCurrency(match.value) : -1;
-        }),
-      }));
-
-      console.log('Processed gear metrics:', {
-        landingSites,
-        gearTypes,
-        series,
-        rawData: revenueData,
-        gearTotals,
-        siteTotals,
-      });
-
-      return {
-        series,
-        gearTypes: gearTypes.map(gear => gear.replace(/_/g, ' ')),
-      };
-    } catch (error) {
-      console.error('Error processing gear metrics data:', error);
-      return {
-        series: [],
-        gearTypes: [],
-      };
-    }
-  }, [convertCurrency]);
-
-  // Calculate color ranges
-  const colorRanges = useMemo(() => {
-    if (!processedGearMetrics.series.length) return [];
-
-    const allValues = processedGearMetrics.series.flatMap(s => s.data).filter(v => v > 0);
-
-    if (allValues.length === 0) return [];
-
-    const min = Math.min(...allValues);
-    // Base threshold is 20 EUR
-    const baseThresholdEUR = 20;
-    // Convert to TZS first (since our values are stored in TZS)
-    const baseThresholdTZS = baseThresholdEUR / EXCHANGE_RATES.EUR;
-    // Then convert to current currency
-    const threshold = convertCurrency(baseThresholdTZS);
-    const max = Math.max(...allValues);
-    const step = (threshold - min) / 7;
-
-    return [
-      {
-        from: -1,
-        to: -1,
-        color: theme === 'dark' ? '#374151' : '#f3f4f6',
-        name: 'No Data',
-      },
-      {
-        from: min,
-        to: min + step,
-        color: '#ffffd990',
-        name: `< ${formatWithCurrency(min + step)}`,
-      },
-      {
-        from: min + step,
-        to: min + 2 * step,
-        color: '#edf8b190',
-        name: `${formatWithCurrency(min + step)} - ${formatWithCurrency(min + 2 * step)}`,
-      },
-      {
-        from: min + 2 * step,
-        to: min + 3 * step,
-        color: '#c7e9b490',
-        name: `${formatWithCurrency(min + 2 * step)} - ${formatWithCurrency(min + 3 * step)}`,
-      },
-      {
-        from: min + 3 * step,
-        to: min + 4 * step,
-        color: '#7fcdbb90',
-        name: `${formatWithCurrency(min + 3 * step)} - ${formatWithCurrency(min + 4 * step)}`,
-      },
-      {
-        from: min + 4 * step,
-        to: min + 5 * step,
-        color: '#41b6c490',
-        name: `${formatWithCurrency(min + 4 * step)} - ${formatWithCurrency(min + 5 * step)}`,
-      },
-      {
-        from: min + 5 * step,
-        to: min + 6 * step,
-        color: '#1d91c090',
-        name: `${formatWithCurrency(min + 5 * step)} - ${formatWithCurrency(min + 6 * step)}`,
-      },
-      {
-        from: min + 6 * step,
-        to: threshold,
-        color: '#225ea890',
-        name: `${formatWithCurrency(min + 6 * step)} - ${formatWithCurrency(threshold)}`,
-      },
-      {
-        from: threshold,
-        to: max,
-        color: '#0c2c8490',
-        name: `> ${formatWithCurrency(threshold)}`,
-      },
-    ];
-  }, [processedGearMetrics.series, theme, formatWithCurrency, convertCurrency]);
-
   if (loading) {
     return (
       <div className="card">
@@ -439,13 +286,12 @@ const Revenue = ({ theme, landingSite, currency }) => {
             <h3 className="card-title">Revenue by Gear Type and Landing Site</h3>
           </div>
           <div className="card-body">
-            {processedGearMetrics.series.length > 0 ? (
+            {gearHabitatMetrics.length > 0 ? (
               <GearMetricsHeatmap
                 theme={theme}
-                series={processedGearMetrics.series}
-                gearTypes={processedGearMetrics.gearTypes}
-                colorRanges={colorRanges}
-                formatValue={formatWithCurrency}
+                data={gearHabitatMetrics}
+                formatValue={val => `${CURRENCY_SYMBOLS[currency]} ${(val * EXCHANGE_RATES[currency]).toFixed(2)}`}
+                metric="rpue"
               />
             ) : (
               <div className="d-flex align-items-center justify-content-center h-100 text-muted">

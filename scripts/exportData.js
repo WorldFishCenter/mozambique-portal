@@ -43,6 +43,16 @@ const COLLECTIONS_TO_EXPORT = [
     name: 'taxa-sites',
     query: {},
     filename: 'taxa-sites.json'
+  },
+  {
+    name: 'gear_habitat_metrics',
+    query: { type: { $ne: "metadata" } },  // Exclude metadata documents
+    filename: 'gear-habitat-metrics.json'
+  },
+  {
+    name: 'surveys-gps',
+    query: {},
+    filename: 'surveys-gps.json'
   }
 ];
 

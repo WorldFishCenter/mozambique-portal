@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { getChartConfig } from '../../utils/chartConfigs';
 import { getCatchData } from '../../services/dataService';
-import gearMetricsData from '../../data/gear-metrics.json';
+import gearHabitatMetrics from '../../data/gear-habitat-metrics.json';
 import TimeSeriesChart from '../charts/TimeSeriesChart';
 import SeasonalChart from '../charts/SeasonalChart';
 import GearMetricsHeatmap from '../charts/GearMetricsHeatmap';
@@ -149,152 +149,6 @@ const Catch = ({ theme, landingSite }) => {
     };
   }, [validData]);
 
-  // Memoized gear metrics data processing
-  const processedGearMetrics = useMemo(() => {
-    if (!Array.isArray(gearMetricsData) || gearMetricsData.length === 0) {
-      console.warn('No gear metrics data available');
-      return {
-        series: [],
-        gearTypes: [],
-      };
-    }
-
-    try {
-      // Filter for CPUE metrics only and exclude metadata
-      const cpueData = gearMetricsData.filter(
-        d =>
-          d.metric === 'median_cpue' &&
-          !d.type &&
-          typeof d.value === 'number' &&
-          d.landing_site &&
-          d.gear
-      );
-
-      if (cpueData.length === 0) {
-        console.warn('No CPUE data found in gear metrics');
-        return {
-          series: [],
-          gearTypes: [],
-        };
-      }
-
-      // Calculate total CPUE for each gear type and landing site
-      const gearTotals = {};
-      const siteTotals = {};
-
-      cpueData.forEach(d => {
-        if (!gearTotals[d.gear]) gearTotals[d.gear] = 0;
-        if (!siteTotals[d.landing_site]) siteTotals[d.landing_site] = 0;
-        gearTotals[d.gear] += d.value || 0;
-        siteTotals[d.landing_site] += d.value || 0;
-      });
-
-      // Sort gear types by highest CPUE first
-      const gearTypes = Object.keys(gearTotals).sort((a, b) => gearTotals[b] - gearTotals[a]);
-      // Sort landing sites by lowest CPUE first (so highest CPUE will be at the top)
-      const landingSites = Object.keys(siteTotals).sort((a, b) => siteTotals[a] - siteTotals[b]);
-
-      // Transform data into series format
-      const series = landingSites.map(site => ({
-        name: site.replace(/_/g, ' '),
-        data: gearTypes.map(gear => {
-          const match = cpueData.find(d => d.landing_site === site && d.gear === gear);
-          return match && match.value ? Number(match.value.toFixed(2)) : -1;
-        }),
-      }));
-
-      console.log('Processed gear metrics:', {
-        landingSites,
-        gearTypes,
-        series,
-        rawData: cpueData,
-        gearTotals,
-        siteTotals,
-      });
-
-      return {
-        series,
-        gearTypes: gearTypes.map(gear => gear.replace(/_/g, ' ')),
-      };
-    } catch (error) {
-      console.error('Error processing gear metrics data:', error);
-      return {
-        series: [],
-        gearTypes: [],
-      };
-    }
-  }, []);
-
-  // Calculate color ranges
-  const colorRanges = useMemo(() => {
-    if (!processedGearMetrics.series.length) return [];
-
-    const allValues = processedGearMetrics.series.flatMap(s => s.data).filter(v => v > 0);
-
-    if (allValues.length === 0) return [];
-
-    const min = Math.min(...allValues);
-    const max = Math.max(...allValues);
-    const step = (40 - min) / 7; // Changed to use 40 as max for regular scale
-
-    return [
-      {
-        from: -1,
-        to: -1,
-        color: theme === 'dark' ? '#374151' : '#f3f4f6',
-        name: 'No Data',
-      },
-      {
-        from: min,
-        to: min + step,
-        color: '#ffffd990',
-        name: `< ${(min + step).toFixed(2)}`,
-      },
-      {
-        from: min + step,
-        to: min + 2 * step,
-        color: '#edf8b190',
-        name: `${(min + step).toFixed(2)} - ${(min + 2 * step).toFixed(2)}`,
-      },
-      {
-        from: min + 2 * step,
-        to: min + 3 * step,
-        color: '#c7e9b490',
-        name: `${(min + 2 * step).toFixed(2)} - ${(min + 3 * step).toFixed(2)}`,
-      },
-      {
-        from: min + 3 * step,
-        to: min + 4 * step,
-        color: '#7fcdbb90',
-        name: `${(min + 3 * step).toFixed(2)} - ${(min + 4 * step).toFixed(2)}`,
-      },
-      {
-        from: min + 4 * step,
-        to: min + 5 * step,
-        color: '#41b6c490',
-        name: `${(min + 4 * step).toFixed(2)} - ${(min + 5 * step).toFixed(2)}`,
-      },
-      {
-        from: min + 5 * step,
-        to: min + 6 * step,
-        color: '#1d91c090',
-        name: `${(min + 5 * step).toFixed(2)} - ${(min + 6 * step).toFixed(2)}`,
-      },
-      {
-        from: min + 6 * step,
-        to: 40,
-        color: '#225ea890',
-        name: `${(min + 6 * step).toFixed(2)} - 40.00`,
-      },
-      {
-        from: 40,
-        to: max,
-        color: '#0c2c8490',
-        name: '> 40.00',
-      },
-    ];
-  }, [processedGearMetrics.series, theme]);
-
   if (loading) {
     return (
       <div className="card">
@@ -419,13 +273,12 @@ const Catch = ({ theme, landingSite }) => {
             <h3 className="card-title">Catch Rate by Gear Type</h3>
           </div>
           <div className="card-body">
-            {processedGearMetrics.series.length > 0 ? (
+            {gearHabitatMetrics.length > 0 ? (
               <GearMetricsHeatmap
                 theme={theme}
-                series={processedGearMetrics.series}
-                gearTypes={processedGearMetrics.gearTypes}
-                colorRanges={colorRanges}
+                data={gearHabitatMetrics}
                 formatValue={val => `${val.toFixed(2)} kg/fisher/hour`}
+                metric="cpue"
               />
             ) : (
               <div className="d-flex align-items-center justify-content-center h-100 text-muted">

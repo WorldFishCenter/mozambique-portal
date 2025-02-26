@@ -406,37 +406,20 @@ const Map = memo(({ theme }) => {
   }, []);
 
   // Memoize tooltip function
-  const getTooltip = useCallback(({ object }) => {
-    if (!object) return null;
-
-    const avgTime =
-      object.points.reduce(/** @param {number} sum @param {{ source: { avgTimeHours: number } }} p */
-        (sum, p) => sum + p.source.avgTimeHours, 0) / object.points.length;
-    const breakIndex = TIME_BREAKS.findIndex(
-      range => avgTime >= range.min && (range.max === Infinity ? true : avgTime < range.max)
-    );
-    const cellColor = COLOR_RANGE[breakIndex >= 0 ? breakIndex : 0];
-    const totalVisits = object.points.reduce(/** @param {number} sum @param {{ source: { totalVisits: number } }} p */
-      (sum, p) => sum + p.source.totalVisits, 0);
-
-    return {
-      html: `
-        <div style="padding: 8px">
-          <div><strong>Time spent</strong></div>
-          <div>Average time: ${avgTime.toFixed(2)} hours</div>
-          <div><strong>Activity</strong></div>
-          <div>Total visits: ${totalVisits}</div>
-        </div>
-      `,
-      style: {
-        backgroundColor: `rgba(${cellColor.join(',')}, 0.95)`,
-        color: breakIndex > COLOR_RANGE.length / 2 ? '#ffffff' : '#000000',
-        fontSize: '12px',
-        borderRadius: '4px',
-        boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
-      },
-    };
-  }, []);
+  const getTooltipContent = (info) => {
+    if (!info.object) return null;
+    
+    if (info.layer.id === 'grid-layer') {
+      return `Count: ${info.object.points.length}`;
+    }
+    
+    if (info.layer.id === 'geojson-layer') {
+      const { ADM2_PT, n_observations } = info.object.properties;
+      return `${ADM2_PT}: ${n_observations} observations`;
+    }
+    
+    return null;
+  };
 
   // Memoize layers
   const layers = useMemo(() => {
@@ -444,16 +427,26 @@ const Map = memo(({ theme }) => {
     
     return [
       palmaArea && new GeoJsonLayer({
-        id: 'palma-boundaries',
+        id: 'geojson-layer',
         data: palmaArea,
-        filled: true,
+        pickable: true,
         stroked: true,
-        getFillColor: [44, 62, 80, 25],
-        getLineColor: [44, 62, 80, 255],
-        lineWidthMinPixels: 2
+        filled: true,
+        getFillColor: (feature) => {
+          const count = feature.properties.n_observations;
+          // Color gradient from blue (low) to red (high)
+          return [
+            Math.min(255, (count / 400) * 255), // Red component
+            20,  // Green component
+            Math.max(0, 255 - (count / 400) * 255), // Blue component
+            180  // Alpha
+          ];
+        },
+        getLineColor: [255, 255, 255, 100],
+        lineWidthMinPixels: 1
       }),
       new GridLayer({
-        id: 'grid',
+        id: 'grid-layer',
         data: filteredData,
         pickable: true,
         extruded: true,
@@ -483,7 +476,7 @@ const Map = memo(({ theme }) => {
         controller={true}
         layers={layers}
         onViewStateChange={handleViewStateChange}
-        getTooltip={getTooltip}
+        getTooltip={getTooltipContent}
       >
         <MapGL
           key={`${theme}-${isSatellite}`}

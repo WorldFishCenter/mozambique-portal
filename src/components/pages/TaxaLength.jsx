@@ -1,31 +1,14 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { useTheme } from '../../hooks/useTheme';
 import TaxaLengthChart from '../charts/TaxaLengthChart';
 import { getTaxaLength } from '../../services/dataService';
 
+/**
+ * Component that displays taxa length distribution using a boxplot
+ */
 const TaxaLength = () => {
   const { theme } = useTheme();
   const rawData = getTaxaLength();
-
-  // Filter and transform data to match the required type
-  const chartData = useMemo(() => {
-    return rawData
-      .filter(item => 
-        !item.type?.includes('metadata') && 
-        typeof item.q25 === 'number' &&
-        typeof item.q75 === 'number' &&
-        typeof item.min === 'number' &&
-        typeof item.max === 'number' &&
-        typeof item.catch_taxon === 'string'
-      )
-      .map(item => ({
-        catch_taxon: item.catch_taxon,
-        q25: item.q25,
-        q75: item.q75,
-        min: item.min,
-        max: item.max
-      }));
-  }, [rawData]);
 
   return (
     <div className="container-xl">
@@ -42,7 +25,8 @@ const TaxaLength = () => {
       <div className="page-body">
         <div className="row row-cards">
           <div className="col-12">
-            <TaxaLengthChart data={chartData} theme={theme} />
+            {/* @ts-ignore - Type definition handled in TaxaLengthChart component */}
+            <TaxaLengthChart data={rawData} theme={theme} />
           </div>
         </div>
       </div>

@@ -1,98 +1,835 @@
 [
   {
-    "_id": "67bf6a317e36018cbe057546",
+    "_id": "67c033847e36018cbe0575fe",
     "type": [
       "metadata"
     ],
     "columns": [
       "catch_taxon",
-      "q25",
-      "q75",
-      "min",
-      "max"
+      "length_class"
     ],
     "timestamp": [
-      "2025-02-26T19:23:29.673Z"
+      "2025-02-27T09:42:28.724Z"
     ]
   },
   {
-    "_id": "67bf6a317e36018cbe057547",
-    "catch_taxon": "Barracuda",
-    "q25": 17.5,
-    "q75": 47.5,
-    "min": 7.5,
-    "max": 150
-  },
-  {
-    "_id": "67bf6a317e36018cbe057548",
-    "catch_taxon": "Emperor",
-    "q25": 17.5,
-    "q75": 42.5,
-    "min": 7.5,
-    "max": 80
-  },
-  {
-    "_id": "67bf6a317e36018cbe057549",
-    "catch_taxon": "Snapper/seaperch",
-    "q25": 17.5,
-    "q75": 42.5,
-    "min": 7.5,
-    "max": 800
-  },
-  {
-    "_id": "67bf6a317e36018cbe05754a",
+    "_id": "67c033847e36018cbe0575ff",
     "catch_taxon": "Parrotfish",
-    "q25": 17.5,
-    "q75": 37.5,
-    "min": 7.5,
-    "max": 200
+    "length_class": 12.5
   },
   {
-    "_id": "67bf6a317e36018cbe05754b",
-    "catch_taxon": "Spinefoot",
-    "q25": 12.5,
-    "q75": 37.5,
-    "min": 7.5,
-    "max": 150
+    "_id": "67c033847e36018cbe057600",
+    "catch_taxon": "Parrotfish",
+    "length_class": 17.5
   },
   {
-    "_id": "67bf6a317e36018cbe05754c",
-    "catch_taxon": "Mojarra/Silverbelly",
-    "q25": 12.5,
-    "q75": 32.5,
-    "min": 7,
-    "max": 65
-  },
-  {
-    "_id": "67bf6a317e36018cbe05754d",
+    "_id": "67c033847e36018cbe057601",
     "catch_taxon": "Goatfish",
-    "q25": 17.5,
-    "q75": 27.5,
-    "min": 7.5,
-    "max": 62
+    "length_class": 12.5
   },
   {
-    "_id": "67bf6a317e36018cbe05754e",
-    "catch_taxon": "Fusilier",
-    "q25": 12.5,
-    "q75": 22.5,
-    "min": 6,
-    "max": 57.5
+    "_id": "67c033847e36018cbe057602",
+    "catch_taxon": "Goatfish",
+    "length_class": 17.5
   },
   {
-    "_id": "67bf6a317e36018cbe05754f",
+    "_id": "67c033847e36018cbe057603",
     "catch_taxon": "Sardines/pilchards",
-    "q25": 7.5,
-    "q75": 22.5,
-    "min": 7,
-    "max": 37.5
+    "length_class": 12.5
   },
   {
-    "_id": "67bf6a317e36018cbe057550",
+    "_id": "67c033847e36018cbe057604",
+    "catch_taxon": "Sardines/pilchards",
+    "length_class": 17.5
+  },
+  {
+    "_id": "67c033847e36018cbe057605",
+    "catch_taxon": "Sardines/pilchards",
+    "length_class": 22.5
+  },
+  {
+    "_id": "67c033847e36018cbe057606",
+    "catch_taxon": "Sardines/pilchards",
+    "length_class": 27.5
+  },
+  {
+    "_id": "67c033847e36018cbe057607",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 7.5
+  },
+  {
+    "_id": "67c033847e36018cbe057608",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 12.5
+  },
+  {
+    "_id": "67c033847e36018cbe057609",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 17.5
+  },
+  {
+    "_id": "67c033847e36018cbe05760a",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 22.5
+  },
+  {
+    "_id": "67c033847e36018cbe05760b",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 27.5
+  },
+  {
+    "_id": "67c033847e36018cbe05760c",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 32.5
+  },
+  {
+    "_id": "67c033847e36018cbe05760d",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 47.5
+  },
+  {
+    "_id": "67c033847e36018cbe05760e",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 42.5
+  },
+  {
+    "_id": "67c033847e36018cbe05760f",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 37.5
+  },
+  {
+    "_id": "67c033847e36018cbe057610",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 52.5
+  },
+  {
+    "_id": "67c033847e36018cbe057611",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 57.5
+  },
+  {
+    "_id": "67c033847e36018cbe057612",
+    "catch_taxon": "Emperor",
+    "length_class": 7.5
+  },
+  {
+    "_id": "67c033847e36018cbe057613",
+    "catch_taxon": "Emperor",
+    "length_class": 12.5
+  },
+  {
+    "_id": "67c033847e36018cbe057614",
+    "catch_taxon": "Emperor",
+    "length_class": 17.5
+  },
+  {
+    "_id": "67c033847e36018cbe057615",
+    "catch_taxon": "Emperor",
+    "length_class": 22.5
+  },
+  {
+    "_id": "67c033847e36018cbe057616",
+    "catch_taxon": "Emperor",
+    "length_class": 27.5
+  },
+  {
+    "_id": "67c033847e36018cbe057617",
+    "catch_taxon": "Emperor",
+    "length_class": 32.5
+  },
+  {
+    "_id": "67c033847e36018cbe057618",
+    "catch_taxon": "Emperor",
+    "length_class": 47.5
+  },
+  {
+    "_id": "67c033847e36018cbe057619",
+    "catch_taxon": "Emperor",
+    "length_class": 42.5
+  },
+  {
+    "_id": "67c033847e36018cbe05761a",
+    "catch_taxon": "Emperor",
+    "length_class": 37.5
+  },
+  {
+    "_id": "67c033847e36018cbe05761b",
+    "catch_taxon": "Emperor",
+    "length_class": 52.5
+  },
+  {
+    "_id": "67c033847e36018cbe05761c",
+    "catch_taxon": "Emperor",
+    "length_class": 57.5
+  },
+  {
+    "_id": "67c033847e36018cbe05761d",
+    "catch_taxon": "Sardines/pilchards",
+    "length_class": 7.5
+  },
+  {
+    "_id": "67c033847e36018cbe05761e",
+    "catch_taxon": "Sardines/pilchards",
+    "length_class": 32.5
+  },
+  {
+    "_id": "67c033847e36018cbe05761f",
+    "catch_taxon": "Parrotfish",
+    "length_class": 7.5
+  },
+  {
+    "_id": "67c033847e36018cbe057620",
+    "catch_taxon": "Parrotfish",
+    "length_class": 22.5
+  },
+  {
+    "_id": "67c033847e36018cbe057621",
+    "catch_taxon": "Parrotfish",
+    "length_class": 27.5
+  },
+  {
+    "_id": "67c033847e36018cbe057622",
+    "catch_taxon": "Parrotfish",
+    "length_class": 32.5
+  },
+  {
+    "_id": "67c033847e36018cbe057623",
+    "catch_taxon": "Parrotfish",
+    "length_class": 47.5
+  },
+  {
+    "_id": "67c033847e36018cbe057624",
+    "catch_taxon": "Spinefoot",
+    "length_class": 7.5
+  },
+  {
+    "_id": "67c033847e36018cbe057625",
+    "catch_taxon": "Spinefoot",
+    "length_class": 12.5
+  },
+  {
+    "_id": "67c033847e36018cbe057626",
+    "catch_taxon": "Spinefoot",
+    "length_class": 17.5
+  },
+  {
+    "_id": "67c033847e36018cbe057627",
+    "catch_taxon": "Spinefoot",
+    "length_class": 22.5
+  },
+  {
+    "_id": "67c033847e36018cbe057628",
+    "catch_taxon": "Spinefoot",
+    "length_class": 27.5
+  },
+  {
+    "_id": "67c033847e36018cbe057629",
+    "catch_taxon": "Spinefoot",
+    "length_class": 32.5
+  },
+  {
+    "_id": "67c033847e36018cbe05762a",
+    "catch_taxon": "Spinefoot",
+    "length_class": 47.5
+  },
+  {
+    "_id": "67c033847e36018cbe05762b",
+    "catch_taxon": "Spinefoot",
+    "length_class": 42.5
+  },
+  {
+    "_id": "67c033847e36018cbe05762c",
+    "catch_taxon": "Spinefoot",
+    "length_class": 37.5
+  },
+  {
+    "_id": "67c033847e36018cbe05762d",
+    "catch_taxon": "Spinefoot",
+    "length_class": 52.5
+  },
+  {
+    "_id": "67c033847e36018cbe05762e",
+    "catch_taxon": "Spinefoot",
+    "length_class": 57.5
+  },
+  {
+    "_id": "67c033847e36018cbe05762f",
+    "catch_taxon": "Fusilier",
+    "length_class": 12.5
+  },
+  {
+    "_id": "67c033847e36018cbe057630",
+    "catch_taxon": "Fusilier",
+    "length_class": 17.5
+  },
+  {
+    "_id": "67c033847e36018cbe057631",
+    "catch_taxon": "Fusilier",
+    "length_class": 7.5
+  },
+  {
+    "_id": "67c033847e36018cbe057632",
+    "catch_taxon": "Parrotfish",
+    "length_class": 30
+  },
+  {
+    "_id": "67c033847e36018cbe057633",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "length_class": 17.5
+  },
+  {
+    "_id": "67c033847e36018cbe057634",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "length_class": 27.5
+  },
+  {
+    "_id": "67c033847e36018cbe057635",
+    "catch_taxon": "Barracuda",
+    "length_class": 37.5
+  },
+  {
+    "_id": "67c033847e36018cbe057636",
+    "catch_taxon": "Parrotfish",
+    "length_class": 40
+  },
+  {
+    "_id": "67c033847e36018cbe057637",
+    "catch_taxon": "Goatfish",
+    "length_class": 7.5
+  },
+  {
+    "_id": "67c033847e36018cbe057638",
+    "catch_taxon": "Goatfish",
+    "length_class": 22.5
+  },
+  {
+    "_id": "67c033847e36018cbe057639",
+    "catch_taxon": "Goatfish",
+    "length_class": 27.5
+  },
+  {
+    "_id": "67c033847e36018cbe05763a",
+    "catch_taxon": "Goatfish",
+    "length_class": 32.5
+  },
+  {
+    "_id": "67c033847e36018cbe05763b",
+    "catch_taxon": "Goatfish",
+    "length_class": 42.5
+  },
+  {
+    "_id": "67c033847e36018cbe05763c",
+    "catch_taxon": "Goatfish",
+    "length_class": 35
+  },
+  {
+    "_id": "67c033847e36018cbe05763d",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "length_class": 22.5
+  },
+  {
+    "_id": "67c033847e36018cbe05763e",
+    "catch_taxon": "Barracuda",
+    "length_class": 7.5
+  },
+  {
+    "_id": "67c033847e36018cbe05763f",
+    "catch_taxon": "Barracuda",
+    "length_class": 12.5
+  },
+  {
+    "_id": "67c033847e36018cbe057640",
+    "catch_taxon": "Barracuda",
+    "length_class": 17.5
+  },
+  {
+    "_id": "67c033847e36018cbe057641",
+    "catch_taxon": "Barracuda",
+    "length_class": 22.5
+  },
+  {
+    "_id": "67c033847e36018cbe057642",
+    "catch_taxon": "Barracuda",
+    "length_class": 27.5
+  },
+  {
+    "_id": "67c033847e36018cbe057643",
+    "catch_taxon": "Barracuda",
+    "length_class": 70
+  },
+  {
+    "_id": "67c033847e36018cbe057644",
+    "catch_taxon": "Fusilier",
+    "length_class": 35
+  },
+  {
+    "_id": "67c033847e36018cbe057645",
+    "catch_taxon": "Fusilier",
+    "length_class": 22.5
+  },
+  {
+    "_id": "67c033847e36018cbe057646",
+    "catch_taxon": "Fusilier",
+    "length_class": 27.5
+  },
+  {
+    "_id": "67c033847e36018cbe057647",
+    "catch_taxon": "Fusilier",
+    "length_class": 32.5
+  },
+  {
+    "_id": "67c033847e36018cbe057648",
+    "catch_taxon": "Fusilier",
+    "length_class": 6
+  },
+  {
+    "_id": "67c033847e36018cbe057649",
+    "catch_taxon": "Parrotfish",
+    "length_class": 35
+  },
+  {
+    "_id": "67c033847e36018cbe05764a",
     "catch_taxon": "Soldierfish",
-    "q25": 12.5,
-    "q75": 22.5,
-    "min": 7.5,
-    "max": 100
+    "length_class": 7.5
+  },
+  {
+    "_id": "67c033847e36018cbe05764b",
+    "catch_taxon": "Soldierfish",
+    "length_class": 12.5
+  },
+  {
+    "_id": "67c033847e36018cbe05764c",
+    "catch_taxon": "Soldierfish",
+    "length_class": 17.5
+  },
+  {
+    "_id": "67c033847e36018cbe05764d",
+    "catch_taxon": "Soldierfish",
+    "length_class": 22.5
+  },
+  {
+    "_id": "67c033847e36018cbe05764e",
+    "catch_taxon": "Soldierfish",
+    "length_class": 27.5
+  },
+  {
+    "_id": "67c033847e36018cbe05764f",
+    "catch_taxon": "Soldierfish",
+    "length_class": 32.5
+  },
+  {
+    "_id": "67c033847e36018cbe057650",
+    "catch_taxon": "Parrotfish",
+    "length_class": 50
+  },
+  {
+    "_id": "67c033847e36018cbe057651",
+    "catch_taxon": "Fusilier",
+    "length_class": 7
+  },
+  {
+    "_id": "67c033847e36018cbe057652",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "length_class": 7.5
+  },
+  {
+    "_id": "67c033847e36018cbe057653",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "length_class": 12.5
+  },
+  {
+    "_id": "67c033847e36018cbe057654",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "length_class": 32.5
+  },
+  {
+    "_id": "67c033847e36018cbe057655",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "length_class": 7
+  },
+  {
+    "_id": "67c033847e36018cbe057656",
+    "catch_taxon": "Barracuda",
+    "length_class": 32.5
+  },
+  {
+    "_id": "67c033847e36018cbe057657",
+    "catch_taxon": "Barracuda",
+    "length_class": 47.5
+  },
+  {
+    "_id": "67c033847e36018cbe057658",
+    "catch_taxon": "Barracuda",
+    "length_class": 42.5
+  },
+  {
+    "_id": "67c033847e36018cbe057659",
+    "catch_taxon": "Barracuda",
+    "length_class": 52.5
+  },
+  {
+    "_id": "67c033847e36018cbe05765a",
+    "catch_taxon": "Barracuda",
+    "length_class": 57.5
+  },
+  {
+    "_id": "67c033847e36018cbe05765b",
+    "catch_taxon": "Sardines/pilchards",
+    "length_class": 7
+  },
+  {
+    "_id": "67c033847e36018cbe05765c",
+    "catch_taxon": "Sardines/pilchards",
+    "length_class": 10
+  },
+  {
+    "_id": "67c033847e36018cbe05765d",
+    "catch_taxon": "Spinefoot",
+    "length_class": 79
+  },
+  {
+    "_id": "67c033847e36018cbe05765e",
+    "catch_taxon": "Sardines/pilchards",
+    "length_class": 13
+  },
+  {
+    "_id": "67c033847e36018cbe05765f",
+    "catch_taxon": "Parrotfish",
+    "length_class": 8
+  },
+  {
+    "_id": "67c033847e36018cbe057660",
+    "catch_taxon": "Sardines/pilchards",
+    "length_class": 12
+  },
+  {
+    "_id": "67c033847e36018cbe057661",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 65
+  },
+  {
+    "_id": "67c033847e36018cbe057662",
+    "catch_taxon": "Emperor",
+    "length_class": 80
+  },
+  {
+    "_id": "67c033847e36018cbe057663",
+    "catch_taxon": "Parrotfish",
+    "length_class": 37.5
+  },
+  {
+    "_id": "67c033847e36018cbe057664",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "length_class": 42.5
+  },
+  {
+    "_id": "67c033847e36018cbe057665",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "length_class": 37.5
+  },
+  {
+    "_id": "67c033847e36018cbe057666",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "length_class": 52.5
+  },
+  {
+    "_id": "67c033847e36018cbe057667",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "length_class": 57.5
+  },
+  {
+    "_id": "67c033847e36018cbe057668",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "length_class": 61
+  },
+  {
+    "_id": "67c033847e36018cbe057669",
+    "catch_taxon": "Parrotfish",
+    "length_class": 52.5
+  },
+  {
+    "_id": "67c033847e36018cbe05766a",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "length_class": 65
+  },
+  {
+    "_id": "67c033847e36018cbe05766b",
+    "catch_taxon": "Parrotfish",
+    "length_class": 42.5
+  },
+  {
+    "_id": "67c033847e36018cbe05766c",
+    "catch_taxon": "Spinefoot",
+    "length_class": 65
+  },
+  {
+    "_id": "67c033847e36018cbe05766d",
+    "catch_taxon": "Barracuda",
+    "length_class": 63
+  },
+  {
+    "_id": "67c033847e36018cbe05766e",
+    "catch_taxon": "Barracuda",
+    "length_class": 65
+  },
+  {
+    "_id": "67c033847e36018cbe05766f",
+    "catch_taxon": "Goatfish",
+    "length_class": 37.5
+  },
+  {
+    "_id": "67c033847e36018cbe057670",
+    "catch_taxon": "Goatfish",
+    "length_class": 62
+  },
+  {
+    "_id": "67c033847e36018cbe057671",
+    "catch_taxon": "Spinefoot",
+    "length_class": 70
+  },
+  {
+    "_id": "67c033847e36018cbe057672",
+    "catch_taxon": "Parrotfish",
+    "length_class": 90
+  },
+  {
+    "_id": "67c033847e36018cbe057673",
+    "catch_taxon": "Parrotfish",
+    "length_class": 70
+  },
+  {
+    "_id": "67c033847e36018cbe057674",
+    "catch_taxon": "Parrotfish",
+    "length_class": 57.5
+  },
+  {
+    "_id": "67c033847e36018cbe057675",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 61
+  },
+  {
+    "_id": "67c033847e36018cbe057676",
+    "catch_taxon": "Barracuda",
+    "length_class": 61
+  },
+  {
+    "_id": "67c033847e36018cbe057677",
+    "catch_taxon": "Parrotfish",
+    "length_class": 65
+  },
+  {
+    "_id": "67c033847e36018cbe057678",
+    "catch_taxon": "Goatfish",
+    "length_class": 52.5
+  },
+  {
+    "_id": "67c033847e36018cbe057679",
+    "catch_taxon": "Spinefoot",
+    "length_class": 63
+  },
+  {
+    "_id": "67c033847e36018cbe05767a",
+    "catch_taxon": "Barracuda",
+    "length_class": 62
+  },
+  {
+    "_id": "67c033847e36018cbe05767b",
+    "catch_taxon": "Parrotfish",
+    "length_class": 61
+  },
+  {
+    "_id": "67c033847e36018cbe05767c",
+    "catch_taxon": "Barracuda",
+    "length_class": 80
+  },
+  {
+    "_id": "67c033847e36018cbe05767d",
+    "catch_taxon": "Spinefoot",
+    "length_class": 62
+  },
+  {
+    "_id": "67c033847e36018cbe05767e",
+    "catch_taxon": "Parrotfish",
+    "length_class": 63
+  },
+  {
+    "_id": "67c033847e36018cbe05767f",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 63
+  },
+  {
+    "_id": "67c033847e36018cbe057680",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "length_class": 62
+  },
+  {
+    "_id": "67c033847e36018cbe057681",
+    "catch_taxon": "Soldierfish",
+    "length_class": 57.5
+  },
+  {
+    "_id": "67c033847e36018cbe057682",
+    "catch_taxon": "Soldierfish",
+    "length_class": 100
+  },
+  {
+    "_id": "67c033847e36018cbe057683",
+    "catch_taxon": "Spinefoot",
+    "length_class": 90
+  },
+  {
+    "_id": "67c033847e36018cbe057684",
+    "catch_taxon": "Fusilier",
+    "length_class": 52.5
+  },
+  {
+    "_id": "67c033847e36018cbe057685",
+    "catch_taxon": "Fusilier",
+    "length_class": 57.5
+  },
+  {
+    "_id": "67c033847e36018cbe057686",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 70
+  },
+  {
+    "_id": "67c033847e36018cbe057687",
+    "catch_taxon": "Emperor",
+    "length_class": 65
+  },
+  {
+    "_id": "67c033847e36018cbe057688",
+    "catch_taxon": "Sardines/pilchards",
+    "length_class": 37.5
+  },
+  {
+    "_id": "67c033847e36018cbe057689",
+    "catch_taxon": "Spinefoot",
+    "length_class": 61
+  },
+  {
+    "_id": "67c033847e36018cbe05768a",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 80
+  },
+  {
+    "_id": "67c033847e36018cbe05768b",
+    "catch_taxon": "Fusilier",
+    "length_class": 37.5
+  },
+  {
+    "_id": "67c033847e36018cbe05768c",
+    "catch_taxon": "Barracuda",
+    "length_class": 150
+  },
+  {
+    "_id": "67c033847e36018cbe05768d",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 62
+  },
+  {
+    "_id": "67c033847e36018cbe05768e",
+    "catch_taxon": "Parrotfish",
+    "length_class": 62
+  },
+  {
+    "_id": "67c033847e36018cbe05768f",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 90
+  },
+  {
+    "_id": "67c033847e36018cbe057690",
+    "catch_taxon": "Emperor",
+    "length_class": 61
+  },
+  {
+    "_id": "67c033847e36018cbe057691",
+    "catch_taxon": "Soldierfish",
+    "length_class": 52.5
+  },
+  {
+    "_id": "67c033847e36018cbe057692",
+    "catch_taxon": "Emperor",
+    "length_class": 64
+  },
+  {
+    "_id": "67c033847e36018cbe057693",
+    "catch_taxon": "Spinefoot",
+    "length_class": 150
+  },
+  {
+    "_id": "67c033847e36018cbe057694",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 150
+  },
+  {
+    "_id": "67c033847e36018cbe057695",
+    "catch_taxon": "Emperor",
+    "length_class": 62
+  },
+  {
+    "_id": "67c033847e36018cbe057696",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 100
+  },
+  {
+    "_id": "67c033847e36018cbe057697",
+    "catch_taxon": "Snapper/seaperch",
+    "length_class": 800
+  },
+  {
+    "_id": "67c033847e36018cbe057698",
+    "catch_taxon": "Spinefoot",
+    "length_class": 74
+  },
+  {
+    "_id": "67c033847e36018cbe057699",
+    "catch_taxon": "Spinefoot",
+    "length_class": 66
+  },
+  {
+    "_id": "67c033847e36018cbe05769a",
+    "catch_taxon": "Spinefoot",
+    "length_class": 69
+  },
+  {
+    "_id": "67c033847e36018cbe05769b",
+    "catch_taxon": "Spinefoot",
+    "length_class": 80
+  },
+  {
+    "_id": "67c033847e36018cbe05769c",
+    "catch_taxon": "Goatfish",
+    "length_class": 57.5
+  },
+  {
+    "_id": "67c033847e36018cbe05769d",
+    "catch_taxon": "Barracuda",
+    "length_class": 67
+  },
+  {
+    "_id": "67c033847e36018cbe05769e",
+    "catch_taxon": "Parrotfish",
+    "length_class": 149
+  },
+  {
+    "_id": "67c033847e36018cbe05769f",
+    "catch_taxon": "Parrotfish",
+    "length_class": 200
+  },
+  {
+    "_id": "67c033847e36018cbe0576a0",
+    "catch_taxon": "Emperor",
+    "length_class": 70
+  },
+  {
+    "_id": "67c033847e36018cbe0576a1",
+    "catch_taxon": "Barracuda",
+    "length_class": 90
+  },
+  {
+    "_id": "67c033847e36018cbe0576a2",
+    "catch_taxon": "Barracuda",
+    "length_class": 75
   }
 ]

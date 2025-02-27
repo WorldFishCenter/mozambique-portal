@@ -22,7 +22,7 @@ const Navigation = ({ selectedLandingSite, setSelectedLandingSite, currency, set
   // Format landing site name for display
   const formatLandingSiteName = site => {
     return site === 'all'
-      ? 'All Landing Sites'
+      ? 'All Districts'
       : site.charAt(0).toUpperCase() + site.slice(1).replace('_', ' ');
   };
 
@@ -109,13 +109,13 @@ const Navigation = ({ selectedLandingSite, setSelectedLandingSite, currency, set
                     </span>
                   </button>
                   <div className="dropdown-menu dropdown-menu-end">
-                    <div className="dropdown-header">Select Landing Site</div>
+                    <div className="dropdown-header">Select District</div>
                     <button
                       type="button"
                       className={`dropdown-item ${selectedLandingSite === 'all' ? 'active fw-bold' : ''}`}
                       onClick={() => setSelectedLandingSite('all')}
                     >
-                      All Landing Sites
+                      All Districts
                     </button>
                     <div className="dropdown-divider"></div>
                     <div

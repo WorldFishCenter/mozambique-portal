@@ -199,7 +199,7 @@ const Revenue = ({ theme, landingSite, currency }) => {
       <div className="card">
         <div className="card-body">
           <div className="text-center text-muted">
-            No data available for {landingSite === 'all' ? 'all landing sites' : landingSite}
+            No data available for {landingSite === 'all' ? 'all districts' : landingSite}
           </div>
         </div>
       </div>
@@ -266,7 +266,7 @@ const Revenue = ({ theme, landingSite, currency }) => {
                   chartConfig={chartConfig}
                   data={displayData}
                   viewMode={viewMode}
-                  title={landingSite === 'all' ? 'All Landing Sites' : landingSite}
+                  title={landingSite === 'all' ? 'All Districts' : landingSite}
                   formatValue={formatWithCurrency}
                   currency={currency}
                 />

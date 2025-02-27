@@ -77,34 +77,6 @@ const Catch = ({ theme, landingSite }) => {
     }));
   }, []);
 
-  // Memoized yearly aggregation
-  const aggregateToYearly = useCallback(monthlyData => {
-    const yearlyMap = new Map();
-
-    monthlyData.forEach(item => {
-      const date = new Date(item.x);
-      const year = date.getFullYear();
-
-      if (!yearlyMap.has(year)) {
-        yearlyMap.set(year, {
-          sum: 0,
-          count: 0,
-        });
-      }
-
-      if (item.y !== null) {
-        yearlyMap.get(year).sum += item.y;
-        yearlyMap.get(year).count += 1;
-      }
-    });
-
-    return Array.from(yearlyMap.entries())
-      .map(([year, data]) => ({
-        x: year.toString(),
-        y: data.count > 0 ? Number((data.sum / data.count).toFixed(2)) : null,
-      }))
-      .sort((a, b) => parseInt(a.x) - parseInt(b.x));
-  }, []);
 
   // Memoized seasonal data calculation
   const seasonalData = useMemo(() => {
@@ -182,7 +154,7 @@ const Catch = ({ theme, landingSite }) => {
       <div className="card">
         <div className="card-body">
           <div className="text-center text-muted">
-            No data available for {landingSite === 'all' ? 'all landing sites' : landingSite}
+            No data available for {landingSite === 'all' ? 'all districts' : landingSite}
           </div>
         </div>
       </div>
@@ -250,7 +222,7 @@ const Catch = ({ theme, landingSite }) => {
                   chartConfig={chartConfig}
                   data={displayData}
                   viewMode={viewMode}
-                  title={landingSite === 'all' ? 'All Landing Sites' : landingSite}
+                  title={landingSite === 'all' ? 'All Districts' : landingSite}
                   formatValue={val => `${val.toFixed(2)} kg/fisher/hour`}
                 />
               </div>

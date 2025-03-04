@@ -18,9 +18,10 @@ import {
 } from '../../constants/mapConfig';
 
 // @ts-ignore
-const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
-console.log('Environment variables:', import.meta.env);
-console.log('Mapbox token:', MAPBOX_TOKEN);
+const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN || 
+                     (typeof process !== 'undefined' && process.env && process.env.REACT_APP_MAPBOX_TOKEN);
+console.log('Environment variables loaded:', !!(import.meta.env.VITE_MAPBOX_TOKEN || 
+                     (typeof process !== 'undefined' && process.env && process.env.REACT_APP_MAPBOX_TOKEN)));
 
 // Workaround for mapboxgl worker
 const workerCode = `
@@ -83,114 +84,114 @@ const FILTERED_DATA = effortMapData
   }));
 
 // Utility functions
-const calculateStats = data => {
-  const totalVisits = data.reduce((sum, d) => sum + (d.totalVisits || 0), 0);
-  const avgTime = data.reduce((sum, d) => sum + (d.avgTimeHours || 0), 0) / data.length;
-  const maxTime = Math.max(...data.map(d => d.avgTimeHours || 0));
-  const avgSpeed = data.reduce((sum, d) => sum + (d.avgSpeed || 0), 0) / data.length;
+// const calculateStats = data => {
+//   const totalVisits = data.reduce((sum, d) => sum + (d.totalVisits || 0), 0);
+//   const avgTime = data.reduce((sum, d) => sum + (d.avgTimeHours || 0), 0) / data.length;
+//   const maxTime = Math.max(...data.map(d => d.avgTimeHours || 0));
+//   const avgSpeed = data.reduce((sum, d) => sum + (d.avgSpeed || 0), 0) / data.length;
 
-  return {
-    totalVisits: totalVisits.toLocaleString(),
-    avgTime: avgTime.toFixed(1),
-    maxTime: maxTime.toFixed(1),
-    gridCells: data.length.toLocaleString(),
-    avgSpeed: avgSpeed.toFixed(1),
-  };
-};
+//   return {
+//     totalVisits: totalVisits.toLocaleString(),
+//     avgTime: avgTime.toFixed(1),
+//     maxTime: maxTime.toFixed(1),
+//     gridCells: data.length.toLocaleString(),
+//     avgSpeed: avgSpeed.toFixed(1),
+//   };
+// };
 
-const getColorForValue = value => {
-  for (let i = TIME_BREAKS.length - 1; i >= 0; i--) {
-    const range = TIME_BREAKS[i];
-    if (value >= range.min && (range.max === Infinity ? true : value < range.max)) {
-      return i;
-    }
-  }
-  return 0;
-};
+// const getColorForValue = value => {
+//   for (let i = TIME_BREAKS.length - 1; i >= 0; i--) {
+//     const range = TIME_BREAKS[i];
+//     if (value >= range.min && (range.max === Infinity ? true : value < range.max)) {
+//       return i;
+//     }
+//   }
+//   return 0;
+// };
 
 // Memoized components with prop types
 /** @type {React.FC<{ theme: string, isSatellite: boolean, onToggle: () => void }>} */
-const MapStyleToggle = memo(({ theme, isSatellite, onToggle }) => (
-  <button
-    onClick={onToggle}
-    title={isSatellite ? 'Switch to standard view' : 'Switch to satellite view'}
-    style={{
-      position: 'absolute',
-      top: 20,
-      right: 20,
-      width: '40px',
-      height: '40px',
-      padding: '8px',
-      ...SHARED_STYLES.glassPanel(theme),
-      border: 'none',
-      cursor: 'pointer',
-      zIndex: 1,
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      transition: SHARED_STYLES.transitions.default,
-      transform: 'none',
-      backgroundColor: theme === 'dark' ? 'rgba(31, 41, 55, 0.7)' : 'rgba(255, 255, 255, 0.7)',
-    }}
-    onMouseEnter={e => {
-      e.currentTarget.style.transform = 'translateY(-1px)';
-      e.currentTarget.style.backgroundColor = theme === 'dark' ? 'rgba(31, 41, 55, 0.9)' : 'rgba(255, 255, 255, 0.9)';
-    }}
-    onMouseLeave={e => {
-      e.currentTarget.style.transform = 'none';
-      e.currentTarget.style.backgroundColor = theme === 'dark' ? 'rgba(31, 41, 55, 0.7)' : 'rgba(255, 255, 255, 0.7)';
-    }}
-  >
-    {isSatellite ? <IconMap size={24} stroke={1.5} /> : <IconSatellite size={24} stroke={1.5} />}
-  </button>
-));
+// const MapStyleToggle = memo(({ theme, isSatellite, onToggle }) => (
+//   <button
+//     onClick={onToggle}
+//     title={isSatellite ? 'Switch to standard view' : 'Switch to satellite view'}
+//     style={{
+//       position: 'absolute',
+//       top: 20,
+//       right: 20,
+//       width: '40px',
+//       height: '40px',
+//       padding: '8px',
+//       ...SHARED_STYLES.glassPanel(theme),
+//       border: 'none',
+//       cursor: 'pointer',
+//       zIndex: 1,
+//       display: 'flex',
+//       alignItems: 'center',
+//       justifyContent: 'center',
+//       transition: SHARED_STYLES.transitions.default,
+//       transform: 'none',
+//       backgroundColor: theme === 'dark' ? 'rgba(31, 41, 55, 0.7)' : 'rgba(255, 255, 255, 0.7)',
+//     }}
+//     onMouseEnter={e => {
+//       e.currentTarget.style.transform = 'translateY(-1px)';
+//       e.currentTarget.style.backgroundColor = theme === 'dark' ? 'rgba(31, 41, 55, 0.9)' : 'rgba(255, 255, 255, 0.9)';
+//     }}
+//     onMouseLeave={e => {
+//       e.currentTarget.style.transform = 'none';
+//       e.currentTarget.style.backgroundColor = theme === 'dark' ? 'rgba(31, 41, 55, 0.7)' : 'rgba(255, 255, 255, 0.7)';
+//     }}
+//   >
+//     {isSatellite ? <IconMap size={24} stroke={1.5} /> : <IconSatellite size={24} stroke={1.5} />}
+//   </button>
+// ));
 
 /** @type {React.FC<{ range: any, index: number, isSelected: boolean, colorRange: number[][], theme: string, onToggle: (range: any) => void }>} */
-const TimeRangeButton = memo(({ range, index, isSelected, colorRange, theme, onToggle }) => (
-  <div
-    onClick={() => onToggle(range)}
-    style={{
-      display: 'flex',
-      alignItems: 'center',
-      padding: '4px 8px',
-      cursor: 'pointer',
-      backgroundColor: isSelected
-        ? theme === 'dark'
-          ? 'rgba(59, 130, 246, 0.15)'
-          : 'rgba(59, 130, 246, 0.1)'
-        : 'transparent',
-      borderRadius: '4px',
-      opacity: isSelected ? 1 : 0.6,
-      transition: SHARED_STYLES.transitions.default,
-    }}
-  >
-    <div
-      style={{
-        width: '10px',
-        height: '10px',
-        backgroundColor: `rgb(${colorRange[index].join(',')})`,
-        marginRight: '6px',
-        borderRadius: '2px',
-      }}
-    />
-    <span
-      style={{
-        fontSize: '12px',
-        color: theme === 'dark' ? '#ffffff' : '#000000',
-      }}
-    >
-      {range.label}
-    </span>
-  </div>
-));
+// const TimeRangeButton = memo(({ range, index, isSelected, colorRange, theme, onToggle }) => (
+//   <div
+//     onClick={() => onToggle(range)}
+//     style={{
+//       display: 'flex',
+//       alignItems: 'center',
+//       padding: '4px 8px',
+//       cursor: 'pointer',
+//       backgroundColor: isSelected
+//         ? theme === 'dark'
+//           ? 'rgba(59, 130, 246, 0.15)'
+//           : 'rgba(59, 130, 246, 0.1)'
+//         : 'transparent',
+//       borderRadius: '4px',
+//       opacity: isSelected ? 1 : 0.6,
+//       transition: SHARED_STYLES.transitions.default,
+//     }}
+//   >
+//     <div
+//       style={{
+//         width: '10px',
+//         height: '10px',
+//         backgroundColor: `rgb(${colorRange[index].join(',')})`,
+//         marginRight: '6px',
+//         borderRadius: '2px',
+//       }}
+//     />
+//     <span
+//       style={{
+//         fontSize: '12px',
+//         color: theme === 'dark' ? '#ffffff' : '#000000',
+//       }}
+//     >
+//       {range.label}
+//     </span>
+//   </div>
+// ));
 
-const labelStyle = (theme) => ({
-  color: theme === 'dark' ? '#94a3b8' : '#475569',
-  fontSize: '12px',
-  textTransform: /** @type {const} */ ('uppercase'),
-  letterSpacing: '0.05em',
-  marginBottom: '8px',
-});
+// const labelStyle = (theme) => ({
+//   color: theme === 'dark' ? '#94a3b8' : '#475569',
+//   fontSize: '12px',
+//   textTransform: /** @type {const} */ ('uppercase'),
+//   letterSpacing: '0.05em',
+//   marginBottom: '8px',
+// });
 
 /** @type {React.FC<{ theme: string, data: any[], colorRange: number[][], selectedRanges: any[], onRangeToggle: (range: any) => void }>} */
 // const InfoPanel = memo(({ theme, data, colorRange, selectedRanges, onRangeToggle }) => {
@@ -399,13 +400,13 @@ const Map = memo(({ theme }) => {
   //   });
   // }, []);
 
-  const handleViewStateChange = useCallback(({ viewState }) => {
-    setViewState(viewState);
-  }, []);
+  // const handleViewStateChange = useCallback(({ viewState }) => {
+  //   setViewState(viewState);
+  // }, []);
 
-  const handleMapStyleToggle = useCallback(() => {
-    setIsSatellite(prev => !prev);
-  }, []);
+  // const handleMapStyleToggle = useCallback(() => {
+  //   setIsSatellite(prev => !prev);
+  // }, []);
 
   // Memoize tooltip function
   const getTooltipContent = (info) => {
@@ -468,7 +469,16 @@ const Map = memo(({ theme }) => {
 
   if (!MAPBOX_TOKEN) {
     console.error('Mapbox token is missing. Please check your environment variables.');
-    return <div>Error: Mapbox token is missing</div>;
+    return (
+      <div className="alert alert-danger m-3">
+        <h4 className="alert-heading">Map Error</h4>
+        <p>Mapbox token is missing. Please check that:</p>
+        <ol>
+          <li>The VITE_MAPBOX_TOKEN environment variable is set in your .env file</li>
+          <li>Your development server has been restarted to load the updated variables</li>
+        </ol>
+      </div>
+    );
   }
 
   return (
@@ -501,7 +511,7 @@ const Map = memo(({ theme }) => {
         initialViewState={viewState}
         controller={true}
         layers={layers}
-        onViewStateChange={handleViewStateChange}
+        // onViewStateChange={handleViewStateChange}
         getTooltip={getTooltipContent}
       >
         <MapGL
@@ -515,17 +525,17 @@ const Map = memo(({ theme }) => {
           }
           mapboxAccessToken={MAPBOX_TOKEN}
           onError={console.error}
-          reuseMaps={false}
+          reuseMaps
           attributionControl={false}
           renderWorldCopies={false}
-          antialias
+          antialias={true}
           style={{
             width: '100%',
             height: '100%',
           }}
         />
       </DeckGL>
-      <MapStyleToggle theme={theme} isSatellite={isSatellite} onToggle={handleMapStyleToggle} />
+      {/* <MapStyleToggle theme={theme} isSatellite={isSatellite} onToggle={handleMapStyleToggle} /> */}
     </div>
   );
 });

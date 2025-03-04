@@ -71,7 +71,7 @@ const TaxaLengthChart = ({ data, theme }) => {
       type: 'boxPlot',
       height: Math.max(450, processedData.length * 50), // Adjust height based on number of taxa
       toolbar: {
-        show: false
+        show: true
       },
       fontFamily: 'inherit',
       background: 'transparent'
@@ -191,17 +191,15 @@ const TaxaLengthChart = ({ data, theme }) => {
   }, [processedData]);
 
   return (
-    <div className="card">
-      <div className="card-body">
-        <Chart
-          options={options}
-          series={series}
-          type="boxPlot"
-          height={options.chart.height}
-        />
-        <div className="mt-3 text-muted small">
-          <p>Each box shows the distribution of fish lengths: the central line indicates the median, box edges represent the 1st and 3rd quartiles (25th and 75th percentiles), and whiskers show the minimum and maximum values.</p>
-        </div>
+    <div className="p-3">
+      <Chart
+        options={options}
+        series={series}
+        type="boxPlot"
+        height={options.chart.height}
+      />
+      <div className="mt-3 text-muted small">
+        <p>Each box shows the distribution of fish lengths: the central line indicates the median, box edges represent the 1st and 3rd quartiles (25th and 75th percentiles), and whiskers show the minimum and maximum values.</p>
       </div>
     </div>
   );

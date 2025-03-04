@@ -44,7 +44,7 @@ const TaxaLengthChart: React.FC<TaxaLengthChartProps> = ({ data, theme }) => {
       type: 'rangeBar' as const,
       height: Math.max(350, chartData.length * 40), // Adjust height based on number of taxa
       toolbar: {
-        show: false
+        show: true
       },
     },
     plotOptions: {

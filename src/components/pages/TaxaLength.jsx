@@ -10,7 +10,7 @@ import { getTaxaLength, getTaxaSites } from '../../services/dataService';
  */
 const TaxaLength = () => {
   const { theme } = useTheme();
-  const [activeTab, setActiveTab] = useState('composition');
+  const [activeTab, setActiveTab] = useState('length');
   const lengthData = getTaxaLength();
   const proportionsData = getTaxaSites();
 
@@ -33,18 +33,6 @@ const TaxaLength = () => {
               <li className="nav-item">
                 <a 
                   href="#" 
-                  className={`nav-link ${activeTab === 'composition' ? 'active' : ''}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setActiveTab('composition');
-                  }}
-                >
-                  Catch Composition
-                </a>
-              </li>
-              <li className="nav-item">
-                <a 
-                  href="#" 
                   className={`nav-link ${activeTab === 'length' ? 'active' : ''}`}
                   onClick={(e) => {
                     e.preventDefault();
@@ -54,20 +42,32 @@ const TaxaLength = () => {
                   Length Distribution
                 </a>
               </li>
+              <li className="nav-item">
+                <a 
+                  href="#" 
+                  className={`nav-link ${activeTab === 'composition' ? 'active' : ''}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setActiveTab('composition');
+                  }}
+                >
+                  Catch Composition
+                </a>
+              </li>
             </ul>
           </div>
-          <div className="card-body">
+          <div className="card-body p-0">
             <div className="tab-content">
-              <div className={`tab-pane ${activeTab === 'composition' ? 'active show' : ''}`}>
-                {activeTab === 'composition' && (
-                  /* @ts-ignore - Type definitions handled in chart components */
-                  <TaxaProportionsChart data={proportionsData} theme={theme} />
-                )}
-              </div>
               <div className={`tab-pane ${activeTab === 'length' ? 'active show' : ''}`}>
                 {activeTab === 'length' && (
                   /* @ts-ignore - Type definitions handled in chart components */
                   <TaxaLengthChart data={lengthData} theme={theme} />
+                )}
+              </div>
+              <div className={`tab-pane ${activeTab === 'composition' ? 'active show' : ''}`}>
+                {activeTab === 'composition' && (
+                  /* @ts-ignore - Type definitions handled in chart components */
+                  <TaxaProportionsChart data={proportionsData} theme={theme} />
                 )}
               </div>
             </div>

@@ -11,7 +11,7 @@ const SeasonalChart = ({ theme, data, height = 350, formatValue }) => {
         type: CHART_TYPE,
         height,
         toolbar: {
-          show: false,
+          show: true,
         },
         background: 'transparent',
       },

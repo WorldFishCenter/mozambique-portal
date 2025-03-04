@@ -42,7 +42,7 @@ const GearMetricsTreemap = ({
       type: CHART_TYPE,
       height,
       toolbar: {
-        show: false
+        show: true
       },
       animations: {
         enabled: true,

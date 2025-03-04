@@ -19,11 +19,11 @@ const TaxaProportionsChart = ({ data, theme }) => {
   const processedData = useMemo(() => {
     // Filter out metadata
     const filteredData = data.filter(d => !d.type?.includes('metadata'));
-    
+
     // Group by landing_site and catch_taxon
     const landingSites = [...new Set(filteredData.map(item => item.landing_site))].sort();
     const allTaxa = [...new Set(filteredData.map(item => item.catch_taxon))];
-    
+
     // Define taxa categories to use
     const categories = [
       'Barracuda',
@@ -42,40 +42,40 @@ const TaxaProportionsChart = ({ data, theme }) => {
       'Spinefoot',
       'Surgeonfish'
     ];
-    
+
     // Create a map of landing site to taxa proportions
     const siteProportions = {};
     landingSites.forEach(site => {
       siteProportions[site] = {};
-      
+
       // Initialize all categories to 0
       categories.forEach(category => {
         siteProportions[site][category] = 0;
       });
-      
+
       // Filter data for this site
       const siteData = filteredData.filter(item => item.landing_site === site);
-      
+
       // Calculate total catch for this site to compute percentages
       const totalCatch = siteData.reduce((sum, item) => sum + (item.catch_kg || 0), 0);
-      
+
       // Fill in actual values (using catch_percent if available, otherwise calculate from catch_kg)
       siteData.forEach(item => {
         if (categories.includes(item.catch_taxon)) {
           // Use catch_percent if available, otherwise calculate from catch_kg
-          const percentage = item.catch_percent !== undefined 
-            ? item.catch_percent 
+          const percentage = item.catch_percent !== undefined
+            ? item.catch_percent
             : (totalCatch > 0 ? (item.catch_kg / totalCatch * 100) : 0);
-          
+
           siteProportions[site][item.catch_taxon] = percentage;
         } else {
-          siteProportions[site]['Other'] += item.catch_percent !== undefined 
-            ? item.catch_percent 
+          siteProportions[site]['Other'] += item.catch_percent !== undefined
+            ? item.catch_percent
             : (totalCatch > 0 ? (item.catch_kg / totalCatch * 100) : 0);
         }
       });
     });
-    
+
     // Format data for ApexCharts series
     const series = categories.map(category => {
       return {
@@ -83,13 +83,13 @@ const TaxaProportionsChart = ({ data, theme }) => {
         data: landingSites.map(site => siteProportions[site][category] || 0)
       };
     });
-    
+
     return {
       landingSites,
       series
     };
   }, [data]);
-  
+
   const chartOptions = {
     chart: {
       type: 'bar',
@@ -156,6 +156,9 @@ const TaxaProportionsChart = ({ data, theme }) => {
       }
     },
     tooltip: {
+      onDatasetHover: {
+        highlightDataSeries: true,
+      },
       y: {
         formatter: function (val) {
           return val.toFixed(1) + "%";
@@ -181,15 +184,13 @@ const TaxaProportionsChart = ({ data, theme }) => {
   };
 
   return (
-    <div className="card">
-      <div className="card-body">
-        <ApexBarChart
-          options={chartOptions}
-          series={processedData.series}
-          type="bar"
-          height={Math.max(450, processedData.landingSites.length * 40)}
-        />
-      </div>
+    <div className="p-3">
+      <ApexBarChart
+        options={chartOptions}
+        series={processedData.series}
+        type="bar"
+        height={Math.max(450, processedData.landingSites.length * 40)}
+      />
     </div>
   );
 };

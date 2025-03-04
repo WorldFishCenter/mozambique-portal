@@ -42,7 +42,7 @@ const TimeSeriesChart = ({
           enabled: false,
         },
         toolbar: {
-          show: false,
+          show: true,
         },
         animations: {
           enabled: true,

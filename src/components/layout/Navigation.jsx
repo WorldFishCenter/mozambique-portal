@@ -6,7 +6,7 @@ import {
   IconCurrencyDollar,
   IconInfoSquare,
   IconMap2,
-  IconRuler,
+  IconFish,
 } from '@tabler/icons-react';
 import { LANDING_SITES } from '../../constants/landingSites';
 
@@ -64,9 +64,9 @@ const Navigation = ({ selectedLandingSite, setSelectedLandingSite, currency, set
               <li className={`nav-item ${location.pathname === '/taxa-length' ? 'active' : ''}`}>
                 <Link to="/taxa-length" className="nav-link">
                   <span className="nav-link-icon d-md-none d-lg-inline-block">
-                    <IconRuler size={24} stroke={1.5} />
+                    <IconFish size={24} stroke={1.5} />
                   </span>
-                  <span className="nav-link-title">Taxa Length</span>
+                  <span className="nav-link-title">Composition</span>
                 </Link>
               </li>
               <li className={`nav-item ${location.pathname === '/about' ? 'active' : ''}`}>

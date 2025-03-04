@@ -66,6 +66,7 @@ const TimeSeriesChart = ({
       },
       plotOptions: {
         bar: {
+          horizontal: false,
           borderRadius: 8,
           columnWidth: '60%',
           colors: viewMode === 'differenced' ? {
@@ -100,6 +101,17 @@ const TimeSeriesChart = ({
           },
           format: 'MMM yyyy',
           datetimeUTC: false,
+          rotate: 0,
+          trim: true,
+          hideOverlappingLabels: true,
+          offsetY: 0,
+          formatter: function(val, timestamp) {
+            const date = new Date(timestamp);
+            return date.toLocaleDateString('en-US', { 
+              month: 'short', 
+              year: 'numeric' 
+            });
+          }
         },
         axisBorder: {
           show: false,
@@ -107,6 +119,10 @@ const TimeSeriesChart = ({
         axisTicks: {
           show: false,
         },
+        tickAmount: 'dataPoints',
+        tickPlacement: 'on',
+        convertedCatToNumeric: false,
+        tickInterval: 'month'
       },
       yaxis: {
         title: {

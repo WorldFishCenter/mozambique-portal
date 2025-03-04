@@ -11,7 +11,7 @@ const ApexBarChart = (props) => {
  * Component that displays a stacked barplot of taxa proportions by landing site
  * 
  * @param {Object} props
- * @param {Array} props.data - Raw taxa proportions data
+ * @param {Array} props.data - Raw taxa sites data
  * @param {'dark' | 'light'} props.theme - UI theme
  */
 const TaxaProportionsChart = ({ data, theme }) => {
@@ -20,38 +20,11 @@ const TaxaProportionsChart = ({ data, theme }) => {
     // Filter out metadata
     const filteredData = data.filter(d => !d.type?.includes('metadata'));
     
-    // Group by landing_site and family
+    // Group by landing_site and catch_taxon
     const landingSites = [...new Set(filteredData.map(item => item.landing_site))].sort();
-    const allFamilies = [...new Set(filteredData.map(item => item.family))];
+    const allTaxa = [...new Set(filteredData.map(item => item.catch_taxon))];
     
-    // Map fish families to common display names
-    const familyDisplayNames = {
-      'Acanthuridae': 'Surgeonfish',
-      'Ariidae': 'Catfish',
-      'Balistidae': 'Triggerfish',
-      'Caesionidae': 'Fusilier',
-      'Carangidae': 'Jacks/Trevally/Other Scad',
-      'Clupeidae': 'Sardines/pilchards',
-      'Dasyatidae': 'Stingray',
-      'Gerreidae': 'Mojarra/Silverbelly',
-      'Haemulidae': 'Grunts',
-      'Hemiramphidae': 'Halfbeaks',
-      'Lethrinidae': 'Emperor',
-      'Lutjanidae': 'Snapper/seaperch',
-      'Mullidae': 'Goatfish',
-      'Myliobatidae': 'Eagle ray',
-      'Nemipteridae': 'Threadfin bream',
-      'Octopodidae': 'Octopus',
-      'Scaridae': 'Parrotfish',
-      'Scombridae': 'Mackerel scad',
-      'Serranidae': 'Grouper',
-      'Siganidae': 'Rabbitfish',
-      'Sphyraenidae': 'Barracuda',
-      'Xiphiidae': 'Swordfish',
-      'Others': 'Other'
-    };
-    
-    // Define fish family categories
+    // Define taxa categories to use
     const categories = [
       'Barracuda',
       'Chub',
@@ -70,7 +43,7 @@ const TaxaProportionsChart = ({ data, theme }) => {
       'Surgeonfish'
     ];
     
-    // Create a map of landing site to family proportions
+    // Create a map of landing site to taxa proportions
     const siteProportions = {};
     landingSites.forEach(site => {
       siteProportions[site] = {};
@@ -80,15 +53,25 @@ const TaxaProportionsChart = ({ data, theme }) => {
         siteProportions[site][category] = 0;
       });
       
-      // Fill in actual values
-      filteredData.forEach(item => {
-        if (item.landing_site === site) {
-          const displayName = familyDisplayNames[item.family] || 'Other';
-          if (categories.includes(displayName)) {
-            siteProportions[site][displayName] = item.catch_prop;
-          } else {
-            siteProportions[site]['Other'] += item.catch_prop;
-          }
+      // Filter data for this site
+      const siteData = filteredData.filter(item => item.landing_site === site);
+      
+      // Calculate total catch for this site to compute percentages
+      const totalCatch = siteData.reduce((sum, item) => sum + (item.catch_kg || 0), 0);
+      
+      // Fill in actual values (using catch_percent if available, otherwise calculate from catch_kg)
+      siteData.forEach(item => {
+        if (categories.includes(item.catch_taxon)) {
+          // Use catch_percent if available, otherwise calculate from catch_kg
+          const percentage = item.catch_percent !== undefined 
+            ? item.catch_percent 
+            : (totalCatch > 0 ? (item.catch_kg / totalCatch * 100) : 0);
+          
+          siteProportions[site][item.catch_taxon] = percentage;
+        } else {
+          siteProportions[site]['Other'] += item.catch_percent !== undefined 
+            ? item.catch_percent 
+            : (totalCatch > 0 ? (item.catch_kg / totalCatch * 100) : 0);
         }
       });
     });

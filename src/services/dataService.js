@@ -4,6 +4,7 @@ import gearHabitatMetrics from '../data/gear-habitat-metrics.json';
 import taxaProportions from '../data/taxa-proportions.json';
 import effortMapData from '../data/effort-map.json';
 import taxaLength from '../data/taxa-length.json';
+import taxaSites from '../data/taxa-sites.json';
 import { LANDING_SITES } from '../constants/landingSites';
 
 // Cache configuration with memory limits
@@ -226,6 +227,11 @@ export const getGearMetrics = () => {
 // Get taxa proportions data
 export const getTaxaProportions = () => {
   return taxaProportions;
+};
+
+// Get taxa sites data
+export const getTaxaSites = () => {
+  return taxaSites;
 };
 
 // Get effort map data

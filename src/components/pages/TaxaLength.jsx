@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useTheme } from '../../hooks/useTheme';
 import TaxaLengthChart from '../charts/TaxaLengthChart';
 import TaxaProportionsChart from '../charts/TaxaProportionsChart';
-import { getTaxaLength, getTaxaProportions } from '../../services/dataService';
+import { getTaxaLength, getTaxaSites } from '../../services/dataService';
 
 /**
  * Component that displays taxa length distribution and catch composition
@@ -12,7 +12,7 @@ const TaxaLength = () => {
   const { theme } = useTheme();
   const [activeTab, setActiveTab] = useState('length');
   const lengthData = getTaxaLength();
-  const proportionsData = getTaxaProportions();
+  const proportionsData = getTaxaSites();
 
   return (
     <div className="container-xl">

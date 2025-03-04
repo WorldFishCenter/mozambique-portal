@@ -20,9 +20,9 @@ export const COLOR_RANGE = [
 
 // Initial map view state
 export const INITIAL_VIEW_STATE = {
-  longitude: 32.58, // Maputo longitude
-  latitude: -25.97, // Maputo latitude
-  zoom: 8, // Reduced zoom level for better overview
+  longitude: 40.14, // Maputo longitude
+  latitude: -10.80, // Maputo latitude
+  zoom: 7, // Reduced zoom level for better overview
   pitch: 45, // Add tilt to see 3D
   bearing: 10, // Slight rotation for better perspective
 };

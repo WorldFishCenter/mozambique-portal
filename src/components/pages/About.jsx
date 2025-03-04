@@ -9,9 +9,7 @@ const About = () => {
         <div className="card-body">
           <h2 className="mb-3">About Peskas</h2>
           <p className="text-muted mb-4">
-            A data-driven platform for sustainable fisheries management in Mozambique, developed
-            through partnership between the Wildlife Conservation Society (WCS) and local fisheries
-            institutions.
+            A data-driven platform for sustainable fisheries management in Mozambique.
           </p>
 
           {/* Features */}

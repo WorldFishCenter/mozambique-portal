@@ -2,7 +2,7 @@
 import React, { useState, useMemo, useCallback, memo, useEffect } from 'react';
 import { DeckGL } from '@deck.gl/react';
 import { Map as MapGL } from 'react-map-gl';
-import { GridLayer } from '@deck.gl/aggregation-layers';
+// import { GridLayer } from '@deck.gl/aggregation-layers';
 import { GeoJsonLayer } from '@deck.gl/layers';
 import mapboxgl from 'mapbox-gl';
 import { IconSatellite, IconMap } from '@tabler/icons-react';
@@ -11,9 +11,9 @@ import palmaAreaRaw from '../../data/palma_area.geojson?url';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import {
   TIME_BREAKS,
-  COLOR_RANGE,
+  // COLOR_RANGE,
   INITIAL_VIEW_STATE,
-  GRID_LAYER_SETTINGS,
+  // GRID_LAYER_SETTINGS,
   SHARED_STYLES,
 } from '../../constants/mapConfig';
 
@@ -193,169 +193,169 @@ const labelStyle = (theme) => ({
 });
 
 /** @type {React.FC<{ theme: string, data: any[], colorRange: number[][], selectedRanges: any[], onRangeToggle: (range: any) => void }>} */
-const InfoPanel = memo(({ theme, data, colorRange, selectedRanges, onRangeToggle }) => {
-  const stats = useMemo(() => calculateStats(data), [data]);
+// const InfoPanel = memo(({ theme, data, colorRange, selectedRanges, onRangeToggle }) => {
+//   const stats = useMemo(() => calculateStats(data), [data]);
 
-  return (
-    <div
-      style={{
-        position: 'absolute',
-        top: 20,
-        left: 20,
-        padding: '16px',
-        width: '380px',
-        zIndex: 1,
-        ...SHARED_STYLES.glassPanel(theme),
-      }}
-    >
-      <h3
-        style={{
-          margin: '0 0 16px 0',
-          ...SHARED_STYLES.text.heading(theme),
-        }}
-      >
-        Fishing Effort Distribution
-      </h3>
+//   return (
+//     <div
+//       style={{
+//         position: 'absolute',
+//         top: 20,
+//         left: 20,
+//         padding: '16px',
+//         width: '380px',
+//         zIndex: 1,
+//         ...SHARED_STYLES.glassPanel(theme),
+//       }}
+//     >
+//       <h3
+//         style={{
+//           margin: '0 0 16px 0',
+//           ...SHARED_STYLES.text.heading(theme),
+//         }}
+//       >
+//         Fishing Effort Distribution
+//       </h3>
 
-      {/* Grid Info */}
-      <div
-        style={{
-          marginBottom: '20px',
-          padding: '8px 12px',
-          backgroundColor: theme === 'dark' ? 'rgba(0, 0, 0, 0.2)' : 'rgba(0, 0, 0, 0.05)',
-          borderRadius: '4px',
-          fontSize: '13px',
-        }}
-      >
-        <div style={{ marginBottom: '4px' }}>
-          <strong>Grid Resolution:</strong> 1 × 1 km
-        </div>
-        <div
-          style={{
-            color: theme === 'dark' ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.7)',
-            fontSize: '12px',
-            lineHeight: '1.4',
-          }}
-        >
-          Each cell represents a 1 square kilometer area where fishing activity has been recorded
-        </div>
-      </div>
+//       {/* Grid Info */}
+//       <div
+//         style={{
+//           marginBottom: '20px',
+//           padding: '8px 12px',
+//           backgroundColor: theme === 'dark' ? 'rgba(0, 0, 0, 0.2)' : 'rgba(0, 0, 0, 0.05)',
+//           borderRadius: '4px',
+//           fontSize: '13px',
+//         }}
+//       >
+//         <div style={{ marginBottom: '4px' }}>
+//           <strong>Grid Resolution:</strong> 1 × 1 km
+//         </div>
+//         <div
+//           style={{
+//             color: theme === 'dark' ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.7)',
+//             fontSize: '12px',
+//             lineHeight: '1.4',
+//           }}
+//         >
+//           Each cell represents a 1 square kilometer area where fishing activity has been recorded
+//         </div>
+//       </div>
 
-      {/* Color Scale Legend */}
-      <div style={{ marginBottom: '20px' }}>
-        <div style={labelStyle(theme)}>
-          AVERAGE TIME SPENT
-        </div>
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-            marginBottom: '8px',
-          }}
-        >
-          <div
-            style={{
-              height: '8px',
-              flex: 1,
-              background: `linear-gradient(to right, ${colorRange.map(c => `rgb(${c.join(',')})`).join(', ')})`,
-              borderRadius: '4px',
-            }}
-          />
-        </div>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            color: theme === 'dark' ? '#94a3b8' : '#475569',
-            fontSize: '12px',
-          }}
-        >
-          <span>Fewer Hours</span>
-          <span>More Hours</span>
-        </div>
-      </div>
+//       {/* Color Scale Legend */}
+//       <div style={{ marginBottom: '20px' }}>
+//         <div style={labelStyle(theme)}>
+//           AVERAGE TIME SPENT
+//         </div>
+//         <div
+//           style={{
+//             display: 'flex',
+//             alignItems: 'center',
+//             gap: '8px',
+//             marginBottom: '8px',
+//           }}
+//         >
+//           <div
+//             style={{
+//               height: '8px',
+//               flex: 1,
+//               background: `linear-gradient(to right, ${colorRange.map(c => `rgb(${c.join(',')})`).join(', ')})`,
+//               borderRadius: '4px',
+//             }}
+//           />
+//         </div>
+//         <div
+//           style={{
+//             display: 'flex',
+//             justifyContent: 'space-between',
+//             color: theme === 'dark' ? '#94a3b8' : '#475569',
+//             fontSize: '12px',
+//           }}
+//         >
+//           <span>Fewer Hours</span>
+//           <span>More Hours</span>
+//         </div>
+//       </div>
 
-      {/* Time Range Filters */}
-      <div style={{ marginBottom: '20px' }}>
-        <div style={labelStyle(theme)}>
-          TIME RANGES (select to filter)
-        </div>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '4px',
-          }}
-        >
-          {TIME_BREAKS.map((range, i) => (
-            <TimeRangeButton
-              key={range.label}
-              range={range}
-              index={i}
-              isSelected={selectedRanges.some(r => r.min === range.min && r.max === range.max)}
-              colorRange={colorRange}
-              theme={theme}
-              onToggle={onRangeToggle}
-            />
-          ))}
-        </div>
-      </div>
+//       {/* Time Range Filters */}
+//       <div style={{ marginBottom: '20px' }}>
+//         <div style={labelStyle(theme)}>
+//           TIME RANGES (select to filter)
+//         </div>
+//         <div
+//           style={{
+//             display: 'grid',
+//             gridTemplateColumns: 'repeat(3, 1fr)',
+//             gap: '4px',
+//           }}
+//         >
+//           {TIME_BREAKS.map((range, i) => (
+//             <TimeRangeButton
+//               key={range.label}
+//               range={range}
+//               index={i}
+//               isSelected={selectedRanges.some(r => r.min === range.min && r.max === range.max)}
+//               colorRange={colorRange}
+//               theme={theme}
+//               onToggle={onRangeToggle}
+//             />
+//           ))}
+//         </div>
+//       </div>
 
-      {/* Statistics */}
-      <div
-        style={{
-          fontSize: '14px',
-          lineHeight: '1.6',
-          display: 'grid',
-          gap: '12px',
-        }}
-      >
-        <div>
-          <div style={labelStyle(theme)}>
-            ACTIVITY
-          </div>
-          <div>
-            <strong>{stats.totalVisits}</strong> total visits recorded
-          </div>
-          <div>
-            <strong>{stats.gridCells}</strong> active grid cells
-          </div>
-        </div>
+//       {/* Statistics */}
+//       <div
+//         style={{
+//           fontSize: '14px',
+//           lineHeight: '1.6',
+//           display: 'grid',
+//           gap: '12px',
+//         }}
+//       >
+//         <div>
+//           <div style={labelStyle(theme)}>
+//             ACTIVITY
+//           </div>
+//           <div>
+//             <strong>{stats.totalVisits}</strong> total visits recorded
+//           </div>
+//           <div>
+//             <strong>{stats.gridCells}</strong> active grid cells
+//           </div>
+//         </div>
 
-        <div>
-          <div style={labelStyle(theme)}>
-            TIME & SPEED
-          </div>
-          <div>
-            <strong>{stats.avgTime}h</strong> average time per visit
-          </div>
-          <div>
-            <strong>{stats.maxTime}h</strong> maximum time recorded
-          </div>
-          <div>
-            <strong>{stats.avgSpeed} km/h</strong> average speed
-          </div>
-        </div>
+//         <div>
+//           <div style={labelStyle(theme)}>
+//             TIME & SPEED
+//           </div>
+//           <div>
+//             <strong>{stats.avgTime}h</strong> average time per visit
+//           </div>
+//           <div>
+//             <strong>{stats.maxTime}h</strong> maximum time recorded
+//           </div>
+//           <div>
+//             <strong>{stats.avgSpeed} km/h</strong> average speed
+//           </div>
+//         </div>
 
-        <div
-          style={{
-            marginTop: '8px',
-            paddingTop: '12px',
-            borderTop:
-              theme === 'dark'
-                ? '1px solid rgba(156, 163, 175, 0.2)'
-                : '1px solid rgba(107, 114, 128, 0.2)',
-            color: theme === 'dark' ? '#94a3b8' : '#475569',
-            fontSize: '12px',
-          }}
-        >
-          ⌘ + Drag to rotate view
-        </div>
-      </div>
-    </div>
-  );
-});
+//         <div
+//           style={{
+//             marginTop: '8px',
+//             paddingTop: '12px',
+//             borderTop:
+//               theme === 'dark'
+//                 ? '1px solid rgba(156, 163, 175, 0.2)'
+//                 : '1px solid rgba(107, 114, 128, 0.2)',
+//             color: theme === 'dark' ? '#94a3b8' : '#475569',
+//             fontSize: '12px',
+//           }}
+//         >
+//           ⌘ + Drag to rotate view
+//         </div>
+//       </div>
+//     </div>
+//   );
+// });
 
 /** @type {React.FC<{ theme: string }>} */
 const Map = memo(({ theme }) => {
@@ -363,6 +363,7 @@ const Map = memo(({ theme }) => {
   const [selectedRanges, setSelectedRanges] = useState(TIME_BREAKS);
   const [isSatellite, setIsSatellite] = useState(true);
   const [palmaArea, setPalmaArea] = useState(null);
+  const [showInfoPanel, setShowInfoPanel] = useState(false);
 
   // Load GeoJSON data
   useEffect(() => {
@@ -386,17 +387,17 @@ const Map = memo(({ theme }) => {
   );
 
   // Memoize handlers
-  const handleRangeToggle = useCallback(range => {
-    setSelectedRanges(current => {
-      const isSelected = current.some(r => r.min === range.min && r.max === range.max);
-      if (isSelected) {
-        return current.length === 1
-          ? current
-          : current.filter(r => r.min !== range.min || r.max !== range.max);
-      }
-      return [...current, range];
-    });
-  }, []);
+  // const handleRangeToggle = useCallback(range => {
+  //   setSelectedRanges(current => {
+  //     const isSelected = current.some(r => r.min === range.min && r.max === range.max);
+  //     if (isSelected) {
+  //       return current.length === 1
+  //         ? current
+  //         : current.filter(r => r.min !== range.min || r.max !== range.max);
+  //     }
+  //     return [...current, range];
+  //   });
+  // }, []);
 
   const handleViewStateChange = useCallback(({ viewState }) => {
     setViewState(viewState);
@@ -446,22 +447,22 @@ const Map = memo(({ theme }) => {
         getLineColor: [255, 255, 255, 100],
         lineWidthMinPixels: 1
       }),
-      new GridLayer({
-        id: 'grid-layer',
-        data: filteredData,
-        pickable: true,
-        extruded: true,
-        getPosition: d => d.position,
-        getElevationWeight: d => d.avgTimeHours,
-        colorRange: COLOR_RANGE,
-        ...GRID_LAYER_SETTINGS,
-        colorScaleType: 'ordinal',
-        colorDomain: [0, 1, 2, 3, 4, 5],
-        getColorWeight: d => (d ? getColorForValue(d.avgTimeHours) : 0),
-        updateTriggers: {
-          getColorWeight: [selectedRanges],
-        },
-      })
+      // new GridLayer({
+      //   id: 'grid-layer',
+      //   data: filteredData,
+      //   pickable: true,
+      //   extruded: true,
+      //   getPosition: d => d.position,
+      //   getElevationWeight: d => d.avgTimeHours,
+      //   colorRange: COLOR_RANGE,
+      //   ...GRID_LAYER_SETTINGS,
+      //   colorScaleType: 'ordinal',
+      //   colorDomain: [0, 1, 2, 3, 4, 5],
+      //   getColorWeight: d => (d ? getColorForValue(d.avgTimeHours) : 0),
+      //   updateTriggers: {
+      //     getColorWeight: [selectedRanges],
+      //   },
+      // })
     ].filter(Boolean);
   }, [transformedData, selectedRanges, palmaArea]);
 
@@ -471,7 +472,31 @@ const Map = memo(({ theme }) => {
   }
 
   return (
-    <>
+    <div className="position-relative h-100">
+{/*       
+      <button 
+        className="btn btn-sm position-absolute top-0 end-0 m-2 z-10"
+        style={{
+          backgroundColor: theme === 'dark' ? 'rgba(30, 41, 59, 0.7)' : 'rgba(255, 255, 255, 0.7)',
+          color: theme === 'dark' ? '#e2e8f0' : '#334155',
+          border: theme === 'dark' ? '1px solid rgba(51, 65, 85, 0.5)' : '1px solid rgba(203, 213, 225, 0.5)',
+          zIndex: 10,
+        }}
+        onClick={() => setShowInfoPanel(!showInfoPanel)}
+      >
+        {showInfoPanel ? 'Hide Info' : 'Show Info'}
+      </button>
+
+      {showInfoPanel && (
+        <InfoPanel
+          theme={theme}
+          data={transformedData}
+          colorRange={COLOR_RANGE}
+          selectedRanges={selectedRanges}
+          onRangeToggle={handleRangeToggle}
+        />
+      )} */}
+
       <DeckGL
         initialViewState={viewState}
         controller={true}
@@ -501,14 +526,7 @@ const Map = memo(({ theme }) => {
         />
       </DeckGL>
       <MapStyleToggle theme={theme} isSatellite={isSatellite} onToggle={handleMapStyleToggle} />
-      <InfoPanel
-        theme={theme}
-        data={transformedData}
-        colorRange={COLOR_RANGE}
-        selectedRanges={selectedRanges}
-        onRangeToggle={handleRangeToggle}
-      />
-    </>
+    </div>
   );
 });
 

@@ -66,11 +66,11 @@ const Home = ({ theme, district }) => {
     () => [
       columnHelper.accessor('district', {
         header: 'District',
-        cell: info => <div style={{ textAlign: 'center' }}>{info.getValue()}</div>
+        cell: info => <div style={{ textAlign: 'center' }}>{String(info.getValue())}</div>
       }),
       columnHelper.accessor('landing_site', {
         header: 'Landing Site',
-        cell: info => <div style={{ textAlign: 'center' }}>{info.getValue()}</div>
+        cell: info => <div style={{ textAlign: 'center' }}>{String(info.getValue())}</div>
       }),
       columnHelper.accessor('trip_duration_hrs', {
         header: 'Trip Duration (hrs)',
@@ -125,7 +125,7 @@ const Home = ({ theme, district }) => {
           <div className="card-body p-0">
             <div
               style={{
-                height: '800px',
+                height: '500px',
                 width: '100%',
                 position: 'relative',
                 overflow: 'hidden',

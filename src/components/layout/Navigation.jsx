@@ -61,8 +61,8 @@ const Navigation = ({ selectedLandingSite, setSelectedLandingSite, currency, set
                   <span className="nav-link-title">Revenue</span>
                 </Link>
               </li>
-              <li className={`nav-item ${location.pathname === '/taxa-length' ? 'active' : ''}`}>
-                <Link to="/taxa-length" className="nav-link">
+              <li className={`nav-item ${location.pathname === '/Composition' ? 'active' : ''}`}>
+                <Link to="/Composition" className="nav-link">
                   <span className="nav-link-icon d-md-none d-lg-inline-block">
                     <IconFish size={24} stroke={1.5} />
                   </span>

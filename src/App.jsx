@@ -5,7 +5,7 @@ import Home from './components/pages/Home';
 import Catch from './components/pages/Catch';
 import Revenue from './components/pages/Revenue';
 import About from './components/pages/About';
-import TaxaLength from './components/pages/TaxaLength';
+import Composition from './components/pages/Composition';
 import ErrorBoundary from './components/ErrorBoundary';
 import { useTheme } from './hooks/useTheme';
 import './styles/charts.css';
@@ -35,7 +35,7 @@ function App() {
             path="/revenue"
             element={<Revenue theme={theme} landingSite={selectedLandingSite} currency={currency} />}
           />
-          <Route path="/taxa-length" element={<TaxaLength />} />
+          <Route path="/Composition" element={<Composition />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </ErrorBoundary>

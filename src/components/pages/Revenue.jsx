@@ -53,7 +53,27 @@ const Revenue = ({ theme, landingSite, currency }) => {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2,
       });
-      return skipSymbol ? formattedValue : `${CURRENCY_SYMBOLS[currency]} ${formattedValue}`;
+      
+      if (skipSymbol) {
+        return formattedValue;
+      }
+      
+      // Format as "133.33 MT/fisher/hour"
+      return `${formattedValue} ${CURRENCY_SYMBOLS[currency]}/fisher/hour`;
+    },
+    [currency]
+  );
+
+  // Memoized currency formatting with unit for charts
+  const formatValueWithUnit = useCallback(
+    (value) => {
+      if (value === null || value === undefined) return 'No data';
+      const formattedValue = value.toLocaleString('en-US', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      });
+      // Format as "133.33 MT/fisher/hour" - same as formatWithCurrency
+      return `${formattedValue} ${CURRENCY_SYMBOLS[currency]}/fisher/hour`;
     },
     [currency]
   );
@@ -232,11 +252,20 @@ const Revenue = ({ theme, landingSite, currency }) => {
           <div className="card-body">
             <div className="d-flex align-items-center mb-4">
               <div className="me-4">
-                <div className="text-muted mb-1">Latest Revenue</div>
+                <div className="text-muted mb-1">Latest RPUE</div>
                 <div className="d-flex align-items-baseline">
-                  <h1 className="h1 mb-0 me-2">
-                    {typeof latestValue === 'number' ? formatWithCurrency(latestValue) : 'No data'}
-                  </h1>
+                  {typeof latestValue === 'number' ? (
+                    <>
+                      <h1 className="h1 mb-0 me-1">
+                        {formatWithCurrency(latestValue, true)}
+                      </h1>
+                      <span className="text-muted">
+                        {CURRENCY_SYMBOLS[currency]}/fisher/hour
+                      </span>
+                    </>
+                  ) : (
+                    <h1 className="h1 mb-0">No data</h1>
+                  )}
                 </div>
               </div>
               {percentChange && (
@@ -267,12 +296,12 @@ const Revenue = ({ theme, landingSite, currency }) => {
                   data={displayData}
                   viewMode={viewMode}
                   title={landingSite === 'all' ? 'All Districts' : landingSite}
-                  formatValue={formatWithCurrency}
+                  formatValue={formatValueWithUnit}
                   currency={currency}
                 />
               </div>
               <div className="col-4">
-                <SeasonalChart theme={theme} data={seasonalData} formatValue={formatWithCurrency} />
+                <SeasonalChart theme={theme} data={seasonalData} formatValue={formatValueWithUnit} />
               </div>
             </div>
           </div>
@@ -290,7 +319,10 @@ const Revenue = ({ theme, landingSite, currency }) => {
               <GearMetricsHeatmap
                 theme={theme}
                 data={gearHabitatMetrics}
-                formatValue={val => `${CURRENCY_SYMBOLS[currency]} ${(val * EXCHANGE_RATES[currency]).toFixed(2)}`}
+                formatValue={val => {
+                  const converted = (val * EXCHANGE_RATES[currency]).toFixed(2);
+                  return `${converted} ${CURRENCY_SYMBOLS[currency]}/fisher/hour`;
+                }}
                 metric="rpue"
               />
             ) : (

@@ -15,9 +15,30 @@
     ]
   },
   {
+    "_id": "67bf69917e36018cbe0573c9",
+    "landing_site": "Embomdeiro",
+    "catch_taxon": "Barracuda",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0573ca",
+    "landing_site": "Embomdeiro",
+    "catch_taxon": "Emperor",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
     "_id": "67bf69917e36018cbe0573cb",
     "landing_site": "Embomdeiro",
     "catch_taxon": "Fusilier",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0573cc",
+    "landing_site": "Embomdeiro",
+    "catch_taxon": "Garfish",
     "catch_kg": 0,
     "catch_percent": 0
   },
@@ -50,6 +71,27 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe0573d1",
+    "landing_site": "Embomdeiro",
+    "catch_taxon": "Other",
+    "catch_kg": 40.34,
+    "catch_percent": 100
+  },
+  {
+    "_id": "67bf69917e36018cbe0573d2",
+    "landing_site": "Embomdeiro",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0573d3",
+    "landing_site": "Embomdeiro",
+    "catch_taxon": "Sardines/pilchards",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
     "_id": "67bf69917e36018cbe0573d4",
     "landing_site": "Embomdeiro",
     "catch_taxon": "Snapper/seaperch",
@@ -60,1490 +102,6 @@
     "_id": "67bf69917e36018cbe0573d5",
     "landing_site": "Embomdeiro",
     "catch_taxon": "Soldierfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573e0",
-    "landing_site": "Farol",
-    "catch_taxon": "Other",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573e1",
-    "landing_site": "Farol",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573e4",
-    "landing_site": "Farol",
-    "catch_taxon": "Soldierfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573e9",
-    "landing_site": "Lalane",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573ed",
-    "landing_site": "Lalane",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573f1",
-    "landing_site": "Lalane",
-    "catch_taxon": "Sardines/pilchards",
-    "catch_kg": 1.89,
-    "catch_percent": 0.06
-  },
-  {
-    "_id": "67bf69917e36018cbe0573f7",
-    "landing_site": "Lussoma",
-    "catch_taxon": "Emperor",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573f8",
-    "landing_site": "Lussoma",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573fb",
-    "landing_site": "Lussoma",
-    "catch_taxon": "Jacks/Trevally/Other Scad",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057404",
-    "landing_site": "Lussoma",
-    "catch_taxon": "Surgeonfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057405",
-    "landing_site": "Macongõ",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057409",
-    "landing_site": "Macongõ",
-    "catch_taxon": "Goatfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05740b",
-    "landing_site": "Macongõ",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05740e",
-    "landing_site": "Macongõ",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057419",
-    "landing_site": "Maculo",
-    "catch_taxon": "Jacks/Trevally/Other Scad",
-    "catch_kg": 364.88,
-    "catch_percent": 1.92
-  },
-  {
-    "_id": "67bf69917e36018cbe05741a",
-    "landing_site": "Maculo",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 24,
-    "catch_percent": 0.13
-  },
-  {
-    "_id": "67bf69917e36018cbe05741c",
-    "landing_site": "Maculo",
-    "catch_taxon": "Other",
-    "catch_kg": 12735.33,
-    "catch_percent": 66.98
-  },
-  {
-    "_id": "67bf69917e36018cbe05741d",
-    "landing_site": "Maculo",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 377.1,
-    "catch_percent": 1.98
-  },
-  {
-    "_id": "67bf69917e36018cbe05742b",
-    "landing_site": "Maganja-velha",
-    "catch_taxon": "Other",
-    "catch_kg": 2079.47,
-    "catch_percent": 6.67
-  },
-  {
-    "_id": "67bf69917e36018cbe05742d",
-    "landing_site": "Maganja-velha",
-    "catch_taxon": "Sardines/pilchards",
-    "catch_kg": 0.49,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05742e",
-    "landing_site": "Maganja-velha",
-    "catch_taxon": "Snapper/seaperch",
-    "catch_kg": 16672.31,
-    "catch_percent": 53.45
-  },
-  {
-    "_id": "67bf69917e36018cbe057430",
-    "landing_site": "Maganja-velha",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 1.29,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057431",
-    "landing_site": "Maganja-velha",
-    "catch_taxon": "Surgeonfish",
-    "catch_kg": 15.27,
-    "catch_percent": 0.05
-  },
-  {
-    "_id": "67bf69917e36018cbe057438",
-    "landing_site": "Milamba",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05743a",
-    "landing_site": "Milamba",
-    "catch_taxon": "Other",
-    "catch_kg": 12328.61,
-    "catch_percent": 12.1
-  },
-  {
-    "_id": "67bf69917e36018cbe05743b",
-    "landing_site": "Milamba",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 37890.88,
-    "catch_percent": 37.19
-  },
-  {
-    "_id": "67bf69917e36018cbe057448",
-    "landing_site": "Mocímboa-velha",
-    "catch_taxon": "Mojarra/Silverbelly",
-    "catch_kg": 27.91,
-    "catch_percent": 0.04
-  },
-  {
-    "_id": "67bf69917e36018cbe057449",
-    "landing_site": "Mocímboa-velha",
-    "catch_taxon": "Other",
-    "catch_kg": 18324.46,
-    "catch_percent": 27.82
-  },
-  {
-    "_id": "67bf69917e36018cbe05744c",
-    "landing_site": "Mocímboa-velha",
-    "catch_taxon": "Snapper/seaperch",
-    "catch_kg": 1818,
-    "catch_percent": 2.76
-  },
-  {
-    "_id": "67bf69917e36018cbe057451",
-    "landing_site": "Nabadje",
-    "catch_taxon": "Emperor",
-    "catch_kg": 1647.32,
-    "catch_percent": 12.64
-  },
-  {
-    "_id": "67bf69917e36018cbe057459",
-    "landing_site": "Nabadje",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 702.25,
-    "catch_percent": 5.39
-  },
-  {
-    "_id": "67bf69917e36018cbe057461",
-    "landing_site": "Nabubuci",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057463",
-    "landing_site": "Nabubuci",
-    "catch_taxon": "Goatfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057466",
-    "landing_site": "Nabubuci",
-    "catch_taxon": "Mojarra/Silverbelly",
-    "catch_kg": 2.18,
-    "catch_percent": 0.01
-  },
-  {
-    "_id": "67bf69917e36018cbe05746e",
-    "landing_site": "Ncomangano",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057470",
-    "landing_site": "Ncomangano",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057473",
-    "landing_site": "Ncomangano",
-    "catch_taxon": "Jacks/Trevally/Other Scad",
-    "catch_kg": 0.31,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057479",
-    "landing_site": "Ncomangano",
-    "catch_taxon": "Snapper/seaperch",
-    "catch_kg": 4723666.15,
-    "catch_percent": 99.94
-  },
-  {
-    "_id": "67bf69917e36018cbe05747c",
-    "landing_site": "Ncomangano",
-    "catch_taxon": "Surgeonfish",
-    "catch_kg": 279.7,
-    "catch_percent": 0.01
-  },
-  {
-    "_id": "67bf69917e36018cbe057480",
-    "landing_site": "Nsangue",
-    "catch_taxon": "Garfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057487",
-    "landing_site": "Nsangue",
-    "catch_taxon": "Sardines/pilchards",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057489",
-    "landing_site": "Nsangue",
-    "catch_taxon": "Soldierfish",
-    "catch_kg": 0.54,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05748b",
-    "landing_site": "Nsangue",
-    "catch_taxon": "Surgeonfish",
-    "catch_kg": 0.32,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05748e",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 638.33,
-    "catch_percent": 0.38
-  },
-  {
-    "_id": "67bf69917e36018cbe05748f",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Garfish",
-    "catch_kg": 133.75,
-    "catch_percent": 0.08
-  },
-  {
-    "_id": "67bf69917e36018cbe057492",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 17821.84,
-    "catch_percent": 10.54
-  },
-  {
-    "_id": "67bf69917e36018cbe057497",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Snapper/seaperch",
-    "catch_kg": 12274.32,
-    "catch_percent": 7.26
-  },
-  {
-    "_id": "67bf69917e36018cbe05749e",
-    "landing_site": "Panchina",
-    "catch_taxon": "Garfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0574a0",
-    "landing_site": "Panchina",
-    "catch_taxon": "Jacks/Trevally/Other Scad",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0574a1",
-    "landing_site": "Panchina",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0574aa",
-    "landing_site": "Quelimane",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 3869.19,
-    "catch_percent": 27.93
-  },
-  {
-    "_id": "67bf69917e36018cbe0574b2",
-    "landing_site": "Quelimane",
-    "catch_taxon": "Other",
-    "catch_kg": 1169.18,
-    "catch_percent": 8.44
-  },
-  {
-    "_id": "67bf69917e36018cbe0574b6",
-    "landing_site": "Quelimane",
-    "catch_taxon": "Soldierfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0574bc",
-    "landing_site": "Quifuque",
-    "catch_taxon": "Garfish",
-    "catch_kg": 0.66,
-    "catch_percent": 0.01
-  },
-  {
-    "_id": "67bf69917e36018cbe0574bd",
-    "landing_site": "Quifuque",
-    "catch_taxon": "Goatfish",
-    "catch_kg": 308.32,
-    "catch_percent": 5.84
-  },
-  {
-    "_id": "67bf69917e36018cbe0574c0",
-    "landing_site": "Quifuque",
-    "catch_taxon": "Mojarra/Silverbelly",
-    "catch_kg": 16.45,
-    "catch_percent": 0.31
-  },
-  {
-    "_id": "67bf69917e36018cbe0574c1",
-    "landing_site": "Quifuque",
-    "catch_taxon": "Other",
-    "catch_kg": 902.42,
-    "catch_percent": 17.08
-  },
-  {
-    "_id": "67bf69917e36018cbe0573d1",
-    "landing_site": "Embomdeiro",
-    "catch_taxon": "Other",
-    "catch_kg": 40.34,
-    "catch_percent": 100
-  },
-  {
-    "_id": "67bf69917e36018cbe0573d3",
-    "landing_site": "Embomdeiro",
-    "catch_taxon": "Sardines/pilchards",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573ef",
-    "landing_site": "Lalane",
-    "catch_taxon": "Other",
-    "catch_kg": 2348.7,
-    "catch_percent": 75.88
-  },
-  {
-    "_id": "67bf69917e36018cbe0573f0",
-    "landing_site": "Lalane",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 72.09,
-    "catch_percent": 2.33
-  },
-  {
-    "_id": "67bf69917e36018cbe0573f6",
-    "landing_site": "Lussoma",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573fc",
-    "landing_site": "Lussoma",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 4.6,
-    "catch_percent": 0.58
-  },
-  {
-    "_id": "67bf69917e36018cbe0573ff",
-    "landing_site": "Lussoma",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057406",
-    "landing_site": "Macongõ",
-    "catch_taxon": "Emperor",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057407",
-    "landing_site": "Macongõ",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05740c",
-    "landing_site": "Macongõ",
-    "catch_taxon": "Mojarra/Silverbelly",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057411",
-    "landing_site": "Macongõ",
-    "catch_taxon": "Soldierfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057412",
-    "landing_site": "Macongõ",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057417",
-    "landing_site": "Maculo",
-    "catch_taxon": "Garfish",
-    "catch_kg": 144.58,
-    "catch_percent": 0.76
-  },
-  {
-    "_id": "67bf69917e36018cbe05741e",
-    "landing_site": "Maculo",
-    "catch_taxon": "Sardines/pilchards",
-    "catch_kg": 449.04,
-    "catch_percent": 2.36
-  },
-  {
-    "_id": "67bf69917e36018cbe057421",
-    "landing_site": "Maculo",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 2444.82,
-    "catch_percent": 12.86
-  },
-  {
-    "_id": "67bf69917e36018cbe057422",
-    "landing_site": "Maculo",
-    "catch_taxon": "Surgeonfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057425",
-    "landing_site": "Maganja-velha",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 2.14,
-    "catch_percent": 0.01
-  },
-  {
-    "_id": "67bf69917e36018cbe05742a",
-    "landing_site": "Maganja-velha",
-    "catch_taxon": "Mojarra/Silverbelly",
-    "catch_kg": 959.03,
-    "catch_percent": 3.07
-  },
-  {
-    "_id": "67bf69917e36018cbe05742c",
-    "landing_site": "Maganja-velha",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 40.52,
-    "catch_percent": 0.13
-  },
-  {
-    "_id": "67bf69917e36018cbe057433",
-    "landing_site": "Milamba",
-    "catch_taxon": "Emperor",
-    "catch_kg": 7383.68,
-    "catch_percent": 7.25
-  },
-  {
-    "_id": "67bf69917e36018cbe057434",
-    "landing_site": "Milamba",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057437",
-    "landing_site": "Milamba",
-    "catch_taxon": "Jacks/Trevally/Other Scad",
-    "catch_kg": 44.57,
-    "catch_percent": 0.04
-  },
-  {
-    "_id": "67bf69917e36018cbe057442",
-    "landing_site": "Mocímboa-velha",
-    "catch_taxon": "Emperor",
-    "catch_kg": 54.53,
-    "catch_percent": 0.08
-  },
-  {
-    "_id": "67bf69917e36018cbe057446",
-    "landing_site": "Mocímboa-velha",
-    "catch_taxon": "Jacks/Trevally/Other Scad",
-    "catch_kg": 13.78,
-    "catch_percent": 0.02
-  },
-  {
-    "_id": "67bf69917e36018cbe057447",
-    "landing_site": "Mocímboa-velha",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 1.08,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05744d",
-    "landing_site": "Mocímboa-velha",
-    "catch_taxon": "Soldierfish",
-    "catch_kg": 1.68,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05744f",
-    "landing_site": "Mocímboa-velha",
-    "catch_taxon": "Surgeonfish",
-    "catch_kg": 10173.4,
-    "catch_percent": 15.44
-  },
-  {
-    "_id": "67bf69917e36018cbe057452",
-    "landing_site": "Nabadje",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 401,
-    "catch_percent": 3.08
-  },
-  {
-    "_id": "67bf69917e36018cbe057453",
-    "landing_site": "Nabadje",
-    "catch_taxon": "Garfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05745c",
-    "landing_site": "Nabadje",
-    "catch_taxon": "Soldierfish",
-    "catch_kg": 0.1,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057469",
-    "landing_site": "Nabubuci",
-    "catch_taxon": "Sardines/pilchards",
-    "catch_kg": 6.32,
-    "catch_percent": 0.04
-  },
-  {
-    "_id": "67bf69917e36018cbe05746b",
-    "landing_site": "Nabubuci",
-    "catch_taxon": "Soldierfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05746c",
-    "landing_site": "Nabubuci",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 1824.55,
-    "catch_percent": 10.65
-  },
-  {
-    "_id": "67bf69917e36018cbe05746f",
-    "landing_site": "Ncomangano",
-    "catch_taxon": "Emperor",
-    "catch_kg": 489.3,
-    "catch_percent": 0.01
-  },
-  {
-    "_id": "67bf69917e36018cbe057474",
-    "landing_site": "Ncomangano",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 0.18,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057483",
-    "landing_site": "Nsangue",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 253.67,
-    "catch_percent": 0.98
-  },
-  {
-    "_id": "67bf69917e36018cbe057486",
-    "landing_site": "Nsangue",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 32.01,
-    "catch_percent": 0.12
-  },
-  {
-    "_id": "67bf69917e36018cbe057488",
-    "landing_site": "Nsangue",
-    "catch_taxon": "Snapper/seaperch",
-    "catch_kg": 11729.94,
-    "catch_percent": 45.46
-  },
-  {
-    "_id": "67bf69917e36018cbe05748c",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 108599.11,
-    "catch_percent": 64.2
-  },
-  {
-    "_id": "67bf69917e36018cbe057495",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 829.89,
-    "catch_percent": 0.49
-  },
-  {
-    "_id": "67bf69917e36018cbe057496",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Sardines/pilchards",
-    "catch_kg": 193.22,
-    "catch_percent": 0.11
-  },
-  {
-    "_id": "67bf69917e36018cbe057499",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 5539.54,
-    "catch_percent": 3.27
-  },
-  {
-    "_id": "67bf69917e36018cbe0574a2",
-    "landing_site": "Panchina",
-    "catch_taxon": "Mojarra/Silverbelly",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0574a3",
-    "landing_site": "Panchina",
-    "catch_taxon": "Other",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0574a8",
-    "landing_site": "Panchina",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0574af",
-    "landing_site": "Quelimane",
-    "catch_taxon": "Jacks/Trevally/Other Scad",
-    "catch_kg": 183.11,
-    "catch_percent": 1.32
-  },
-  {
-    "_id": "67bf69917e36018cbe0574b4",
-    "landing_site": "Quelimane",
-    "catch_taxon": "Sardines/pilchards",
-    "catch_kg": 2016.04,
-    "catch_percent": 14.55
-  },
-  {
-    "_id": "67bf69917e36018cbe0574b8",
-    "landing_site": "Quelimane",
-    "catch_taxon": "Surgeonfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0574b9",
-    "landing_site": "Quifuque",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 842.35,
-    "catch_percent": 15.94
-  },
-  {
-    "_id": "67bf69917e36018cbe0574c4",
-    "landing_site": "Quifuque",
-    "catch_taxon": "Snapper/seaperch",
-    "catch_kg": 680.99,
-    "catch_percent": 12.89
-  },
-  {
-    "_id": "67bf69917e36018cbe0574c6",
-    "landing_site": "Quifuque",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 166.02,
-    "catch_percent": 3.14
-  },
-  {
-    "_id": "67bf69917e36018cbe0574c9",
-    "landing_site": "Quiwia",
-    "catch_taxon": "Emperor",
-    "catch_kg": 443.08,
-    "catch_percent": 3.54
-  },
-  {
-    "_id": "67bf69917e36018cbe0574d7",
-    "landing_site": "Vamizi",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 2687.8,
-    "catch_percent": 0.52
-  },
-  {
-    "_id": "67bf69917e36018cbe0574db",
-    "landing_site": "Vamizi",
-    "catch_taxon": "Goatfish",
-    "catch_kg": 78668.83,
-    "catch_percent": 15.13
-  },
-  {
-    "_id": "67bf69917e36018cbe0574dc",
-    "landing_site": "Vamizi",
-    "catch_taxon": "Jacks/Trevally/Other Scad",
-    "catch_kg": 3362.23,
-    "catch_percent": 0.65
-  },
-  {
-    "_id": "67bf69917e36018cbe0574de",
-    "landing_site": "Vamizi",
-    "catch_taxon": "Mojarra/Silverbelly",
-    "catch_kg": 107431.83,
-    "catch_percent": 20.66
-  },
-  {
-    "_id": "67bf69917e36018cbe0574e6",
-    "landing_site": "Zalala",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 2063.38,
-    "catch_percent": 3.56
-  },
-  {
-    "_id": "67bf69917e36018cbe0574eb",
-    "landing_site": "Zalala",
-    "catch_taxon": "Jacks/Trevally/Other Scad",
-    "catch_kg": 3257.94,
-    "catch_percent": 5.62
-  },
-  {
-    "_id": "67bf69917e36018cbe0574ed",
-    "landing_site": "Zalala",
-    "catch_taxon": "Mojarra/Silverbelly",
-    "catch_kg": 1512.57,
-    "catch_percent": 2.61
-  },
-  {
-    "_id": "67bf69917e36018cbe0574ee",
-    "landing_site": "Zalala",
-    "catch_taxon": "Other",
-    "catch_kg": 4946.82,
-    "catch_percent": 8.53
-  },
-  {
-    "_id": "67bf69917e36018cbe0574f3",
-    "landing_site": "Zalala",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 3712.76,
-    "catch_percent": 6.4
-  },
-  {
-    "_id": "67bf69917e36018cbe0574c2",
-    "landing_site": "Quifuque",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 505.87,
-    "catch_percent": 9.57
-  },
-  {
-    "_id": "67bf69917e36018cbe0574c8",
-    "landing_site": "Quiwia",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 363.58,
-    "catch_percent": 2.91
-  },
-  {
-    "_id": "67bf69917e36018cbe0574ce",
-    "landing_site": "Quiwia",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0574d2",
-    "landing_site": "Quiwia",
-    "catch_taxon": "Sardines/pilchards",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0574d3",
-    "landing_site": "Quiwia",
-    "catch_taxon": "Snapper/seaperch",
-    "catch_kg": 2433.54,
-    "catch_percent": 19.47
-  },
-  {
-    "_id": "67bf69917e36018cbe0574d4",
-    "landing_site": "Quiwia",
-    "catch_taxon": "Soldierfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0574d5",
-    "landing_site": "Quiwia",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 109.85,
-    "catch_percent": 0.88
-  },
-  {
-    "_id": "67bf69917e36018cbe0574d9",
-    "landing_site": "Vamizi",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 135161.42,
-    "catch_percent": 26
-  },
-  {
-    "_id": "67bf69917e36018cbe0574e0",
-    "landing_site": "Vamizi",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 64553.11,
-    "catch_percent": 12.42
-  },
-  {
-    "_id": "67bf69917e36018cbe0574e5",
-    "landing_site": "Vamizi",
-    "catch_taxon": "Surgeonfish",
-    "catch_kg": 12059.94,
-    "catch_percent": 2.32
-  },
-  {
-    "_id": "67bf69917e36018cbe0574e8",
-    "landing_site": "Zalala",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 194.95,
-    "catch_percent": 0.34
-  },
-  {
-    "_id": "67bf69917e36018cbe0574ea",
-    "landing_site": "Zalala",
-    "catch_taxon": "Goatfish",
-    "catch_kg": 17.59,
-    "catch_percent": 0.03
-  },
-  {
-    "_id": "67bf69917e36018cbe0574ef",
-    "landing_site": "Zalala",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 2142.31,
-    "catch_percent": 3.69
-  },
-  {
-    "_id": "67bf69917e36018cbe0573d9",
-    "landing_site": "Farol",
-    "catch_taxon": "Emperor",
-    "catch_kg": 0.77,
-    "catch_percent": 0.28
-  },
-  {
-    "_id": "67bf69917e36018cbe0573db",
-    "landing_site": "Farol",
-    "catch_taxon": "Garfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573dc",
-    "landing_site": "Farol",
-    "catch_taxon": "Goatfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573ee",
-    "landing_site": "Lalane",
-    "catch_taxon": "Mojarra/Silverbelly",
-    "catch_kg": 410.29,
-    "catch_percent": 13.26
-  },
-  {
-    "_id": "67bf69917e36018cbe0573f2",
-    "landing_site": "Lalane",
-    "catch_taxon": "Snapper/seaperch",
-    "catch_kg": 96.84,
-    "catch_percent": 3.13
-  },
-  {
-    "_id": "67bf69917e36018cbe0573f3",
-    "landing_site": "Lalane",
-    "catch_taxon": "Soldierfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057400",
-    "landing_site": "Lussoma",
-    "catch_taxon": "Sardines/pilchards",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057401",
-    "landing_site": "Lussoma",
-    "catch_taxon": "Snapper/seaperch",
-    "catch_kg": 19.91,
-    "catch_percent": 2.51
-  },
-  {
-    "_id": "67bf69917e36018cbe057402",
-    "landing_site": "Lussoma",
-    "catch_taxon": "Soldierfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057408",
-    "landing_site": "Macongõ",
-    "catch_taxon": "Garfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05740d",
-    "landing_site": "Macongõ",
-    "catch_taxon": "Other",
-    "catch_kg": 70.74,
-    "catch_percent": 100
-  },
-  {
-    "_id": "67bf69917e36018cbe057413",
-    "landing_site": "Macongõ",
-    "catch_taxon": "Surgeonfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057415",
-    "landing_site": "Maculo",
-    "catch_taxon": "Emperor",
-    "catch_kg": 414.32,
-    "catch_percent": 2.18
-  },
-  {
-    "_id": "67bf69917e36018cbe057416",
-    "landing_site": "Maculo",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057418",
-    "landing_site": "Maculo",
-    "catch_taxon": "Goatfish",
-    "catch_kg": 150.45,
-    "catch_percent": 0.79
-  },
-  {
-    "_id": "67bf69917e36018cbe05741b",
-    "landing_site": "Maculo",
-    "catch_taxon": "Mojarra/Silverbelly",
-    "catch_kg": 206.71,
-    "catch_percent": 1.09
-  },
-  {
-    "_id": "67bf69917e36018cbe057423",
-    "landing_site": "Maganja-velha",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 108.46,
-    "catch_percent": 0.35
-  },
-  {
-    "_id": "67bf69917e36018cbe057424",
-    "landing_site": "Maganja-velha",
-    "catch_taxon": "Emperor",
-    "catch_kg": 3005.73,
-    "catch_percent": 9.64
-  },
-  {
-    "_id": "67bf69917e36018cbe057428",
-    "landing_site": "Maganja-velha",
-    "catch_taxon": "Jacks/Trevally/Other Scad",
-    "catch_kg": 8126.76,
-    "catch_percent": 26.05
-  },
-  {
-    "_id": "67bf69917e36018cbe057432",
-    "landing_site": "Milamba",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05743e",
-    "landing_site": "Milamba",
-    "catch_taxon": "Soldierfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05743f",
-    "landing_site": "Milamba",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 9.35,
-    "catch_percent": 0.01
-  },
-  {
-    "_id": "67bf69917e36018cbe057441",
-    "landing_site": "Mocímboa-velha",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 3204.8,
-    "catch_percent": 4.86
-  },
-  {
-    "_id": "67bf69917e36018cbe057444",
-    "landing_site": "Mocímboa-velha",
-    "catch_taxon": "Garfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057445",
-    "landing_site": "Mocímboa-velha",
-    "catch_taxon": "Goatfish",
-    "catch_kg": 0.46,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05744e",
-    "landing_site": "Mocímboa-velha",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 6266.17,
-    "catch_percent": 9.51
-  },
-  {
-    "_id": "67bf69917e36018cbe057454",
-    "landing_site": "Nabadje",
-    "catch_taxon": "Goatfish",
-    "catch_kg": 45.74,
-    "catch_percent": 0.35
-  },
-  {
-    "_id": "67bf69917e36018cbe057457",
-    "landing_site": "Nabadje",
-    "catch_taxon": "Mojarra/Silverbelly",
-    "catch_kg": 48.55,
-    "catch_percent": 0.37
-  },
-  {
-    "_id": "67bf69917e36018cbe057458",
-    "landing_site": "Nabadje",
-    "catch_taxon": "Other",
-    "catch_kg": 605.81,
-    "catch_percent": 4.65
-  },
-  {
-    "_id": "67bf69917e36018cbe05745a",
-    "landing_site": "Nabadje",
-    "catch_taxon": "Sardines/pilchards",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05745b",
-    "landing_site": "Nabadje",
-    "catch_taxon": "Snapper/seaperch",
-    "catch_kg": 4511.42,
-    "catch_percent": 34.62
-  },
-  {
-    "_id": "67bf69917e36018cbe05745f",
-    "landing_site": "Nabubuci",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 930,
-    "catch_percent": 5.43
-  },
-  {
-    "_id": "67bf69917e36018cbe057460",
-    "landing_site": "Nabubuci",
-    "catch_taxon": "Emperor",
-    "catch_kg": 634.17,
-    "catch_percent": 3.7
-  },
-  {
-    "_id": "67bf69917e36018cbe057462",
-    "landing_site": "Nabubuci",
-    "catch_taxon": "Garfish",
-    "catch_kg": 6.23,
-    "catch_percent": 0.04
-  },
-  {
-    "_id": "67bf69917e36018cbe057465",
-    "landing_site": "Nabubuci",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 1472.52,
-    "catch_percent": 8.59
-  },
-  {
-    "_id": "67bf69917e36018cbe057471",
-    "landing_site": "Ncomangano",
-    "catch_taxon": "Garfish",
-    "catch_kg": 0.05,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057476",
-    "landing_site": "Ncomangano",
-    "catch_taxon": "Other",
-    "catch_kg": 1504.27,
-    "catch_percent": 0.03
-  },
-  {
-    "_id": "67bf69917e36018cbe057477",
-    "landing_site": "Ncomangano",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 467.68,
-    "catch_percent": 0.01
-  },
-  {
-    "_id": "67bf69917e36018cbe05747b",
-    "landing_site": "Ncomangano",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 237.77,
-    "catch_percent": 0.01
-  },
-  {
-    "_id": "67bf69917e36018cbe05747e",
-    "landing_site": "Nsangue",
-    "catch_taxon": "Emperor",
-    "catch_kg": 24.59,
-    "catch_percent": 0.1
-  },
-  {
-    "_id": "67bf69917e36018cbe05747f",
-    "landing_site": "Nsangue",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057482",
-    "landing_site": "Nsangue",
-    "catch_taxon": "Jacks/Trevally/Other Scad",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe057485",
-    "landing_site": "Nsangue",
-    "catch_taxon": "Other",
-    "catch_kg": 931.98,
-    "catch_percent": 3.61
-  },
-  {
-    "_id": "67bf69917e36018cbe05748a",
-    "landing_site": "Nsangue",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 12831.12,
-    "catch_percent": 49.72
-  },
-  {
-    "_id": "67bf69917e36018cbe05748d",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Emperor",
-    "catch_kg": 13776.28,
-    "catch_percent": 8.14
-  },
-  {
-    "_id": "67bf69917e36018cbe057491",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Jacks/Trevally/Other Scad",
-    "catch_kg": 458.48,
-    "catch_percent": 0.27
-  },
-  {
-    "_id": "67bf69917e36018cbe057493",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Mojarra/Silverbelly",
-    "catch_kg": 2634.26,
-    "catch_percent": 1.56
-  },
-  {
-    "_id": "67bf69917e36018cbe057494",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Other",
-    "catch_kg": 6250.99,
-    "catch_percent": 3.7
-  },
-  {
-    "_id": "67bf69917e36018cbe057498",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Soldierfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05749a",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Surgeonfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05749b",
-    "landing_site": "Panchina",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05749d",
-    "landing_site": "Panchina",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe05749f",
-    "landing_site": "Panchina",
-    "catch_taxon": "Goatfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0574a4",
-    "landing_site": "Panchina",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 1.77,
-    "catch_percent": 5.62
-  },
-  {
-    "_id": "67bf69917e36018cbe0574a6",
-    "landing_site": "Panchina",
-    "catch_taxon": "Snapper/seaperch",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0574ab",
-    "landing_site": "Quelimane",
-    "catch_taxon": "Emperor",
-    "catch_kg": 256.53,
-    "catch_percent": 1.85
-  },
-  {
-    "_id": "67bf69917e36018cbe0574ae",
-    "landing_site": "Quelimane",
-    "catch_taxon": "Goatfish",
-    "catch_kg": 1.48,
-    "catch_percent": 0.01
-  },
-  {
-    "_id": "67bf69917e36018cbe0574b0",
-    "landing_site": "Quelimane",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 1031.65,
-    "catch_percent": 7.45
-  },
-  {
-    "_id": "67bf69917e36018cbe0574b1",
-    "landing_site": "Quelimane",
-    "catch_taxon": "Mojarra/Silverbelly",
-    "catch_kg": 438.5,
-    "catch_percent": 3.17
-  },
-  {
-    "_id": "67bf69917e36018cbe0574b3",
-    "landing_site": "Quelimane",
-    "catch_taxon": "Parrotfish",
-    "catch_kg": 1074.13,
-    "catch_percent": 7.75
-  },
-  {
-    "_id": "67bf69917e36018cbe0574b5",
-    "landing_site": "Quelimane",
-    "catch_taxon": "Snapper/seaperch",
-    "catch_kg": 2704.27,
-    "catch_percent": 19.52
-  },
-  {
-    "_id": "67bf69917e36018cbe0574b7",
-    "landing_site": "Quelimane",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 671.64,
-    "catch_percent": 4.85
-  },
-  {
-    "_id": "67bf69917e36018cbe0574ba",
-    "landing_site": "Quifuque",
-    "catch_taxon": "Emperor",
-    "catch_kg": 31.76,
-    "catch_percent": 0.6
-  },
-  {
-    "_id": "67bf69917e36018cbe0574be",
-    "landing_site": "Quifuque",
-    "catch_taxon": "Jacks/Trevally/Other Scad",
-    "catch_kg": 689.33,
-    "catch_percent": 13.05
-  },
-  {
-    "_id": "67bf69917e36018cbe0574bf",
-    "landing_site": "Quifuque",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 41.92,
-    "catch_percent": 0.79
-  },
-  {
-    "_id": "67bf69917e36018cbe0574ca",
-    "landing_site": "Quiwia",
-    "catch_taxon": "Fusilier",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0574d8",
-    "landing_site": "Vamizi",
-    "catch_taxon": "Emperor",
-    "catch_kg": 2091.25,
-    "catch_percent": 0.4
-  },
-  {
-    "_id": "67bf69917e36018cbe0574dd",
-    "landing_site": "Vamizi",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 124.64,
-    "catch_percent": 0.02
-  },
-  {
-    "_id": "67bf69917e36018cbe0574df",
-    "landing_site": "Vamizi",
-    "catch_taxon": "Other",
-    "catch_kg": 36313.22,
-    "catch_percent": 6.98
-  },
-  {
-    "_id": "67bf69917e36018cbe0574e2",
-    "landing_site": "Vamizi",
-    "catch_taxon": "Snapper/seaperch",
-    "catch_kg": 2514.27,
-    "catch_percent": 0.48
-  },
-  {
-    "_id": "67bf69917e36018cbe0574e3",
-    "landing_site": "Vamizi",
-    "catch_taxon": "Soldierfish",
-    "catch_kg": 36470.89,
-    "catch_percent": 7.02
-  },
-  {
-    "_id": "67bf69917e36018cbe0574e4",
-    "landing_site": "Vamizi",
-    "catch_taxon": "Spinefoot",
-    "catch_kg": 1076.63,
-    "catch_percent": 0.21
-  },
-  {
-    "_id": "67bf69917e36018cbe0574e7",
-    "landing_site": "Zalala",
-    "catch_taxon": "Emperor",
-    "catch_kg": 1915.08,
-    "catch_percent": 3.3
-  },
-  {
-    "_id": "67bf69917e36018cbe0574ec",
-    "landing_site": "Zalala",
-    "catch_taxon": "Mackerel scad",
-    "catch_kg": 1333.13,
-    "catch_percent": 2.3
-  },
-  {
-    "_id": "67bf69917e36018cbe0574f0",
-    "landing_site": "Zalala",
-    "catch_taxon": "Sardines/pilchards",
-    "catch_kg": 33558.96,
-    "catch_percent": 57.87
-  },
-  {
-    "_id": "67bf69917e36018cbe0574f1",
-    "landing_site": "Zalala",
-    "catch_taxon": "Snapper/seaperch",
-    "catch_kg": 3239.19,
-    "catch_percent": 5.59
-  },
-  {
-    "_id": "67bf69917e36018cbe0574f4",
-    "landing_site": "Zalala",
-    "catch_taxon": "Surgeonfish",
-    "catch_kg": 0.59,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573c9",
-    "landing_site": "Embomdeiro",
-    "catch_taxon": "Barracuda",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573ca",
-    "landing_site": "Embomdeiro",
-    "catch_taxon": "Emperor",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573cc",
-    "landing_site": "Embomdeiro",
-    "catch_taxon": "Garfish",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "67bf69917e36018cbe0573d2",
-    "landing_site": "Embomdeiro",
-    "catch_taxon": "Parrotfish",
     "catch_kg": 0,
     "catch_percent": 0
   },
@@ -1569,9 +127,30 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe0573d9",
+    "landing_site": "Farol",
+    "catch_taxon": "Emperor",
+    "catch_kg": 0.77,
+    "catch_percent": 0.28
+  },
+  {
     "_id": "67bf69917e36018cbe0573da",
     "landing_site": "Farol",
     "catch_taxon": "Fusilier",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0573db",
+    "landing_site": "Farol",
+    "catch_taxon": "Garfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0573dc",
+    "landing_site": "Farol",
+    "catch_taxon": "Goatfish",
     "catch_kg": 0,
     "catch_percent": 0
   },
@@ -1597,6 +176,20 @@
     "catch_percent": 0.21
   },
   {
+    "_id": "67bf69917e36018cbe0573e0",
+    "landing_site": "Farol",
+    "catch_taxon": "Other",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0573e1",
+    "landing_site": "Farol",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
     "_id": "67bf69917e36018cbe0573e2",
     "landing_site": "Farol",
     "catch_taxon": "Sardines/pilchards",
@@ -1609,6 +202,13 @@
     "catch_taxon": "Snapper/seaperch",
     "catch_kg": 266.07,
     "catch_percent": 96.14
+  },
+  {
+    "_id": "67bf69917e36018cbe0573e4",
+    "landing_site": "Farol",
+    "catch_taxon": "Soldierfish",
+    "catch_kg": 0,
+    "catch_percent": 0
   },
   {
     "_id": "67bf69917e36018cbe0573e5",
@@ -1639,6 +239,13 @@
     "catch_percent": 1.45
   },
   {
+    "_id": "67bf69917e36018cbe0573e9",
+    "landing_site": "Lalane",
+    "catch_taxon": "Fusilier",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
     "_id": "67bf69917e36018cbe0573ea",
     "landing_site": "Lalane",
     "catch_taxon": "Garfish",
@@ -1660,6 +267,55 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe0573ed",
+    "landing_site": "Lalane",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0573ee",
+    "landing_site": "Lalane",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "catch_kg": 410.29,
+    "catch_percent": 13.26
+  },
+  {
+    "_id": "67bf69917e36018cbe0573ef",
+    "landing_site": "Lalane",
+    "catch_taxon": "Other",
+    "catch_kg": 2348.7,
+    "catch_percent": 75.88
+  },
+  {
+    "_id": "67bf69917e36018cbe0573f0",
+    "landing_site": "Lalane",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 72.09,
+    "catch_percent": 2.33
+  },
+  {
+    "_id": "67bf69917e36018cbe0573f1",
+    "landing_site": "Lalane",
+    "catch_taxon": "Sardines/pilchards",
+    "catch_kg": 1.89,
+    "catch_percent": 0.06
+  },
+  {
+    "_id": "67bf69917e36018cbe0573f2",
+    "landing_site": "Lalane",
+    "catch_taxon": "Snapper/seaperch",
+    "catch_kg": 96.84,
+    "catch_percent": 3.13
+  },
+  {
+    "_id": "67bf69917e36018cbe0573f3",
+    "landing_site": "Lalane",
+    "catch_taxon": "Soldierfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
     "_id": "67bf69917e36018cbe0573f4",
     "landing_site": "Lalane",
     "catch_taxon": "Spinefoot",
@@ -1672,6 +328,27 @@
     "catch_taxon": "Surgeonfish",
     "catch_kg": 5.01,
     "catch_percent": 0.16
+  },
+  {
+    "_id": "67bf69917e36018cbe0573f6",
+    "landing_site": "Lussoma",
+    "catch_taxon": "Barracuda",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0573f7",
+    "landing_site": "Lussoma",
+    "catch_taxon": "Emperor",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0573f8",
+    "landing_site": "Lussoma",
+    "catch_taxon": "Fusilier",
+    "catch_kg": 0,
+    "catch_percent": 0
   },
   {
     "_id": "67bf69917e36018cbe0573f9",
@@ -1688,6 +365,20 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe0573fb",
+    "landing_site": "Lussoma",
+    "catch_taxon": "Jacks/Trevally/Other Scad",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0573fc",
+    "landing_site": "Lussoma",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 4.6,
+    "catch_percent": 0.58
+  },
+  {
     "_id": "67bf69917e36018cbe0573fd",
     "landing_site": "Lussoma",
     "catch_taxon": "Mojarra/Silverbelly",
@@ -1702,6 +393,34 @@
     "catch_percent": 96.91
   },
   {
+    "_id": "67bf69917e36018cbe0573ff",
+    "landing_site": "Lussoma",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057400",
+    "landing_site": "Lussoma",
+    "catch_taxon": "Sardines/pilchards",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057401",
+    "landing_site": "Lussoma",
+    "catch_taxon": "Snapper/seaperch",
+    "catch_kg": 19.91,
+    "catch_percent": 2.51
+  },
+  {
+    "_id": "67bf69917e36018cbe057402",
+    "landing_site": "Lussoma",
+    "catch_taxon": "Soldierfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
     "_id": "67bf69917e36018cbe057403",
     "landing_site": "Lussoma",
     "catch_taxon": "Spinefoot",
@@ -1709,9 +428,79 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe057404",
+    "landing_site": "Lussoma",
+    "catch_taxon": "Surgeonfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057405",
+    "landing_site": "Macongõ",
+    "catch_taxon": "Barracuda",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057406",
+    "landing_site": "Macongõ",
+    "catch_taxon": "Emperor",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057407",
+    "landing_site": "Macongõ",
+    "catch_taxon": "Fusilier",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057408",
+    "landing_site": "Macongõ",
+    "catch_taxon": "Garfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057409",
+    "landing_site": "Macongõ",
+    "catch_taxon": "Goatfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
     "_id": "67bf69917e36018cbe05740a",
     "landing_site": "Macongõ",
     "catch_taxon": "Jacks/Trevally/Other Scad",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05740b",
+    "landing_site": "Macongõ",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05740c",
+    "landing_site": "Macongõ",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05740d",
+    "landing_site": "Macongõ",
+    "catch_taxon": "Other",
+    "catch_kg": 70.74,
+    "catch_percent": 100
+  },
+  {
+    "_id": "67bf69917e36018cbe05740e",
+    "landing_site": "Macongõ",
+    "catch_taxon": "Parrotfish",
     "catch_kg": 0,
     "catch_percent": 0
   },
@@ -1730,11 +519,102 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe057411",
+    "landing_site": "Macongõ",
+    "catch_taxon": "Soldierfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057412",
+    "landing_site": "Macongõ",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057413",
+    "landing_site": "Macongõ",
+    "catch_taxon": "Surgeonfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
     "_id": "67bf69917e36018cbe057414",
     "landing_site": "Maculo",
     "catch_taxon": "Barracuda",
     "catch_kg": 121.32,
     "catch_percent": 0.64
+  },
+  {
+    "_id": "67bf69917e36018cbe057415",
+    "landing_site": "Maculo",
+    "catch_taxon": "Emperor",
+    "catch_kg": 414.32,
+    "catch_percent": 2.18
+  },
+  {
+    "_id": "67bf69917e36018cbe057416",
+    "landing_site": "Maculo",
+    "catch_taxon": "Fusilier",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057417",
+    "landing_site": "Maculo",
+    "catch_taxon": "Garfish",
+    "catch_kg": 144.58,
+    "catch_percent": 0.76
+  },
+  {
+    "_id": "67bf69917e36018cbe057418",
+    "landing_site": "Maculo",
+    "catch_taxon": "Goatfish",
+    "catch_kg": 150.45,
+    "catch_percent": 0.79
+  },
+  {
+    "_id": "67bf69917e36018cbe057419",
+    "landing_site": "Maculo",
+    "catch_taxon": "Jacks/Trevally/Other Scad",
+    "catch_kg": 364.88,
+    "catch_percent": 1.92
+  },
+  {
+    "_id": "67bf69917e36018cbe05741a",
+    "landing_site": "Maculo",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 24,
+    "catch_percent": 0.13
+  },
+  {
+    "_id": "67bf69917e36018cbe05741b",
+    "landing_site": "Maculo",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "catch_kg": 206.71,
+    "catch_percent": 1.09
+  },
+  {
+    "_id": "67bf69917e36018cbe05741c",
+    "landing_site": "Maculo",
+    "catch_taxon": "Other",
+    "catch_kg": 12735.33,
+    "catch_percent": 66.98
+  },
+  {
+    "_id": "67bf69917e36018cbe05741d",
+    "landing_site": "Maculo",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 377.1,
+    "catch_percent": 1.98
+  },
+  {
+    "_id": "67bf69917e36018cbe05741e",
+    "landing_site": "Maculo",
+    "catch_taxon": "Sardines/pilchards",
+    "catch_kg": 449.04,
+    "catch_percent": 2.36
   },
   {
     "_id": "67bf69917e36018cbe05741f",
@@ -1751,6 +631,41 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe057421",
+    "landing_site": "Maculo",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 2444.82,
+    "catch_percent": 12.86
+  },
+  {
+    "_id": "67bf69917e36018cbe057422",
+    "landing_site": "Maculo",
+    "catch_taxon": "Surgeonfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057423",
+    "landing_site": "Maganja-velha",
+    "catch_taxon": "Barracuda",
+    "catch_kg": 108.46,
+    "catch_percent": 0.35
+  },
+  {
+    "_id": "67bf69917e36018cbe057424",
+    "landing_site": "Maganja-velha",
+    "catch_taxon": "Emperor",
+    "catch_kg": 3005.73,
+    "catch_percent": 9.64
+  },
+  {
+    "_id": "67bf69917e36018cbe057425",
+    "landing_site": "Maganja-velha",
+    "catch_taxon": "Fusilier",
+    "catch_kg": 2.14,
+    "catch_percent": 0.01
+  },
+  {
     "_id": "67bf69917e36018cbe057426",
     "landing_site": "Maganja-velha",
     "catch_taxon": "Garfish",
@@ -1765,6 +680,13 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe057428",
+    "landing_site": "Maganja-velha",
+    "catch_taxon": "Jacks/Trevally/Other Scad",
+    "catch_kg": 8126.76,
+    "catch_percent": 26.05
+  },
+  {
     "_id": "67bf69917e36018cbe057429",
     "landing_site": "Maganja-velha",
     "catch_taxon": "Mackerel scad",
@@ -1772,9 +694,79 @@
     "catch_percent": 0.58
   },
   {
+    "_id": "67bf69917e36018cbe05742a",
+    "landing_site": "Maganja-velha",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "catch_kg": 959.03,
+    "catch_percent": 3.07
+  },
+  {
+    "_id": "67bf69917e36018cbe05742b",
+    "landing_site": "Maganja-velha",
+    "catch_taxon": "Other",
+    "catch_kg": 2079.47,
+    "catch_percent": 6.67
+  },
+  {
+    "_id": "67bf69917e36018cbe05742c",
+    "landing_site": "Maganja-velha",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 40.52,
+    "catch_percent": 0.13
+  },
+  {
+    "_id": "67bf69917e36018cbe05742d",
+    "landing_site": "Maganja-velha",
+    "catch_taxon": "Sardines/pilchards",
+    "catch_kg": 0.49,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05742e",
+    "landing_site": "Maganja-velha",
+    "catch_taxon": "Snapper/seaperch",
+    "catch_kg": 16672.31,
+    "catch_percent": 53.45
+  },
+  {
     "_id": "67bf69917e36018cbe05742f",
     "landing_site": "Maganja-velha",
     "catch_taxon": "Soldierfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057430",
+    "landing_site": "Maganja-velha",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 1.29,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057431",
+    "landing_site": "Maganja-velha",
+    "catch_taxon": "Surgeonfish",
+    "catch_kg": 15.27,
+    "catch_percent": 0.05
+  },
+  {
+    "_id": "67bf69917e36018cbe057432",
+    "landing_site": "Milamba",
+    "catch_taxon": "Barracuda",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057433",
+    "landing_site": "Milamba",
+    "catch_taxon": "Emperor",
+    "catch_kg": 7383.68,
+    "catch_percent": 7.25
+  },
+  {
+    "_id": "67bf69917e36018cbe057434",
+    "landing_site": "Milamba",
+    "catch_taxon": "Fusilier",
     "catch_kg": 0,
     "catch_percent": 0
   },
@@ -1793,11 +785,39 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe057437",
+    "landing_site": "Milamba",
+    "catch_taxon": "Jacks/Trevally/Other Scad",
+    "catch_kg": 44.57,
+    "catch_percent": 0.04
+  },
+  {
+    "_id": "67bf69917e36018cbe057438",
+    "landing_site": "Milamba",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
     "_id": "67bf69917e36018cbe057439",
     "landing_site": "Milamba",
     "catch_taxon": "Mojarra/Silverbelly",
     "catch_kg": 627.66,
     "catch_percent": 0.62
+  },
+  {
+    "_id": "67bf69917e36018cbe05743a",
+    "landing_site": "Milamba",
+    "catch_taxon": "Other",
+    "catch_kg": 12328.61,
+    "catch_percent": 12.1
+  },
+  {
+    "_id": "67bf69917e36018cbe05743b",
+    "landing_site": "Milamba",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 37890.88,
+    "catch_percent": 37.19
   },
   {
     "_id": "67bf69917e36018cbe05743c",
@@ -1814,6 +834,20 @@
     "catch_percent": 42.78
   },
   {
+    "_id": "67bf69917e36018cbe05743e",
+    "landing_site": "Milamba",
+    "catch_taxon": "Soldierfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05743f",
+    "landing_site": "Milamba",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 9.35,
+    "catch_percent": 0.01
+  },
+  {
     "_id": "67bf69917e36018cbe057440",
     "landing_site": "Milamba",
     "catch_taxon": "Surgeonfish",
@@ -1821,11 +855,67 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe057441",
+    "landing_site": "Mocímboa-velha",
+    "catch_taxon": "Barracuda",
+    "catch_kg": 3204.8,
+    "catch_percent": 4.86
+  },
+  {
+    "_id": "67bf69917e36018cbe057442",
+    "landing_site": "Mocímboa-velha",
+    "catch_taxon": "Emperor",
+    "catch_kg": 54.53,
+    "catch_percent": 0.08
+  },
+  {
     "_id": "67bf69917e36018cbe057443",
     "landing_site": "Mocímboa-velha",
     "catch_taxon": "Fusilier",
     "catch_kg": 0,
     "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057444",
+    "landing_site": "Mocímboa-velha",
+    "catch_taxon": "Garfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057445",
+    "landing_site": "Mocímboa-velha",
+    "catch_taxon": "Goatfish",
+    "catch_kg": 0.46,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057446",
+    "landing_site": "Mocímboa-velha",
+    "catch_taxon": "Jacks/Trevally/Other Scad",
+    "catch_kg": 13.78,
+    "catch_percent": 0.02
+  },
+  {
+    "_id": "67bf69917e36018cbe057447",
+    "landing_site": "Mocímboa-velha",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 1.08,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057448",
+    "landing_site": "Mocímboa-velha",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "catch_kg": 27.91,
+    "catch_percent": 0.04
+  },
+  {
+    "_id": "67bf69917e36018cbe057449",
+    "landing_site": "Mocímboa-velha",
+    "catch_taxon": "Other",
+    "catch_kg": 18324.46,
+    "catch_percent": 27.82
   },
   {
     "_id": "67bf69917e36018cbe05744a",
@@ -1842,11 +932,67 @@
     "catch_percent": 0.36
   },
   {
+    "_id": "67bf69917e36018cbe05744c",
+    "landing_site": "Mocímboa-velha",
+    "catch_taxon": "Snapper/seaperch",
+    "catch_kg": 1818,
+    "catch_percent": 2.76
+  },
+  {
+    "_id": "67bf69917e36018cbe05744d",
+    "landing_site": "Mocímboa-velha",
+    "catch_taxon": "Soldierfish",
+    "catch_kg": 1.68,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05744e",
+    "landing_site": "Mocímboa-velha",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 6266.17,
+    "catch_percent": 9.51
+  },
+  {
+    "_id": "67bf69917e36018cbe05744f",
+    "landing_site": "Mocímboa-velha",
+    "catch_taxon": "Surgeonfish",
+    "catch_kg": 10173.4,
+    "catch_percent": 15.44
+  },
+  {
     "_id": "67bf69917e36018cbe057450",
     "landing_site": "Nabadje",
     "catch_taxon": "Barracuda",
     "catch_kg": 1067.94,
     "catch_percent": 8.2
+  },
+  {
+    "_id": "67bf69917e36018cbe057451",
+    "landing_site": "Nabadje",
+    "catch_taxon": "Emperor",
+    "catch_kg": 1647.32,
+    "catch_percent": 12.64
+  },
+  {
+    "_id": "67bf69917e36018cbe057452",
+    "landing_site": "Nabadje",
+    "catch_taxon": "Fusilier",
+    "catch_kg": 401,
+    "catch_percent": 3.08
+  },
+  {
+    "_id": "67bf69917e36018cbe057453",
+    "landing_site": "Nabadje",
+    "catch_taxon": "Garfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057454",
+    "landing_site": "Nabadje",
+    "catch_taxon": "Goatfish",
+    "catch_kg": 45.74,
+    "catch_percent": 0.35
   },
   {
     "_id": "67bf69917e36018cbe057455",
@@ -1863,6 +1009,48 @@
     "catch_percent": 1.13
   },
   {
+    "_id": "67bf69917e36018cbe057457",
+    "landing_site": "Nabadje",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "catch_kg": 48.55,
+    "catch_percent": 0.37
+  },
+  {
+    "_id": "67bf69917e36018cbe057458",
+    "landing_site": "Nabadje",
+    "catch_taxon": "Other",
+    "catch_kg": 605.81,
+    "catch_percent": 4.65
+  },
+  {
+    "_id": "67bf69917e36018cbe057459",
+    "landing_site": "Nabadje",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 702.25,
+    "catch_percent": 5.39
+  },
+  {
+    "_id": "67bf69917e36018cbe05745a",
+    "landing_site": "Nabadje",
+    "catch_taxon": "Sardines/pilchards",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05745b",
+    "landing_site": "Nabadje",
+    "catch_taxon": "Snapper/seaperch",
+    "catch_kg": 4511.42,
+    "catch_percent": 34.62
+  },
+  {
+    "_id": "67bf69917e36018cbe05745c",
+    "landing_site": "Nabadje",
+    "catch_taxon": "Soldierfish",
+    "catch_kg": 0.1,
+    "catch_percent": 0
+  },
+  {
     "_id": "67bf69917e36018cbe05745d",
     "landing_site": "Nabadje",
     "catch_taxon": "Spinefoot",
@@ -1877,11 +1065,60 @@
     "catch_percent": 0.14
   },
   {
+    "_id": "67bf69917e36018cbe05745f",
+    "landing_site": "Nabubuci",
+    "catch_taxon": "Barracuda",
+    "catch_kg": 930,
+    "catch_percent": 5.43
+  },
+  {
+    "_id": "67bf69917e36018cbe057460",
+    "landing_site": "Nabubuci",
+    "catch_taxon": "Emperor",
+    "catch_kg": 634.17,
+    "catch_percent": 3.7
+  },
+  {
+    "_id": "67bf69917e36018cbe057461",
+    "landing_site": "Nabubuci",
+    "catch_taxon": "Fusilier",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057462",
+    "landing_site": "Nabubuci",
+    "catch_taxon": "Garfish",
+    "catch_kg": 6.23,
+    "catch_percent": 0.04
+  },
+  {
+    "_id": "67bf69917e36018cbe057463",
+    "landing_site": "Nabubuci",
+    "catch_taxon": "Goatfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
     "_id": "67bf69917e36018cbe057464",
     "landing_site": "Nabubuci",
     "catch_taxon": "Jacks/Trevally/Other Scad",
     "catch_kg": 15.66,
     "catch_percent": 0.09
+  },
+  {
+    "_id": "67bf69917e36018cbe057465",
+    "landing_site": "Nabubuci",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 1472.52,
+    "catch_percent": 8.59
+  },
+  {
+    "_id": "67bf69917e36018cbe057466",
+    "landing_site": "Nabubuci",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "catch_kg": 2.18,
+    "catch_percent": 0.01
   },
   {
     "_id": "67bf69917e36018cbe057467",
@@ -1898,6 +1135,13 @@
     "catch_percent": 0.27
   },
   {
+    "_id": "67bf69917e36018cbe057469",
+    "landing_site": "Nabubuci",
+    "catch_taxon": "Sardines/pilchards",
+    "catch_kg": 6.32,
+    "catch_percent": 0.04
+  },
+  {
     "_id": "67bf69917e36018cbe05746a",
     "landing_site": "Nabubuci",
     "catch_taxon": "Snapper/seaperch",
@@ -1905,10 +1149,52 @@
     "catch_percent": 62.18
   },
   {
+    "_id": "67bf69917e36018cbe05746b",
+    "landing_site": "Nabubuci",
+    "catch_taxon": "Soldierfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05746c",
+    "landing_site": "Nabubuci",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 1824.55,
+    "catch_percent": 10.65
+  },
+  {
     "_id": "67bf69917e36018cbe05746d",
     "landing_site": "Nabubuci",
     "catch_taxon": "Surgeonfish",
     "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05746e",
+    "landing_site": "Ncomangano",
+    "catch_taxon": "Barracuda",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05746f",
+    "landing_site": "Ncomangano",
+    "catch_taxon": "Emperor",
+    "catch_kg": 489.3,
+    "catch_percent": 0.01
+  },
+  {
+    "_id": "67bf69917e36018cbe057470",
+    "landing_site": "Ncomangano",
+    "catch_taxon": "Fusilier",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057471",
+    "landing_site": "Ncomangano",
+    "catch_taxon": "Garfish",
+    "catch_kg": 0.05,
     "catch_percent": 0
   },
   {
@@ -1919,11 +1205,39 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe057473",
+    "landing_site": "Ncomangano",
+    "catch_taxon": "Jacks/Trevally/Other Scad",
+    "catch_kg": 0.31,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057474",
+    "landing_site": "Ncomangano",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 0.18,
+    "catch_percent": 0
+  },
+  {
     "_id": "67bf69917e36018cbe057475",
     "landing_site": "Ncomangano",
     "catch_taxon": "Mojarra/Silverbelly",
     "catch_kg": 54.09,
     "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057476",
+    "landing_site": "Ncomangano",
+    "catch_taxon": "Other",
+    "catch_kg": 1504.27,
+    "catch_percent": 0.03
+  },
+  {
+    "_id": "67bf69917e36018cbe057477",
+    "landing_site": "Ncomangano",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 467.68,
+    "catch_percent": 0.01
   },
   {
     "_id": "67bf69917e36018cbe057478",
@@ -1933,6 +1247,13 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe057479",
+    "landing_site": "Ncomangano",
+    "catch_taxon": "Snapper/seaperch",
+    "catch_kg": 4723666.15,
+    "catch_percent": 99.94
+  },
+  {
     "_id": "67bf69917e36018cbe05747a",
     "landing_site": "Ncomangano",
     "catch_taxon": "Soldierfish",
@@ -1940,9 +1261,44 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe05747b",
+    "landing_site": "Ncomangano",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 237.77,
+    "catch_percent": 0.01
+  },
+  {
+    "_id": "67bf69917e36018cbe05747c",
+    "landing_site": "Ncomangano",
+    "catch_taxon": "Surgeonfish",
+    "catch_kg": 279.7,
+    "catch_percent": 0.01
+  },
+  {
     "_id": "67bf69917e36018cbe05747d",
     "landing_site": "Nsangue",
     "catch_taxon": "Barracuda",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05747e",
+    "landing_site": "Nsangue",
+    "catch_taxon": "Emperor",
+    "catch_kg": 24.59,
+    "catch_percent": 0.1
+  },
+  {
+    "_id": "67bf69917e36018cbe05747f",
+    "landing_site": "Nsangue",
+    "catch_taxon": "Fusilier",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057480",
+    "landing_site": "Nsangue",
+    "catch_taxon": "Garfish",
     "catch_kg": 0,
     "catch_percent": 0
   },
@@ -1954,6 +1310,20 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe057482",
+    "landing_site": "Nsangue",
+    "catch_taxon": "Jacks/Trevally/Other Scad",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057483",
+    "landing_site": "Nsangue",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 253.67,
+    "catch_percent": 0.98
+  },
+  {
     "_id": "67bf69917e36018cbe057484",
     "landing_site": "Nsangue",
     "catch_taxon": "Mojarra/Silverbelly",
@@ -1961,9 +1331,163 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe057485",
+    "landing_site": "Nsangue",
+    "catch_taxon": "Other",
+    "catch_kg": 931.98,
+    "catch_percent": 3.61
+  },
+  {
+    "_id": "67bf69917e36018cbe057486",
+    "landing_site": "Nsangue",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 32.01,
+    "catch_percent": 0.12
+  },
+  {
+    "_id": "67bf69917e36018cbe057487",
+    "landing_site": "Nsangue",
+    "catch_taxon": "Sardines/pilchards",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057488",
+    "landing_site": "Nsangue",
+    "catch_taxon": "Snapper/seaperch",
+    "catch_kg": 11729.94,
+    "catch_percent": 45.46
+  },
+  {
+    "_id": "67bf69917e36018cbe057489",
+    "landing_site": "Nsangue",
+    "catch_taxon": "Soldierfish",
+    "catch_kg": 0.54,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05748a",
+    "landing_site": "Nsangue",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 12831.12,
+    "catch_percent": 49.72
+  },
+  {
+    "_id": "67bf69917e36018cbe05748b",
+    "landing_site": "Nsangue",
+    "catch_taxon": "Surgeonfish",
+    "catch_kg": 0.32,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05748c",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Barracuda",
+    "catch_kg": 108599.11,
+    "catch_percent": 64.2
+  },
+  {
+    "_id": "67bf69917e36018cbe05748d",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Emperor",
+    "catch_kg": 13776.28,
+    "catch_percent": 8.14
+  },
+  {
+    "_id": "67bf69917e36018cbe05748e",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Fusilier",
+    "catch_kg": 638.33,
+    "catch_percent": 0.38
+  },
+  {
+    "_id": "67bf69917e36018cbe05748f",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Garfish",
+    "catch_kg": 133.75,
+    "catch_percent": 0.08
+  },
+  {
     "_id": "67bf69917e36018cbe057490",
     "landing_site": "Olumbe",
     "catch_taxon": "Goatfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057491",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Jacks/Trevally/Other Scad",
+    "catch_kg": 458.48,
+    "catch_percent": 0.27
+  },
+  {
+    "_id": "67bf69917e36018cbe057492",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 17821.84,
+    "catch_percent": 10.54
+  },
+  {
+    "_id": "67bf69917e36018cbe057493",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "catch_kg": 2634.26,
+    "catch_percent": 1.56
+  },
+  {
+    "_id": "67bf69917e36018cbe057494",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Other",
+    "catch_kg": 6250.99,
+    "catch_percent": 3.7
+  },
+  {
+    "_id": "67bf69917e36018cbe057495",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 829.89,
+    "catch_percent": 0.49
+  },
+  {
+    "_id": "67bf69917e36018cbe057496",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Sardines/pilchards",
+    "catch_kg": 193.22,
+    "catch_percent": 0.11
+  },
+  {
+    "_id": "67bf69917e36018cbe057497",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Snapper/seaperch",
+    "catch_kg": 12274.32,
+    "catch_percent": 7.26
+  },
+  {
+    "_id": "67bf69917e36018cbe057498",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Soldierfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe057499",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 5539.54,
+    "catch_percent": 3.27
+  },
+  {
+    "_id": "67bf69917e36018cbe05749a",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Surgeonfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05749b",
+    "landing_site": "Panchina",
+    "catch_taxon": "Barracuda",
     "catch_kg": 0,
     "catch_percent": 0
   },
@@ -1975,9 +1499,72 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe05749d",
+    "landing_site": "Panchina",
+    "catch_taxon": "Fusilier",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05749e",
+    "landing_site": "Panchina",
+    "catch_taxon": "Garfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe05749f",
+    "landing_site": "Panchina",
+    "catch_taxon": "Goatfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0574a0",
+    "landing_site": "Panchina",
+    "catch_taxon": "Jacks/Trevally/Other Scad",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0574a1",
+    "landing_site": "Panchina",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0574a2",
+    "landing_site": "Panchina",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0574a3",
+    "landing_site": "Panchina",
+    "catch_taxon": "Other",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0574a4",
+    "landing_site": "Panchina",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 1.77,
+    "catch_percent": 5.62
+  },
+  {
     "_id": "67bf69917e36018cbe0574a5",
     "landing_site": "Panchina",
     "catch_taxon": "Sardines/pilchards",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0574a6",
+    "landing_site": "Panchina",
+    "catch_taxon": "Snapper/seaperch",
     "catch_kg": 0,
     "catch_percent": 0
   },
@@ -1989,11 +1576,32 @@
     "catch_percent": 0
   },
   {
+    "_id": "67bf69917e36018cbe0574a8",
+    "landing_site": "Panchina",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
     "_id": "67bf69917e36018cbe0574a9",
     "landing_site": "Panchina",
     "catch_taxon": "Surgeonfish",
     "catch_kg": 29.76,
     "catch_percent": 94.38
+  },
+  {
+    "_id": "67bf69917e36018cbe0574aa",
+    "landing_site": "Quelimane",
+    "catch_taxon": "Barracuda",
+    "catch_kg": 3869.19,
+    "catch_percent": 27.93
+  },
+  {
+    "_id": "67bf69917e36018cbe0574ab",
+    "landing_site": "Quelimane",
+    "catch_taxon": "Emperor",
+    "catch_kg": 256.53,
+    "catch_percent": 1.85
   },
   {
     "_id": "67bf69917e36018cbe0574ac",
@@ -2010,11 +1618,151 @@
     "catch_percent": 0.14
   },
   {
+    "_id": "67bf69917e36018cbe0574ae",
+    "landing_site": "Quelimane",
+    "catch_taxon": "Goatfish",
+    "catch_kg": 1.48,
+    "catch_percent": 0.01
+  },
+  {
+    "_id": "67bf69917e36018cbe0574af",
+    "landing_site": "Quelimane",
+    "catch_taxon": "Jacks/Trevally/Other Scad",
+    "catch_kg": 183.11,
+    "catch_percent": 1.32
+  },
+  {
+    "_id": "67bf69917e36018cbe0574b0",
+    "landing_site": "Quelimane",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 1031.65,
+    "catch_percent": 7.45
+  },
+  {
+    "_id": "67bf69917e36018cbe0574b1",
+    "landing_site": "Quelimane",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "catch_kg": 438.5,
+    "catch_percent": 3.17
+  },
+  {
+    "_id": "67bf69917e36018cbe0574b2",
+    "landing_site": "Quelimane",
+    "catch_taxon": "Other",
+    "catch_kg": 1169.18,
+    "catch_percent": 8.44
+  },
+  {
+    "_id": "67bf69917e36018cbe0574b3",
+    "landing_site": "Quelimane",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 1074.13,
+    "catch_percent": 7.75
+  },
+  {
+    "_id": "67bf69917e36018cbe0574b4",
+    "landing_site": "Quelimane",
+    "catch_taxon": "Sardines/pilchards",
+    "catch_kg": 2016.04,
+    "catch_percent": 14.55
+  },
+  {
+    "_id": "67bf69917e36018cbe0574b5",
+    "landing_site": "Quelimane",
+    "catch_taxon": "Snapper/seaperch",
+    "catch_kg": 2704.27,
+    "catch_percent": 19.52
+  },
+  {
+    "_id": "67bf69917e36018cbe0574b6",
+    "landing_site": "Quelimane",
+    "catch_taxon": "Soldierfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0574b7",
+    "landing_site": "Quelimane",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 671.64,
+    "catch_percent": 4.85
+  },
+  {
+    "_id": "67bf69917e36018cbe0574b8",
+    "landing_site": "Quelimane",
+    "catch_taxon": "Surgeonfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0574b9",
+    "landing_site": "Quifuque",
+    "catch_taxon": "Barracuda",
+    "catch_kg": 842.35,
+    "catch_percent": 15.94
+  },
+  {
+    "_id": "67bf69917e36018cbe0574ba",
+    "landing_site": "Quifuque",
+    "catch_taxon": "Emperor",
+    "catch_kg": 31.76,
+    "catch_percent": 0.6
+  },
+  {
     "_id": "67bf69917e36018cbe0574bb",
     "landing_site": "Quifuque",
     "catch_taxon": "Fusilier",
     "catch_kg": 180.61,
     "catch_percent": 3.42
+  },
+  {
+    "_id": "67bf69917e36018cbe0574bc",
+    "landing_site": "Quifuque",
+    "catch_taxon": "Garfish",
+    "catch_kg": 0.66,
+    "catch_percent": 0.01
+  },
+  {
+    "_id": "67bf69917e36018cbe0574bd",
+    "landing_site": "Quifuque",
+    "catch_taxon": "Goatfish",
+    "catch_kg": 308.32,
+    "catch_percent": 5.84
+  },
+  {
+    "_id": "67bf69917e36018cbe0574be",
+    "landing_site": "Quifuque",
+    "catch_taxon": "Jacks/Trevally/Other Scad",
+    "catch_kg": 689.33,
+    "catch_percent": 13.05
+  },
+  {
+    "_id": "67bf69917e36018cbe0574bf",
+    "landing_site": "Quifuque",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 41.92,
+    "catch_percent": 0.79
+  },
+  {
+    "_id": "67bf69917e36018cbe0574c0",
+    "landing_site": "Quifuque",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "catch_kg": 16.45,
+    "catch_percent": 0.31
+  },
+  {
+    "_id": "67bf69917e36018cbe0574c1",
+    "landing_site": "Quifuque",
+    "catch_taxon": "Other",
+    "catch_kg": 902.42,
+    "catch_percent": 17.08
+  },
+  {
+    "_id": "67bf69917e36018cbe0574c2",
+    "landing_site": "Quifuque",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 505.87,
+    "catch_percent": 9.57
   },
   {
     "_id": "67bf69917e36018cbe0574c3",
@@ -2024,6 +1772,13 @@
     "catch_percent": 2.49
   },
   {
+    "_id": "67bf69917e36018cbe0574c4",
+    "landing_site": "Quifuque",
+    "catch_taxon": "Snapper/seaperch",
+    "catch_kg": 680.99,
+    "catch_percent": 12.89
+  },
+  {
     "_id": "67bf69917e36018cbe0574c5",
     "landing_site": "Quifuque",
     "catch_taxon": "Soldierfish",
@@ -2031,11 +1786,39 @@
     "catch_percent": 9.11
   },
   {
+    "_id": "67bf69917e36018cbe0574c6",
+    "landing_site": "Quifuque",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 166.02,
+    "catch_percent": 3.14
+  },
+  {
     "_id": "67bf69917e36018cbe0574c7",
     "landing_site": "Quifuque",
     "catch_taxon": "Surgeonfish",
     "catch_kg": 304.32,
     "catch_percent": 5.76
+  },
+  {
+    "_id": "67bf69917e36018cbe0574c8",
+    "landing_site": "Quiwia",
+    "catch_taxon": "Barracuda",
+    "catch_kg": 363.58,
+    "catch_percent": 2.91
+  },
+  {
+    "_id": "67bf69917e36018cbe0574c9",
+    "landing_site": "Quiwia",
+    "catch_taxon": "Emperor",
+    "catch_kg": 443.08,
+    "catch_percent": 3.54
+  },
+  {
+    "_id": "67bf69917e36018cbe0574ca",
+    "landing_site": "Quiwia",
+    "catch_taxon": "Fusilier",
+    "catch_kg": 0,
+    "catch_percent": 0
   },
   {
     "_id": "67bf69917e36018cbe0574cb",
@@ -2059,6 +1842,13 @@
     "catch_percent": 16.17
   },
   {
+    "_id": "67bf69917e36018cbe0574ce",
+    "landing_site": "Quiwia",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
     "_id": "67bf69917e36018cbe0574cf",
     "landing_site": "Quiwia",
     "catch_taxon": "Mojarra/Silverbelly",
@@ -2080,11 +1870,60 @@
     "catch_percent": 0.65
   },
   {
+    "_id": "67bf69917e36018cbe0574d2",
+    "landing_site": "Quiwia",
+    "catch_taxon": "Sardines/pilchards",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0574d3",
+    "landing_site": "Quiwia",
+    "catch_taxon": "Snapper/seaperch",
+    "catch_kg": 2433.54,
+    "catch_percent": 19.47
+  },
+  {
+    "_id": "67bf69917e36018cbe0574d4",
+    "landing_site": "Quiwia",
+    "catch_taxon": "Soldierfish",
+    "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0574d5",
+    "landing_site": "Quiwia",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 109.85,
+    "catch_percent": 0.88
+  },
+  {
     "_id": "67bf69917e36018cbe0574d6",
     "landing_site": "Quiwia",
     "catch_taxon": "Surgeonfish",
     "catch_kg": 4.63,
     "catch_percent": 0.04
+  },
+  {
+    "_id": "67bf69917e36018cbe0574d7",
+    "landing_site": "Vamizi",
+    "catch_taxon": "Barracuda",
+    "catch_kg": 2687.8,
+    "catch_percent": 0.52
+  },
+  {
+    "_id": "67bf69917e36018cbe0574d8",
+    "landing_site": "Vamizi",
+    "catch_taxon": "Emperor",
+    "catch_kg": 2091.25,
+    "catch_percent": 0.4
+  },
+  {
+    "_id": "67bf69917e36018cbe0574d9",
+    "landing_site": "Vamizi",
+    "catch_taxon": "Fusilier",
+    "catch_kg": 135161.42,
+    "catch_percent": 26
   },
   {
     "_id": "67bf69917e36018cbe0574da",
@@ -2094,11 +1933,102 @@
     "catch_percent": 5.53
   },
   {
+    "_id": "67bf69917e36018cbe0574db",
+    "landing_site": "Vamizi",
+    "catch_taxon": "Goatfish",
+    "catch_kg": 78668.83,
+    "catch_percent": 15.13
+  },
+  {
+    "_id": "67bf69917e36018cbe0574dc",
+    "landing_site": "Vamizi",
+    "catch_taxon": "Jacks/Trevally/Other Scad",
+    "catch_kg": 3362.23,
+    "catch_percent": 0.65
+  },
+  {
+    "_id": "67bf69917e36018cbe0574dd",
+    "landing_site": "Vamizi",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 124.64,
+    "catch_percent": 0.02
+  },
+  {
+    "_id": "67bf69917e36018cbe0574de",
+    "landing_site": "Vamizi",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "catch_kg": 107431.83,
+    "catch_percent": 20.66
+  },
+  {
+    "_id": "67bf69917e36018cbe0574df",
+    "landing_site": "Vamizi",
+    "catch_taxon": "Other",
+    "catch_kg": 36313.22,
+    "catch_percent": 6.98
+  },
+  {
+    "_id": "67bf69917e36018cbe0574e0",
+    "landing_site": "Vamizi",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 64553.11,
+    "catch_percent": 12.42
+  },
+  {
     "_id": "67bf69917e36018cbe0574e1",
     "landing_site": "Vamizi",
     "catch_taxon": "Sardines/pilchards",
     "catch_kg": 8618.23,
     "catch_percent": 1.66
+  },
+  {
+    "_id": "67bf69917e36018cbe0574e2",
+    "landing_site": "Vamizi",
+    "catch_taxon": "Snapper/seaperch",
+    "catch_kg": 2514.27,
+    "catch_percent": 0.48
+  },
+  {
+    "_id": "67bf69917e36018cbe0574e3",
+    "landing_site": "Vamizi",
+    "catch_taxon": "Soldierfish",
+    "catch_kg": 36470.89,
+    "catch_percent": 7.02
+  },
+  {
+    "_id": "67bf69917e36018cbe0574e4",
+    "landing_site": "Vamizi",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 1076.63,
+    "catch_percent": 0.21
+  },
+  {
+    "_id": "67bf69917e36018cbe0574e5",
+    "landing_site": "Vamizi",
+    "catch_taxon": "Surgeonfish",
+    "catch_kg": 12059.94,
+    "catch_percent": 2.32
+  },
+  {
+    "_id": "67bf69917e36018cbe0574e6",
+    "landing_site": "Zalala",
+    "catch_taxon": "Barracuda",
+    "catch_kg": 2063.38,
+    "catch_percent": 3.56
+  },
+  {
+    "_id": "67bf69917e36018cbe0574e7",
+    "landing_site": "Zalala",
+    "catch_taxon": "Emperor",
+    "catch_kg": 1915.08,
+    "catch_percent": 3.3
+  },
+  {
+    "_id": "67bf69917e36018cbe0574e8",
+    "landing_site": "Zalala",
+    "catch_taxon": "Fusilier",
+    "catch_kg": 194.95,
+    "catch_percent": 0.34
   },
   {
     "_id": "67bf69917e36018cbe0574e9",
@@ -2108,10 +2038,80 @@
     "catch_percent": 0.17
   },
   {
+    "_id": "67bf69917e36018cbe0574ea",
+    "landing_site": "Zalala",
+    "catch_taxon": "Goatfish",
+    "catch_kg": 17.59,
+    "catch_percent": 0.03
+  },
+  {
+    "_id": "67bf69917e36018cbe0574eb",
+    "landing_site": "Zalala",
+    "catch_taxon": "Jacks/Trevally/Other Scad",
+    "catch_kg": 3257.94,
+    "catch_percent": 5.62
+  },
+  {
+    "_id": "67bf69917e36018cbe0574ec",
+    "landing_site": "Zalala",
+    "catch_taxon": "Mackerel scad",
+    "catch_kg": 1333.13,
+    "catch_percent": 2.3
+  },
+  {
+    "_id": "67bf69917e36018cbe0574ed",
+    "landing_site": "Zalala",
+    "catch_taxon": "Mojarra/Silverbelly",
+    "catch_kg": 1512.57,
+    "catch_percent": 2.61
+  },
+  {
+    "_id": "67bf69917e36018cbe0574ee",
+    "landing_site": "Zalala",
+    "catch_taxon": "Other",
+    "catch_kg": 4946.82,
+    "catch_percent": 8.53
+  },
+  {
+    "_id": "67bf69917e36018cbe0574ef",
+    "landing_site": "Zalala",
+    "catch_taxon": "Parrotfish",
+    "catch_kg": 2142.31,
+    "catch_percent": 3.69
+  },
+  {
+    "_id": "67bf69917e36018cbe0574f0",
+    "landing_site": "Zalala",
+    "catch_taxon": "Sardines/pilchards",
+    "catch_kg": 33558.96,
+    "catch_percent": 57.87
+  },
+  {
+    "_id": "67bf69917e36018cbe0574f1",
+    "landing_site": "Zalala",
+    "catch_taxon": "Snapper/seaperch",
+    "catch_kg": 3239.19,
+    "catch_percent": 5.59
+  },
+  {
     "_id": "67bf69917e36018cbe0574f2",
     "landing_site": "Zalala",
     "catch_taxon": "Soldierfish",
     "catch_kg": 0,
+    "catch_percent": 0
+  },
+  {
+    "_id": "67bf69917e36018cbe0574f3",
+    "landing_site": "Zalala",
+    "catch_taxon": "Spinefoot",
+    "catch_kg": 3712.76,
+    "catch_percent": 6.4
+  },
+  {
+    "_id": "67bf69917e36018cbe0574f4",
+    "landing_site": "Zalala",
+    "catch_taxon": "Surgeonfish",
+    "catch_kg": 0.59,
     "catch_percent": 0
   }
 ]

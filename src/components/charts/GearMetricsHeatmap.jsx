@@ -16,7 +16,7 @@ const GearMetricsTreemap = ({
 
     // Get the metric data (cpue or rpue)
     const metricData = data[0][metric];
-    
+
     // Create a series for each habitat
     return metricData.map(habitat => ({
       name: Array.isArray(habitat.name) ? habitat.name[0] : (habitat.name || habitat.habitat),
@@ -104,21 +104,26 @@ const GearMetricsTreemap = ({
         enableShades: true,
         shadeIntensity: 0.2,
         distributed: false,
-        useFillColorAsStroke: false
+        useFillColorAsStroke: false,
+        dataLabels: {
+          format: /** @type {'scale'} */ ('scale')
+        }
       }
     },
     dataLabels: {
       enabled: true,
       style: {
-        fontSize: '13px',
-        fontWeight: 500,
+        fontSize: '14px',
+        fontWeight: 600,
         fontFamily: 'inherit',
         colors: ['#fff']
       },
-      formatter: function(text, op) {
-        const suffix = metric === 'cpue' ? ' kg/hrs' : ' MZM/hrs';
-        return `${text}\n${op.value.toFixed(2)}${suffix}`;
-      }
+      formatter: /** @type {any} */ (function(text, op) {
+        const suffix = metric === 'cpue' ? 'kg/h' : 'MZM/h';
+        const value = op.value.toFixed(2);
+        // Return array for multiline labels (ApexCharts native support v3.15.0+)
+        return [text, value + ' ' + suffix];
+      })
     },
     tooltip: {
       enabled: true,

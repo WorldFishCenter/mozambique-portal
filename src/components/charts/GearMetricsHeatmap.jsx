@@ -4,16 +4,6 @@ import Chart from 'react-apexcharts';
 /** @type {import('react-apexcharts').Props['type']} */
 const CHART_TYPE = 'treemap';
 
-// Define colors for different habitats with specific hex values matching the image
-const HABITAT_COLORS = {
-  'Reef': '#5D2A8C',      // Deep purple
-  'Pelagic': '#3F7CAC',   // Steel blue
-  'Beach': '#4CAF7C',     // Sea green
-  'Mangroves': '#F4D03F', // Golden yellow
-  'Seagrass': '#FFA07A',  // Light salmon
-  'FAD': '#DC3545'        // Red
-};
-
 const GearMetricsTreemap = ({
   theme,
   data,
@@ -29,13 +19,47 @@ const GearMetricsTreemap = ({
     
     // Create a series for each habitat
     return metricData.map(habitat => ({
-      name: habitat.name[0],
+      name: Array.isArray(habitat.name) ? habitat.name[0] : (habitat.name || habitat.habitat),
       data: habitat.data.map(item => ({
         x: item.x[0],
         y: item.y[0]
       })).sort((a, b) => b.y - a.y)
     }));
   }, [data, metric]);
+
+  // Generate colors dynamically based on the number of habitats in the data
+  const colors = useMemo(() => {
+    if (series.length === 0) return [];
+    
+    // Extended color palette that can handle any number of habitats
+    const baseColors = [
+      '#5D2A8C', // Deep purple
+      '#3F7CAC', // Steel blue
+      '#4CAF7C', // Sea green
+      '#F4D03F', // Golden yellow
+      '#FFA07A', // Light salmon
+      '#DC3545', // Red
+      '#8B5CF6', // Purple
+      '#06B6D4', // Cyan
+      '#10B981', // Emerald
+      '#F59E0B', // Amber
+      '#EF4444', // Red
+      '#EC4899', // Pink
+      '#6366F1', // Indigo
+      '#14B8A6', // Teal
+      '#F97316', // Orange
+      '#84CC16', // Lime
+      '#A855F7', // Violet
+      '#22C55E', // Green
+      '#EAB308', // Yellow
+      '#3B82F6'  // Blue
+    ];
+    
+    // Return colors for each habitat, cycling through the palette if needed
+    return Array.from({ length: series.length }, (_, i) => 
+      baseColors[i % baseColors.length]
+    );
+  }, [series]);
 
   const options = useMemo(() => ({
     chart: {
@@ -54,7 +78,7 @@ const GearMetricsTreemap = ({
       fontFamily: 'inherit',
       background: 'transparent'
     },
-    colors: Object.values(HABITAT_COLORS),
+    colors: colors,
     title: {
       text: '',
       align: /** @type {'left'} */ ('left'),
@@ -112,7 +136,7 @@ const GearMetricsTreemap = ({
         }
       }
     }
-  }), [theme, height, metric]);
+  }), [theme, height, metric, colors]);
 
   return (
     <Chart

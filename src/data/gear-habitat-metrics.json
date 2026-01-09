@@ -1,357 +1,431 @@
 [
   {
-    "_id": "67bf9ed47e36018cbe057553",
+    "_id": "696134b772d58acfd9081fbd",
     "cpue": [
       {
-        "name": [
-          "Seagrass"
-        ],
+        "habitat": "FAD",
+        "name": "FAD",
         "data": [
           {
             "x": [
-              "Arpão"
+              "Harpoon"
             ],
             "y": [
-              12045.421
+              11.5195
             ]
           },
           {
             "x": [
-              "Rede de emalhar"
+              "Hand Line"
             ],
             "y": [
-              3.645
+              10.4406
             ]
           },
           {
             "x": [
-              "Linha a mão"
+              "Long Line"
             ],
             "y": [
-              3.284
+              7.0279
             ]
           },
           {
             "x": [
-              "Palangre"
+              "Gill Net"
             ],
             "y": [
-              1.947
+              5.6138
             ]
           },
           {
             "x": [
-              "Rede de cerco"
+              "Trap"
             ],
             "y": [
-              1.754
+              3.2905
             ]
           },
           {
             "x": [
-              "Rede de Arrasto"
+              "Purse Seine"
             ],
             "y": [
-              1.29
+              1.2832
             ]
           },
           {
             "x": [
-              "Armadilha"
+              "Trawl Net"
             ],
             "y": [
-              0.183
+              1.1608
             ]
           }
         ]
       },
       {
-        "name": [
-          "Beach"
-        ],
+        "habitat": "Mangrove",
+        "name": "Mangrove",
         "data": [
           {
             "x": [
-              "Armadilha"
+              "Hand Line"
             ],
             "y": [
-              977.953
+              7.4525
             ]
           },
           {
             "x": [
-              "Palangre"
+              "Harpoon"
             ],
             "y": [
-              601.471
+              3.2568
             ]
           },
           {
             "x": [
-              "Linha a mão"
+              "Purse Seine"
             ],
             "y": [
-              353.371
+              1.6253
             ]
           },
           {
             "x": [
-              "Rede de emalhar"
+              "Deep Gill Net"
             ],
             "y": [
-              26.414
+              1.1753
             ]
           },
           {
             "x": [
-              "Arpão"
+              "Gill Net"
             ],
             "y": [
-              11.694
+              1.0267
             ]
           },
           {
             "x": [
-              "Rede de cerco"
+              "Trawl Net"
             ],
             "y": [
-              8.219
+              1.015
             ]
           },
           {
             "x": [
-              "Rede de Arrasto"
+              "Trap"
             ],
             "y": [
-              0.883
+              0.7826
+            ]
+          },
+          {
+            "x": [
+              "Long Line"
+            ],
+            "y": [
+              0
             ]
           }
         ]
       },
       {
-        "name": [
-          "Reef"
-        ],
+        "habitat": "Open Sea",
+        "name": "Open Sea",
         "data": [
           {
             "x": [
-              "Armadilha"
+              "Purse Seine"
             ],
             "y": [
-              220.852
+              5.8303
             ]
           },
           {
             "x": [
-              "Linha a mão"
+              "Other"
             ],
             "y": [
-              128.516
+              5.2
             ]
           },
           {
             "x": [
-              "Rede de cerco"
+              "Trap"
             ],
             "y": [
-              63.629
+              3.4972
             ]
           },
           {
             "x": [
-              "Palangre"
+              "Deep Gill Net"
             ],
             "y": [
-              43.732
+              2.8318
             ]
           },
           {
             "x": [
-              "Rede de emalhar"
+              "Hand Line"
             ],
             "y": [
-              12.872
+              2.7502
             ]
           },
           {
             "x": [
-              "Arpão"
+              "Harpoon"
             ],
             "y": [
-              10.423
+              2.5632
             ]
           },
           {
             "x": [
-              "Rede de Arrasto"
+              "Gill Net"
             ],
             "y": [
-              2.645
+              1.8788
+            ]
+          },
+          {
+            "x": [
+              "Trawl Net"
+            ],
+            "y": [
+              1.3891
+            ]
+          },
+          {
+            "x": [
+              "Long Line"
+            ],
+            "y": [
+              1.2081
             ]
           }
         ]
       },
       {
-        "name": [
-          "Pelagic"
-        ],
+        "habitat": "Reef",
+        "name": "Reef",
         "data": [
           {
             "x": [
-              "Arpão"
+              "Hand Line"
             ],
             "y": [
-              219.259
+              4.2525
             ]
           },
           {
             "x": [
-              "Armadilha"
+              "Purse Seine"
             ],
             "y": [
-              80.652
+              4.0108
             ]
           },
           {
             "x": [
-              "Linha a mão"
+              "Trap"
             ],
             "y": [
-              21.016
+              2.8869
             ]
           },
           {
             "x": [
-              "Rede de cerco"
+              "Deep Gill Net"
             ],
             "y": [
-              12.773
+              2.2516
             ]
           },
           {
             "x": [
-              "Rede de emalhar"
+              "Harpoon"
             ],
             "y": [
-              5.849
+              1.8469
             ]
           },
           {
             "x": [
-              "Rede de Arrasto"
+              "Gill Net"
             ],
             "y": [
-              4.935
+              1.7707
             ]
           },
           {
             "x": [
-              "Palangre"
+              "Trawl Net"
             ],
             "y": [
-              0.015
+              1.5574
+            ]
+          },
+          {
+            "x": [
+              "Long Line"
+            ],
+            "y": [
+              1.329
             ]
           }
         ]
       },
       {
-        "name": [
-          "FAD"
-        ],
+        "habitat": "Seagrass",
+        "name": "Seagrass",
         "data": [
           {
             "x": [
-              "Arpão"
+              "Hand Line"
             ],
             "y": [
-              146.389
+              2.5336
             ]
           },
           {
             "x": [
-              "Linha a mão"
+              "Trap"
             ],
             "y": [
-              12.476
+              2.3789
             ]
           },
           {
             "x": [
-              "Rede de emalhar"
+              "Long Line"
             ],
             "y": [
-              9.609
+              2.1277
             ]
           },
           {
             "x": [
-              "Rede de Arrasto"
+              "Harpoon"
             ],
             "y": [
-              1.342
+              1.2969
+            ]
+          },
+          {
+            "x": [
+              "Gill Net"
+            ],
+            "y": [
+              1.2537
+            ]
+          },
+          {
+            "x": [
+              "Purse Seine"
+            ],
+            "y": [
+              0.9916
+            ]
+          },
+          {
+            "x": [
+              "Trawl Net"
+            ],
+            "y": [
+              0.8443
+            ]
+          },
+          {
+            "x": [
+              "Deep Gill Net"
+            ],
+            "y": [
+              0.6753
             ]
           }
         ]
       },
       {
-        "name": [
-          "Mangroves"
-        ],
+        "habitat": "Shore",
+        "name": "Shore",
         "data": [
           {
             "x": [
-              "Palangre"
+              "Trap"
             ],
             "y": [
-              7.627
+              8.5458
             ]
           },
           {
             "x": [
-              "Rede de emalhar"
+              "Long Line"
             ],
             "y": [
-              5.127
+              5.6514
             ]
           },
           {
             "x": [
-              "Rede de cerco"
+              "Other"
             ],
             "y": [
-              3.799
+              5.0864
             ]
           },
           {
             "x": [
-              "Arpão"
+              "Harpoon"
             ],
             "y": [
-              3.66
+              4.4732
             ]
           },
           {
             "x": [
-              "Rede de Arrasto"
+              "Hand Line"
             ],
             "y": [
-              2.522
+              3.6306
             ]
           },
           {
             "x": [
-              "Armadilha"
+              "Gill Net"
             ],
             "y": [
-              0.426
+              2.3185
             ]
           },
           {
             "x": [
-              "Linha a mão"
+              "Purse Seine"
             ],
             "y": [
-              0.149
+              1.8123
+            ]
+          },
+          {
+            "x": [
+              "Trawl Net"
+            ],
+            "y": [
+              1.5604
+            ]
+          },
+          {
+            "x": [
+              "Deep Gill Net"
+            ],
+            "y": [
+              1.1058
             ]
           }
         ]
@@ -359,363 +433,437 @@
     ],
     "rpue": [
       {
-        "name": [
-          "Reef"
-        ],
+        "habitat": "FAD",
+        "name": "FAD",
         "data": [
           {
             "x": [
-              "Armadilha"
+              "Hand Line"
             ],
             "y": [
-              585.154
+              470.5313
             ]
           },
           {
             "x": [
-              "Rede de cerco"
+              "Harpoon"
             ],
             "y": [
-              431.686
+              405.5551
             ]
           },
           {
             "x": [
-              "Linha a mão"
+              "Deep Gill Net"
             ],
             "y": [
-              409.521
+              300
             ]
           },
           {
             "x": [
-              "Arpão"
+              "Gill Net"
             ],
             "y": [
-              194.75
+              176.0504
             ]
           },
           {
             "x": [
-              "Rede de emalhar"
+              "Trawl Net"
             ],
             "y": [
-              171.47
+              171.9635
             ]
           },
           {
             "x": [
-              "Rede de Arrasto"
+              "Long Line"
             ],
             "y": [
-              133.595
+              166.6667
             ]
           },
           {
             "x": [
-              "Palangre"
+              "Purse Seine"
             ],
             "y": [
-              106.727
+              151.7483
+            ]
+          },
+          {
+            "x": [
+              "Trap"
+            ],
+            "y": [
+              56.1429
             ]
           }
         ]
       },
       {
-        "name": [
-          "Pelagic"
-        ],
+        "habitat": "Mangrove",
+        "name": "Mangrove",
         "data": [
           {
             "x": [
-              "Rede de cerco"
+              "Hand Line"
             ],
             "y": [
-              470.457
+              242.3303
             ]
           },
           {
             "x": [
-              "Armadilha"
+              "Deep Gill Net"
             ],
             "y": [
-              383.224
+              189.899
             ]
           },
           {
             "x": [
-              "Linha a mão"
+              "Harpoon"
             ],
             "y": [
-              301.515
+              123.0589
             ]
           },
           {
             "x": [
-              "Arpão"
+              "Trawl Net"
             ],
             "y": [
-              227.762
+              88.1104
             ]
           },
           {
             "x": [
-              "Palangre"
+              "Purse Seine"
             ],
             "y": [
-              222.222
+              80.103
             ]
           },
           {
             "x": [
-              "Rede de emalhar"
+              "Gill Net"
             ],
             "y": [
-              157.544
+              56.0539
             ]
           },
           {
             "x": [
-              "Rede de Arrasto"
+              "Long Line"
             ],
             "y": [
-              117.82
+              50
+            ]
+          },
+          {
+            "x": [
+              "Trap"
+            ],
+            "y": [
+              46.1463
             ]
           }
         ]
       },
       {
-        "name": [
-          "Beach"
-        ],
+        "habitat": "Open Sea",
+        "name": "Open Sea",
         "data": [
           {
             "x": [
-              "Armadilha"
+              "Purse Seine"
             ],
             "y": [
-              536.19
+              603.913
             ]
           },
           {
             "x": [
-              "Linha a mão"
+              "Trap"
             ],
             "y": [
-              210.403
+              290.4064
             ]
           },
           {
             "x": [
-              "Palangre"
+              "Hand Line"
             ],
             "y": [
-              173.611
+              251.1526
             ]
           },
           {
             "x": [
-              "Arpão"
+              "Harpoon"
             ],
             "y": [
-              171.8
+              202.4401
             ]
           },
           {
             "x": [
-              "Rede de emalhar"
+              "Long Line"
             ],
             "y": [
-              108.729
+              185.4416
             ]
           },
           {
             "x": [
-              "Rede de cerco"
+              "Gill Net"
             ],
             "y": [
-              108.277
+              131.0774
             ]
           },
           {
             "x": [
-              "Rede de Arrasto"
+              "Trawl Net"
             ],
             "y": [
-              64.891
+              117.4551
+            ]
+          },
+          {
+            "x": [
+              "Deep Gill Net"
+            ],
+            "y": [
+              56.5996
+            ]
+          },
+          {
+            "x": [
+              "Other"
+            ],
+            "y": [
+              3
             ]
           }
         ]
       },
       {
-        "name": [
-          "Mangroves"
-        ],
+        "habitat": "Reef",
+        "name": "Reef",
         "data": [
           {
             "x": [
-              "Armadilha"
+              "Hand Line"
             ],
             "y": [
-              712
+              369.8253
             ]
           },
           {
             "x": [
-              "Rede de emalhar"
+              "Trap"
             ],
             "y": [
-              133.806
+              230.3391
             ]
           },
           {
             "x": [
-              "Rede de Arrasto"
+              "Trawl Net"
             ],
             "y": [
-              123.378
+              203.9506
             ]
           },
           {
             "x": [
-              "Arpão"
+              "Purse Seine"
             ],
             "y": [
-              119.048
+              173.5705
             ]
           },
           {
             "x": [
-              "Linha a mão"
+              "Harpoon"
             ],
             "y": [
-              90.729
+              172.8863
             ]
           },
           {
             "x": [
-              "Rede de cerco"
+              "Deep Gill Net"
             ],
             "y": [
-              86.067
+              171.967
             ]
           },
           {
             "x": [
-              "Palangre"
+              "Gill Net"
             ],
             "y": [
-              55
+              113.5802
+            ]
+          },
+          {
+            "x": [
+              "Long Line"
+            ],
+            "y": [
+              56.4052
             ]
           }
         ]
       },
       {
-        "name": [
-          "Seagrass"
-        ],
+        "habitat": "Seagrass",
+        "name": "Seagrass",
         "data": [
           {
             "x": [
-              "Linha a mão"
+              "Trap"
             ],
             "y": [
-              229.781
+              299.7354
             ]
           },
           {
             "x": [
-              "Arpão"
+              "Hand Line"
             ],
             "y": [
-              165.78
+              270.0728
             ]
           },
           {
             "x": [
-              "Rede de cerco"
+              "Harpoon"
             ],
             "y": [
-              163.87
+              165.4097
             ]
           },
           {
             "x": [
-              "Palangre"
+              "Gill Net"
             ],
             "y": [
-              135
+              135.7376
             ]
           },
           {
             "x": [
-              "Armadilha"
+              "Long Line"
             ],
             "y": [
-              112
+              124.9335
             ]
           },
           {
             "x": [
-              "Rede de emalhar"
+              "Trawl Net"
             ],
             "y": [
-              111.699
+              66.0039
             ]
           },
           {
             "x": [
-              "Rede de Arrasto"
+              "Purse Seine"
             ],
             "y": [
-              81.395
+              56.6753
+            ]
+          },
+          {
+            "x": [
+              "Deep Gill Net"
+            ],
+            "y": [
+              50.7294
             ]
           }
         ]
       },
       {
-        "name": [
-          "FAD"
-        ],
+        "habitat": "Shore",
+        "name": "Shore",
         "data": [
           {
             "x": [
-              "Rede de emalhar"
+              "Other"
             ],
             "y": [
-              274.911
+              869.1975
             ]
           },
           {
             "x": [
-              "Linha a mão"
+              "Trap"
             ],
             "y": [
-              192.271
+              714.1737
             ]
           },
           {
             "x": [
-              "Arpão"
+              "Harpoon"
             ],
             "y": [
-              171.553
+              400.5532
             ]
           },
           {
             "x": [
-              "Rede de Arrasto"
+              "Hand Line"
             ],
             "y": [
-              145.684
+              324.9767
             ]
           },
           {
             "x": [
-              "Rede de cerco"
+              "Gill Net"
             ],
             "y": [
-              1.07
+              195.0018
+            ]
+          },
+          {
+            "x": [
+              "Purse Seine"
+            ],
+            "y": [
+              148.2317
+            ]
+          },
+          {
+            "x": [
+              "Trawl Net"
+            ],
+            "y": [
+              110.3593
+            ]
+          },
+          {
+            "x": [
+              "Deep Gill Net"
+            ],
+            "y": [
+              85.5983
+            ]
+          },
+          {
+            "x": [
+              "Long Line"
+            ],
+            "y": [
+              81.0519
             ]
           }
         ]

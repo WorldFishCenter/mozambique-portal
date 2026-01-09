@@ -17,14 +17,17 @@ const GearMetricsTreemap = ({
     // Get the metric data (cpue or rpue)
     const metricData = data[0][metric];
 
-    // Create a series for each habitat
+    // Create a series for each habitat, filtering out zero or very small values
     return metricData.map(habitat => ({
       name: Array.isArray(habitat.name) ? habitat.name[0] : (habitat.name || habitat.habitat),
-      data: habitat.data.map(item => ({
-        x: item.x[0],
-        y: item.y[0]
-      })).sort((a, b) => b.y - a.y)
-    }));
+      data: habitat.data
+        .filter(item => item.y[0] > 0.01) // Filter out zero or negligible values
+        .map(item => ({
+          x: item.x[0],
+          y: item.y[0]
+        }))
+        .sort((a, b) => b.y - a.y)
+    })).filter(habitat => habitat.data.length > 0); // Remove empty habitats
   }, [data, metric]);
 
   // Generate colors dynamically based on the number of habitats in the data
@@ -113,17 +116,17 @@ const GearMetricsTreemap = ({
     dataLabels: {
       enabled: true,
       style: {
-        fontSize: '14px',
+        fontSize: '13px',
         fontWeight: 600,
         fontFamily: 'inherit',
         colors: ['#fff']
       },
-      formatter: /** @type {any} */ (function(text, op) {
+      formatter: function(text, op) {
         const suffix = metric === 'cpue' ? 'kg/h' : 'MZM/h';
         const value = op.value.toFixed(2);
-        // Return array for multiline labels (ApexCharts native support v3.15.0+)
-        return [text, value + ' ' + suffix];
-      })
+        // Single line format for treemaps (multiline doesn't work properly)
+        return `${text} ${value} ${suffix}`;
+      }
     },
     tooltip: {
       enabled: true,

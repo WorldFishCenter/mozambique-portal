@@ -1,15 +1,22 @@
 import { useState, useEffect, useCallback } from 'react';
 
-/** @returns {{theme: string, toggleTheme: () => void}} */
+/**
+ * Theme hook for light/dark mode toggle
+ * Fixed theme settings (cyan, neutral, 1.5 radius) are applied in index.jsx
+ *
+ * @returns {{theme: string, toggleTheme: () => void}}
+ */
 export const useTheme = () => {
   const [theme, setTheme] = useState(() => {
-    // Get theme from localStorage or default to light
     const savedTheme = localStorage.getItem('theme');
     return savedTheme || 'light';
   });
 
   useEffect(() => {
-    document.documentElement.setAttribute('data-bs-theme', theme);
+    const root = document.documentElement;
+
+    // Apply light/dark theme
+    root.setAttribute('data-bs-theme', theme);
     localStorage.setItem('theme', theme);
 
     // Update theme when system preference changes

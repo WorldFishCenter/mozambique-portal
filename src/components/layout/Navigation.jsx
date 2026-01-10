@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import {
   IconHome,
@@ -69,14 +68,14 @@ const Navigation = ({ selectedLandingSite, setSelectedLandingSite, currency, set
                   <span className="nav-link-title">Composition</span>
                 </Link>
               </li>
-              <li className={`nav-item ${location.pathname === '/about' ? 'active' : ''}`}>
+              {/* <li className={`nav-item ${location.pathname === '/about' ? 'active' : ''}`}>
                 <Link to="/about" className="nav-link">
                   <span className="nav-link-icon d-md-none d-lg-inline-block">
                     <IconInfoSquare size={24} stroke={1.5} />
                   </span>
                   <span className="nav-link-title">About</span>
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <div className="navbar-nav ms-auto d-flex align-items-center gap-2">
               {isRevenuePage && (

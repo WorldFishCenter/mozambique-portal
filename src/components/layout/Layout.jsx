@@ -27,11 +27,16 @@ const Layout = ({
       <div className="page-wrapper">
         <div className="page-body">
           <div className="container-xl">
-            {/* Beta Alert */}
-            <div className="alert alert-warning" role="alert">
-              <h4 className="alert-title">Beta Version</h4>
-              <div className="text-muted">This application is currently in beta testing phase.</div>
-            </div>
+            {/* Beta Alert using official Tabler Alert component structure */}
+            {/* <div className="alert alert-warning alert-dismissible" role="alert">
+              <div className="alert-icon">
+                <i className="ti ti-info-circle"></i>
+              </div>
+              <div className="alert-title mb-1">Beta Version</div>
+              <div className="alert-description text-muted">
+                This application is currently in beta testing phase.
+              </div>
+            </div> */}
 
             {children}
           </div>

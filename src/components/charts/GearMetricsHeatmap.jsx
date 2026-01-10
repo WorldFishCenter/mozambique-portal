@@ -122,10 +122,9 @@ const GearMetricsTreemap = ({
         colors: ['#fff']
       },
       formatter: function(text, op) {
-        const suffix = metric === 'cpue' ? 'kg/h' : 'MZM/h';
         const value = op.value.toFixed(2);
         // Single line format for treemaps (multiline doesn't work properly)
-        return `${text} ${value} ${suffix}`;
+        return `${text} ${value}`;
       }
     },
     tooltip: {

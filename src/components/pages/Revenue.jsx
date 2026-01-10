@@ -312,7 +312,7 @@ const Revenue = ({ theme, landingSite, currency }) => {
       <div className="col-12 mt-3">
         <div className="card">
           <div className="card-header">
-            <h3 className="card-title">Revenue by Gear Type and Landing Site</h3>
+          <h3 className="card-title">Revenue by Habitat and Gear Type <span className="text-muted fs-4">MZN/fisher/hour</span></h3>
           </div>
           <div className="card-body">
             {gearHabitatMetrics.length > 0 ? (

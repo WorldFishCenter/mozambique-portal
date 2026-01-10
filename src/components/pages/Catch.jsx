@@ -242,7 +242,7 @@ const Catch = ({ theme, landingSite }) => {
       <div className="col-12 mt-3">
         <div className="card">
           <div className="card-header">
-            <h3 className="card-title">Catch Rate by Gear Type</h3>
+            <h3 className="card-title">Catch Rate by Habitat and Gear Type <span className="text-muted fs-4">kg/fisher/hour</span></h3>
           </div>
           <div className="card-body">
             {gearHabitatMetrics.length > 0 ? (

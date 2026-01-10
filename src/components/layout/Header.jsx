@@ -15,7 +15,7 @@ const Header = ({ theme, toggleTheme }) => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <h1 className="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
-          <Link to="/">Peskas | Mozambique 🇲🇿</Link>
+          <Link to="/">PESKAS | Cabo Delgado 🇲🇿</Link>
         </h1>
 
         {/* Right side navbar items */}

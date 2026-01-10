@@ -116,16 +116,16 @@ const GearMetricsTreemap = ({
     dataLabels: {
       enabled: true,
       style: {
-        fontSize: '13px',
-        fontWeight: 600,
+        fontSize: '14px',
+        fontWeight: 700,  // Bold font weight for gear type
         fontFamily: 'inherit',
         colors: ['#fff']
       },
-      formatter: function(text, op) {
+      formatter: /** @type {any} */ (function(text, op) {
         const value = op.value.toFixed(2);
-        // Single line format for treemaps (multiline doesn't work properly)
-        return `${text} ${value}`;
-      }
+        // Return array for multiline labels: [gear type (bold), value (normal)]
+        return [text, value];
+      })
     },
     tooltip: {
       enabled: true,

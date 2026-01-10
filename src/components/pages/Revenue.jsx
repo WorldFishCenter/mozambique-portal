@@ -8,15 +8,13 @@ import GearMetricsHeatmap from '../charts/GearMetricsHeatmap';
 
 // Memoized constants
 const EXCHANGE_RATES = {
-  MT: 1,
-  USD: 0.016,  // 1 MT = 0.016 USD
-  EUR: 0.015,  // 1 MT = 0.015 EUR
+  MZN: 1,
+  USD: 0.016,  // 1 MZN = 0.016 USD
 };
 
 const CURRENCY_SYMBOLS = {
-  MT: 'MT',
+  MZN: 'MZN',
   USD: 'USD',
-  EUR: '€',
 };
 
 // Memoized helper functions
@@ -58,7 +56,7 @@ const Revenue = ({ theme, landingSite, currency }) => {
         return formattedValue;
       }
       
-      // Format as "133.33 MT/fisher/hour"
+      // Format as "133.33 MZN/fisher/hour"
       return `${formattedValue} ${CURRENCY_SYMBOLS[currency]}/fisher/hour`;
     },
     [currency]
@@ -72,7 +70,7 @@ const Revenue = ({ theme, landingSite, currency }) => {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2,
       });
-      // Format as "133.33 MT/fisher/hour" - same as formatWithCurrency
+      // Format as "133.33 MZN/fisher/hour" - same as formatWithCurrency
       return `${formattedValue} ${CURRENCY_SYMBOLS[currency]}/fisher/hour`;
     },
     [currency]

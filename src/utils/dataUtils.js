@@ -45,7 +45,7 @@ export const formatNumber = number => {
 };
 
 // Format currency values
-export const formatCurrency = (value, currency = 'MT') => {
+export const formatCurrency = (value, currency = 'MZN') => {
   return new Intl.NumberFormat('en-MZ', {
     style: 'currency',
     currency,

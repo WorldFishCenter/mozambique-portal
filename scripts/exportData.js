@@ -53,6 +53,11 @@ const COLLECTIONS_TO_EXPORT = [
     name: 'surveys-gps',
     query: {},
     filename: 'surveys-gps.json'
+  },
+  {
+    name: 'geo-indicators',
+    query: {},
+    filename: 'geo-indicators.geojson'
   }
 ];
 
@@ -66,11 +71,40 @@ async function exportCollection(db, collectionConfig) {
   console.log(`Exporting ${collectionConfig.name} data...`);
   const collection = db.collection(collectionConfig.name);
   const data = await collection.find(collectionConfig.query).toArray();
-  
+
+  let outputData = data;
+
+  // Convert geo-indicators to GeoJSON FeatureCollection format
+  if (collectionConfig.filename.endsWith('.geojson')) {
+    const features = data
+      .filter(d => !d.type?.includes('metadata'))
+      .map(d => ({
+        type: 'Feature',
+        properties: {
+          _id: d._id,
+          country: d.country,
+          region: d.region,
+          n_submissions: d.n_submissions,
+          n_fishers: d.n_fishers,
+          trip_duration: d.trip_duration,
+          mean_catch_kg: d.mean_catch_kg,
+          mean_cpue: d.mean_cpue,
+          mean_rpue: d.mean_rpue,
+          mean_price_kg: d.mean_price_kg
+        },
+        geometry: d.geometry
+      }));
+
+    outputData = {
+      type: 'FeatureCollection',
+      features
+    };
+  }
+
   // Write the data file
   fs.writeFileSync(
     path.join(DATA_DIR, collectionConfig.filename),
-    JSON.stringify(data, null, 2)
+    JSON.stringify(outputData, null, 2)
   );
   console.log(`Exported ${data.length} records from ${collectionConfig.name}`);
   return data.length;

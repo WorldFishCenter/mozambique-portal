@@ -1,6 +1,24 @@
-# mozambique-portal (Development Version)
+# mozambique-portal 1.3.0
 
 ## New Features
+
+### Interactive Map Control Panel
+- **Geographic Indicators Panel**: New control panel for the map visualization
+  - Dropdown selector to choose between 7 different metrics (Submissions, Fishers, CPUE, RPUE, Trip Duration, Mean Catch, Price per kg)
+  - Dynamic metric descriptions that update based on selection
+  - YlGnBu color scale legend showing value ranges
+  - Glass-morphism design matching Tabler styling
+  - Show/hide toggle for minimalist viewing experience
+- **Dynamic Map Colors**: Map polygons now update colors based on selected metric
+  - 6-step YlGnBu (Yellow-Green-Blue) color palette for clear visual distinction
+  - Normalized color mapping based on metric-specific maximum values
+  - Interactive tooltips displaying region name and selected metric value
+- **Enhanced GeoJSON Data**:
+  - New geo-indicators.geojson file with comprehensive regional statistics
+  - 36,393 total submissions across Mocímboa (17,540) and Palma (18,853) regions
+  - Complete polygon geometries with aggregated fishing metrics
+---
+# mozambique-portal 1.2.0
 
 ### Interactive Help System
 - **InfoButton Component**: New reusable component providing contextual help for charts and tables
@@ -36,7 +54,7 @@
 ### User Interface
 - **Better Visual Hierarchy**: Info buttons positioned consistently in card headers
 - **Accessibility**: Added aria-labels to info button for screen reader support
-- **Professional Tooltips**: Custom React-based tooltips replace native browser tooltips for instant response
+- **Professional Tooltips**: Custom React-based tooltips replace native browser 
 
 ## Bug Fixes
 
@@ -44,6 +62,7 @@
 - Fixed dark mode color contrast issues in Taxa Proportions chart
 - Fixed stroke colors not adapting to theme in Taxa Length boxplot chart
 - Fixed tooltip styling inconsistency between light and dark themes
+
 
 ### Dependencies
 - Updated TypeScript definitions for Bootstrap 5 popover functionality
@@ -53,11 +72,6 @@
 ### New Components
 - `src/components/common/InfoButton.jsx`: Reusable info button with custom tooltip
 - `src/types/bootstrap.d.ts`: TypeScript definitions for Bootstrap components
-
-### Modified Files
-- Enhanced theme prop usage across TaxaProportionsChart and TaxaLengthChart
-- Improved TimeSeriesChart date formatting with multi-line year labels
-- Added InfoButton imports to Catch, Revenue, Home, and Composition pages
 
 ---
 

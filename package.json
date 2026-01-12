@@ -17,16 +17,24 @@
     "ajv": "8.12.0",
     "ajv-keywords": "5.1.0",
     "apexcharts": "3.45.2",
+    "aws-sdk": "^2.1693.0",
+    "axios": "^1.13.2",
+    "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "deck.gl": "8.9.32",
     "express": "^4.21.2",
+    "express-rate-limit": "^8.2.1",
+    "express-validator": "^7.3.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
     "mapbox-gl": "2.15.0",
     "mongodb": "^6.13.0",
     "react": "18.2.0",
     "react-apexcharts": "1.4.1",
     "react-dom": "18.2.0",
     "react-map-gl": "7.1.7",
-    "react-router-dom": "6.22.1"
+    "react-router-dom": "6.22.1",
+    "validator": "^13.15.26"
   },
   "resolutions": {
     "ajv": "8.12.0",
@@ -38,6 +46,9 @@
     "dev": "concurrently -n frontend,backend \"VITE_API_PORT=3001 npm run start\" \"npm run start-api\"",
     "build": "vite build",
     "preview": "vite preview",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "clean": "rm -rf node_modules build dist .vite && cd api && rm -rf node_modules && cd ..",
     "format": "prettier --write \"src/**/*.{js,jsx,json,css,scss,md}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
@@ -47,6 +58,23 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/__tests__/**/*.js",
+      "**/?(*.)+(spec|test).js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "api/**/*.js",
+      "!src/index.js",
+      "!src/reportWebVitals.js",
+      "!**/node_modules/**"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom"
     ]
   },
   "browserslist": {
@@ -63,6 +91,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/jest": "^30.0.0",
     "@vitejs/plugin-react": "^4.2.1",
     "concurrently": "^8.2.2",
     "dotenv": "^16.4.7",
@@ -71,6 +100,9 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "fast-check": "^4.5.3",
+    "jest": "^30.2.0",
+    "mongodb-memory-server": "^11.0.1",
     "nodemon": "^3.0.3",
     "prettier": "^3.2.5",
     "vite": "^5.1.4",

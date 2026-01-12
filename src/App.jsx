@@ -8,6 +8,14 @@ import About from './components/pages/About';
 import Composition from './components/pages/Composition';
 import ErrorBoundary from './components/ErrorBoundary';
 import { useTheme } from './hooks/useTheme';
+import { 
+  AuthProvider, 
+  ProtectedRoute, 
+  LoginPage, 
+  RegisterPage, 
+  ForgotPasswordPage, 
+  ResetPasswordPage 
+} from './auth';
 import './styles/charts.css';
 
 function App() {
@@ -16,30 +24,76 @@ function App() {
   const [currency, setCurrency] = useState('MZN');
 
   return (
-    <Layout
-      theme={theme}
-      toggleTheme={toggleTheme}
-      selectedLandingSite={selectedLandingSite}
-      setSelectedLandingSite={setSelectedLandingSite}
-      currency={currency}
-      setCurrency={setCurrency}
-    >
+    <AuthProvider>
       <ErrorBoundary>
         <Routes>
-          <Route path="/" element={<Home theme={theme} district={selectedLandingSite} />} />
-          <Route
-            path="/catch"
-            element={<Catch theme={theme} landingSite={selectedLandingSite} />}
+          {/* Public authentication routes */}
+          <Route 
+            path="/login" 
+            element={
+              <ProtectedRoute requireAuth={false}>
+                <LoginPage />
+              </ProtectedRoute>
+            } 
           />
-          <Route
-            path="/revenue"
-            element={<Revenue theme={theme} landingSite={selectedLandingSite} currency={currency} />}
+          <Route 
+            path="/register" 
+            element={
+              <ProtectedRoute requireAuth={false}>
+                <RegisterPage />
+              </ProtectedRoute>
+            } 
           />
-          <Route path="/Composition" element={<Composition />} />
-          <Route path="/about" element={<About />} />
+          <Route 
+            path="/forgot-password" 
+            element={
+              <ProtectedRoute requireAuth={false}>
+                <ForgotPasswordPage />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/reset-password" 
+            element={
+              <ProtectedRoute requireAuth={false}>
+                <ResetPasswordPage />
+              </ProtectedRoute>
+            } 
+          />
+
+          {/* Protected application routes */}
+          <Route 
+            path="/*" 
+            element={
+              <ProtectedRoute requireAuth={true}>
+                <Layout
+                  theme={theme}
+                  toggleTheme={toggleTheme}
+                  selectedLandingSite={selectedLandingSite}
+                  setSelectedLandingSite={setSelectedLandingSite}
+                  currency={currency}
+                  setCurrency={setCurrency}
+                >
+                  <Routes>
+                    <Route path="/" element={<Home theme={theme} district={selectedLandingSite} />} />
+                    <Route
+                      path="/catch"
+                      element={<Catch theme={theme} landingSite={selectedLandingSite} />}
+                    />
+                    <Route
+                      path="/revenue"
+                      element={<Revenue theme={theme} landingSite={selectedLandingSite} currency={currency} />}
+                    />
+                    <Route path="/composition" element={<Composition />} />
+                    <Route path="/about" element={<About />} />
+                  </Routes>
+                </Layout>
+              </ProtectedRoute>
+            } 
+          />
         </Routes>
       </ErrorBoundary>
-    </Layout>
+    </AuthProvider>
   );
 }
 

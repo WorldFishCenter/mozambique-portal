@@ -1,6 +1,7 @@
 const express = require('express');
 const { MongoClient } = require('mongodb');
 const cors = require('cors');
+const createAuthRoutes = require('./auth/routes/authRoutes');
 require('dotenv').config({ path: '../.env' });
 
 // Initialize express app
@@ -85,6 +86,21 @@ app.use((req, res, next) => {
   console.log(`${new Date().toISOString()} - ${req.method} ${req.path}`);
   next();
 });
+
+// Initialize authentication routes
+const initializeAuthRoutes = async () => {
+  try {
+    const db = await connectToDatabase();
+    const authRoutes = createAuthRoutes(db);
+    app.use('/api/auth', authRoutes);
+    console.log('Authentication routes initialized successfully');
+  } catch (error) {
+    console.error('Failed to initialize authentication routes:', error);
+  }
+};
+
+// Initialize auth routes
+initializeAuthRoutes();
 
 // Health check endpoint
 app.get('/api/health', async (req, res) => {

@@ -17,17 +17,35 @@ const TimeSeriesChart = ({
     return testValue.replace(/[\d.,]+\s?/, '').trim();
   }, [formatValue]);
 
+  // Convert datetime data to categories with formatted labels
+  const { categories, seriesData } = useMemo(() => {
+    if (!data?.length) return { categories: [], seriesData: [] };
+
+    const categories = data.map(d => {
+      const date = new Date(d.x);
+      const month = date.toLocaleDateString('en-US', { month: 'short' });
+      const year = date.getFullYear();
+
+      // Store both month and year, will format in the chart formatter
+      if (date.getMonth() === 0) {
+        return { month, year };
+      }
+      return { month };
+    });
+
+    const seriesData = data.map(d => d.y);
+
+    return { categories, seriesData };
+  }, [data]);
+
   // Calculate mean and differences for differenced view
   const { transformedData, mean } = useMemo(() => {
     if (!data?.length || viewMode !== 'differenced') return { transformedData: [], mean: 0 };
     const validValues = data.filter(d => d.y !== null && !isNaN(d.y)).map(d => d.y);
     const mean = validValues.reduce((a, b) => a + b, 0) / validValues.length;
-    
-    const transformedData = data.map(d => ({
-      x: d.x,
-      y: d.y !== null ? Number((d.y - mean).toFixed(2)) : null
-    }));
-    
+
+    const transformedData = data.map(d => d.y !== null ? Number((d.y - mean).toFixed(2)) : null);
+
     return { transformedData, mean: Number(mean.toFixed(2)) };
   }, [data, viewMode]);
 
@@ -69,6 +87,9 @@ const TimeSeriesChart = ({
           horizontal: false,
           borderRadius: 8,
           columnWidth: '60%',
+          distributed: false,
+          rangeBarOverlap: true,
+          rangeBarGroupRows: false,
           colors: viewMode === 'differenced' ? {
             ranges: [
               {
@@ -94,35 +115,42 @@ const TimeSeriesChart = ({
         },
       },
       xaxis: {
-        type: 'datetime',
+        type: 'category',
+        categories: categories,
         labels: {
           style: {
             fontSize: '12px',
+            colors: theme === 'dark' ? '#94a3b8' : '#475569',
           },
-          format: 'MMM yyyy',
-          datetimeUTC: false,
           rotate: 0,
-          trim: true,
-          hideOverlappingLabels: true,
-          offsetY: 0,
-          formatter: function(val, timestamp) {
-            const date = new Date(timestamp);
-            return date.toLocaleDateString('en-US', { 
-              month: 'short', 
-              year: 'numeric' 
-            });
-          }
+          rotateAlways: false,
+          hideOverlappingLabels: false,
+          showDuplicates: false,
+          trim: false,
+          offsetY: 5,
+          formatter: function(value, timestamp, opts) {
+            // Handle object format for January (has year)
+            if (typeof value === 'object' && value !== null) {
+              if (value.year) {
+                // Create multi-line label using array (ApexCharts will handle line breaks)
+                return [value.month, value.year.toString()];
+              }
+              return value.month;
+            }
+            return value;
+          },
         },
         axisBorder: {
-          show: false,
+          show: true,
+          color: theme === 'dark' ? '#334155' : '#cbd5e1',
+          height: 1,
         },
         axisTicks: {
-          show: false,
+          show: true,
+          color: theme === 'dark' ? '#334155' : '#cbd5e1',
+          height: 6,
         },
-        tickAmount: 'dataPoints',
         tickPlacement: 'on',
-        convertedCatToNumeric: false,
-        tickInterval: 'month'
       },
       yaxis: {
         title: {
@@ -169,13 +197,13 @@ const TimeSeriesChart = ({
         strokeDashArray: 4,
         padding: {
           top: 0,
-          right: 0,
-          bottom: 0,
+          right: 20,
+          bottom: 10,
           left: 10,
         },
       },
     }),
-    [chartConfig, theme, viewMode, height, formatValue, mean, unit]
+    [chartConfig, theme, viewMode, height, formatValue, mean, unit, categories]
   );
 
   return (
@@ -184,7 +212,7 @@ const TimeSeriesChart = ({
       options={options}
       series={[{
         name: title,
-        data: viewMode === 'differenced' ? transformedData : data
+        data: viewMode === 'differenced' ? transformedData : seriesData
       }]}
       type="bar"
       height={height}

@@ -1,3 +1,66 @@
+# mozambique-portal (Development Version)
+
+## New Features
+
+### Interactive Help System
+- **InfoButton Component**: New reusable component providing contextual help for charts and tables
+  - Instant-hover tooltips with no delay for better user experience
+  - Semi-transparent design with backdrop blur effect (opacity: 0.9)
+  - Full theme awareness supporting both light and dark modes
+  - Custom positioning options (top, bottom, left, right, auto)
+  - Consistent Tabler styling using card components
+- **Chart Documentation**: Added info buttons to all chart and table headers
+  - CPUE time series explanation in Catch dashboard
+  - Catch rate heatmap explanation in Catch dashboard
+  - RPUE time series explanation in Revenue dashboard
+  - Revenue heatmap explanation in Revenue dashboard
+  - Landing Sites Statistics table explanation in Home dashboard
+  - Dynamic Fish Taxa Analysis explanation that changes based on active tab (Composition/Length)
+
+## Improvements
+
+### Theme Support
+- **Enhanced Dark Mode**: Improved theme awareness across all composition charts
+  - TaxaProportionsChart now uses theme-aware color palettes (30 colors per theme)
+  - TaxaLengthChart stroke colors adapt to current theme
+  - Tooltip styling automatically switches between light and dark themes using ApexCharts built-in feature
+  - Color palettes optimized for contrast: brighter colors in dark mode, deeper colors in light mode
+  - Eliminated hardcoded colors that were invisible in dark mode (e.g., #1e293b)
+
+### Data Visualization
+- **Time Series Charts**: Enhanced date axis formatting
+  - Improved x-axis label consistency with multi-line year display
+  - Better handling of month-year formatting for clearer temporal navigation
+  - January labels now display both month and year below the month name
+
+### User Interface
+- **Better Visual Hierarchy**: Info buttons positioned consistently in card headers
+- **Accessibility**: Added aria-labels to info button for screen reader support
+- **Professional Tooltips**: Custom React-based tooltips replace native browser tooltips for instant response
+
+## Bug Fixes
+
+### Visual
+- Fixed dark mode color contrast issues in Taxa Proportions chart
+- Fixed stroke colors not adapting to theme in Taxa Length boxplot chart
+- Fixed tooltip styling inconsistency between light and dark themes
+
+### Dependencies
+- Updated TypeScript definitions for Bootstrap 5 popover functionality
+
+## Technical
+
+### New Components
+- `src/components/common/InfoButton.jsx`: Reusable info button with custom tooltip
+- `src/types/bootstrap.d.ts`: TypeScript definitions for Bootstrap components
+
+### Modified Files
+- Enhanced theme prop usage across TaxaProportionsChart and TaxaLengthChart
+- Improved TimeSeriesChart date formatting with multi-line year labels
+- Added InfoButton imports to Catch, Revenue, Home, and Composition pages
+
+---
+
 # mozambique-portal 1.0.0
 
 ## New Features

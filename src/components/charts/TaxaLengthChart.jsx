@@ -105,15 +105,16 @@ const TaxaLengthChart = ({ data, theme }) => {
       }
     },
     stroke: {
-      colors: ['#6c757d']
+      colors: [theme === 'dark' ? '#94a3b8' : '#6c757d']
     },
     tooltip: {
+      theme: theme === 'dark' ? 'dark' : 'light',
       shared: false,
       intersect: true,
       custom: function({ seriesIndex, dataPointIndex, w }) {
         const data = w.config.series[seriesIndex].data[dataPointIndex];
         const taxonInfo = processedData[dataPointIndex];
-        
+
         return `
           <div class="apexcharts-tooltip-box">
             <span><b>${data.x}</b> (n=${taxonInfo.count})</span><br/>

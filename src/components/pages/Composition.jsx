@@ -3,6 +3,7 @@ import { useTheme } from '../../hooks/useTheme';
 import TaxaLengthChart from '../charts/TaxaLengthChart';
 import TaxaProportionsChart from '../charts/TaxaProportionsChart';
 import { getTaxaLength, getTaxaSites } from '../../services/dataService';
+import InfoButton from '../common/InfoButton';
 
 /**
  * Component that displays taxa length distribution and catch composition
@@ -28,8 +29,8 @@ const TaxaLength = () => {
       </div>
       <div className="page-body">
         <div className="card">
-          <div className="card-header">
-            <ul className="nav nav-tabs card-header-tabs">
+          <div className="card-header d-flex align-items-center justify-content-between">
+            <ul className="nav nav-tabs card-header-tabs mb-0">
               <li className="nav-item">
                 <a 
                   href="#" 
@@ -55,6 +56,15 @@ const TaxaLength = () => {
                 </a>
               </li>
             </ul>
+            <InfoButton
+              title="Fish Taxa Analysis"
+              content={
+                activeTab === 'composition'
+                  ? "The Catch Composition chart shows the proportion of different fish taxa (species groups) caught across all landing sites. This helps understand the diversity and composition of the fishery."
+                  : "The Length Distribution chart displays the size distribution of fish catches for different taxa. This information is crucial for understanding population structure and ensuring sustainable harvest of mature fish."
+              }
+              placement="bottom"
+            />
           </div>
           <div className="card-body">
             <div className="tab-content">

@@ -29,11 +29,11 @@ const TaxaLength = () => {
       </div>
       <div className="page-body">
         <div className="card">
-          <div className="card-header d-flex align-items-center justify-content-between">
-            <ul className="nav nav-tabs card-header-tabs mb-0">
+          <div className="card-header">
+            <ul className="nav nav-tabs card-header-tabs">
               <li className="nav-item">
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   className={`nav-link ${activeTab === 'composition' ? 'active' : ''}`}
                   onClick={(e) => {
                     e.preventDefault();
@@ -44,8 +44,8 @@ const TaxaLength = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   className={`nav-link ${activeTab === 'length' ? 'active' : ''}`}
                   onClick={(e) => {
                     e.preventDefault();
@@ -56,17 +56,19 @@ const TaxaLength = () => {
                 </a>
               </li>
             </ul>
-            <InfoButton
-              title="Fish Taxa Analysis"
-              content={
-                activeTab === 'composition'
-                  ? "The Catch Composition chart shows the proportion of different fish taxa (species groups) caught across all landing sites. This helps understand the diversity and composition of the fishery."
-                  : "The Length Distribution chart displays the size distribution of fish catches for different taxa. This information is crucial for understanding population structure and ensuring sustainable harvest of mature fish."
-              }
-              placement="bottom"
-            />
+            <div className="card-actions">
+              <InfoButton
+                title="Fish Taxa Analysis"
+                content={
+                  activeTab === 'composition'
+                    ? "The Catch Composition chart shows the proportion of different fish taxa (species groups) caught across all landing sites."
+                    : "The Length Distribution chart displays the ranked size distribution of fish catches for different taxa."
+                }
+                placement="bottom"
+              />
+            </div>
           </div>
-          <div className="card-body">
+          <div className="card-body card-body-scrollable" style={{ maxHeight: '600px' }}>
             <div className="tab-content">
               <div className={`tab-pane ${activeTab === 'composition' ? 'active show' : ''}`}>
                 {activeTab === 'composition' && (

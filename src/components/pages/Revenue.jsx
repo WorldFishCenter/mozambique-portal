@@ -234,7 +234,7 @@ const Revenue = ({ theme, landingSite, currency }) => {
               <h3 className="card-title mb-0">Revenue per unit effort (median)</h3>
               <InfoButton
                 title="Revenue Per Unit Effort (RPUE)"
-                content="This chart shows the median revenue earned per fisher per hour over time. The time series displays monthly economic trends, while the seasonal chart shows median values by month across all years. Use the 'Differenced' view to see deviations from the mean value, helping identify periods of higher or lower economic returns."
+                content="This chart shows the median revenue per fisher per hour over time. The time series displays monthly trends, while the radar chart shows median values by month across all years. Use the 'Differenced' view to see deviations from the mean value, with green bars indicating above-average values and red bars indicating below-average values across the time series."
                 placement="bottom"
               />
             </div>
@@ -322,7 +322,7 @@ const Revenue = ({ theme, landingSite, currency }) => {
               <h3 className="card-title mb-0">Revenue by Habitat and Gear Type <span className="text-muted fs-4">MZN/fisher/hour</span></h3>
               <InfoButton
                 title="Revenue Heatmap"
-                content="This heatmap visualizes revenue across different combinations of fishing gear types and habitat types. Darker colors indicate higher revenue per unit effort. This helps identify which gear-habitat combinations provide the best economic returns for fisheries."
+                content="This heatmap visualizes revenue rates across different combinations of habitats and fishing gears. Darker colors indicate higher revenue rates. This helps identify which gear-habitat combinations are most productive for fisheries."
                 placement="bottom"
               />
             </div>

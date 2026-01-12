@@ -146,7 +146,7 @@ const Home = ({ theme, district }) => {
               <h3 className="card-title mb-0">Landing Sites Statistics</h3>
               <InfoButton
                 title="Landing Sites Statistics"
-                content="This table displays key metrics for each landing site including trip duration, catch per unit effort (CPUE), price per kilogram, mean catch, and mean catch price. Click column headers to sort. Color intensity indicates relative values, with darker colors representing higher values within each metric."
+                content="This table displays key metrics for each landing site including median trip duration, median catch per unit effort (CPUE), median price per kilogram, median catch, and median catch price. Click column headers to sort. Color intensity indicates relative values, with darker colors representing higher values within each metric."
                 placement="bottom"
               />
             </div>

@@ -95,7 +95,7 @@ const TaxaLengthChart = ({ data, theme }) => {
     plotOptions: {
       bar: {
         horizontal: true,
-        barHeight: '70%'
+        barHeight: '50%'
       },
       boxPlot: {
         colors: {

@@ -145,6 +145,8 @@ const TaxaProportionsChart = ({ data, theme }) => {
     },
     tooltip: {
       theme: theme === 'dark' ? 'dark' : 'light',
+      shared: false,
+      intersect: true,
       onDatasetHover: {
         highlightDataSeries: true,
       },
@@ -158,7 +160,7 @@ const TaxaProportionsChart = ({ data, theme }) => {
       opacity: 1
     },
     legend: {
-      position: 'bottom',
+      position: 'top',
       horizontalAlign: 'left',
       labels: {
         colors: theme === 'dark' ? '#cbd5e1' : '#475569'

@@ -171,7 +171,7 @@ const Catch = ({ theme, landingSite }) => {
               <h3 className="card-title mb-0">Catch per unit effort (median)</h3>
               <InfoButton
                 title="Catch Per Unit Effort (CPUE)"
-                content="This chart shows the median catch per fisher per hour over time. The time series displays monthly trends, while the seasonal chart shows median values by month across all years. Use the 'Differenced' view to see deviations from the mean value, with green bars indicating above-average catches and red bars indicating below-average catches."
+                content="This chart shows the median catch per fisher per hour over time. The time series displays monthly trends, while the radar chart shows median values by month across all years. Use the 'Differenced' view to see deviations from the mean value, with green bars indicating above-average values and red bars indicating below-average values across the time series."
                 placement="bottom"
               />
             </div>
@@ -254,7 +254,7 @@ const Catch = ({ theme, landingSite }) => {
               <h3 className="card-title mb-0">Catch Rate by Habitat and Gear Type <span className="text-muted fs-4">kg/fisher/hour</span></h3>
               <InfoButton
                 title="Catch Rate Heatmap"
-                content="This heatmap visualizes catch rates across different combinations of fishing gear types and habitat types. Darker colors indicate higher catch rates. This helps identify which gear-habitat combinations are most productive for fisheries."
+                content="This heatmap visualizes catch rates across different combinations of habitats and fishing gears. Darker colors indicate higher catch rates. This helps identify which gear-habitat combinations are most productive for fisheries."
                 placement="bottom"
               />
             </div>

@@ -1,3 +1,80 @@
+# mozambique-portal 1.3.0
+
+## New Features
+
+### Interactive Map Control Panel
+- **Geographic Indicators Panel**: New control panel for the map visualization
+  - Dropdown selector to choose between 7 different metrics (Submissions, Fishers, CPUE, RPUE, Trip Duration, Mean Catch, Price per kg)
+  - Dynamic metric descriptions that update based on selection
+  - YlGnBu color scale legend showing value ranges
+  - Glass-morphism design matching Tabler styling
+  - Show/hide toggle for minimalist viewing experience
+- **Dynamic Map Colors**: Map polygons now update colors based on selected metric
+  - 6-step YlGnBu (Yellow-Green-Blue) color palette for clear visual distinction
+  - Normalized color mapping based on metric-specific maximum values
+  - Interactive tooltips displaying region name and selected metric value
+- **Enhanced GeoJSON Data**:
+  - New geo-indicators.geojson file with comprehensive regional statistics
+  - 36,393 total submissions across Mocímboa (17,540) and Palma (18,853) regions
+  - Complete polygon geometries with aggregated fishing metrics
+---
+# mozambique-portal 1.2.0
+
+### Interactive Help System
+- **InfoButton Component**: New reusable component providing contextual help for charts and tables
+  - Instant-hover tooltips with no delay for better user experience
+  - Semi-transparent design with backdrop blur effect (opacity: 0.9)
+  - Full theme awareness supporting both light and dark modes
+  - Custom positioning options (top, bottom, left, right, auto)
+  - Consistent Tabler styling using card components
+- **Chart Documentation**: Added info buttons to all chart and table headers
+  - CPUE time series explanation in Catch dashboard
+  - Catch rate heatmap explanation in Catch dashboard
+  - RPUE time series explanation in Revenue dashboard
+  - Revenue heatmap explanation in Revenue dashboard
+  - Landing Sites Statistics table explanation in Home dashboard
+  - Dynamic Fish Taxa Analysis explanation that changes based on active tab (Composition/Length)
+
+## Improvements
+
+### Theme Support
+- **Enhanced Dark Mode**: Improved theme awareness across all composition charts
+  - TaxaProportionsChart now uses theme-aware color palettes (30 colors per theme)
+  - TaxaLengthChart stroke colors adapt to current theme
+  - Tooltip styling automatically switches between light and dark themes using ApexCharts built-in feature
+  - Color palettes optimized for contrast: brighter colors in dark mode, deeper colors in light mode
+  - Eliminated hardcoded colors that were invisible in dark mode (e.g., #1e293b)
+
+### Data Visualization
+- **Time Series Charts**: Enhanced date axis formatting
+  - Improved x-axis label consistency with multi-line year display
+  - Better handling of month-year formatting for clearer temporal navigation
+  - January labels now display both month and year below the month name
+
+### User Interface
+- **Better Visual Hierarchy**: Info buttons positioned consistently in card headers
+- **Accessibility**: Added aria-labels to info button for screen reader support
+- **Professional Tooltips**: Custom React-based tooltips replace native browser 
+
+## Bug Fixes
+
+### Visual
+- Fixed dark mode color contrast issues in Taxa Proportions chart
+- Fixed stroke colors not adapting to theme in Taxa Length boxplot chart
+- Fixed tooltip styling inconsistency between light and dark themes
+
+
+### Dependencies
+- Updated TypeScript definitions for Bootstrap 5 popover functionality
+
+## Technical
+
+### New Components
+- `src/components/common/InfoButton.jsx`: Reusable info button with custom tooltip
+- `src/types/bootstrap.d.ts`: TypeScript definitions for Bootstrap components
+
+---
+
 # mozambique-portal 1.0.0
 
 ## New Features

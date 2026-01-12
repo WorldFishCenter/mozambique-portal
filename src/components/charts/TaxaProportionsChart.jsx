@@ -87,21 +87,27 @@ const TaxaProportionsChart = ({ data, theme }) => {
     },
     colors: (() => {
       // Generate colors dynamically based on number of taxa
-      // Using a color palette that can be extended
-      const baseColors = [
-        '#1e293b', '#3b82f6', '#60a5fa', '#93c5fd', '#7dd3fc',
-        '#67e8f9', '#a7f3d0', '#86efac', '#fef08a', '#fcd34d',
-        '#fdba74', '#fb923c', '#f87171', '#b91c1c', '#7f1d1d',
-        '#8b5cf6', '#a78bfa', '#c4b5fd', '#ddd6fe', '#f3e8ff',
-        '#ec4899', '#f472b6', '#f9a8d4', '#fce7f3', '#fdf2f8',
-        '#06b6d4', '#22d3ee', '#67e8f9', '#a5f3fc', '#cffafe',
-        '#10b981', '#34d399', '#6ee7b7', '#a7f3d0', '#d1fae5',
-        '#f59e0b', '#fbbf24', '#fcd34d', '#fde68a', '#fef3c7'
+      // Using theme-aware vibrant colors with good contrast in both light and dark modes
+      const baseColors = theme === 'dark' ? [
+        // Dark mode: brighter, more saturated colors for contrast
+        '#60a5fa', '#34d399', '#fbbf24', '#fb923c', '#f472b6',
+        '#a78bfa', '#22d3ee', '#86efac', '#fcd34d', '#f87171',
+        '#c4b5fd', '#67e8f9', '#fdba74', '#ec4899', '#8b5cf6',
+        '#10b981', '#f59e0b', '#ef4444', '#06b6d4', '#a855f7',
+        '#14b8a6', '#eab308', '#dc2626', '#0891b2', '#9333ea',
+        '#059669', '#ca8a04', '#b91c1c', '#0e7490', '#7c3aed'
+      ] : [
+        // Light mode: deeper, more saturated colors
+        '#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#ec4899',
+        '#8b5cf6', '#06b6d4', '#22c55e', '#eab308', '#dc2626',
+        '#a855f7', '#0891b2', '#ea580c', '#db2777', '#7c3aed',
+        '#059669', '#ca8a04', '#b91c1c', '#0e7490', '#9333ea',
+        '#047857', '#a16207', '#991b1b', '#155e75', '#6b21a8'
       ];
-      
+
       const numTaxa = processedData.categories.length;
       // If we need more colors, cycle through the palette
-      return Array.from({ length: numTaxa }, (_, i) => 
+      return Array.from({ length: numTaxa }, (_, i) =>
         baseColors[i % baseColors.length]
       );
     })(),
@@ -138,6 +144,7 @@ const TaxaProportionsChart = ({ data, theme }) => {
       }
     },
     tooltip: {
+      theme: theme === 'dark' ? 'dark' : 'light',
       onDatasetHover: {
         highlightDataSeries: true,
       },

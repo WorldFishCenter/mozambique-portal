@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import Map from '../charts/Map';
 import sitesStatsData from '../../data/sites-stats.json';
+import InfoButton from '../common/InfoButton';
 import {
   useReactTable,
   getCoreRowModel,
@@ -141,7 +142,14 @@ const Home = ({ theme, district }) => {
       <div className="col-12 mt-3">
         <div className="card">
           <div className="card-header">
-            <h3 className="card-title">Landing Sites Statistics</h3>
+            <div className="d-flex align-items-center">
+              <h3 className="card-title mb-0">Landing Sites Statistics</h3>
+              <InfoButton
+                title="Landing Sites Statistics"
+                content="This table displays key metrics for each landing site including trip duration, catch per unit effort (CPUE), price per kilogram, mean catch, and mean catch price. Click column headers to sort. Color intensity indicates relative values, with darker colors representing higher values within each metric."
+                placement="bottom"
+              />
+            </div>
           </div>
           <div className="card-body">
             <div className="table-responsive">

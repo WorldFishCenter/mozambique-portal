@@ -10,9 +10,8 @@ import {
 import { LANDING_SITES } from '../../constants/landingSites';
 
 const CURRENCY_SYMBOLS = {
-  MT: 'MT',
+  MZN: 'MZN',
   USD: 'USD',
-  EUR: '€',
 };
 
 const Navigation = ({ selectedLandingSite, setSelectedLandingSite, currency, setCurrency }) => {

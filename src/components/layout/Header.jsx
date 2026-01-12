@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { IconSun, IconMoon } from '@tabler/icons-react';
+import { getVersionString } from '../../utils/version';
 
 const Header = ({ theme, toggleTheme }) => {
   return (
@@ -25,8 +26,10 @@ const Header = ({ theme, toggleTheme }) => {
               <div className="text-muted">
                 <small>Management Dashboard</small>
                 <br />
-                <small>Mozambique (0.0.0.9000 - beta)</small>
-              </div>
+                <small>
+                  Mozambique - Cabo Delgado ({getVersionString()})
+                </small>              
+                </div>
             </div>
           </div>
           <div className="nav-item">

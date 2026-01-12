@@ -13,7 +13,7 @@ import './styles/charts.css';
 function App() {
   const { theme, toggleTheme } = useTheme();
   const [selectedLandingSite, setSelectedLandingSite] = useState('all');
-  const [currency, setCurrency] = useState('MT');
+  const [currency, setCurrency] = useState('MZN');
 
   return (
     <Layout

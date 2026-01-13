@@ -20,7 +20,7 @@ if (!MONGODB_URI) {
   process.exit(1);
 }
 
-const DB_NAME = 'mozambique-dev';
+const DB_NAME = 'mozambique-prod';
 
 // Define collections to export
 const COLLECTIONS_TO_EXPORT = [
@@ -48,11 +48,6 @@ const COLLECTIONS_TO_EXPORT = [
     name: 'gear_habitat_metrics',
     query: { type: { $ne: "metadata" } },  // Exclude metadata documents
     filename: 'gear-habitat-metrics.json'
-  },
-  {
-    name: 'surveys-gps',
-    query: {},
-    filename: 'surveys-gps.json'
   },
   {
     name: 'geo-indicators',

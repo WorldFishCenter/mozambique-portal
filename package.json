@@ -3,7 +3,6 @@
   "version": "1.3.0",
   "private": true,
   "dependencies": {
-    "@deck.gl/aggregation-layers": "8.9.32",
     "@deck.gl/core": "8.9.32",
     "@deck.gl/geo-layers": "8.9.32",
     "@deck.gl/layers": "8.9.32",
@@ -11,15 +10,8 @@
     "@tabler/core": "^1.4.0",
     "@tabler/icons-react": "^3.36.1",
     "@tanstack/react-table": "^8.21.2",
-    "@testing-library/jest-dom": "5.17.0",
-    "@testing-library/react": "13.4.0",
-    "@testing-library/user-event": "13.5.0",
-    "ajv": "8.12.0",
-    "ajv-keywords": "5.1.0",
     "apexcharts": "3.45.2",
-    "cors": "^2.8.5",
     "deck.gl": "8.9.32",
-    "express": "^4.21.2",
     "mapbox-gl": "2.15.0",
     "mongodb": "^6.13.0",
     "react": "18.2.0",
@@ -28,17 +20,11 @@
     "react-map-gl": "7.1.7",
     "react-router-dom": "6.22.1"
   },
-  "resolutions": {
-    "ajv": "8.12.0",
-    "ajv-keywords": "5.1.0"
-  },
   "scripts": {
     "start": "vite --port 3000",
-    "start-api": "cd api && PORT=3001 nodemon server.js",
-    "dev": "concurrently -n frontend,backend \"VITE_API_PORT=3001 npm run start\" \"npm run start-api\"",
     "build": "vite build",
     "preview": "vite preview",
-    "clean": "rm -rf node_modules build dist .vite && cd api && rm -rf node_modules && cd ..",
+    "clean": "rm -rf node_modules build dist .vite",
     "format": "prettier --write \"src/**/*.{js,jsx,json,css,scss,md}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix"
@@ -64,16 +50,13 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@vitejs/plugin-react": "^4.2.1",
-    "concurrently": "^8.2.2",
     "dotenv": "^16.4.7",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "nodemon": "^3.0.3",
     "prettier": "^3.2.5",
-    "vite": "^5.1.4",
-    "worker-loader": "^3.0.8"
+    "vite": "^5.1.4"
   }
 }

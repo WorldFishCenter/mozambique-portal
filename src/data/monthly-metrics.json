@@ -1,6 +1,6 @@
 [
   {
-    "_id": "6965e96ae2a073648e00abb3",
+    "_id": "696651af37df98ee6006c0a3",
     "district": "Mocimboa",
     "date": "2024-10-01T00:00:00.000Z",
     "n": 4,
@@ -8,21 +8,21 @@
     "value": 5.5
   },
   {
-    "_id": "6965e96ae2a073648e00abb4",
+    "_id": "696651af37df98ee6006c0a4",
     "district": "Mocimboa",
     "date": "2024-10-01T00:00:00.000Z",
     "n": 4,
     "metric": "trip_duration"
   },
   {
-    "_id": "6965e96ae2a073648e00abb5",
+    "_id": "696651af37df98ee6006c0a5",
     "district": "Mocimboa",
     "date": "2024-10-01T00:00:00.000Z",
     "n": 4,
     "metric": "median_cpue"
   },
   {
-    "_id": "6965e96ae2a073648e00abb6",
+    "_id": "696651af37df98ee6006c0a6",
     "district": "Mocimboa",
     "date": "2024-10-01T00:00:00.000Z",
     "n": 4,
@@ -30,19 +30,19 @@
     "value": 100
   },
   {
-    "_id": "6965e96ae2a073648e00abb7",
+    "_id": "696651af37df98ee6006c0a7",
     "district": "Mocimboa",
     "date": "2024-10-01T00:00:00.000Z",
     "n": 4,
     "metric": "median_price_kg"
   },
   {
-    "_id": "6965e96ae2a073648e00abb8",
+    "_id": "696651af37df98ee6006c0a8",
     "district": "Mocimboa",
     "date": "2024-11-01T00:00:00.000Z"
   },
   {
-    "_id": "6965e96ae2a073648e00abb9",
+    "_id": "696651af37df98ee6006c0a9",
     "district": "Mocimboa",
     "date": "2024-12-01T00:00:00.000Z",
     "n": 1,
@@ -50,7 +50,7 @@
     "value": 1
   },
   {
-    "_id": "6965e96ae2a073648e00abba",
+    "_id": "696651af37df98ee6006c0aa",
     "district": "Mocimboa",
     "date": "2024-12-01T00:00:00.000Z",
     "n": 1,
@@ -58,7 +58,7 @@
     "value": 6
   },
   {
-    "_id": "6965e96ae2a073648e00abbb",
+    "_id": "696651af37df98ee6006c0ab",
     "district": "Mocimboa",
     "date": "2024-12-01T00:00:00.000Z",
     "n": 1,
@@ -66,7 +66,7 @@
     "value": 0
   },
   {
-    "_id": "6965e96ae2a073648e00abbc",
+    "_id": "696651af37df98ee6006c0ac",
     "district": "Mocimboa",
     "date": "2024-12-01T00:00:00.000Z",
     "n": 1,
@@ -74,565 +74,565 @@
     "value": 0
   },
   {
-    "_id": "6965e96ae2a073648e00abbd",
+    "_id": "696651af37df98ee6006c0ad",
     "district": "Mocimboa",
     "date": "2024-12-01T00:00:00.000Z",
     "n": 1,
     "metric": "median_price_kg"
   },
   {
-    "_id": "6965e96ae2a073648e00abbe",
+    "_id": "696651af37df98ee6006c0ae",
     "district": "Mocimboa",
     "date": "2025-01-01T00:00:00.000Z",
-    "n": 92,
+    "n": 31,
     "metric": "n_fishers",
-    "value": 3.119565217
+    "value": 1.516129032
   },
   {
-    "_id": "6965e96ae2a073648e00abbf",
+    "_id": "696651af37df98ee6006c0af",
     "district": "Mocimboa",
     "date": "2025-01-01T00:00:00.000Z",
-    "n": 92,
+    "n": 31,
     "metric": "trip_duration"
   },
   {
-    "_id": "6965e96ae2a073648e00abc0",
+    "_id": "696651af37df98ee6006c0b0",
     "district": "Mocimboa",
     "date": "2025-01-01T00:00:00.000Z",
-    "n": 92,
+    "n": 31,
     "metric": "median_cpue",
-    "value": 0.035200566
+    "value": 0.060775391
   },
   {
-    "_id": "6965e96ae2a073648e00abc1",
+    "_id": "696651af37df98ee6006c0b1",
     "district": "Mocimboa",
     "date": "2025-01-01T00:00:00.000Z",
-    "n": 92,
+    "n": 31,
     "metric": "median_rpue",
-    "value": 22.619047619
+    "value": 25
   },
   {
-    "_id": "6965e96ae2a073648e00abc2",
+    "_id": "696651af37df98ee6006c0b2",
     "district": "Mocimboa",
     "date": "2025-01-01T00:00:00.000Z",
-    "n": 92,
+    "n": 31,
     "metric": "median_price_kg",
-    "value": 489.790388739
+    "value": 136.41401654
   },
   {
-    "_id": "6965e96ae2a073648e00abc3",
+    "_id": "696651af37df98ee6006c0b3",
     "district": "Mocimboa",
     "date": "2025-02-01T00:00:00.000Z",
-    "n": 1778,
+    "n": 1349,
     "metric": "n_fishers",
-    "value": 5.124296963
+    "value": 4.890289103
   },
   {
-    "_id": "6965e96ae2a073648e00abc4",
+    "_id": "696651af37df98ee6006c0b4",
     "district": "Mocimboa",
     "date": "2025-02-01T00:00:00.000Z",
-    "n": 1778,
+    "n": 1349,
     "metric": "trip_duration"
   },
   {
-    "_id": "6965e96ae2a073648e00abc5",
+    "_id": "696651af37df98ee6006c0b5",
     "district": "Mocimboa",
     "date": "2025-02-01T00:00:00.000Z",
-    "n": 1778,
+    "n": 1349,
     "metric": "median_cpue",
-    "value": 1.254545455
+    "value": 0.977882756
   },
   {
-    "_id": "6965e96ae2a073648e00abc6",
+    "_id": "696651af37df98ee6006c0b6",
     "district": "Mocimboa",
     "date": "2025-02-01T00:00:00.000Z",
-    "n": 1778,
+    "n": 1349,
     "metric": "median_rpue",
     "value": 83.333333333
   },
   {
-    "_id": "6965e96ae2a073648e00abc7",
+    "_id": "696651af37df98ee6006c0b7",
     "district": "Mocimboa",
     "date": "2025-02-01T00:00:00.000Z",
-    "n": 1778,
+    "n": 1349,
     "metric": "median_price_kg",
-    "value": 78.799970564
+    "value": 94.017565319
   },
   {
-    "_id": "6965e96ae2a073648e00abc8",
+    "_id": "696651af37df98ee6006c0b8",
     "district": "Mocimboa",
     "date": "2025-03-01T00:00:00.000Z",
-    "n": 2075,
+    "n": 1755,
     "metric": "n_fishers",
-    "value": 4.267951807
+    "value": 4.170940171
   },
   {
-    "_id": "6965e96ae2a073648e00abc9",
+    "_id": "696651af37df98ee6006c0b9",
     "district": "Mocimboa",
     "date": "2025-03-01T00:00:00.000Z",
-    "n": 2075,
+    "n": 1755,
     "metric": "trip_duration"
   },
   {
-    "_id": "6965e96ae2a073648e00abca",
+    "_id": "696651af37df98ee6006c0ba",
     "district": "Mocimboa",
     "date": "2025-03-01T00:00:00.000Z",
-    "n": 2075,
+    "n": 1755,
     "metric": "median_cpue",
-    "value": 1.105263158
+    "value": 0.997939954
   },
   {
-    "_id": "6965e96ae2a073648e00abcb",
+    "_id": "696651af37df98ee6006c0bb",
     "district": "Mocimboa",
     "date": "2025-03-01T00:00:00.000Z",
-    "n": 2075,
-    "metric": "median_rpue",
-    "value": 76
-  },
-  {
-    "_id": "6965e96ae2a073648e00abcc",
-    "district": "Mocimboa",
-    "date": "2025-03-01T00:00:00.000Z",
-    "n": 2075,
-    "metric": "median_price_kg",
-    "value": 83.333333333
-  },
-  {
-    "_id": "6965e96ae2a073648e00abcd",
-    "district": "Mocimboa",
-    "date": "2025-04-01T00:00:00.000Z",
-    "n": 1567,
-    "metric": "n_fishers",
-    "value": 4.222718571
-  },
-  {
-    "_id": "6965e96ae2a073648e00abce",
-    "district": "Mocimboa",
-    "date": "2025-04-01T00:00:00.000Z",
-    "n": 1567,
-    "metric": "trip_duration"
-  },
-  {
-    "_id": "6965e96ae2a073648e00abcf",
-    "district": "Mocimboa",
-    "date": "2025-04-01T00:00:00.000Z",
-    "n": 1567,
-    "metric": "median_cpue",
-    "value": 1
-  },
-  {
-    "_id": "6965e96ae2a073648e00abd0",
-    "district": "Mocimboa",
-    "date": "2025-04-01T00:00:00.000Z",
-    "n": 1567,
+    "n": 1755,
     "metric": "median_rpue",
     "value": 70
   },
   {
-    "_id": "6965e96ae2a073648e00abd1",
+    "_id": "696651af37df98ee6006c0bc",
+    "district": "Mocimboa",
+    "date": "2025-03-01T00:00:00.000Z",
+    "n": 1755,
+    "metric": "median_price_kg",
+    "value": 92.391989617
+  },
+  {
+    "_id": "696651af37df98ee6006c0bd",
     "district": "Mocimboa",
     "date": "2025-04-01T00:00:00.000Z",
-    "n": 1567,
-    "metric": "median_price_kg",
-    "value": 84.327510516
-  },
-  {
-    "_id": "6965e96ae2a073648e00abd2",
-    "district": "Mocimboa",
-    "date": "2025-05-01T00:00:00.000Z",
-    "n": 2041,
+    "n": 1430,
     "metric": "n_fishers",
-    "value": 4.01910828
+    "value": 4.243356643
   },
   {
-    "_id": "6965e96ae2a073648e00abd3",
+    "_id": "696651af37df98ee6006c0be",
     "district": "Mocimboa",
-    "date": "2025-05-01T00:00:00.000Z",
-    "n": 2041,
+    "date": "2025-04-01T00:00:00.000Z",
+    "n": 1430,
     "metric": "trip_duration"
   },
   {
-    "_id": "6965e96ae2a073648e00abd4",
+    "_id": "696651af37df98ee6006c0bf",
     "district": "Mocimboa",
-    "date": "2025-05-01T00:00:00.000Z",
-    "n": 2041,
+    "date": "2025-04-01T00:00:00.000Z",
+    "n": 1430,
     "metric": "median_cpue",
-    "value": 1.166666667
+    "value": 0.989169252
   },
   {
-    "_id": "6965e96ae2a073648e00abd5",
+    "_id": "696651af37df98ee6006c0c0",
     "district": "Mocimboa",
-    "date": "2025-05-01T00:00:00.000Z",
-    "n": 2041,
+    "date": "2025-04-01T00:00:00.000Z",
+    "n": 1430,
     "metric": "median_rpue",
-    "value": 83.333333333
+    "value": 66.666666667
   },
   {
-    "_id": "6965e96ae2a073648e00abd6",
+    "_id": "696651af37df98ee6006c0c1",
+    "district": "Mocimboa",
+    "date": "2025-04-01T00:00:00.000Z",
+    "n": 1430,
+    "metric": "median_price_kg",
+    "value": 85.714285714
+  },
+  {
+    "_id": "696651af37df98ee6006c0c2",
     "district": "Mocimboa",
     "date": "2025-05-01T00:00:00.000Z",
-    "n": 2041,
+    "n": 1921,
+    "metric": "n_fishers",
+    "value": 3.974492452
+  },
+  {
+    "_id": "696651af37df98ee6006c0c3",
+    "district": "Mocimboa",
+    "date": "2025-05-01T00:00:00.000Z",
+    "n": 1921,
+    "metric": "trip_duration"
+  },
+  {
+    "_id": "696651af37df98ee6006c0c4",
+    "district": "Mocimboa",
+    "date": "2025-05-01T00:00:00.000Z",
+    "n": 1921,
+    "metric": "median_cpue",
+    "value": 1.136434662
+  },
+  {
+    "_id": "696651af37df98ee6006c0c5",
+    "district": "Mocimboa",
+    "date": "2025-05-01T00:00:00.000Z",
+    "n": 1921,
+    "metric": "median_rpue",
+    "value": 80
+  },
+  {
+    "_id": "696651af37df98ee6006c0c6",
+    "district": "Mocimboa",
+    "date": "2025-05-01T00:00:00.000Z",
+    "n": 1921,
     "metric": "median_price_kg",
     "value": 100
   },
   {
-    "_id": "6965e96ae2a073648e00abd7",
+    "_id": "696651af37df98ee6006c0c7",
     "district": "Mocimboa",
     "date": "2025-06-01T00:00:00.000Z",
-    "n": 1920,
+    "n": 1796,
     "metric": "n_fishers",
-    "value": 3.5453125
+    "value": 3.520044543
   },
   {
-    "_id": "6965e96ae2a073648e00abd8",
+    "_id": "696651af37df98ee6006c0c8",
     "district": "Mocimboa",
     "date": "2025-06-01T00:00:00.000Z",
-    "n": 1920,
+    "n": 1796,
     "metric": "trip_duration"
   },
   {
-    "_id": "6965e96ae2a073648e00abd9",
+    "_id": "696651af37df98ee6006c0c9",
     "district": "Mocimboa",
     "date": "2025-06-01T00:00:00.000Z",
-    "n": 1920,
+    "n": 1796,
+    "metric": "median_cpue",
+    "value": 1.5
+  },
+  {
+    "_id": "696651af37df98ee6006c0ca",
+    "district": "Mocimboa",
+    "date": "2025-06-01T00:00:00.000Z",
+    "n": 1796,
+    "metric": "median_rpue",
+    "value": 91.287878788
+  },
+  {
+    "_id": "696651af37df98ee6006c0cb",
+    "district": "Mocimboa",
+    "date": "2025-06-01T00:00:00.000Z",
+    "n": 1796,
+    "metric": "median_price_kg",
+    "value": 100
+  },
+  {
+    "_id": "696651af37df98ee6006c0cc",
+    "district": "Mocimboa",
+    "date": "2025-07-01T00:00:00.000Z",
+    "n": 1895,
+    "metric": "n_fishers",
+    "value": 3.45646438
+  },
+  {
+    "_id": "696651af37df98ee6006c0cd",
+    "district": "Mocimboa",
+    "date": "2025-07-01T00:00:00.000Z",
+    "n": 1895,
+    "metric": "trip_duration"
+  },
+  {
+    "_id": "696651af37df98ee6006c0ce",
+    "district": "Mocimboa",
+    "date": "2025-07-01T00:00:00.000Z",
+    "n": 1895,
     "metric": "median_cpue",
     "value": 1.666666667
   },
   {
-    "_id": "6965e96ae2a073648e00abda",
+    "_id": "696651af37df98ee6006c0cf",
     "district": "Mocimboa",
-    "date": "2025-06-01T00:00:00.000Z",
-    "n": 1920,
+    "date": "2025-07-01T00:00:00.000Z",
+    "n": 1895,
     "metric": "median_rpue",
     "value": 100
   },
   {
-    "_id": "6965e96ae2a073648e00abdb",
+    "_id": "696651af37df98ee6006c0d0",
     "district": "Mocimboa",
-    "date": "2025-06-01T00:00:00.000Z",
-    "n": 1920,
+    "date": "2025-07-01T00:00:00.000Z",
+    "n": 1895,
     "metric": "median_price_kg",
+    "value": 111.557233582
+  },
+  {
+    "_id": "696651af37df98ee6006c0d1",
+    "district": "Mocimboa",
+    "date": "2025-08-01T00:00:00.000Z",
+    "n": 2144,
+    "metric": "n_fishers",
+    "value": 3.233208955
+  },
+  {
+    "_id": "696651af37df98ee6006c0d2",
+    "district": "Mocimboa",
+    "date": "2025-08-01T00:00:00.000Z",
+    "n": 2144,
+    "metric": "trip_duration"
+  },
+  {
+    "_id": "696651af37df98ee6006c0d3",
+    "district": "Mocimboa",
+    "date": "2025-08-01T00:00:00.000Z",
+    "n": 2144,
+    "metric": "median_cpue",
+    "value": 1.666666667
+  },
+  {
+    "_id": "696651af37df98ee6006c0d4",
+    "district": "Mocimboa",
+    "date": "2025-08-01T00:00:00.000Z",
+    "n": 2144,
+    "metric": "median_rpue",
     "value": 100
   },
   {
-    "_id": "6965e96ae2a073648e00abdc",
+    "_id": "696651af37df98ee6006c0d5",
     "district": "Mocimboa",
-    "date": "2025-07-01T00:00:00.000Z",
-    "n": 2030,
-    "metric": "n_fishers",
-    "value": 3.481280788
-  },
-  {
-    "_id": "6965e96ae2a073648e00abdd",
-    "district": "Mocimboa",
-    "date": "2025-07-01T00:00:00.000Z",
-    "n": 2030,
-    "metric": "trip_duration"
-  },
-  {
-    "_id": "6965e96ae2a073648e00abde",
-    "district": "Mocimboa",
-    "date": "2025-07-01T00:00:00.000Z",
-    "n": 2030,
-    "metric": "median_cpue",
-    "value": 1.693182871
-  },
-  {
-    "_id": "6965e96ae2a073648e00abdf",
-    "district": "Mocimboa",
-    "date": "2025-07-01T00:00:00.000Z",
-    "n": 2030,
-    "metric": "median_rpue",
-    "value": 102.040816327
-  },
-  {
-    "_id": "6965e96ae2a073648e00abe0",
-    "district": "Mocimboa",
-    "date": "2025-07-01T00:00:00.000Z",
-    "n": 2030,
+    "date": "2025-08-01T00:00:00.000Z",
+    "n": 2144,
     "metric": "median_price_kg",
-    "value": 102.502502503
+    "value": 114.285714286
   },
   {
-    "_id": "6965e96ae2a073648e00abe1",
+    "_id": "696651af37df98ee6006c0d6",
     "district": "Mocimboa",
-    "date": "2025-08-01T00:00:00.000Z",
-    "n": 2347,
+    "date": "2025-09-01T00:00:00.000Z",
+    "n": 1794,
     "metric": "n_fishers",
-    "value": 3.258628036
+    "value": 3.075250836
   },
   {
-    "_id": "6965e96ae2a073648e00abe2",
+    "_id": "696651af37df98ee6006c0d7",
     "district": "Mocimboa",
-    "date": "2025-08-01T00:00:00.000Z",
-    "n": 2347,
+    "date": "2025-09-01T00:00:00.000Z",
+    "n": 1794,
     "metric": "trip_duration"
   },
   {
-    "_id": "6965e96ae2a073648e00abe3",
-    "district": "Mocimboa",
-    "date": "2025-08-01T00:00:00.000Z",
-    "n": 2347,
-    "metric": "median_cpue",
-    "value": 1.733333333
-  },
-  {
-    "_id": "6965e96ae2a073648e00abe4",
-    "district": "Mocimboa",
-    "date": "2025-08-01T00:00:00.000Z",
-    "n": 2347,
-    "metric": "median_rpue",
-    "value": 116.666666667
-  },
-  {
-    "_id": "6965e96ae2a073648e00abe5",
-    "district": "Mocimboa",
-    "date": "2025-08-01T00:00:00.000Z",
-    "n": 2347,
-    "metric": "median_price_kg",
-    "value": 100
-  },
-  {
-    "_id": "6965e96ae2a073648e00abe6",
+    "_id": "696651af37df98ee6006c0d8",
     "district": "Mocimboa",
     "date": "2025-09-01T00:00:00.000Z",
-    "n": 1926,
-    "metric": "n_fishers",
-    "value": 3.020249221
-  },
-  {
-    "_id": "6965e96ae2a073648e00abe7",
-    "district": "Mocimboa",
-    "date": "2025-09-01T00:00:00.000Z",
-    "n": 1926,
-    "metric": "trip_duration"
-  },
-  {
-    "_id": "6965e96ae2a073648e00abe8",
-    "district": "Mocimboa",
-    "date": "2025-09-01T00:00:00.000Z",
-    "n": 1926,
-    "metric": "median_cpue",
-    "value": 2.12404793
-  },
-  {
-    "_id": "6965e96ae2a073648e00abe9",
-    "district": "Mocimboa",
-    "date": "2025-09-01T00:00:00.000Z",
-    "n": 1926,
-    "metric": "median_rpue",
-    "value": 125
-  },
-  {
-    "_id": "6965e96ae2a073648e00abea",
-    "district": "Mocimboa",
-    "date": "2025-09-01T00:00:00.000Z",
-    "n": 1926,
-    "metric": "median_price_kg",
-    "value": 110.714285714
-  },
-  {
-    "_id": "6965e96ae2a073648e00abeb",
-    "district": "Mocimboa",
-    "date": "2025-10-01T00:00:00.000Z",
-    "n": 2110,
-    "metric": "n_fishers",
-    "value": 3.237440758
-  },
-  {
-    "_id": "6965e96ae2a073648e00abec",
-    "district": "Mocimboa",
-    "date": "2025-10-01T00:00:00.000Z",
-    "n": 2110,
-    "metric": "trip_duration"
-  },
-  {
-    "_id": "6965e96ae2a073648e00abed",
-    "district": "Mocimboa",
-    "date": "2025-10-01T00:00:00.000Z",
-    "n": 2110,
+    "n": 1794,
     "metric": "median_cpue",
     "value": 2
   },
   {
-    "_id": "6965e96ae2a073648e00abee",
+    "_id": "696651af37df98ee6006c0d9",
     "district": "Mocimboa",
-    "date": "2025-10-01T00:00:00.000Z",
-    "n": 2110,
+    "date": "2025-09-01T00:00:00.000Z",
+    "n": 1794,
     "metric": "median_rpue",
     "value": 116.666666667
   },
   {
-    "_id": "6965e96ae2a073648e00abef",
+    "_id": "696651af37df98ee6006c0da",
+    "district": "Mocimboa",
+    "date": "2025-09-01T00:00:00.000Z",
+    "n": 1794,
+    "metric": "median_price_kg",
+    "value": 120
+  },
+  {
+    "_id": "696651af37df98ee6006c0db",
     "district": "Mocimboa",
     "date": "2025-10-01T00:00:00.000Z",
-    "n": 2110,
-    "metric": "median_price_kg",
-    "value": 100
-  },
-  {
-    "_id": "6965e96ae2a073648e00abf0",
-    "district": "Mocimboa",
-    "date": "2025-11-01T00:00:00.000Z",
-    "n": 2114,
+    "n": 2001,
     "metric": "n_fishers",
-    "value": 3.317407758
+    "value": 3.28135932
   },
   {
-    "_id": "6965e96ae2a073648e00abf1",
+    "_id": "696651af37df98ee6006c0dc",
     "district": "Mocimboa",
-    "date": "2025-11-01T00:00:00.000Z",
-    "n": 2114,
+    "date": "2025-10-01T00:00:00.000Z",
+    "n": 2001,
     "metric": "trip_duration"
   },
   {
-    "_id": "6965e96ae2a073648e00abf2",
+    "_id": "696651af37df98ee6006c0dd",
     "district": "Mocimboa",
-    "date": "2025-11-01T00:00:00.000Z",
-    "n": 2114,
+    "date": "2025-10-01T00:00:00.000Z",
+    "n": 2001,
     "metric": "median_cpue",
     "value": 1.666666667
   },
   {
-    "_id": "6965e96ae2a073648e00abf3",
+    "_id": "696651af37df98ee6006c0de",
     "district": "Mocimboa",
-    "date": "2025-11-01T00:00:00.000Z",
-    "n": 2114,
+    "date": "2025-10-01T00:00:00.000Z",
+    "n": 2001,
     "metric": "median_rpue",
-    "value": 116.666666667
+    "value": 105.714285714
   },
   {
-    "_id": "6965e96ae2a073648e00abf4",
+    "_id": "696651af37df98ee6006c0df",
+    "district": "Mocimboa",
+    "date": "2025-10-01T00:00:00.000Z",
+    "n": 2001,
+    "metric": "median_price_kg",
+    "value": 112.074971238
+  },
+  {
+    "_id": "696651af37df98ee6006c0e0",
     "district": "Mocimboa",
     "date": "2025-11-01T00:00:00.000Z",
-    "n": 2114,
-    "metric": "median_price_kg",
-    "value": 104.651162791
-  },
-  {
-    "_id": "6965e96ae2a073648e00abf5",
-    "district": "Mocimboa",
-    "date": "2025-12-01T00:00:00.000Z",
-    "n": 1755,
+    "n": 2020,
     "metric": "n_fishers",
-    "value": 3.256410256
+    "value": 3.347524752
   },
   {
-    "_id": "6965e96ae2a073648e00abf6",
+    "_id": "696651af37df98ee6006c0e1",
     "district": "Mocimboa",
-    "date": "2025-12-01T00:00:00.000Z",
-    "n": 1755,
+    "date": "2025-11-01T00:00:00.000Z",
+    "n": 2020,
     "metric": "trip_duration"
   },
   {
-    "_id": "6965e96ae2a073648e00abf7",
+    "_id": "696651af37df98ee6006c0e2",
     "district": "Mocimboa",
-    "date": "2025-12-01T00:00:00.000Z",
-    "n": 1755,
+    "date": "2025-11-01T00:00:00.000Z",
+    "n": 2020,
     "metric": "median_cpue",
-    "value": 1.8
+    "value": 1.666666667
   },
   {
-    "_id": "6965e96ae2a073648e00abf8",
+    "_id": "696651af37df98ee6006c0e3",
     "district": "Mocimboa",
-    "date": "2025-12-01T00:00:00.000Z",
-    "n": 1755,
+    "date": "2025-11-01T00:00:00.000Z",
+    "n": 2020,
     "metric": "median_rpue",
-    "value": 133.333333333
+    "value": 107.5
   },
   {
-    "_id": "6965e96ae2a073648e00abf9",
+    "_id": "696651af37df98ee6006c0e4",
+    "district": "Mocimboa",
+    "date": "2025-11-01T00:00:00.000Z",
+    "n": 2020,
+    "metric": "median_price_kg",
+    "value": 117.226832445
+  },
+  {
+    "_id": "696651af37df98ee6006c0e5",
     "district": "Mocimboa",
     "date": "2025-12-01T00:00:00.000Z",
-    "n": 1755,
-    "metric": "median_price_kg",
-    "value": 100
+    "n": 1658,
+    "metric": "n_fishers",
+    "value": 3.28588661
   },
   {
-    "_id": "6965e96ae2a073648e00abfa",
+    "_id": "696651af37df98ee6006c0e6",
+    "district": "Mocimboa",
+    "date": "2025-12-01T00:00:00.000Z",
+    "n": 1658,
+    "metric": "trip_duration"
+  },
+  {
+    "_id": "696651af37df98ee6006c0e7",
+    "district": "Mocimboa",
+    "date": "2025-12-01T00:00:00.000Z",
+    "n": 1658,
+    "metric": "median_cpue",
+    "value": 1.666666667
+  },
+  {
+    "_id": "696651af37df98ee6006c0e8",
+    "district": "Mocimboa",
+    "date": "2025-12-01T00:00:00.000Z",
+    "n": 1658,
+    "metric": "median_rpue",
+    "value": 122.222222222
+  },
+  {
+    "_id": "696651af37df98ee6006c0e9",
+    "district": "Mocimboa",
+    "date": "2025-12-01T00:00:00.000Z",
+    "n": 1658,
+    "metric": "median_price_kg",
+    "value": 112.88625445
+  },
+  {
+    "_id": "696651af37df98ee6006c0ea",
     "district": "Mocimboa",
     "date": "2026-01-01T00:00:00.000Z"
   },
   {
-    "_id": "6965e96ae2a073648e00abfb",
+    "_id": "696651af37df98ee6006c0eb",
     "district": "Palma",
     "date": "2024-10-01T00:00:00.000Z",
-    "n": 76,
+    "n": 33,
     "metric": "n_fishers",
-    "value": 6.013157895
+    "value": 6.787878788
   },
   {
-    "_id": "6965e96ae2a073648e00abfc",
+    "_id": "696651af37df98ee6006c0ec",
     "district": "Palma",
     "date": "2024-10-01T00:00:00.000Z",
-    "n": 76,
+    "n": 33,
     "metric": "trip_duration"
   },
   {
-    "_id": "6965e96ae2a073648e00abfd",
+    "_id": "696651af37df98ee6006c0ed",
     "district": "Palma",
     "date": "2024-10-01T00:00:00.000Z",
-    "n": 76,
+    "n": 33,
     "metric": "median_cpue",
-    "value": 0.40155901
+    "value": 0.259487964
   },
   {
-    "_id": "6965e96ae2a073648e00abfe",
+    "_id": "696651af37df98ee6006c0ee",
     "district": "Palma",
     "date": "2024-10-01T00:00:00.000Z",
-    "n": 76,
+    "n": 33,
     "metric": "median_rpue",
-    "value": 150
+    "value": 102.083333333
   },
   {
-    "_id": "6965e96ae2a073648e00abff",
+    "_id": "696651af37df98ee6006c0ef",
     "district": "Palma",
     "date": "2024-10-01T00:00:00.000Z",
-    "n": 76,
+    "n": 33,
     "metric": "median_price_kg",
-    "value": 216.918472329
+    "value": 446.68636073
   },
   {
-    "_id": "6965e96ae2a073648e00ac00",
+    "_id": "696651af37df98ee6006c0f0",
     "district": "Palma",
     "date": "2024-11-01T00:00:00.000Z",
-    "n": 53,
+    "n": 28,
     "metric": "n_fishers",
-    "value": 3.547169811
+    "value": 4.428571429
   },
   {
-    "_id": "6965e96ae2a073648e00ac01",
+    "_id": "696651af37df98ee6006c0f1",
     "district": "Palma",
     "date": "2024-11-01T00:00:00.000Z",
-    "n": 53,
+    "n": 28,
     "metric": "trip_duration"
   },
   {
-    "_id": "6965e96ae2a073648e00ac02",
+    "_id": "696651af37df98ee6006c0f2",
     "district": "Palma",
     "date": "2024-11-01T00:00:00.000Z",
-    "n": 53,
+    "n": 28,
     "metric": "median_cpue",
-    "value": 2.969638548
+    "value": 2
   },
   {
-    "_id": "6965e96ae2a073648e00ac03",
+    "_id": "696651af37df98ee6006c0f3",
     "district": "Palma",
     "date": "2024-11-01T00:00:00.000Z",
-    "n": 53,
+    "n": 28,
     "metric": "median_rpue",
-    "value": 134.431818182
+    "value": 132.5
   },
   {
-    "_id": "6965e96ae2a073648e00ac04",
+    "_id": "696651af37df98ee6006c0f4",
     "district": "Palma",
     "date": "2024-11-01T00:00:00.000Z",
-    "n": 53,
+    "n": 28,
     "metric": "median_price_kg",
-    "value": 15.759231587
+    "value": 75
   },
   {
-    "_id": "6965e96ae2a073648e00ac05",
+    "_id": "696651af37df98ee6006c0f5",
     "district": "Palma",
     "date": "2024-12-01T00:00:00.000Z",
     "n": 1,
@@ -640,7 +640,7 @@
     "value": 8
   },
   {
-    "_id": "6965e96ae2a073648e00ac06",
+    "_id": "696651af37df98ee6006c0f6",
     "district": "Palma",
     "date": "2024-12-01T00:00:00.000Z",
     "n": 1,
@@ -648,7 +648,7 @@
     "value": 4
   },
   {
-    "_id": "6965e96ae2a073648e00ac07",
+    "_id": "696651af37df98ee6006c0f7",
     "district": "Palma",
     "date": "2024-12-01T00:00:00.000Z",
     "n": 1,
@@ -656,7 +656,7 @@
     "value": 1.25
   },
   {
-    "_id": "6965e96ae2a073648e00ac08",
+    "_id": "696651af37df98ee6006c0f8",
     "district": "Palma",
     "date": "2024-12-01T00:00:00.000Z",
     "n": 1,
@@ -664,7 +664,7 @@
     "value": 218.75
   },
   {
-    "_id": "6965e96ae2a073648e00ac09",
+    "_id": "696651af37df98ee6006c0f9",
     "district": "Palma",
     "date": "2024-12-01T00:00:00.000Z",
     "n": 1,
@@ -672,441 +672,441 @@
     "value": 175
   },
   {
-    "_id": "6965e96ae2a073648e00ac0a",
+    "_id": "696651af37df98ee6006c0fa",
     "district": "Palma",
     "date": "2025-01-01T00:00:00.000Z"
   },
   {
-    "_id": "6965e96ae2a073648e00ac0b",
+    "_id": "696651af37df98ee6006c0fb",
     "district": "Palma",
     "date": "2025-02-01T00:00:00.000Z",
-    "n": 2027,
+    "n": 1178,
     "metric": "n_fishers",
-    "value": 4.178589048
+    "value": 4.05008489
   },
   {
-    "_id": "6965e96ae2a073648e00ac0c",
+    "_id": "696651af37df98ee6006c0fc",
     "district": "Palma",
     "date": "2025-02-01T00:00:00.000Z",
-    "n": 2027,
+    "n": 1178,
     "metric": "trip_duration"
   },
   {
-    "_id": "6965e96ae2a073648e00ac0d",
+    "_id": "696651af37df98ee6006c0fd",
     "district": "Palma",
     "date": "2025-02-01T00:00:00.000Z",
-    "n": 2027,
+    "n": 1178,
     "metric": "median_cpue",
-    "value": 1.75
+    "value": 0.965384647
   },
   {
-    "_id": "6965e96ae2a073648e00ac0e",
+    "_id": "696651af37df98ee6006c0fe",
     "district": "Palma",
     "date": "2025-02-01T00:00:00.000Z",
-    "n": 2027,
-    "metric": "median_rpue",
-    "value": 140
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac0f",
-    "district": "Palma",
-    "date": "2025-02-01T00:00:00.000Z",
-    "n": 2027,
-    "metric": "median_price_kg",
-    "value": 61.927957941
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac10",
-    "district": "Palma",
-    "date": "2025-03-01T00:00:00.000Z",
-    "n": 2191,
-    "metric": "n_fishers",
-    "value": 4.627567321
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac11",
-    "district": "Palma",
-    "date": "2025-03-01T00:00:00.000Z",
-    "n": 2191,
-    "metric": "trip_duration"
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac12",
-    "district": "Palma",
-    "date": "2025-03-01T00:00:00.000Z",
-    "n": 2191,
-    "metric": "median_cpue",
-    "value": 1.875
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac13",
-    "district": "Palma",
-    "date": "2025-03-01T00:00:00.000Z",
-    "n": 2191,
-    "metric": "median_rpue",
-    "value": 133.333333333
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac14",
-    "district": "Palma",
-    "date": "2025-03-01T00:00:00.000Z",
-    "n": 2191,
-    "metric": "median_price_kg",
-    "value": 65.554180202
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac15",
-    "district": "Palma",
-    "date": "2025-04-01T00:00:00.000Z",
-    "n": 1702,
-    "metric": "n_fishers",
-    "value": 5.042890717
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac16",
-    "district": "Palma",
-    "date": "2025-04-01T00:00:00.000Z",
-    "n": 1702,
-    "metric": "trip_duration"
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac17",
-    "district": "Palma",
-    "date": "2025-04-01T00:00:00.000Z",
-    "n": 1702,
-    "metric": "median_cpue",
-    "value": 2
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac18",
-    "district": "Palma",
-    "date": "2025-04-01T00:00:00.000Z",
-    "n": 1702,
-    "metric": "median_rpue",
-    "value": 166.666666667
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac19",
-    "district": "Palma",
-    "date": "2025-04-01T00:00:00.000Z",
-    "n": 1702,
-    "metric": "median_price_kg",
-    "value": 74.074074074
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac1a",
-    "district": "Palma",
-    "date": "2025-05-01T00:00:00.000Z",
-    "n": 2157,
-    "metric": "n_fishers",
-    "value": 6.288363468
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac1b",
-    "district": "Palma",
-    "date": "2025-05-01T00:00:00.000Z",
-    "n": 2157,
-    "metric": "trip_duration"
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac1c",
-    "district": "Palma",
-    "date": "2025-05-01T00:00:00.000Z",
-    "n": 2157,
-    "metric": "median_cpue",
-    "value": 1.578947368
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac1d",
-    "district": "Palma",
-    "date": "2025-05-01T00:00:00.000Z",
-    "n": 2157,
-    "metric": "median_rpue",
-    "value": 140
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac1e",
-    "district": "Palma",
-    "date": "2025-05-01T00:00:00.000Z",
-    "n": 2157,
-    "metric": "median_price_kg",
-    "value": 83.333333333
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac1f",
-    "district": "Palma",
-    "date": "2025-06-01T00:00:00.000Z",
-    "n": 1702,
-    "metric": "n_fishers",
-    "value": 5.152173913
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac20",
-    "district": "Palma",
-    "date": "2025-06-01T00:00:00.000Z",
-    "n": 1702,
-    "metric": "trip_duration"
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac21",
-    "district": "Palma",
-    "date": "2025-06-01T00:00:00.000Z",
-    "n": 1702,
-    "metric": "median_cpue",
-    "value": 1.527777778
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac22",
-    "district": "Palma",
-    "date": "2025-06-01T00:00:00.000Z",
-    "n": 1702,
-    "metric": "median_rpue",
-    "value": 133.333333333
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac23",
-    "district": "Palma",
-    "date": "2025-06-01T00:00:00.000Z",
-    "n": 1702,
-    "metric": "median_price_kg",
-    "value": 86.087539076
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac24",
-    "district": "Palma",
-    "date": "2025-07-01T00:00:00.000Z",
-    "n": 1456,
-    "metric": "n_fishers",
-    "value": 5.271978022
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac25",
-    "district": "Palma",
-    "date": "2025-07-01T00:00:00.000Z",
-    "n": 1456,
-    "metric": "trip_duration"
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac26",
-    "district": "Palma",
-    "date": "2025-07-01T00:00:00.000Z",
-    "n": 1456,
-    "metric": "median_cpue",
-    "value": 1.333333333
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac27",
-    "district": "Palma",
-    "date": "2025-07-01T00:00:00.000Z",
-    "n": 1456,
-    "metric": "median_rpue",
-    "value": 113.636363636
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac28",
-    "district": "Palma",
-    "date": "2025-07-01T00:00:00.000Z",
-    "n": 1456,
-    "metric": "median_price_kg",
-    "value": 87.920409216
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac29",
-    "district": "Palma",
-    "date": "2025-08-01T00:00:00.000Z",
-    "n": 2075,
-    "metric": "n_fishers",
-    "value": 4.935421687
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac2a",
-    "district": "Palma",
-    "date": "2025-08-01T00:00:00.000Z",
-    "n": 2075,
-    "metric": "trip_duration"
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac2b",
-    "district": "Palma",
-    "date": "2025-08-01T00:00:00.000Z",
-    "n": 2075,
-    "metric": "median_cpue",
-    "value": 1.333333333
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac2c",
-    "district": "Palma",
-    "date": "2025-08-01T00:00:00.000Z",
-    "n": 2075,
-    "metric": "median_rpue",
-    "value": 133.333333333
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac2d",
-    "district": "Palma",
-    "date": "2025-08-01T00:00:00.000Z",
-    "n": 2075,
-    "metric": "median_price_kg",
-    "value": 93.333333333
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac2e",
-    "district": "Palma",
-    "date": "2025-09-01T00:00:00.000Z",
-    "n": 1511,
-    "metric": "n_fishers",
-    "value": 5.215089345
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac2f",
-    "district": "Palma",
-    "date": "2025-09-01T00:00:00.000Z",
-    "n": 1511,
-    "metric": "trip_duration"
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac30",
-    "district": "Palma",
-    "date": "2025-09-01T00:00:00.000Z",
-    "n": 1511,
-    "metric": "median_cpue",
-    "value": 1.071428571
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac31",
-    "district": "Palma",
-    "date": "2025-09-01T00:00:00.000Z",
-    "n": 1511,
-    "metric": "median_rpue",
-    "value": 116.666666667
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac32",
-    "district": "Palma",
-    "date": "2025-09-01T00:00:00.000Z",
-    "n": 1511,
-    "metric": "median_price_kg",
-    "value": 86.602564103
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac33",
-    "district": "Palma",
-    "date": "2025-10-01T00:00:00.000Z",
-    "n": 1641,
-    "metric": "n_fishers",
-    "value": 5.184034126
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac34",
-    "district": "Palma",
-    "date": "2025-10-01T00:00:00.000Z",
-    "n": 1641,
-    "metric": "trip_duration"
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac35",
-    "district": "Palma",
-    "date": "2025-10-01T00:00:00.000Z",
-    "n": 1641,
-    "metric": "median_cpue",
-    "value": 1.153846154
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac36",
-    "district": "Palma",
-    "date": "2025-10-01T00:00:00.000Z",
-    "n": 1641,
+    "n": 1178,
     "metric": "median_rpue",
     "value": 125
   },
   {
-    "_id": "6965e96ae2a073648e00ac37",
+    "_id": "696651af37df98ee6006c0ff",
     "district": "Palma",
-    "date": "2025-10-01T00:00:00.000Z",
-    "n": 1641,
+    "date": "2025-02-01T00:00:00.000Z",
+    "n": 1178,
     "metric": "median_price_kg",
-    "value": 91.666666667
+    "value": 108.294734677
   },
   {
-    "_id": "6965e96ae2a073648e00ac38",
+    "_id": "696651af37df98ee6006c100",
     "district": "Palma",
-    "date": "2025-11-01T00:00:00.000Z",
-    "n": 1876,
+    "date": "2025-03-01T00:00:00.000Z",
+    "n": 1416,
     "metric": "n_fishers",
-    "value": 4.657249467
+    "value": 4.277542373
   },
   {
-    "_id": "6965e96ae2a073648e00ac39",
+    "_id": "696651af37df98ee6006c101",
     "district": "Palma",
-    "date": "2025-11-01T00:00:00.000Z",
-    "n": 1876,
+    "date": "2025-03-01T00:00:00.000Z",
+    "n": 1416,
     "metric": "trip_duration"
   },
   {
-    "_id": "6965e96ae2a073648e00ac3a",
+    "_id": "696651af37df98ee6006c102",
+    "district": "Palma",
+    "date": "2025-03-01T00:00:00.000Z",
+    "n": 1416,
+    "metric": "median_cpue",
+    "value": 1.63470005
+  },
+  {
+    "_id": "696651af37df98ee6006c103",
+    "district": "Palma",
+    "date": "2025-03-01T00:00:00.000Z",
+    "n": 1416,
+    "metric": "median_rpue",
+    "value": 133.333333333
+  },
+  {
+    "_id": "696651af37df98ee6006c104",
+    "district": "Palma",
+    "date": "2025-03-01T00:00:00.000Z",
+    "n": 1416,
+    "metric": "median_price_kg",
+    "value": 81.25
+  },
+  {
+    "_id": "696651af37df98ee6006c105",
+    "district": "Palma",
+    "date": "2025-04-01T00:00:00.000Z",
+    "n": 1366,
+    "metric": "n_fishers",
+    "value": 5.247437775
+  },
+  {
+    "_id": "696651af37df98ee6006c106",
+    "district": "Palma",
+    "date": "2025-04-01T00:00:00.000Z",
+    "n": 1366,
+    "metric": "trip_duration"
+  },
+  {
+    "_id": "696651af37df98ee6006c107",
+    "district": "Palma",
+    "date": "2025-04-01T00:00:00.000Z",
+    "n": 1366,
+    "metric": "median_cpue",
+    "value": 1.875
+  },
+  {
+    "_id": "696651af37df98ee6006c108",
+    "district": "Palma",
+    "date": "2025-04-01T00:00:00.000Z",
+    "n": 1366,
+    "metric": "median_rpue",
+    "value": 175
+  },
+  {
+    "_id": "696651af37df98ee6006c109",
+    "district": "Palma",
+    "date": "2025-04-01T00:00:00.000Z",
+    "n": 1366,
+    "metric": "median_price_kg",
+    "value": 82.076788332
+  },
+  {
+    "_id": "696651af37df98ee6006c10a",
+    "district": "Palma",
+    "date": "2025-05-01T00:00:00.000Z",
+    "n": 1840,
+    "metric": "n_fishers",
+    "value": 6.485869565
+  },
+  {
+    "_id": "696651af37df98ee6006c10b",
+    "district": "Palma",
+    "date": "2025-05-01T00:00:00.000Z",
+    "n": 1840,
+    "metric": "trip_duration"
+  },
+  {
+    "_id": "696651af37df98ee6006c10c",
+    "district": "Palma",
+    "date": "2025-05-01T00:00:00.000Z",
+    "n": 1840,
+    "metric": "median_cpue",
+    "value": 1.5
+  },
+  {
+    "_id": "696651af37df98ee6006c10d",
+    "district": "Palma",
+    "date": "2025-05-01T00:00:00.000Z",
+    "n": 1840,
+    "metric": "median_rpue",
+    "value": 142.857142857
+  },
+  {
+    "_id": "696651af37df98ee6006c10e",
+    "district": "Palma",
+    "date": "2025-05-01T00:00:00.000Z",
+    "n": 1840,
+    "metric": "median_price_kg",
+    "value": 88.888888889
+  },
+  {
+    "_id": "696651af37df98ee6006c10f",
+    "district": "Palma",
+    "date": "2025-06-01T00:00:00.000Z",
+    "n": 1432,
+    "metric": "n_fishers",
+    "value": 5.590782123
+  },
+  {
+    "_id": "696651af37df98ee6006c110",
+    "district": "Palma",
+    "date": "2025-06-01T00:00:00.000Z",
+    "n": 1432,
+    "metric": "trip_duration"
+  },
+  {
+    "_id": "696651af37df98ee6006c111",
+    "district": "Palma",
+    "date": "2025-06-01T00:00:00.000Z",
+    "n": 1432,
+    "metric": "median_cpue",
+    "value": 1.5
+  },
+  {
+    "_id": "696651af37df98ee6006c112",
+    "district": "Palma",
+    "date": "2025-06-01T00:00:00.000Z",
+    "n": 1432,
+    "metric": "median_rpue",
+    "value": 133.333333333
+  },
+  {
+    "_id": "696651af37df98ee6006c113",
+    "district": "Palma",
+    "date": "2025-06-01T00:00:00.000Z",
+    "n": 1432,
+    "metric": "median_price_kg",
+    "value": 90
+  },
+  {
+    "_id": "696651af37df98ee6006c114",
+    "district": "Palma",
+    "date": "2025-07-01T00:00:00.000Z",
+    "n": 1232,
+    "metric": "n_fishers",
+    "value": 5.612012987
+  },
+  {
+    "_id": "696651af37df98ee6006c115",
+    "district": "Palma",
+    "date": "2025-07-01T00:00:00.000Z",
+    "n": 1232,
+    "metric": "trip_duration"
+  },
+  {
+    "_id": "696651af37df98ee6006c116",
+    "district": "Palma",
+    "date": "2025-07-01T00:00:00.000Z",
+    "n": 1232,
+    "metric": "median_cpue",
+    "value": 1.25
+  },
+  {
+    "_id": "696651af37df98ee6006c117",
+    "district": "Palma",
+    "date": "2025-07-01T00:00:00.000Z",
+    "n": 1232,
+    "metric": "median_rpue",
+    "value": 111.111111111
+  },
+  {
+    "_id": "696651af37df98ee6006c118",
+    "district": "Palma",
+    "date": "2025-07-01T00:00:00.000Z",
+    "n": 1232,
+    "metric": "median_price_kg",
+    "value": 91.801075269
+  },
+  {
+    "_id": "696651af37df98ee6006c119",
+    "district": "Palma",
+    "date": "2025-08-01T00:00:00.000Z",
+    "n": 1737,
+    "metric": "n_fishers",
+    "value": 5.19228555
+  },
+  {
+    "_id": "696651af37df98ee6006c11a",
+    "district": "Palma",
+    "date": "2025-08-01T00:00:00.000Z",
+    "n": 1737,
+    "metric": "trip_duration"
+  },
+  {
+    "_id": "696651af37df98ee6006c11b",
+    "district": "Palma",
+    "date": "2025-08-01T00:00:00.000Z",
+    "n": 1737,
+    "metric": "median_cpue",
+    "value": 1.273333333
+  },
+  {
+    "_id": "696651af37df98ee6006c11c",
+    "district": "Palma",
+    "date": "2025-08-01T00:00:00.000Z",
+    "n": 1737,
+    "metric": "median_rpue",
+    "value": 133.333333333
+  },
+  {
+    "_id": "696651af37df98ee6006c11d",
+    "district": "Palma",
+    "date": "2025-08-01T00:00:00.000Z",
+    "n": 1737,
+    "metric": "median_price_kg",
+    "value": 99
+  },
+  {
+    "_id": "696651af37df98ee6006c11e",
+    "district": "Palma",
+    "date": "2025-09-01T00:00:00.000Z",
+    "n": 1254,
+    "metric": "n_fishers",
+    "value": 5.697767145
+  },
+  {
+    "_id": "696651af37df98ee6006c11f",
+    "district": "Palma",
+    "date": "2025-09-01T00:00:00.000Z",
+    "n": 1254,
+    "metric": "trip_duration"
+  },
+  {
+    "_id": "696651af37df98ee6006c120",
+    "district": "Palma",
+    "date": "2025-09-01T00:00:00.000Z",
+    "n": 1254,
+    "metric": "median_cpue",
+    "value": 1
+  },
+  {
+    "_id": "696651af37df98ee6006c121",
+    "district": "Palma",
+    "date": "2025-09-01T00:00:00.000Z",
+    "n": 1254,
+    "metric": "median_rpue",
+    "value": 108.571428571
+  },
+  {
+    "_id": "696651af37df98ee6006c122",
+    "district": "Palma",
+    "date": "2025-09-01T00:00:00.000Z",
+    "n": 1254,
+    "metric": "median_price_kg",
+    "value": 89.011031888
+  },
+  {
+    "_id": "696651af37df98ee6006c123",
+    "district": "Palma",
+    "date": "2025-10-01T00:00:00.000Z",
+    "n": 1394,
+    "metric": "n_fishers",
+    "value": 5.656384505
+  },
+  {
+    "_id": "696651af37df98ee6006c124",
+    "district": "Palma",
+    "date": "2025-10-01T00:00:00.000Z",
+    "n": 1394,
+    "metric": "trip_duration"
+  },
+  {
+    "_id": "696651af37df98ee6006c125",
+    "district": "Palma",
+    "date": "2025-10-01T00:00:00.000Z",
+    "n": 1394,
+    "metric": "median_cpue",
+    "value": 1.09375
+  },
+  {
+    "_id": "696651af37df98ee6006c126",
+    "district": "Palma",
+    "date": "2025-10-01T00:00:00.000Z",
+    "n": 1394,
+    "metric": "median_rpue",
+    "value": 116.666666667
+  },
+  {
+    "_id": "696651af37df98ee6006c127",
+    "district": "Palma",
+    "date": "2025-10-01T00:00:00.000Z",
+    "n": 1394,
+    "metric": "median_price_kg",
+    "value": 93.75
+  },
+  {
+    "_id": "696651af37df98ee6006c128",
     "district": "Palma",
     "date": "2025-11-01T00:00:00.000Z",
-    "n": 1876,
+    "n": 1616,
+    "metric": "n_fishers",
+    "value": 4.990717822
+  },
+  {
+    "_id": "696651af37df98ee6006c129",
+    "district": "Palma",
+    "date": "2025-11-01T00:00:00.000Z",
+    "n": 1616,
+    "metric": "trip_duration"
+  },
+  {
+    "_id": "696651af37df98ee6006c12a",
+    "district": "Palma",
+    "date": "2025-11-01T00:00:00.000Z",
+    "n": 1616,
+    "metric": "median_cpue",
+    "value": 1.261804621
+  },
+  {
+    "_id": "696651af37df98ee6006c12b",
+    "district": "Palma",
+    "date": "2025-11-01T00:00:00.000Z",
+    "n": 1616,
+    "metric": "median_rpue",
+    "value": 140
+  },
+  {
+    "_id": "696651af37df98ee6006c12c",
+    "district": "Palma",
+    "date": "2025-11-01T00:00:00.000Z",
+    "n": 1616,
+    "metric": "median_price_kg",
+    "value": 100
+  },
+  {
+    "_id": "696651af37df98ee6006c12d",
+    "district": "Palma",
+    "date": "2025-12-01T00:00:00.000Z",
+    "n": 1216,
+    "metric": "n_fishers",
+    "value": 5.191611842
+  },
+  {
+    "_id": "696651af37df98ee6006c12e",
+    "district": "Palma",
+    "date": "2025-12-01T00:00:00.000Z",
+    "n": 1216,
+    "metric": "trip_duration"
+  },
+  {
+    "_id": "696651af37df98ee6006c12f",
+    "district": "Palma",
+    "date": "2025-12-01T00:00:00.000Z",
+    "n": 1216,
     "metric": "median_cpue",
     "value": 1.333333333
   },
   {
-    "_id": "6965e96ae2a073648e00ac3b",
+    "_id": "696651af37df98ee6006c130",
     "district": "Palma",
-    "date": "2025-11-01T00:00:00.000Z",
-    "n": 1876,
+    "date": "2025-12-01T00:00:00.000Z",
+    "n": 1216,
     "metric": "median_rpue",
-    "value": 145.454545455
+    "value": 140
   },
   {
-    "_id": "6965e96ae2a073648e00ac3c",
+    "_id": "696651af37df98ee6006c131",
     "district": "Palma",
-    "date": "2025-11-01T00:00:00.000Z",
-    "n": 1876,
+    "date": "2025-12-01T00:00:00.000Z",
+    "n": 1216,
     "metric": "median_price_kg",
     "value": 100
   },
   {
-    "_id": "6965e96ae2a073648e00ac3d",
-    "district": "Palma",
-    "date": "2025-12-01T00:00:00.000Z",
-    "n": 1370,
-    "metric": "n_fishers",
-    "value": 4.940875912
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac3e",
-    "district": "Palma",
-    "date": "2025-12-01T00:00:00.000Z",
-    "n": 1370,
-    "metric": "trip_duration"
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac3f",
-    "district": "Palma",
-    "date": "2025-12-01T00:00:00.000Z",
-    "n": 1370,
-    "metric": "median_cpue",
-    "value": 1.363636364
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac40",
-    "district": "Palma",
-    "date": "2025-12-01T00:00:00.000Z",
-    "n": 1370,
-    "metric": "median_rpue",
-    "value": 141.666666667
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac41",
-    "district": "Palma",
-    "date": "2025-12-01T00:00:00.000Z",
-    "n": 1370,
-    "metric": "median_price_kg",
-    "value": 100
-  },
-  {
-    "_id": "6965e96ae2a073648e00ac42",
+    "_id": "696651af37df98ee6006c132",
     "district": "Palma",
     "date": "2026-01-01T00:00:00.000Z",
     "n": 13,
@@ -1114,14 +1114,14 @@
     "value": 4.769230769
   },
   {
-    "_id": "6965e96ae2a073648e00ac43",
+    "_id": "696651af37df98ee6006c133",
     "district": "Palma",
     "date": "2026-01-01T00:00:00.000Z",
     "n": 13,
     "metric": "trip_duration"
   },
   {
-    "_id": "6965e96ae2a073648e00ac44",
+    "_id": "696651af37df98ee6006c134",
     "district": "Palma",
     "date": "2026-01-01T00:00:00.000Z",
     "n": 13,
@@ -1129,7 +1129,7 @@
     "value": 1.979166667
   },
   {
-    "_id": "6965e96ae2a073648e00ac45",
+    "_id": "696651af37df98ee6006c135",
     "district": "Palma",
     "date": "2026-01-01T00:00:00.000Z",
     "n": 13,
@@ -1137,7 +1137,7 @@
     "value": 173.214285714
   },
   {
-    "_id": "6965e96ae2a073648e00ac46",
+    "_id": "696651af37df98ee6006c136",
     "district": "Palma",
     "date": "2026-01-01T00:00:00.000Z",
     "n": 13,

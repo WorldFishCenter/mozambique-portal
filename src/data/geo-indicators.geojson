@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "_id": "6970a34547d9386b960dbb62",
+        "_id": "6970af024e2485d559047ebc",
         "country": "mozambique",
         "region": "mocimboa",
         "n_submissions": 15574,
@@ -1500,15 +1500,15 @@
     {
       "type": "Feature",
       "properties": {
-        "_id": "6970a34547d9386b960dbb63",
+        "_id": "6970af024e2485d559047ebd",
         "country": "mozambique",
         "region": "palma",
-        "n_submissions": 14773,
+        "n_submissions": 14782,
         "n_fishers": 3.782422901,
         "trip_duration": 4.572202415,
-        "mean_catch_kg": 47.834340767,
+        "mean_catch_kg": 47.735667557,
         "mean_cpue": 2.583840832,
-        "mean_rpue": 111.391285041,
+        "mean_rpue": 111.256929121,
         "mean_price_kg": 187.0453227
       },
       "geometry": {

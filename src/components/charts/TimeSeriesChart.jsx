@@ -17,25 +17,15 @@ const TimeSeriesChart = ({
     return testValue.replace(/[\d.,]+\s?/, '').trim();
   }, [formatValue]);
 
-  // Convert datetime data to categories with formatted labels
-  const { categories, seriesData } = useMemo(() => {
-    if (!data?.length) return { categories: [], seriesData: [] };
-
-    const categories = data.map(d => {
-      const date = new Date(d.x);
-      const month = date.toLocaleDateString('en-US', { month: 'short' });
-      const year = date.getFullYear();
-
-      // Store both month and year, will format in the chart formatter
-      if (date.getMonth() === 0) {
-        return { month, year };
-      }
-      return { month };
-    });
-
-    const seriesData = data.map(d => d.y);
-
-    return { categories, seriesData };
+  // Prepare series data for datetime x-axis
+  const seriesData = useMemo(() => {
+    if (!data?.length) return [];
+    
+    // For datetime x-axis, data should be in format: { x: timestamp, y: value }
+    return data.map(d => ({
+      x: new Date(d.x).getTime(),
+      y: d.y
+    }));
   }, [data]);
 
   // Calculate mean and differences for differenced view
@@ -44,7 +34,11 @@ const TimeSeriesChart = ({
     const validValues = data.filter(d => d.y !== null && !isNaN(d.y)).map(d => d.y);
     const mean = validValues.reduce((a, b) => a + b, 0) / validValues.length;
 
-    const transformedData = data.map(d => d.y !== null ? Number((d.y - mean).toFixed(2)) : null);
+    // For datetime x-axis, data should be in format: { x: timestamp, y: value }
+    const transformedData = data.map(d => ({
+      x: new Date(d.x).getTime(),
+      y: d.y !== null ? Number((d.y - mean).toFixed(2)) : null
+    }));
 
     return { transformedData, mean: Number(mean.toFixed(2)) };
   }, [data, viewMode]);
@@ -115,8 +109,9 @@ const TimeSeriesChart = ({
         },
       },
       xaxis: {
-        type: 'category',
-        categories: categories,
+        type: 'datetime',
+        min: data?.length > 0 ? new Date(data[0].x).getTime() : undefined,
+        max: data?.length > 0 ? new Date(data[data.length - 1].x).getTime() : undefined,
         labels: {
           style: {
             fontSize: '12px',
@@ -124,21 +119,17 @@ const TimeSeriesChart = ({
           },
           rotate: 0,
           rotateAlways: false,
-          hideOverlappingLabels: false,
+          hideOverlappingLabels: true,
           showDuplicates: false,
           trim: false,
           offsetY: 5,
-          formatter: function(value, timestamp, opts) {
-            // Handle object format for January (has year)
-            if (typeof value === 'object' && value !== null) {
-              if (value.year) {
-                // Create multi-line label using array (ApexCharts will handle line breaks)
-                return [value.month, value.year.toString()];
-              }
-              return value.month;
-            }
-            return value;
-          },
+          datetimeUTC: false,
+          datetimeFormatter: {
+            year: 'yyyy',
+            month: "MMM 'yy",
+            day: 'dd MMM',
+            hour: 'HH:mm'
+          }
         },
         axisBorder: {
           show: true,
@@ -151,6 +142,7 @@ const TimeSeriesChart = ({
           height: 6,
         },
         tickPlacement: 'on',
+        tickAmount: 6,
       },
       yaxis: {
         title: {
@@ -178,7 +170,18 @@ const TimeSeriesChart = ({
       tooltip: {
         theme: theme === 'dark' ? 'dark' : 'light',
         x: {
-          format: 'dd MMM yyyy'
+          formatter: function(val, opts) {
+            // Get the original date from data using the dataPointIndex
+            const index = opts?.dataPointIndex;
+            if (index !== undefined && data[index]) {
+              const date = new Date(data[index].x);
+              return date.toLocaleDateString('en-US', { 
+                month: 'short', 
+                year: 'numeric' 
+              });
+            }
+            return val;
+          }
         },
         y: {
           formatter: function (val) {
@@ -203,7 +206,7 @@ const TimeSeriesChart = ({
         },
       },
     }),
-    [chartConfig, theme, viewMode, height, formatValue, mean, unit, categories]
+    [chartConfig, theme, viewMode, height, formatValue, mean, unit, data]
   );
 
   return (

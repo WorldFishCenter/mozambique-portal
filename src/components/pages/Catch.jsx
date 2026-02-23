@@ -6,6 +6,16 @@ import TimeSeriesChart from '../charts/TimeSeriesChart';
 import SeasonalChart from '../charts/SeasonalChart';
 import GearMetricsHeatmap from '../charts/GearMetricsHeatmap';
 import InfoButton from '../common/InfoButton';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { AlertCircle, TrendingUp, TrendingDown } from 'lucide-react';
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 // Memoized helper functions
 const calculateMedian = values => {
@@ -124,157 +134,146 @@ const Catch = ({ theme, landingSite }) => {
 
   if (loading) {
     return (
-      <div className="card">
-        <div className="card-body">
-          <div className="d-flex align-items-center justify-content-center">
-            <div className="spinner-border text-primary me-2" role="status">
-              <span className="visually-hidden">Loading...</span>
-            </div>
+      <Card>
+        <CardContent className="p-6">
+          <div className="flex items-center justify-center space-x-2">
+            <div className="h-4 w-4 animate-spin rounded-full border-2 border-primary border-t-transparent"></div>
             <span>Loading data...</span>
           </div>
-        </div>
-      </div>
+        </CardContent>
+      </Card>
     );
   }
 
   if (error) {
     return (
-      <div className="card border-danger">
-        <div className="card-body">
-          <div className="d-flex align-items-center justify-content-center text-danger">
-            <i className="ti ti-alert-circle me-2"></i>
-            <span>Error loading data: {error}</span>
-          </div>
-        </div>
-      </div>
+      <Alert variant="destructive">
+        <AlertCircle className="h-4 w-4" />
+        <AlertTitle>Error</AlertTitle>
+        <AlertDescription>Error loading data: {error}</AlertDescription>
+      </Alert>
     );
   }
 
   if (!catchData?.selectedData?.length) {
     return (
-      <div className="card">
-        <div className="card-body">
-          <div className="text-center text-muted">
-            No data available for {landingSite === 'all' ? 'all districts' : landingSite}
-          </div>
-        </div>
-      </div>
+      <Card>
+        <CardContent className="p-6 text-center text-muted-foreground">
+          No data available for {landingSite === 'all' ? 'all districts' : landingSite}
+        </CardContent>
+      </Card>
     );
   }
 
   return (
-    <div className="row row-deck row-cards">
-      <div className="col-12">
-        <div className="card">
-          <div className="card-header d-flex align-items-center justify-content-between">
-            <div className="d-flex align-items-center">
-              <h3 className="card-title mb-0">Catch per unit effort (median)</h3>
-              <InfoButton
-                title="Catch Per Unit Effort (CPUE)"
-                content="This chart shows the median catch per fisher per hour over time. The time series displays monthly trends, while the radar chart shows median values by month across all years. Use the 'Differenced' view to see deviations from the mean value, with green bars indicating above-average values and red bars indicating below-average values across the time series."
-                placement="bottom"
+    <div className="space-y-6">
+      <Card>
+        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+          <div className="flex items-center gap-2">
+            <CardTitle>Catch per unit effort (median)</CardTitle>
+            <InfoButton
+              title="Catch Per Unit Effort (CPUE)"
+              content="This chart shows the median catch per fisher per hour over time. The time series displays monthly trends, while the radar chart shows median values by month across all years. Use the 'Differenced' view to see deviations from the mean value, with green bars indicating above-average values and red bars indicating below-average values across the time series."
+              placement="bottom"
+            />
+          </div>
+          <div className="flex gap-2">
+            <Button
+              variant={viewMode === 'monthly' ? "default" : "outline"}
+              size="sm"
+              onClick={() => setViewMode('monthly')}
+            >
+              Monthly
+            </Button>
+            <Button
+              variant={viewMode === 'differenced' ? "default" : "outline"}
+              size="sm"
+              onClick={() => setViewMode('differenced')}
+            >
+              Differenced
+            </Button>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <div className="flex items-center gap-4 mb-6">
+            <div>
+              <p className="text-sm text-muted-foreground">Latest CPUE</p>
+              <div className="flex items-baseline gap-2">
+                <span className="text-3xl font-bold">
+                  {typeof latestValue === 'number' ? latestValue.toFixed(2) : 'No data'}
+                </span>
+                <span className="text-sm text-muted-foreground">kg/fisher/hour</span>
+              </div>
+            </div>
+
+            {percentChange && (
+              <div className="flex flex-col">
+                <span className="text-sm text-muted-foreground">
+                  Change from {percentChange.previousPeriod} to {percentChange.currentPeriod}
+                </span>
+                <div className={`flex items-center gap-1 text-sm font-medium ${parseFloat(percentChange.change) >= 0 ? 'text-green-600' : 'text-red-600'
+                  }`}>
+                  {parseFloat(percentChange.change) >= 0 ? <TrendingUp className="h-4 w-4" /> : <TrendingDown className="h-4 w-4" />}
+                  {Math.abs(parseFloat(percentChange.change))}%
+                </div>
+              </div>
+            )}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="md:col-span-2">
+              <TimeSeriesChart
+                theme={theme}
+                chartConfig={chartConfig}
+                data={displayData}
+                viewMode={viewMode}
+                title={landingSite === 'all' ? 'All Districts' : landingSite}
+                formatValue={val => `${val.toFixed(2)} kg/fisher/hour`}
               />
             </div>
-            <div className="btn-group" role="group">
-              <button
-                type="button"
-                className={`btn ${viewMode === 'monthly' ? 'btn-primary' : 'btn-outline-primary'}`}
-                onClick={() => setViewMode('monthly')}
-              >
-                Monthly
-              </button>
-              <button
-                type="button"
-                className={`btn ${viewMode === 'differenced' ? 'btn-primary' : 'btn-outline-primary'}`}
-                onClick={() => setViewMode('differenced')}
-              >
-                Differenced
-              </button>
+            <div className="md:col-span-1">
+              <SeasonalChart
+                theme={theme}
+                data={seasonalData}
+                formatValue={val => `${val.toFixed(2)} kg/fisher/hour`}
+              />
             </div>
           </div>
-          <div className="card-body">
-            <div className="d-flex align-items-center mb-4">
-              <div className="me-4">
-                <div className="text-muted mb-1">Latest CPUE</div>
-                <div className="d-flex align-items-baseline">
-                  <h1 className="h1 mb-0 me-2">
-                    {typeof latestValue === 'number' ? latestValue.toFixed(2) : 'No data'}
-                  </h1>
-                  <span className="text-muted fs-4">kg/fisher/hour</span>
-                </div>
-              </div>
-              {percentChange && (
-                <div>
-                  <div className="text-muted mb-1">
-                    Change from {percentChange.previousPeriod} to {percentChange.currentPeriod}
-                  </div>
-                  <div
-                    className={`d-inline-flex align-items-center px-2 py-1 rounded-2 ${
-                      parseFloat(percentChange.change) >= 0
-                        ? 'bg-success-lt text-success'
-                        : 'bg-danger-lt text-danger'
-                    }`}
-                  >
-                    <i
-                      className={`ti ti-trend-${parseFloat(percentChange.change) >= 0 ? 'up' : 'down'} me-1`}
-                    ></i>
-                    <span className="fw-medium">{Math.abs(parseFloat(percentChange.change))}%</span>
-                  </div>
-                </div>
-              )}
-            </div>
-            <div className="row">
-              <div className="col-8">
-                <TimeSeriesChart
-                  theme={theme}
-                  chartConfig={chartConfig}
-                  data={displayData}
-                  viewMode={viewMode}
-                  title={landingSite === 'all' ? 'All Districts' : landingSite}
-                  formatValue={val => `${val.toFixed(2)} kg/fisher/hour`}
-                />
-              </div>
-              <div className="col-4">
-                <SeasonalChart
-                  theme={theme}
-                  data={seasonalData}
-                  formatValue={val => `${val.toFixed(2)} kg/fisher/hour`}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </CardContent>
+      </Card>
 
       {/* Heatmap card */}
-      <div className="col-12 mt-3">
-        <div className="card">
-          <div className="card-header">
-            <div className="d-flex align-items-center">
-              <h3 className="card-title mb-0">Catch Rate by Habitat and Gear Type <span className="text-muted fs-4">kg/fisher/hour</span></h3>
-              <InfoButton
-                title="Catch Rate Heatmap"
-                content="This heatmap visualizes catch rates across different combinations of habitats and fishing gears. Darker colors indicate higher catch rates. This helps identify which gear-habitat combinations are most productive for fisheries."
-                placement="bottom"
-              />
-            </div>
+      <Card>
+        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+          <div className="flex items-center gap-2">
+            <CardTitle className="flex items-baseline gap-2">
+              Catch Rate by Habitat and Gear Type
+              <span className="text-sm font-normal text-muted-foreground">kg/fisher/hour</span>
+            </CardTitle>
+            <InfoButton
+              title="Catch Rate Heatmap"
+              content="This heatmap visualizes catch rates across different combinations of habitats and fishing gears. Darker colors indicate higher catch rates. This helps identify which gear-habitat combinations are most productive for fisheries."
+              placement="bottom"
+            />
           </div>
-          <div className="card-body">
-            {gearHabitatMetrics.length > 0 ? (
+        </CardHeader>
+        <CardContent>
+          {gearHabitatMetrics.length > 0 ? (
+            <div className="h-[400px] w-full">
               <GearMetricsHeatmap
                 theme={theme}
                 data={gearHabitatMetrics}
                 formatValue={val => `${val.toFixed(2)} kg/fisher/hour`}
                 metric="cpue"
               />
-            ) : (
-              <div className="d-flex align-items-center justify-content-center h-100 text-muted">
-                No gear metrics data available
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
+            </div>
+          ) : (
+            <div className="flex h-40 items-center justify-center text-muted-foreground">
+              No gear metrics data available
+            </div>
+          )}
+        </CardContent>
+      </Card>
     </div>
   );
 };

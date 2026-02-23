@@ -16,7 +16,11 @@ export const useTheme = () => {
     const root = document.documentElement;
 
     // Apply light/dark theme
-    root.setAttribute('data-bs-theme', theme);
+    if (theme === 'dark') {
+      root.classList.add('dark');
+    } else {
+      root.classList.remove('dark');
+    }
     localStorage.setItem('theme', theme);
 
     // Update theme when system preference changes

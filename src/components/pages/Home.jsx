@@ -10,6 +10,30 @@ import {
   createColumnHelper,
   getPaginationRowModel
 } from '@tanstack/react-table';
+import { ArrowUpDown } from 'lucide-react';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+import { Button } from '@/components/ui/button';
 
 const Home = ({ theme, district }) => {
   const [pageIndex, setPageIndex] = useState(0);
@@ -51,11 +75,9 @@ const Home = ({ theme, district }) => {
     );
     return (
       <div
+        className="rounded text-center p-1"
         style={{
           backgroundColor: `rgba(${color}, ${intensity * 0.3})`,
-          padding: '0.25rem',
-          borderRadius: '4px',
-          textAlign: 'center'
         }}
       >
         {typeof value === 'number' ? value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : value}
@@ -66,31 +88,108 @@ const Home = ({ theme, district }) => {
   const columns = useMemo(
     () => [
       columnHelper.accessor('district', {
-        header: 'District',
-        cell: info => <div style={{ textAlign: 'center' }}>{String(info.getValue())}</div>
+        header: ({ column }) => {
+          return (
+            <Button
+              variant="ghost"
+              onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+              className="w-full justify-center"
+            >
+              District
+              <ArrowUpDown className="ml-2 h-4 w-4" />
+            </Button>
+          )
+        },
+        cell: info => <div className="text-center">{String(info.getValue())}</div>
       }),
       columnHelper.accessor('landing_site', {
-        header: 'Landing Site',
-        cell: info => <div style={{ textAlign: 'center' }}>{String(info.getValue())}</div>
+        header: ({ column }) => {
+          return (
+            <Button
+              variant="ghost"
+              onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+              className="w-full justify-center"
+            >
+              Landing Site
+              <ArrowUpDown className="ml-2 h-4 w-4" />
+            </Button>
+          )
+        },
+        cell: info => <div className="text-center">{String(info.getValue())}</div>
       }),
       columnHelper.accessor('trip_duration_hrs', {
-        header: 'Trip Duration (hrs)',
+        header: ({ column }) => {
+          return (
+            <Button
+              variant="ghost"
+              onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+              className="w-full justify-center"
+            >
+              Trip Duration (hrs)
+              <ArrowUpDown className="ml-2 h-4 w-4" />
+            </Button>
+          )
+        },
         cell: info => createColoredCell(info.getValue(), 'trip_duration_hrs', '133, 146, 163')
       }),
       columnHelper.accessor('cpue_kg_fisher_hr', {
-        header: 'CPUE (kg/fisher/hr)',
+        header: ({ column }) => {
+          return (
+            <Button
+              variant="ghost"
+              onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+              className="w-full justify-center"
+            >
+              CPUE (kg/fisher/hr)
+              <ArrowUpDown className="ml-2 h-4 w-4" />
+            </Button>
+          )
+        },
         cell: info => createColoredCell(info.getValue(), 'cpue_kg_fisher_hr', '25, 135, 84')
       }),
       columnHelper.accessor('price_per_kg_mzn', {
-        header: 'Price per kg (MZN)',
+        header: ({ column }) => {
+          return (
+            <Button
+              variant="ghost"
+              onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+              className="w-full justify-center"
+            >
+              Price per kg (MZN)
+              <ArrowUpDown className="ml-2 h-4 w-4" />
+            </Button>
+          )
+        },
         cell: info => createColoredCell(info.getValue(), 'price_per_kg_mzn', '13, 110, 253')
       }),
       columnHelper.accessor('mean_catch_kg', {
-        header: 'Mean Catch (kg)',
+        header: ({ column }) => {
+          return (
+            <Button
+              variant="ghost"
+              onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+              className="w-full justify-center"
+            >
+              Mean Catch (kg)
+              <ArrowUpDown className="ml-2 h-4 w-4" />
+            </Button>
+          )
+        },
         cell: info => createColoredCell(info.getValue(), 'mean_catch_kg', '214, 51, 132')
       }),
       columnHelper.accessor('mean_catch_price_mzn', {
-        header: 'Mean Catch Price (MZN)',
+        header: ({ column }) => {
+          return (
+            <Button
+              variant="ghost"
+              onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+              className="w-full justify-center"
+            >
+              Mean Catch Price (MZN)
+              <ArrowUpDown className="ml-2 h-4 w-4" />
+            </Button>
+          )
+        },
         cell: info => createColoredCell(info.getValue(), 'mean_catch_price_mzn', '255, 193, 7')
       })
     ],
@@ -119,133 +218,134 @@ const Home = ({ theme, district }) => {
   });
 
   return (
-    <div className="row row-deck row-cards">
+    <div className="space-y-6">
       {/* Map row */}
-      <div className="col-12">
-        <div className="card">
-          <div className="card-body p-0">
-            <div
-              style={{
-                height: '500px',
-                width: '100%',
-                position: 'relative',
-                overflow: 'hidden',
-              }}
-            >
-              <Map theme={theme} />
-            </div>
+      <Card>
+        <CardContent className="p-0">
+          <div className="h-[500px] w-full relative overflow-hidden rounded-md">
+            <Map theme={theme} />
           </div>
-        </div>
-      </div>
+        </CardContent>
+      </Card>
 
       {/* Sites Statistics Table */}
-      <div className="col-12 mt-3">
-        <div className="card">
-          <div className="card-header">
-            <div className="d-flex align-items-center">
-              <h3 className="card-title mb-0">Landing Sites Statistics</h3>
-              <InfoButton
-                title="Landing Sites Statistics"
-                content="This table displays key metrics for each landing site including median trip duration, median catch per unit effort (CPUE), median price per kilogram, median catch, and median catch price. Click column headers to sort. Color intensity indicates relative values, with darker colors representing higher values within each metric."
-                placement="bottom"
-              />
-            </div>
+      <Card>
+        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+          <div className="flex items-center gap-2">
+            <CardTitle>Landing Sites Statistics</CardTitle>
+            <InfoButton
+              title="Landing Sites Statistics"
+              content="This table displays key metrics for each landing site including median trip duration, median catch per unit effort (CPUE), median price per kilogram, median catch, and median catch price. Click column headers to sort. Color intensity indicates relative values, with darker colors representing higher values within each metric."
+              placement="bottom"
+            />
           </div>
-          <div className="card-body">
-            <div className="table-responsive">
-              <table className="table table-vcenter table-hover">
-                <thead>
-                  {table.getHeaderGroups().map(headerGroup => (
-                    <tr key={headerGroup.id}>
-                      {headerGroup.headers.map(header => (
-                        <th
-                          key={header.id}
-                          onClick={header.column.getToggleSortingHandler()}
-                          style={{ cursor: 'pointer', textAlign: 'center' }}
-                        >
-                          {flexRender(
+        </CardHeader>
+        <CardContent>
+          <div className="rounded-md border">
+            <Table>
+              <TableHeader>
+                {table.getHeaderGroups().map(headerGroup => (
+                  <TableRow key={headerGroup.id}>
+                    {headerGroup.headers.map(header => (
+                      <TableHead key={header.id} className="text-center">
+                        {header.isPlaceholder
+                          ? null
+                          : flexRender(
                             header.column.columnDef.header,
                             header.getContext()
                           )}
-                          {{ asc: ' ↑', desc: ' ↓', false: ' ↕' }[header.column.getIsSorted() ?? false]}
-                        </th>
-                      ))}
-                    </tr>
-                  ))}
-                </thead>
-                <tbody>
-                  {table.getRowModel().rows.map(row => (
-                    <tr key={row.id}>
+                      </TableHead>
+                    ))}
+                  </TableRow>
+                ))}
+              </TableHeader>
+              <TableBody>
+                {table.getRowModel().rows?.length ? (
+                  table.getRowModel().rows.map(row => (
+                    <TableRow
+                      key={row.id}
+                      data-state={row.getIsSelected() && "selected"}
+                    >
                       {row.getVisibleCells().map(cell => (
-                        <td key={cell.id}>
+                        <TableCell key={cell.id}>
                           {flexRender(
                             cell.column.columnDef.cell,
                             cell.getContext()
                           )}
-                        </td>
+                        </TableCell>
                       ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+                    </TableRow>
+                  ))
+                ) : (
+                  <TableRow>
+                    <TableCell
+                      colSpan={columns.length}
+                      className="h-24 text-center"
+                    >
+                      No results.
+                    </TableCell>
+                  </TableRow>
+                )}
+              </TableBody>
+            </Table>
+          </div>
 
-              {/* Table Controls */}
-              <div className="d-flex align-items-center justify-content-between mt-4">
-                <div className="d-flex align-items-center gap-2">
-                  {!isExpanded && (
-                    <>
-                      <select
-                        value={table.getState().pagination.pageSize}
-                        onChange={e => {
-                          table.setPageSize(Number(e.target.value));
-                        }}
-                        className="form-select"
-                        style={{ width: 'auto' }}
-                      >
-                        {[5, 10, 20, 25, 50].map(pageSize => (
-                          <option key={pageSize} value={pageSize}>
-                            Show {pageSize}
-                          </option>
-                        ))}
-                      </select>
-                      <span className="text-muted">
-                        Page {table.getState().pagination.pageIndex + 1} of{' '}
-                        {table.getPageCount()}
-                      </span>
-                    </>
-                  )}
-                </div>
-                <div className="d-flex gap-2">
-                  <button
-                    className="btn btn-outline-secondary"
-                    onClick={() => setIsExpanded(!isExpanded)}
+          {/* Table Controls */}
+          <div className="flex items-center justify-between py-4">
+            <div className="flex items-center gap-2">
+              {!isExpanded && (
+                <>
+                  <Select
+                    value={String(table.getState().pagination.pageSize)}
+                    onValueChange={(value) => table.setPageSize(Number(value))}
                   >
-                    {isExpanded ? 'Collapse View' : 'Expand All'}
-                  </button>
-                  {!isExpanded && (
-                    <>
-                      <button
-                        className="btn btn-outline-primary"
-                        onClick={() => table.previousPage()}
-                        disabled={!table.getCanPreviousPage()}
-                      >
-                        Previous
-                      </button>
-                      <button
-                        className="btn btn-outline-primary"
-                        onClick={() => table.nextPage()}
-                        disabled={!table.getCanNextPage()}
-                      >
-                        Next
-                      </button>
-                    </>
-                  )}
-                </div>
-              </div>
+                    <SelectTrigger className="w-[120px]">
+                      <SelectValue placeholder={`Show ${pageSize}`} />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {[5, 10, 20, 25, 50].map(size => (
+                        <SelectItem key={size} value={String(size)}>
+                          Show {size}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <span className="text-sm text-muted-foreground">
+                    Page {table.getState().pagination.pageIndex + 1} of{' '}
+                    {table.getPageCount()}
+                  </span>
+                </>
+              )}
+            </div>
+            <div className="flex gap-2">
+              <Button
+                variant="outline"
+                onClick={() => setIsExpanded(!isExpanded)}
+              >
+                {isExpanded ? 'Collapse View' : 'Expand All'}
+              </Button>
+              {!isExpanded && (
+                <>
+                  <Button
+                    variant="outline"
+                    onClick={() => table.previousPage()}
+                    disabled={!table.getCanPreviousPage()}
+                  >
+                    Previous
+                  </Button>
+                  <Button
+                    variant="outline"
+                    onClick={() => table.nextPage()}
+                    disabled={!table.getCanNextPage()}
+                  >
+                    Next
+                  </Button>
+                </>
+              )}
             </div>
           </div>
-        </div>
-      </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };

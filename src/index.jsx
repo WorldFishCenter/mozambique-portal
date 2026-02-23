@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
+// Tabler CSS removed in favor of Tailwind/Shadcn
 import App from './App';
-import '@tabler/core/dist/css/tabler.min.css';
-import '@tabler/core/dist/css/tabler-themes.min.css';
-import '@tabler/core/dist/js/tabler.min.js';
+import './globals.css';
 
 // Apply fixed theme settings on initialization
 const html = document.documentElement;

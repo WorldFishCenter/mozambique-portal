@@ -1,7 +1,5 @@
 import React from 'react';
-import Header from './Header';
-import Navigation from './Navigation';
-import Footer from './Footer';
+import { Sidebar, MobileNav } from './Sidebar';
 
 const Layout = ({
   children,
@@ -12,37 +10,30 @@ const Layout = ({
   currency,
   setCurrency,
 }) => {
+  const sidebarProps = {
+    theme,
+    toggleTheme,
+    selectedLandingSite,
+    setSelectedLandingSite,
+    currency,
+    setCurrency,
+  };
+
   return (
-    <div className="page">
-      <div className="sticky-top">
-        <Header theme={theme} toggleTheme={toggleTheme} />
-        <Navigation
-          selectedLandingSite={selectedLandingSite}
-          setSelectedLandingSite={setSelectedLandingSite}
-          currency={currency}
-          setCurrency={setCurrency}
-        />
-      </div>
+    <div className="min-h-screen bg-background font-sans antialiased flex">
+      <Sidebar {...sidebarProps} />
 
-      <div className="page-wrapper">
-        <div className="page-body">
-          <div className="container-xl">
-            {/* Beta Alert using official Tabler Alert component structure */}
-            {/* <div className="alert alert-warning alert-dismissible" role="alert">
-              <div className="alert-icon">
-                <i className="ti ti-info-circle"></i>
-              </div>
-              <div className="alert-title mb-1">Beta Version</div>
-              <div className="alert-description text-muted">
-                This application is currently in beta testing phase.
-              </div>
-            </div> */}
+      <div className="flex-1 flex flex-col md:ml-64 transition-all duration-300">
+        <header className="sticky top-0 z-30 flex items-center gap-4 border-b bg-background/95 px-6 h-14 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:hidden">
+          <MobileNav {...sidebarProps} />
+          <div className="font-semibold text-lg">PESKAS</div>
+        </header>
 
+        <main className="flex-1 p-6 md:p-8 pt-6">
+          <div className="container max-w-7xl mx-auto animate-in fade-in duration-500 slide-in-from-bottom-4">
             {children}
           </div>
-        </div>
-
-        <Footer />
+        </main>
       </div>
     </div>
   );

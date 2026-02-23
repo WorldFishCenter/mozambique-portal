@@ -1,9 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useTheme } from '../../hooks/useTheme';
 import TaxaLengthChart from '../charts/TaxaLengthChart';
 import TaxaProportionsChart from '../charts/TaxaProportionsChart';
 import { getTaxaLength, getTaxaSites } from '../../services/dataService';
 import InfoButton from '../common/InfoButton';
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription
+} from '@/components/ui/card';
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from '@/components/ui/tabs';
 
 /**
  * Component that displays taxa length distribution and catch composition
@@ -11,83 +24,56 @@ import InfoButton from '../common/InfoButton';
  */
 const TaxaLength = () => {
   const { theme } = useTheme();
-  const [activeTab, setActiveTab] = useState('composition');
   const lengthData = getTaxaLength();
   const proportionsData = getTaxaSites();
 
   return (
-    <div className="container-xl">
-      <div className="page-header d-print-none">
-        <div className="row align-items-center">
-          <div className="col">
-            <h2 className="page-title">Fish Taxa Analysis</h2>
-            <div className="text-muted mt-1">
-              Length distribution and catch composition of different fish taxa
-            </div>
-          </div>
-        </div>
+    <div className="space-y-6">
+      <div className="flex flex-col space-y-2">
+        <h2 className="text-3xl font-bold tracking-tight">Fish Taxa Analysis</h2>
+        <p className="text-muted-foreground">
+          Length distribution and catch composition of different fish taxa
+        </p>
       </div>
-      <div className="page-body">
-        <div className="card">
-          <div className="card-header">
-            <ul className="nav nav-tabs card-header-tabs">
-              <li className="nav-item">
-                <a
-                  href="#"
-                  className={`nav-link ${activeTab === 'composition' ? 'active' : ''}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setActiveTab('composition');
-                  }}
-                >
-                  Catch Composition
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  href="#"
-                  className={`nav-link ${activeTab === 'length' ? 'active' : ''}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setActiveTab('length');
-                  }}
-                >
-                  Length Distribution
-                </a>
-              </li>
-            </ul>
-            <div className="card-actions">
+
+      <Card>
+        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+          <div className="space-y-1">
+            {/* Header content moved to tabs list context potentially, or kept generic */}
+          </div>
+        </CardHeader>
+        <CardContent className="p-6">
+          <Tabs defaultValue="composition" className="w-full">
+            <div className="flex items-center justify-between mb-4">
+              <TabsList>
+                <TabsTrigger value="composition">Catch Composition</TabsTrigger>
+                <TabsTrigger value="length">Length Distribution</TabsTrigger>
+              </TabsList>
               <InfoButton
                 title="Fish Taxa Analysis"
-                content={
-                  activeTab === 'composition'
-                    ? "The Catch Composition chart shows the proportion of different fish taxa (species groups) caught across all landing sites."
-                    : "The Length Distribution chart displays the ranked size distribution of fish catches for different taxa."
-                }
+                content="The Catch Composition chart shows the proportion of different fish taxa (species groups) caught across all landing sites. The Length Distribution chart displays the ranked size distribution of fish catches for different taxa."
                 placement="bottom"
               />
             </div>
-          </div>
-          <div className="card-body card-body-scrollable" style={{ maxHeight: '600px' }}>
-            <div className="tab-content">
-              <div className={`tab-pane ${activeTab === 'composition' ? 'active show' : ''}`}>
-                {activeTab === 'composition' && (
-                  /* @ts-ignore - Type definitions handled in chart components */
-                  <TaxaProportionsChart data={proportionsData} theme={theme} />
-                )}
+
+            <TabsContent value="composition" className="mt-0">
+              <div className="h-[600px] w-full relative">
+                {/* @ts-ignore */}
+                <TaxaProportionsChart data={proportionsData} theme={theme} />
               </div>
-              <div className={`tab-pane ${activeTab === 'length' ? 'active show' : ''}`}>
-                {activeTab === 'length' && (
-                  /* @ts-ignore - Type definitions handled in chart components */
-                  <TaxaLengthChart data={lengthData} theme={theme} />
-                )}
+            </TabsContent>
+
+            <TabsContent value="length" className="mt-0">
+              <div className="h-[600px] w-full relative">
+                {/* @ts-ignore */}
+                <TaxaLengthChart data={lengthData} theme={theme} />
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </TabsContent>
+          </Tabs>
+        </CardContent>
+      </Card>
     </div>
   );
 };
 
-export default TaxaLength; 
+export default TaxaLength;

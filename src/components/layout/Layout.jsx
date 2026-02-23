@@ -11,11 +11,12 @@ const Layout = ({
   setSelectedLandingSite,
   currency,
   setCurrency,
+  onLogout,
 }) => {
   return (
     <div className="page">
       <div className="sticky-top">
-        <Header theme={theme} toggleTheme={toggleTheme} />
+        <Header theme={theme} toggleTheme={toggleTheme} onLogout={onLogout} />
         <Navigation
           selectedLandingSite={selectedLandingSite}
           setSelectedLandingSite={setSelectedLandingSite}

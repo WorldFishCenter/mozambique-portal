@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { IconSun, IconMoon } from '@tabler/icons-react';
+import { IconSun, IconMoon, IconLogout } from '@tabler/icons-react';
 import { getVersionString } from '../../utils/version';
 
-const Header = ({ theme, toggleTheme }) => {
+const Header = ({ theme, toggleTheme, onLogout }) => {
   return (
     <header className="navbar navbar-expand-md navbar-light d-print-none">
       <div className="container-xl">
@@ -28,7 +28,7 @@ const Header = ({ theme, toggleTheme }) => {
                 <br />
                 <small>
                   Mozambique - Cabo Delgado ({getVersionString()})
-                </small>              
+                </small>
                 </div>
             </div>
           </div>
@@ -45,6 +45,17 @@ const Header = ({ theme, toggleTheme }) => {
               )}
             </button>
           </div>
+          {onLogout && (
+            <div className="nav-item ms-2">
+              <button
+                className="nav-link px-0"
+                onClick={onLogout}
+                title="Sign out"
+              >
+                <IconLogout size={24} stroke={1.5} />
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </header>

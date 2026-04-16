@@ -1,6 +1,6 @@
 [
   {
-    "_id": "69dc6b89278d5f8e830e533b",
+    "_id": "69df08c4454cf003460cd9eb",
     "type": [
       "metadata"
     ],
@@ -16,11 +16,11 @@
       "price_per_kg_mzn"
     ],
     "timestamp": [
-      "2026-04-13T04:05:29.691Z"
+      "2026-04-15T03:40:52.462Z"
     ]
   },
   {
-    "_id": "69dc6b89278d5f8e830e533c",
+    "_id": "69df08c4454cf003460cd9ec",
     "district": "Mocimboa",
     "landing_site": "Lussoma",
     "n_submissions": 8,
@@ -32,7 +32,7 @@
     "price_per_kg_mzn": 240.239744582
   },
   {
-    "_id": "69dc6b89278d5f8e830e533d",
+    "_id": "69df08c4454cf003460cd9ed",
     "district": "Mocimboa",
     "landing_site": "Maculo",
     "n_submissions": 2272,
@@ -44,7 +44,7 @@
     "price_per_kg_mzn": 527.286941788
   },
   {
-    "_id": "69dc6b89278d5f8e830e533e",
+    "_id": "69df08c4454cf003460cd9ee",
     "district": "Mocimboa",
     "landing_site": "Milamba",
     "n_submissions": 9,
@@ -56,7 +56,7 @@
     "price_per_kg_mzn": 373.400673401
   },
   {
-    "_id": "69dc6b89278d5f8e830e533f",
+    "_id": "69df08c4454cf003460cd9ef",
     "district": "Mocimboa",
     "landing_site": "Mocímboa-velha",
     "n_submissions": 2725,
@@ -68,7 +68,7 @@
     "price_per_kg_mzn": 208.418879202
   },
   {
-    "_id": "69dc6b89278d5f8e830e5340",
+    "_id": "69df08c4454cf003460cd9f0",
     "district": "Mocimboa",
     "landing_site": "Nabadje",
     "n_submissions": 2758,
@@ -80,7 +80,7 @@
     "price_per_kg_mzn": 138.510366276
   },
   {
-    "_id": "69dc6b89278d5f8e830e5341",
+    "_id": "69df08c4454cf003460cd9f1",
     "district": "Mocimboa",
     "landing_site": "Nabubuci",
     "n_submissions": 1230,
@@ -92,7 +92,7 @@
     "price_per_kg_mzn": 474.422371439
   },
   {
-    "_id": "69dc6b89278d5f8e830e5342",
+    "_id": "69df08c4454cf003460cd9f2",
     "district": "Mocimboa",
     "landing_site": "Ncomangano",
     "n_submissions": 2255,
@@ -104,7 +104,7 @@
     "price_per_kg_mzn": 558.403485054
   },
   {
-    "_id": "69dc6b89278d5f8e830e5343",
+    "_id": "69df08c4454cf003460cd9f3",
     "district": "Mocimboa",
     "landing_site": "Nsangue",
     "n_submissions": 3008,
@@ -116,7 +116,7 @@
     "price_per_kg_mzn": 60.453607407
   },
   {
-    "_id": "69dc6b89278d5f8e830e5344",
+    "_id": "69df08c4454cf003460cd9f4",
     "district": "Palma",
     "landing_site": "Farol",
     "n_submissions": 48,
@@ -128,7 +128,7 @@
     "price_per_kg_mzn": 94.658210848
   },
   {
-    "_id": "69dc6b89278d5f8e830e5345",
+    "_id": "69df08c4454cf003460cd9f5",
     "district": "Palma",
     "landing_site": "Lalane",
     "n_submissions": 1175,
@@ -140,7 +140,7 @@
     "price_per_kg_mzn": 291.386826244
   },
   {
-    "_id": "69dc6b89278d5f8e830e5346",
+    "_id": "69df08c4454cf003460cd9f6",
     "district": "Palma",
     "landing_site": "Macongõ",
     "n_submissions": 13,
@@ -152,7 +152,7 @@
     "price_per_kg_mzn": 57.974358974
   },
   {
-    "_id": "69dc6b89278d5f8e830e5347",
+    "_id": "69df08c4454cf003460cd9f7",
     "district": "Palma",
     "landing_site": "Maganja-velha",
     "n_submissions": 1681,
@@ -164,7 +164,7 @@
     "price_per_kg_mzn": 180.27693683
   },
   {
-    "_id": "69dc6b89278d5f8e830e5348",
+    "_id": "69df08c4454cf003460cd9f8",
     "district": "Palma",
     "landing_site": "Mbuizi",
     "n_submissions": 31,
@@ -176,7 +176,7 @@
     "price_per_kg_mzn": 6.922580645
   },
   {
-    "_id": "69dc6b89278d5f8e830e5349",
+    "_id": "69df08c4454cf003460cd9f9",
     "district": "Palma",
     "landing_site": "Milamba",
     "n_submissions": 2180,
@@ -188,7 +188,7 @@
     "price_per_kg_mzn": 152.533509434
   },
   {
-    "_id": "69dc6b89278d5f8e830e534a",
+    "_id": "69df08c4454cf003460cd9fa",
     "district": "Palma",
     "landing_site": "Olumbe",
     "n_submissions": 1258,
@@ -200,7 +200,7 @@
     "price_per_kg_mzn": 112.536907979
   },
   {
-    "_id": "69dc6b89278d5f8e830e534b",
+    "_id": "69df08c4454cf003460cd9fb",
     "district": "Palma",
     "landing_site": "Quelimane",
     "n_submissions": 1638,
@@ -212,7 +212,7 @@
     "price_per_kg_mzn": 156.502712866
   },
   {
-    "_id": "69dc6b89278d5f8e830e534c",
+    "_id": "69df08c4454cf003460cd9fc",
     "district": "Palma",
     "landing_site": "Quifuque",
     "n_submissions": 1944,
@@ -224,7 +224,7 @@
     "price_per_kg_mzn": 190.767079533
   },
   {
-    "_id": "69dc6b89278d5f8e830e534d",
+    "_id": "69df08c4454cf003460cd9fd",
     "district": "Palma",
     "landing_site": "Quionga",
     "n_submissions": 935,
@@ -236,7 +236,7 @@
     "price_per_kg_mzn": 196.834736627
   },
   {
-    "_id": "69dc6b89278d5f8e830e534e",
+    "_id": "69df08c4454cf003460cd9fe",
     "district": "Palma",
     "landing_site": "Quirinde",
     "n_submissions": 1487,
@@ -248,7 +248,7 @@
     "price_per_kg_mzn": 167.080070602
   },
   {
-    "_id": "69dc6b89278d5f8e830e534f",
+    "_id": "69df08c4454cf003460cd9ff",
     "district": "Palma",
     "landing_site": "Quivure",
     "n_submissions": 168,
@@ -260,7 +260,7 @@
     "price_per_kg_mzn": 472.474913566
   },
   {
-    "_id": "69dc6b89278d5f8e830e5350",
+    "_id": "69df08c4454cf003460cda00",
     "district": "Palma",
     "landing_site": "Quiwia",
     "n_submissions": 780,
@@ -272,7 +272,7 @@
     "price_per_kg_mzn": 63.456500521
   },
   {
-    "_id": "69dc6b89278d5f8e830e5351",
+    "_id": "69df08c4454cf003460cda01",
     "district": "Palma",
     "landing_site": "Suavo",
     "n_submissions": 4,
@@ -284,15 +284,15 @@
     "price_per_kg_mzn": 36.25
   },
   {
-    "_id": "69dc6b89278d5f8e830e5352",
+    "_id": "69df08c4454cf003460cda02",
     "district": "Palma",
     "landing_site": "Vamizi",
-    "n_submissions": 1682,
-    "n_fishers": 4.607609988,
-    "trip_duration_hrs": 4.152794293,
-    "mean_catch_kg": 48.417397263,
-    "cpue_kg_fisher_hr": 3.820094169,
-    "mean_catch_price_mzn": 116.33908434,
-    "price_per_kg_mzn": 323.676702301
+    "n_submissions": 1690,
+    "n_fishers": 4.624852071,
+    "trip_duration_hrs": 4.152071006,
+    "mean_catch_kg": 48.423302411,
+    "cpue_kg_fisher_hr": 3.810759308,
+    "mean_catch_price_mzn": 116.333141379,
+    "price_per_kg_mzn": 323.222056534
   }
 ]

@@ -1,6 +1,6 @@
 [
   {
-    "_id": "6a49cf740931766b1302de11",
+    "_id": "6a4c74948bbb6a784a0a0a71",
     "type": [
       "metadata"
     ],
@@ -16,143 +16,11 @@
       "price_per_kg_mzn"
     ],
     "timestamp": [
-      "2026-07-05T03:28:52.479Z"
+      "2026-07-07T03:37:56.069Z"
     ]
   },
   {
-    "_id": "6a49cf740931766b1302de23",
-    "district": "Palma",
-    "landing_site": "Quionga",
-    "n_submissions": 935,
-    "n_fishers": 8.520855615,
-    "trip_duration_hrs": 13.699465241,
-    "mean_catch_kg": 82.236363636,
-    "cpue_kg_fisher_hr": 1.055848879,
-    "mean_catch_price_mzn": 155.699905076,
-    "price_per_kg_mzn": 196.834736627
-  },
-  {
-    "_id": "6a49cf740931766b1302de25",
-    "district": "Palma",
-    "landing_site": "Quivure",
-    "n_submissions": 180,
-    "n_fishers": 3.155555556,
-    "trip_duration_hrs": 4.2,
-    "mean_catch_kg": 38.181526247,
-    "cpue_kg_fisher_hr": 4.405923171,
-    "mean_catch_price_mzn": 132.695304996,
-    "price_per_kg_mzn": 476.239152132
-  },
-  {
-    "_id": "6a49cf740931766b1302de1b",
-    "district": "Palma",
-    "landing_site": "Lalane",
-    "n_submissions": 1176,
-    "n_fishers": 1.414965986,
-    "trip_duration_hrs": 4.441326531,
-    "mean_catch_kg": 18.627363039,
-    "cpue_kg_fisher_hr": 2.840680036,
-    "mean_catch_price_mzn": 231.103147002,
-    "price_per_kg_mzn": 291.234002979
-  },
-  {
-    "_id": "6a49cf740931766b1302de15",
-    "district": "Mocimboa",
-    "landing_site": "Mocímboa-velha",
-    "n_submissions": 2725,
-    "n_fishers": 3.373211009,
-    "trip_duration_hrs": 5.006972477,
-    "mean_catch_kg": 21.167604396,
-    "cpue_kg_fisher_hr": 2.415133305,
-    "mean_catch_price_mzn": 123.560700324,
-    "price_per_kg_mzn": 208.418879202
-  },
-  {
-    "_id": "6a49cf740931766b1302de17",
-    "district": "Mocimboa",
-    "landing_site": "Nabubuci",
-    "n_submissions": 1230,
-    "n_fishers": 1.96097561,
-    "trip_duration_hrs": 5.480487805,
-    "mean_catch_kg": 61.478463755,
-    "cpue_kg_fisher_hr": 10.149061722,
-    "mean_catch_price_mzn": 114.958861354,
-    "price_per_kg_mzn": 474.422371439
-  },
-  {
-    "_id": "6a49cf740931766b1302de19",
-    "district": "Mocimboa",
-    "landing_site": "Nsangue",
-    "n_submissions": 3008,
-    "n_fishers": 1.156582447,
-    "trip_duration_hrs": 5.762965426,
-    "mean_catch_kg": 9.89603239,
-    "cpue_kg_fisher_hr": 0.700552422,
-    "mean_catch_price_mzn": 357.413721557,
-    "price_per_kg_mzn": 60.453607407
-  },
-  {
-    "_id": "6a49cf740931766b1302de13",
-    "district": "Mocimboa",
-    "landing_site": "Maculo",
-    "n_submissions": 2272,
-    "n_fishers": 3.418133803,
-    "trip_duration_hrs": 5.018926056,
-    "mean_catch_kg": 28.193282142,
-    "cpue_kg_fisher_hr": 3.346303467,
-    "mean_catch_price_mzn": 202.429886835,
-    "price_per_kg_mzn": 527.286941788
-  },
-  {
-    "_id": "6a49cf740931766b1302de1d",
-    "district": "Palma",
-    "landing_site": "Maganja-velha",
-    "n_submissions": 1681,
-    "n_fishers": 7.137418203,
-    "trip_duration_hrs": 4.151100535,
-    "mean_catch_kg": 47.865668673,
-    "cpue_kg_fisher_hr": 4.473875461,
-    "mean_catch_price_mzn": 98.900950154,
-    "price_per_kg_mzn": 180.27693683
-  },
-  {
-    "_id": "6a49cf740931766b1302de22",
-    "district": "Palma",
-    "landing_site": "Quifuque",
-    "n_submissions": 1944,
-    "n_fishers": 4.42026749,
-    "trip_duration_hrs": 4.231995885,
-    "mean_catch_kg": 29.428092213,
-    "cpue_kg_fisher_hr": 2.150177466,
-    "mean_catch_price_mzn": 152.417993366,
-    "price_per_kg_mzn": 190.767079533
-  },
-  {
-    "_id": "6a49cf740931766b1302de18",
-    "district": "Mocimboa",
-    "landing_site": "Ncomangano",
-    "n_submissions": 2255,
-    "n_fishers": 2.687804878,
-    "trip_duration_hrs": 3.873170732,
-    "mean_catch_kg": 29.784434374,
-    "cpue_kg_fisher_hr": 4.18095131,
-    "mean_catch_price_mzn": 216.354461208,
-    "price_per_kg_mzn": 558.403485054
-  },
-  {
-    "_id": "6a49cf740931766b1302de28",
-    "district": "Palma",
-    "landing_site": "Vamizi",
-    "n_submissions": 1706,
-    "n_fishers": 4.658851114,
-    "trip_duration_hrs": 4.150058617,
-    "mean_catch_kg": 48.513339034,
-    "cpue_kg_fisher_hr": 3.813141645,
-    "mean_catch_price_mzn": 116.208689532,
-    "price_per_kg_mzn": 323.430370139
-  },
-  {
-    "_id": "6a49cf740931766b1302de12",
+    "_id": "6a4c74948bbb6a784a0a0a72",
     "district": "Mocimboa",
     "landing_site": "Lussoma",
     "n_submissions": 8,
@@ -164,19 +32,19 @@
     "price_per_kg_mzn": 240.239744582
   },
   {
-    "_id": "6a49cf740931766b1302de1a",
-    "district": "Palma",
-    "landing_site": "Farol",
-    "n_submissions": 48,
-    "n_fishers": 4.4375,
-    "trip_duration_hrs": 4.645833333,
-    "mean_catch_kg": 23.897643378,
-    "cpue_kg_fisher_hr": 1.890767493,
-    "mean_catch_price_mzn": 73.520097387,
-    "price_per_kg_mzn": 94.658210848
+    "_id": "6a4c74948bbb6a784a0a0a73",
+    "district": "Mocimboa",
+    "landing_site": "Maculo",
+    "n_submissions": 2272,
+    "n_fishers": 3.418133803,
+    "trip_duration_hrs": 5.018926056,
+    "mean_catch_kg": 28.193282142,
+    "cpue_kg_fisher_hr": 3.346303467,
+    "mean_catch_price_mzn": 202.429886835,
+    "price_per_kg_mzn": 527.286941788
   },
   {
-    "_id": "6a49cf740931766b1302de14",
+    "_id": "6a4c74948bbb6a784a0a0a74",
     "district": "Mocimboa",
     "landing_site": "Milamba",
     "n_submissions": 9,
@@ -188,7 +56,91 @@
     "price_per_kg_mzn": 373.400673401
   },
   {
-    "_id": "6a49cf740931766b1302de1c",
+    "_id": "6a4c74948bbb6a784a0a0a75",
+    "district": "Mocimboa",
+    "landing_site": "Mocímboa-velha",
+    "n_submissions": 2725,
+    "n_fishers": 3.373211009,
+    "trip_duration_hrs": 5.006972477,
+    "mean_catch_kg": 21.167604396,
+    "cpue_kg_fisher_hr": 2.415133305,
+    "mean_catch_price_mzn": 123.560700324,
+    "price_per_kg_mzn": 208.418879202
+  },
+  {
+    "_id": "6a4c74948bbb6a784a0a0a76",
+    "district": "Mocimboa",
+    "landing_site": "Nabadje",
+    "n_submissions": 2758,
+    "n_fishers": 7.4586657,
+    "trip_duration_hrs": 5.55728789,
+    "mean_catch_kg": 33.212583557,
+    "cpue_kg_fisher_hr": 1.801078419,
+    "mean_catch_price_mzn": 139.966359285,
+    "price_per_kg_mzn": 138.510366276
+  },
+  {
+    "_id": "6a4c74948bbb6a784a0a0a77",
+    "district": "Mocimboa",
+    "landing_site": "Nabubuci",
+    "n_submissions": 1230,
+    "n_fishers": 1.96097561,
+    "trip_duration_hrs": 5.480487805,
+    "mean_catch_kg": 61.478463755,
+    "cpue_kg_fisher_hr": 10.149061722,
+    "mean_catch_price_mzn": 114.958861354,
+    "price_per_kg_mzn": 474.422371439
+  },
+  {
+    "_id": "6a4c74948bbb6a784a0a0a78",
+    "district": "Mocimboa",
+    "landing_site": "Ncomangano",
+    "n_submissions": 2255,
+    "n_fishers": 2.687804878,
+    "trip_duration_hrs": 3.873170732,
+    "mean_catch_kg": 29.784434374,
+    "cpue_kg_fisher_hr": 4.18095131,
+    "mean_catch_price_mzn": 216.354461208,
+    "price_per_kg_mzn": 558.403485054
+  },
+  {
+    "_id": "6a4c74948bbb6a784a0a0a79",
+    "district": "Mocimboa",
+    "landing_site": "Nsangue",
+    "n_submissions": 3008,
+    "n_fishers": 1.156582447,
+    "trip_duration_hrs": 5.762965426,
+    "mean_catch_kg": 9.89603239,
+    "cpue_kg_fisher_hr": 0.700552422,
+    "mean_catch_price_mzn": 357.413721557,
+    "price_per_kg_mzn": 60.453607407
+  },
+  {
+    "_id": "6a4c74948bbb6a784a0a0a7a",
+    "district": "Palma",
+    "landing_site": "Farol",
+    "n_submissions": 48,
+    "n_fishers": 4.4375,
+    "trip_duration_hrs": 4.645833333,
+    "mean_catch_kg": 23.897643378,
+    "cpue_kg_fisher_hr": 1.890767493,
+    "mean_catch_price_mzn": 73.520097387,
+    "price_per_kg_mzn": 94.658210848
+  },
+  {
+    "_id": "6a4c74948bbb6a784a0a0a7b",
+    "district": "Palma",
+    "landing_site": "Lalane",
+    "n_submissions": 1176,
+    "n_fishers": 1.414965986,
+    "trip_duration_hrs": 4.441326531,
+    "mean_catch_kg": 18.627363039,
+    "cpue_kg_fisher_hr": 2.840680036,
+    "mean_catch_price_mzn": 231.103147002,
+    "price_per_kg_mzn": 291.234002979
+  },
+  {
+    "_id": "6a4c74948bbb6a784a0a0a7c",
     "district": "Palma",
     "landing_site": "Macongõ",
     "n_submissions": 13,
@@ -200,55 +152,19 @@
     "price_per_kg_mzn": 57.974358974
   },
   {
-    "_id": "6a49cf740931766b1302de20",
+    "_id": "6a4c74948bbb6a784a0a0a7d",
     "district": "Palma",
-    "landing_site": "Olumbe",
-    "n_submissions": 1258,
-    "n_fishers": 15.092209857,
-    "trip_duration_hrs": 5.910174881,
-    "mean_catch_kg": 123.310352331,
-    "cpue_kg_fisher_hr": 1.950514324,
-    "mean_catch_price_mzn": 97.275989528,
-    "price_per_kg_mzn": 112.536907979
+    "landing_site": "Maganja-velha",
+    "n_submissions": 1681,
+    "n_fishers": 7.137418203,
+    "trip_duration_hrs": 4.151100535,
+    "mean_catch_kg": 47.865668673,
+    "cpue_kg_fisher_hr": 4.473875461,
+    "mean_catch_price_mzn": 98.900950154,
+    "price_per_kg_mzn": 180.27693683
   },
   {
-    "_id": "6a49cf740931766b1302de21",
-    "district": "Palma",
-    "landing_site": "Quelimane",
-    "n_submissions": 1638,
-    "n_fishers": 11.470695971,
-    "trip_duration_hrs": 4.73015873,
-    "mean_catch_kg": 52.802885517,
-    "cpue_kg_fisher_hr": 1.066795635,
-    "mean_catch_price_mzn": 212.408307321,
-    "price_per_kg_mzn": 156.502712866
-  },
-  {
-    "_id": "6a49cf740931766b1302de27",
-    "district": "Palma",
-    "landing_site": "Suavo",
-    "n_submissions": 4,
-    "n_fishers": 1,
-    "trip_duration_hrs": 4,
-    "mean_catch_kg": 4.75,
-    "cpue_kg_fisher_hr": 1.15,
-    "mean_catch_price_mzn": 36.111111111,
-    "price_per_kg_mzn": 36.25
-  },
-  {
-    "_id": "6a49cf740931766b1302de1f",
-    "district": "Palma",
-    "landing_site": "Milamba",
-    "n_submissions": 2180,
-    "n_fishers": 1.247247706,
-    "trip_duration_hrs": 3.355963303,
-    "mean_catch_kg": 9.584014885,
-    "cpue_kg_fisher_hr": 2.321483308,
-    "mean_catch_price_mzn": 95.968659363,
-    "price_per_kg_mzn": 152.533509434
-  },
-  {
-    "_id": "6a49cf740931766b1302de1e",
+    "_id": "6a4c74948bbb6a784a0a0a7e",
     "district": "Palma",
     "landing_site": "Mbuizi",
     "n_submissions": 31,
@@ -260,19 +176,67 @@
     "price_per_kg_mzn": 6.922580645
   },
   {
-    "_id": "6a49cf740931766b1302de26",
+    "_id": "6a4c74948bbb6a784a0a0a7f",
     "district": "Palma",
-    "landing_site": "Quiwia",
-    "n_submissions": 780,
-    "n_fishers": 2.151282051,
-    "trip_duration_hrs": 4.703846154,
-    "mean_catch_kg": 52.327920875,
-    "cpue_kg_fisher_hr": 4.645676605,
-    "mean_catch_price_mzn": 103.955720762,
-    "price_per_kg_mzn": 63.456500521
+    "landing_site": "Milamba",
+    "n_submissions": 2180,
+    "n_fishers": 1.247247706,
+    "trip_duration_hrs": 3.355963303,
+    "mean_catch_kg": 9.584014885,
+    "cpue_kg_fisher_hr": 2.321483308,
+    "mean_catch_price_mzn": 95.968659363,
+    "price_per_kg_mzn": 152.533509434
   },
   {
-    "_id": "6a49cf740931766b1302de24",
+    "_id": "6a4c74948bbb6a784a0a0a80",
+    "district": "Palma",
+    "landing_site": "Olumbe",
+    "n_submissions": 1258,
+    "n_fishers": 15.092209857,
+    "trip_duration_hrs": 5.910174881,
+    "mean_catch_kg": 123.310352331,
+    "cpue_kg_fisher_hr": 1.950514324,
+    "mean_catch_price_mzn": 97.275989528,
+    "price_per_kg_mzn": 112.536907979
+  },
+  {
+    "_id": "6a4c74948bbb6a784a0a0a81",
+    "district": "Palma",
+    "landing_site": "Quelimane",
+    "n_submissions": 1638,
+    "n_fishers": 11.470695971,
+    "trip_duration_hrs": 4.73015873,
+    "mean_catch_kg": 52.802885517,
+    "cpue_kg_fisher_hr": 1.066795635,
+    "mean_catch_price_mzn": 212.408307321,
+    "price_per_kg_mzn": 156.502712866
+  },
+  {
+    "_id": "6a4c74948bbb6a784a0a0a82",
+    "district": "Palma",
+    "landing_site": "Quifuque",
+    "n_submissions": 1944,
+    "n_fishers": 4.42026749,
+    "trip_duration_hrs": 4.231995885,
+    "mean_catch_kg": 29.428092213,
+    "cpue_kg_fisher_hr": 2.150177466,
+    "mean_catch_price_mzn": 152.417993366,
+    "price_per_kg_mzn": 190.767079533
+  },
+  {
+    "_id": "6a4c74948bbb6a784a0a0a83",
+    "district": "Palma",
+    "landing_site": "Quionga",
+    "n_submissions": 935,
+    "n_fishers": 8.520855615,
+    "trip_duration_hrs": 13.699465241,
+    "mean_catch_kg": 82.236363636,
+    "cpue_kg_fisher_hr": 1.055848879,
+    "mean_catch_price_mzn": 155.699905076,
+    "price_per_kg_mzn": 196.834736627
+  },
+  {
+    "_id": "6a4c74948bbb6a784a0a0a84",
     "district": "Palma",
     "landing_site": "Quirinde",
     "n_submissions": 1487,
@@ -284,15 +248,51 @@
     "price_per_kg_mzn": 167.080070602
   },
   {
-    "_id": "6a49cf740931766b1302de16",
-    "district": "Mocimboa",
-    "landing_site": "Nabadje",
-    "n_submissions": 2758,
-    "n_fishers": 7.4586657,
-    "trip_duration_hrs": 5.55728789,
-    "mean_catch_kg": 33.212583557,
-    "cpue_kg_fisher_hr": 1.801078419,
-    "mean_catch_price_mzn": 139.966359285,
-    "price_per_kg_mzn": 138.510366276
+    "_id": "6a4c74948bbb6a784a0a0a85",
+    "district": "Palma",
+    "landing_site": "Quivure",
+    "n_submissions": 180,
+    "n_fishers": 3.155555556,
+    "trip_duration_hrs": 4.2,
+    "mean_catch_kg": 38.181526247,
+    "cpue_kg_fisher_hr": 4.405923171,
+    "mean_catch_price_mzn": 132.695304996,
+    "price_per_kg_mzn": 476.239152132
+  },
+  {
+    "_id": "6a4c74948bbb6a784a0a0a86",
+    "district": "Palma",
+    "landing_site": "Quiwia",
+    "n_submissions": 780,
+    "n_fishers": 2.151282051,
+    "trip_duration_hrs": 4.703846154,
+    "mean_catch_kg": 52.327920875,
+    "cpue_kg_fisher_hr": 4.645676605,
+    "mean_catch_price_mzn": 103.955720762,
+    "price_per_kg_mzn": 63.456500521
+  },
+  {
+    "_id": "6a4c74948bbb6a784a0a0a87",
+    "district": "Palma",
+    "landing_site": "Suavo",
+    "n_submissions": 4,
+    "n_fishers": 1,
+    "trip_duration_hrs": 4,
+    "mean_catch_kg": 4.75,
+    "cpue_kg_fisher_hr": 1.15,
+    "mean_catch_price_mzn": 36.111111111,
+    "price_per_kg_mzn": 36.25
+  },
+  {
+    "_id": "6a4c74948bbb6a784a0a0a88",
+    "district": "Palma",
+    "landing_site": "Vamizi",
+    "n_submissions": 1706,
+    "n_fishers": 4.658851114,
+    "trip_duration_hrs": 4.150058617,
+    "mean_catch_kg": 48.513339034,
+    "cpue_kg_fisher_hr": 3.813141645,
+    "mean_catch_price_mzn": 116.208689532,
+    "price_per_kg_mzn": 323.430370139
   }
 ]

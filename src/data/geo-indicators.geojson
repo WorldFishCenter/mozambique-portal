@@ -4,15 +4,15 @@
     {
       "type": "Feature",
       "properties": {
-        "_id": "6a826712a65f813153098291",
+        "_id": "6a83f2cbad6b1c51be0ed5a4",
         "country": "mozambique",
         "region": "mocimboa",
-        "n_submissions": 14282,
-        "n_fishers": 3.023659847,
+        "n_submissions": 14357,
+        "n_fishers": 3.012208808,
         "trip_duration": 5.3125,
-        "mean_catch_kg": 24.626603298,
-        "mean_cpue": 3.031085282,
-        "mean_rpue": 183.320909044,
+        "mean_catch_kg": 23.46729755,
+        "mean_cpue": 2.963188893,
+        "mean_rpue": 183.361509272,
         "mean_price_kg": 267.657751079
       },
       "geometry": {
@@ -1500,16 +1500,16 @@
     {
       "type": "Feature",
       "properties": {
-        "_id": "6a826712a65f813153098292",
+        "_id": "6a83f2cbad6b1c51be0ed5a5",
         "country": "mozambique",
         "region": "palma",
-        "n_submissions": 15182,
+        "n_submissions": 15296,
         "n_fishers": 3.143646409,
-        "trip_duration": 4.645833333,
-        "mean_catch_kg": 27.091112179,
-        "mean_cpue": 1.967487177,
-        "mean_rpue": 107.154437421,
-        "mean_price_kg": 154.911548782
+        "trip_duration": 4.644341801,
+        "mean_catch_kg": 28.100635385,
+        "mean_cpue": 1.970673213,
+        "mean_rpue": 106.58833036,
+        "mean_price_kg": 155.239120522
       },
       "geometry": {
         "type": "MultiPolygon",

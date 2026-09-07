@@ -1,6 +1,6 @@
 [
   {
-    "_id": "6a9b8e75b6ee61fc50058f37",
+    "_id": "6a9e2fc9cf1b3a686d0d93ba",
     "type": [
       "metadata"
     ],
@@ -11,1078 +11,1064 @@
       "catch_percent"
     ],
     "timestamp": [
-      "2026-09-05T03:37:25.968Z"
+      "2026-09-07T03:30:17.106Z"
     ]
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f38",
+    "_id": "6a9e2fc9cf1b3a686d0d93bb",
     "landing_site": "Cabaceira",
     "catch_taxon": "Groupers nei",
     "catch_kg": 35,
     "catch_percent": 48.611111111
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f39",
+    "_id": "6a9e2fc9cf1b3a686d0d93bc",
     "landing_site": "Cabaceira",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 25,
     "catch_percent": 34.722222222
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f3a",
+    "_id": "6a9e2fc9cf1b3a686d0d93bd",
     "landing_site": "Cabaceira",
     "catch_taxon": "Snappers nei",
     "catch_kg": 12,
     "catch_percent": 16.666666667
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f3b",
-    "landing_site": "Celula",
-    "catch_taxon": "Surgeonfishes nei",
-    "catch_kg": 14.4357523,
-    "catch_percent": 37.558136464
-  },
-  {
-    "_id": "6a9b8e76b6ee61fc50058f3c",
+    "_id": "6a9e2fc9cf1b3a686d0d93be",
     "landing_site": "Celula",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 12,
-    "catch_percent": 31.220931768
+    "catch_percent": 50
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f3d",
+    "_id": "6a9e2fc9cf1b3a686d0d93bf",
     "landing_site": "Celula",
     "catch_taxon": "Spinefeet(=Rabbitfishes) nei",
     "catch_kg": 12,
-    "catch_percent": 31.220931768
+    "catch_percent": 50
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f3e",
-    "landing_site": "Celula",
-    "catch_taxon": "Fusiliers nei",
-    "catch_kg": 0,
-    "catch_percent": 0
-  },
-  {
-    "_id": "6a9b8e76b6ee61fc50058f3f",
+    "_id": "6a9e2fc9cf1b3a686d0d93c0",
     "landing_site": "Embomdeiro",
     "catch_taxon": "Octopuses nei",
     "catch_kg": 36,
     "catch_percent": 90.672878959
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f40",
+    "_id": "6a9e2fc9cf1b3a686d0d93c1",
     "landing_site": "Embomdeiro",
     "catch_taxon": "Sicklefishes nei",
     "catch_kg": 3.703161975,
     "catch_percent": 9.327121041
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f41",
+    "_id": "6a9e2fc9cf1b3a686d0d93c2",
     "landing_site": "Farol",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 269.139272919,
-    "catch_percent": 26.18570386
+    "catch_kg": 267.171159386,
+    "catch_percent": 26.045956851
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f42",
+    "_id": "6a9e2fc9cf1b3a686d0d93c3",
     "landing_site": "Farol",
     "catch_taxon": "Other",
-    "catch_kg": 210.670689189,
-    "catch_percent": 20.497046823
+    "catch_kg": 210.597104449,
+    "catch_percent": 20.530670705
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f43",
+    "_id": "6a9e2fc9cf1b3a686d0d93c4",
     "landing_site": "Farol",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 158,
-    "catch_percent": 15.372491591
+    "catch_percent": 15.403089135
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f44",
+    "_id": "6a9e2fc9cf1b3a686d0d93c5",
     "landing_site": "Farol",
     "catch_taxon": "Quoy's garfish",
     "catch_kg": 150,
-    "catch_percent": 14.594137587
+    "catch_percent": 14.623185888
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f45",
+    "_id": "6a9e2fc9cf1b3a686d0d93c6",
     "landing_site": "Farol",
     "catch_taxon": "Emperors(=Scavengers) nei",
     "catch_kg": 140,
-    "catch_percent": 13.621195081
+    "catch_percent": 13.648306829
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f46",
+    "_id": "6a9e2fc9cf1b3a686d0d93c7",
     "landing_site": "Farol",
     "catch_taxon": "Moontail bullseye",
     "catch_kg": 100,
-    "catch_percent": 9.729425058
+    "catch_percent": 9.748790592
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f47",
+    "_id": "6a9e2fc9cf1b3a686d0d93c8",
     "landing_site": "Lalane",
     "catch_taxon": "Other",
-    "catch_kg": 2064.547169873,
-    "catch_percent": 27.276462732
+    "catch_kg": 2332.268965195,
+    "catch_percent": 29.823003342
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f48",
+    "_id": "6a9e2fc9cf1b3a686d0d93c9",
     "landing_site": "Lalane",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 1649.009259919,
-    "catch_percent": 21.786443187
+    "catch_kg": 1631.975357579,
+    "catch_percent": 20.868264883
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f49",
+    "_id": "6a9e2fc9cf1b3a686d0d93ca",
     "landing_site": "Lalane",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 1585,
-    "catch_percent": 20.940763215
+    "catch_percent": 20.267585344
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f4a",
+    "_id": "6a9e2fc9cf1b3a686d0d93cb",
     "landing_site": "Lalane",
     "catch_taxon": "Octopuses nei",
     "catch_kg": 1235.753655342,
-    "catch_percent": 16.32657709
+    "catch_percent": 15.801730394
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f4b",
+    "_id": "6a9e2fc9cf1b3a686d0d93cc",
     "landing_site": "Lalane",
     "catch_taxon": "Mojarras(=Silver-biddies) nei",
-    "catch_kg": 589.659506572,
-    "catch_percent": 7.79048587
+    "catch_kg": 590.371212795,
+    "catch_percent": 7.549147596
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f4c",
+    "_id": "6a9e2fc9cf1b3a686d0d93cd",
     "landing_site": "Lalane",
     "catch_taxon": "Moonfish",
     "catch_kg": 445,
-    "catch_percent": 5.879267906
+    "catch_percent": 5.69026844
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f4d",
+    "_id": "6a9e2fc9cf1b3a686d0d93ce",
     "landing_site": "Luchete",
     "catch_taxon": "Fusiliers nei",
     "catch_kg": 70,
     "catch_percent": 66.666666667
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f4e",
+    "_id": "6a9e2fc9cf1b3a686d0d93cf",
     "landing_site": "Luchete",
     "catch_taxon": "Mojarras(=Silver-biddies) nei",
     "catch_kg": 35,
     "catch_percent": 33.333333333
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f4f",
+    "_id": "6a9e2fc9cf1b3a686d0d93d0",
     "landing_site": "Lussoma",
     "catch_taxon": "Barracudas nei",
     "catch_kg": 300,
-    "catch_percent": 57.202221261
+    "catch_percent": 56.507401128
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f50",
+    "_id": "6a9e2fc9cf1b3a686d0d93d1",
     "landing_site": "Lussoma",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 134.951097781,
-    "catch_percent": 25.731675182
+    "catch_kg": 134.479844264,
+    "catch_percent": 25.330355012
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f51",
+    "_id": "6a9e2fc9cf1b3a686d0d93d2",
     "landing_site": "Lussoma",
     "catch_taxon": "Parrotfishes nei",
     "catch_kg": 50,
-    "catch_percent": 9.533703544
+    "catch_percent": 9.417900188
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f52",
+    "_id": "6a9e2fc9cf1b3a686d0d93d3",
     "landing_site": "Lussoma",
     "catch_taxon": "Quoy's garfish",
     "catch_kg": 20,
-    "catch_percent": 3.813481417
+    "catch_percent": 3.767160075
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f53",
+    "_id": "6a9e2fc9cf1b3a686d0d93d4",
     "landing_site": "Lussoma",
     "catch_taxon": "Spinefeet(=Rabbitfishes) nei",
     "catch_kg": 15,
-    "catch_percent": 2.860111063
+    "catch_percent": 2.825370056
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f54",
+    "_id": "6a9e2fc9cf1b3a686d0d93d5",
     "landing_site": "Lussoma",
     "catch_taxon": "Other",
-    "catch_kg": 4.504060402,
-    "catch_percent": 0.858807532
+    "catch_kg": 11.424062146,
+    "catch_percent": 2.151813541
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f55",
+    "_id": "6a9e2fc9cf1b3a686d0d93d6",
     "landing_site": "Macamba-arbaine",
     "catch_taxon": "Emperors(=Scavengers) nei",
     "catch_kg": 25,
     "catch_percent": 100
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f56",
+    "_id": "6a9e2fc9cf1b3a686d0d93d7",
     "landing_site": "Macongõ",
     "catch_taxon": "Groupers nei",
-    "catch_kg": 65.112472827,
-    "catch_percent": 28.924418096
+    "catch_kg": 64.179119342,
+    "catch_percent": 28.628500072
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f57",
+    "_id": "6a9e2fc9cf1b3a686d0d93d8",
     "landing_site": "Macongõ",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 54,
-    "catch_percent": 23.988008893
+    "catch_percent": 24.087881226
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f58",
+    "_id": "6a9e2fc9cf1b3a686d0d93d9",
     "landing_site": "Macongõ",
     "catch_taxon": "Other",
     "catch_kg": 29,
-    "catch_percent": 12.88244922
+    "catch_percent": 12.936084362
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f59",
+    "_id": "6a9e2fc9cf1b3a686d0d93da",
     "landing_site": "Macongõ",
     "catch_taxon": "Wrasses, hogfishes, etc. nei",
     "catch_kg": 28,
-    "catch_percent": 12.438226833
+    "catch_percent": 12.490012487
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f5a",
+    "_id": "6a9e2fc9cf1b3a686d0d93db",
     "landing_site": "Macongõ",
     "catch_taxon": "Soldierfishes nei",
     "catch_kg": 27,
-    "catch_percent": 11.994004446
+    "catch_percent": 12.043940613
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f5b",
+    "_id": "6a9e2fc9cf1b3a686d0d93dc",
     "landing_site": "Macongõ",
     "catch_taxon": "Tropical spiny lobsters nei",
     "catch_kg": 22,
-    "catch_percent": 9.772892512
+    "catch_percent": 9.81358124
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f5c",
+    "_id": "6a9e2fc9cf1b3a686d0d93dd",
     "landing_site": "Maculo",
     "catch_taxon": "Other",
-    "catch_kg": 22832.405485365,
-    "catch_percent": 37.038393727
+    "catch_kg": 22707.584004384,
+    "catch_percent": 36.762340369
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f5d",
+    "_id": "6a9e2fc9cf1b3a686d0d93de",
     "landing_site": "Maculo",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 15598,
-    "catch_percent": 25.302847119
+    "catch_percent": 25.252311517
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f5e",
+    "_id": "6a9e2fc9cf1b3a686d0d93df",
     "landing_site": "Maculo",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 12706.067534975,
-    "catch_percent": 20.611596636
+    "catch_kg": 12656.348756672,
+    "catch_percent": 20.489938548
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f5f",
+    "_id": "6a9e2fc9cf1b3a686d0d93e0",
     "landing_site": "Maculo",
     "catch_taxon": "Spinefeet(=Rabbitfishes) nei",
     "catch_kg": 3860,
-    "catch_percent": 6.261635458
+    "catch_percent": 6.249129533
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f60",
+    "_id": "6a9e2fc9cf1b3a686d0d93e1",
     "landing_site": "Maculo",
     "catch_taxon": "Rays, stingrays, mantas nei",
-    "catch_kg": 3430.763685802,
-    "catch_percent": 5.565334597
+    "catch_kg": 3728.6700447,
+    "catch_percent": 6.036513496
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f61",
+    "_id": "6a9e2fc9cf1b3a686d0d93e2",
     "landing_site": "Maculo",
     "catch_taxon": "Sea cucumbers nei",
     "catch_kg": 3218,
-    "catch_percent": 5.220192462
+    "catch_percent": 5.209766538
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f62",
+    "_id": "6a9e2fc9cf1b3a686d0d93e3",
     "landing_site": "Maganja-velha",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 37968.81785165,
-    "catch_percent": 50.671880575
+    "catch_kg": 37833.424110668,
+    "catch_percent": 50.387681665
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f63",
+    "_id": "6a9e2fc9cf1b3a686d0d93e4",
     "landing_site": "Maganja-velha",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 14003,
-    "catch_percent": 18.687922981
+    "catch_percent": 18.649612689
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f64",
+    "_id": "6a9e2fc9cf1b3a686d0d93e5",
     "landing_site": "Maganja-velha",
     "catch_taxon": "Other",
-    "catch_kg": 12699.875550791,
-    "catch_percent": 16.948817836
+    "catch_kg": 12989.184909758,
+    "catch_percent": 17.29938354
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f65",
+    "_id": "6a9e2fc9cf1b3a686d0d93e6",
     "landing_site": "Maganja-velha",
     "catch_taxon": "Mojarras(=Silver-biddies) nei",
-    "catch_kg": 5117.052053388,
-    "catch_percent": 6.829041967
+    "catch_kg": 5117.060209047,
+    "catch_percent": 6.815053275
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f66",
+    "_id": "6a9e2fc9cf1b3a686d0d93e7",
     "landing_site": "Maganja-velha",
     "catch_taxon": "Scads nei",
     "catch_kg": 2722,
-    "catch_percent": 3.632687735
+    "catch_percent": 3.625240715
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f67",
+    "_id": "6a9e2fc9cf1b3a686d0d93e8",
     "landing_site": "Maganja-velha",
     "catch_taxon": "Quoy's garfish",
     "catch_kg": 2420,
-    "catch_percent": 3.229648905
+    "catch_percent": 3.223028116
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f68",
+    "_id": "6a9e2fc9cf1b3a686d0d93e9",
     "landing_site": "Mbawala",
     "catch_taxon": "Marine crabs nei",
     "catch_kg": 3,
     "catch_percent": 100
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f69",
+    "_id": "6a9e2fc9cf1b3a686d0d93ea",
     "landing_site": "Mbuizi",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 112,
     "catch_percent": 37.45819398
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f6a",
+    "_id": "6a9e2fc9cf1b3a686d0d93eb",
     "landing_site": "Mbuizi",
     "catch_taxon": "Other",
     "catch_kg": 77,
     "catch_percent": 25.752508361
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f6b",
+    "_id": "6a9e2fc9cf1b3a686d0d93ec",
     "landing_site": "Mbuizi",
     "catch_taxon": "Fusiliers nei",
     "catch_kg": 45,
     "catch_percent": 15.050167224
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f6c",
+    "_id": "6a9e2fc9cf1b3a686d0d93ed",
     "landing_site": "Mbuizi",
     "catch_taxon": "Scads nei",
     "catch_kg": 30,
     "catch_percent": 10.033444816
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f6d",
+    "_id": "6a9e2fc9cf1b3a686d0d93ee",
     "landing_site": "Mbuizi",
     "catch_taxon": "Sea cucumbers nei",
     "catch_kg": 20,
     "catch_percent": 6.688963211
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f6e",
+    "_id": "6a9e2fc9cf1b3a686d0d93ef",
     "landing_site": "Mbuizi",
     "catch_taxon": "Emperors(=Scavengers) nei",
     "catch_kg": 15,
     "catch_percent": 5.016722408
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f6f",
+    "_id": "6a9e2fc9cf1b3a686d0d93f0",
     "landing_site": "Milamba",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 6153.109567329,
-    "catch_percent": 29.6728132
+    "catch_kg": 6124.433005032,
+    "catch_percent": 29.234539979
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f70",
+    "_id": "6a9e2fc9cf1b3a686d0d93f1",
     "landing_site": "Milamba",
     "catch_taxon": "Other",
-    "catch_kg": 4909.23997691,
-    "catch_percent": 23.674364838
+    "catch_kg": 4895.533322555,
+    "catch_percent": 23.368475828
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f71",
+    "_id": "6a9e2fc9cf1b3a686d0d93f2",
     "landing_site": "Milamba",
     "catch_taxon": "Marine crabs nei",
     "catch_kg": 4307,
-    "catch_percent": 20.770117134
+    "catch_percent": 20.559154388
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f72",
+    "_id": "6a9e2fc9cf1b3a686d0d93f3",
     "landing_site": "Milamba",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 3240,
-    "catch_percent": 15.624606342
+    "catch_percent": 15.465906714
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f73",
+    "_id": "6a9e2fc9cf1b3a686d0d93f4",
+    "landing_site": "Milamba",
+    "catch_taxon": "Parrotfishes nei",
+    "catch_kg": 1300.165981249,
+    "catch_percent": 6.206248697
+  },
+  {
+    "_id": "6a9e2fc9cf1b3a686d0d93f5",
     "landing_site": "Milamba",
     "catch_taxon": "Octopuses nei",
     "catch_kg": 1082.172894335,
-    "catch_percent": 5.2186807
+    "catch_percent": 5.165674393
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f74",
-    "landing_site": "Milamba",
-    "catch_taxon": "Parrotfishes nei",
-    "catch_kg": 1045,
-    "catch_percent": 5.039417786
-  },
-  {
-    "_id": "6a9b8e76b6ee61fc50058f75",
+    "_id": "6a9e2fc9cf1b3a686d0d93f6",
     "landing_site": "Mocímboa-velha",
     "catch_taxon": "Other",
-    "catch_kg": 16304.830847145,
-    "catch_percent": 39.127719226
+    "catch_kg": 18646.271433787,
+    "catch_percent": 36.542524388
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f76",
+    "_id": "6a9e2fc9cf1b3a686d0d93f7",
+    "landing_site": "Mocímboa-velha",
+    "catch_taxon": "Parrotfishes nei",
+    "catch_kg": 9252.248073661,
+    "catch_percent": 18.132338257
+  },
+  {
+    "_id": "6a9e2fc9cf1b3a686d0d93f8",
     "landing_site": "Mocímboa-velha",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 9000,
-    "catch_percent": 21.59786117
+    "catch_percent": 17.637988413
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f77",
+    "_id": "6a9e2fc9cf1b3a686d0d93f9",
     "landing_site": "Mocímboa-velha",
     "catch_taxon": "Herrings, sardines nei",
     "catch_kg": 7810,
-    "catch_percent": 18.742143971
+    "catch_percent": 15.305854389
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f78",
+    "_id": "6a9e2fc9cf1b3a686d0d93fa",
     "landing_site": "Mocímboa-velha",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 3384.250479753,
-    "catch_percent": 8.121396892
+    "catch_kg": 3359.709483131,
+    "catch_percent": 6.584279659
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f79",
+    "_id": "6a9e2fc9cf1b3a686d0d93fb",
     "landing_site": "Mocímboa-velha",
     "catch_taxon": "Mojarras(=Silver-biddies) nei",
-    "catch_kg": 2957.711577921,
-    "catch_percent": 7.097804893
+    "catch_kg": 2957.99797717,
+    "catch_percent": 5.797014894
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f7a",
-    "landing_site": "Mocímboa-velha",
-    "catch_taxon": "Penaeid shrimps nei",
-    "catch_kg": 2214,
-    "catch_percent": 5.313073848
-  },
-  {
-    "_id": "6a9b8e76b6ee61fc50058f7b",
+    "_id": "6a9e2fc9cf1b3a686d0d93fc",
     "landing_site": "Moma",
     "catch_taxon": "Milkfish",
     "catch_kg": 20,
     "catch_percent": 48.094747216
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f7c",
+    "_id": "6a9e2fc9cf1b3a686d0d93fd",
     "landing_site": "Moma",
     "catch_taxon": "Tropical spiny lobsters nei",
     "catch_kg": 10,
     "catch_percent": 24.047373608
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f7d",
+    "_id": "6a9e2fc9cf1b3a686d0d93fe",
     "landing_site": "Moma",
     "catch_taxon": "Parrotfishes nei",
     "catch_kg": 10,
     "catch_percent": 24.047373608
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f7e",
+    "_id": "6a9e2fc9cf1b3a686d0d93ff",
     "landing_site": "Moma",
     "catch_taxon": "Octopuses nei",
     "catch_kg": 1.584582845,
     "catch_percent": 3.810505569
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f7f",
+    "_id": "6a9e2fc9cf1b3a686d0d9400",
     "landing_site": "Nabadje",
     "catch_taxon": "Spinefeet(=Rabbitfishes) nei",
-    "catch_kg": 30981.655521527,
-    "catch_percent": 37.341586452
+    "catch_kg": 30976.907844394,
+    "catch_percent": 36.919402429
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f80",
+    "_id": "6a9e2fc9cf1b3a686d0d9401",
     "landing_site": "Nabadje",
     "catch_taxon": "Other",
-    "catch_kg": 20728.250983275,
-    "catch_percent": 24.983357508
+    "catch_kg": 21033.979836522,
+    "catch_percent": 25.069060158
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f81",
+    "_id": "6a9e2fc9cf1b3a686d0d9402",
     "landing_site": "Nabadje",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 14813.209569799,
-    "catch_percent": 17.854073208
+    "catch_kg": 14740.518836543,
+    "catch_percent": 17.568285049
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f82",
+    "_id": "6a9e2fc9cf1b3a686d0d9403",
     "landing_site": "Nabadje",
     "catch_taxon": "Barracudas nei",
     "catch_kg": 6215.87148908,
-    "catch_percent": 7.491868936
+    "catch_percent": 7.408301116
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f83",
+    "_id": "6a9e2fc9cf1b3a686d0d9404",
     "landing_site": "Nabadje",
     "catch_taxon": "Parrotfishes nei",
-    "catch_kg": 5130,
-    "catch_percent": 6.183089163
+    "catch_kg": 5831.094362441,
+    "catch_percent": 6.949709779
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f84",
+    "_id": "6a9e2fc9cf1b3a686d0d9405",
     "landing_site": "Nabadje",
     "catch_taxon": "Emperors(=Scavengers) nei",
-    "catch_kg": 5099.24829654,
-    "catch_percent": 6.146024733
+    "catch_kg": 5105.769644008,
+    "catch_percent": 6.085241469
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f85",
+    "_id": "6a9e2fc9cf1b3a686d0d9406",
     "landing_site": "Nabubuci",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 23984.543453077,
-    "catch_percent": 33.203895741
+    "catch_kg": 23955.432337405,
+    "catch_percent": 32.900661694
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f86",
+    "_id": "6a9e2fc9cf1b3a686d0d9407",
     "landing_site": "Nabubuci",
     "catch_taxon": "Other",
-    "catch_kg": 20880.830270255,
-    "catch_percent": 28.907154836
+    "catch_kg": 21496.487488202,
+    "catch_percent": 29.523519028
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f87",
+    "_id": "6a9e2fc9cf1b3a686d0d9408",
     "landing_site": "Nabubuci",
     "catch_taxon": "Spinefeet(=Rabbitfishes) nei",
-    "catch_kg": 14637.310653899,
-    "catch_percent": 20.263705992
+    "catch_kg": 14628.663124125,
+    "catch_percent": 20.091171376
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f88",
+    "_id": "6a9e2fc9cf1b3a686d0d9409",
     "landing_site": "Nabubuci",
     "catch_taxon": "Carangids nei",
-    "catch_kg": 4777.820673304,
-    "catch_percent": 6.614353941
+    "catch_kg": 4774.756414986,
+    "catch_percent": 6.55770446
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f89",
+    "_id": "6a9e2fc9cf1b3a686d0d940a",
     "landing_site": "Nabubuci",
     "catch_taxon": "Groupers nei",
-    "catch_kg": 4014.81806903,
-    "catch_percent": 5.558062877
+    "catch_kg": 4013.170967446,
+    "catch_percent": 5.511734393
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f8a",
+    "_id": "6a9e2fc9cf1b3a686d0d940b",
     "landing_site": "Nabubuci",
     "catch_taxon": "Emperors(=Scavengers) nei",
-    "catch_kg": 3938.801575779,
-    "catch_percent": 5.452826614
+    "catch_kg": 3942.889513034,
+    "catch_percent": 5.415209049
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f8b",
+    "_id": "6a9e2fc9cf1b3a686d0d940c",
     "landing_site": "Ncomangano",
     "catch_taxon": "Other",
-    "catch_kg": 10047.884233948,
-    "catch_percent": 25.168306975
+    "catch_kg": 14053.293241938,
+    "catch_percent": 30.740907132
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f8c",
+    "_id": "6a9e2fc9cf1b3a686d0d940d",
     "landing_site": "Ncomangano",
     "catch_taxon": "Tropical spiny lobsters nei",
     "catch_kg": 9049.372162231,
-    "catch_percent": 22.667197513
+    "catch_percent": 19.795068989
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f8d",
+    "_id": "6a9e2fc9cf1b3a686d0d940e",
     "landing_site": "Ncomangano",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 7478.242144376,
-    "catch_percent": 18.731773729
+    "catch_kg": 7357.877961475,
+    "catch_percent": 16.095006289
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f8e",
+    "_id": "6a9e2fc9cf1b3a686d0d940f",
+    "landing_site": "Ncomangano",
+    "catch_taxon": "Parrotfishes nei",
+    "catch_kg": 6309.898250807,
+    "catch_percent": 13.802600771
+  },
+  {
+    "_id": "6a9e2fc9cf1b3a686d0d9410",
     "landing_site": "Ncomangano",
     "catch_taxon": "Emperors(=Scavengers) nei",
-    "catch_kg": 4797.898281469,
-    "catch_percent": 12.017950643
+    "catch_kg": 4829.059952752,
+    "catch_percent": 10.563337788
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f8f",
-    "landing_site": "Ncomangano",
-    "catch_taxon": "Groupers nei",
-    "catch_kg": 4433.585697031,
-    "catch_percent": 11.105407191
-  },
-  {
-    "_id": "6a9b8e76b6ee61fc50058f90",
+    "_id": "6a9e2fc9cf1b3a686d0d9411",
     "landing_site": "Ncomangano",
     "catch_taxon": "Octopuses nei",
     "catch_kg": 4115.783218552,
-    "catch_percent": 10.309363949
+    "catch_percent": 9.003079031
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f91",
+    "_id": "6a9e2fc9cf1b3a686d0d9412",
     "landing_site": "Nsangue",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 3954,
-    "catch_percent": 65.350575461
+    "catch_percent": 64.024813301
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f92",
+    "_id": "6a9e2fc9cf1b3a686d0d9413",
     "landing_site": "Nsangue",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 853.308668094,
-    "catch_percent": 14.103240391
+    "catch_kg": 845.955039303,
+    "catch_percent": 13.698056007
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f93",
+    "_id": "6a9e2fc9cf1b3a686d0d9414",
     "landing_site": "Nsangue",
     "catch_taxon": "Other",
-    "catch_kg": 376.91409638,
-    "catch_percent": 6.229527845
+    "catch_kg": 508.990291248,
+    "catch_percent": 8.241782592
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f94",
+    "_id": "6a9e2fc9cf1b3a686d0d9415",
     "landing_site": "Nsangue",
     "catch_taxon": "Spinefeet(=Rabbitfishes) nei",
-    "catch_kg": 323.963969272,
-    "catch_percent": 5.354383364
+    "catch_kg": 322.941533322,
+    "catch_percent": 5.229203687
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f95",
+    "_id": "6a9e2fc9cf1b3a686d0d9416",
     "landing_site": "Nsangue",
     "catch_taxon": "Emperors(=Scavengers) nei",
-    "catch_kg": 288.682428959,
-    "catch_percent": 4.771260207
+    "catch_kg": 290.268876825,
+    "catch_percent": 4.700154437
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f96",
+    "_id": "6a9e2fc9cf1b3a686d0d9417",
     "landing_site": "Nsangue",
     "catch_taxon": "Scads nei",
     "catch_kg": 253.574880212,
-    "catch_percent": 4.191012733
+    "catch_percent": 4.105989976
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f97",
+    "_id": "6a9e2fc9cf1b3a686d0d9418",
     "landing_site": "Nsangue ponta",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 12,
     "catch_percent": 100
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f98",
+    "_id": "6a9e2fc9cf1b3a686d0d9419",
     "landing_site": "Nsemo",
     "catch_taxon": "Sea chubs nei",
     "catch_kg": 6,
     "catch_percent": 100
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f99",
+    "_id": "6a9e2fc9cf1b3a686d0d941a",
     "landing_site": "Nssangue A",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 8,
     "catch_percent": 57.142857143
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f9a",
+    "_id": "6a9e2fc9cf1b3a686d0d941b",
     "landing_site": "Nssangue A",
     "catch_taxon": "Marine crabs nei",
     "catch_kg": 6,
     "catch_percent": 42.857142857
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f9b",
+    "_id": "6a9e2fc9cf1b3a686d0d941c",
     "landing_site": "Olumbe",
     "catch_taxon": "Miscellaneous fish",
-    "catch_kg": 35494,
-    "catch_percent": 22.627547195
+    "catch_kg": 36684,
+    "catch_percent": 23.537050606
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f9c",
+    "_id": "6a9e2fc9cf1b3a686d0d941d",
     "landing_site": "Olumbe",
     "catch_taxon": "Other",
-    "catch_kg": 30478.846980831,
-    "catch_percent": 19.43036988
+    "catch_kg": 32003.050903243,
+    "catch_percent": 20.533677589
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f9d",
+    "_id": "6a9e2fc9cf1b3a686d0d941e",
     "landing_site": "Olumbe",
     "catch_taxon": "Mojarras(=Silver-biddies) nei",
-    "catch_kg": 29390.387393096,
-    "catch_percent": 18.736473145
+    "catch_kg": 31150.810357913,
+    "catch_percent": 19.986866204
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f9e",
+    "_id": "6a9e2fc9cf1b3a686d0d941f",
     "landing_site": "Olumbe",
     "catch_taxon": "Parrotfishes nei",
-    "catch_kg": 22849,
-    "catch_percent": 14.566316162
+    "catch_kg": 23203.876217813,
+    "catch_percent": 14.887984102
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058f9f",
-    "landing_site": "Olumbe",
-    "catch_taxon": "Scads nei",
-    "catch_kg": 20674.663621286,
-    "catch_percent": 13.180169235
-  },
-  {
-    "_id": "6a9b8e76b6ee61fc50058fa0",
+    "_id": "6a9e2fc9cf1b3a686d0d9420",
     "landing_site": "Olumbe",
     "catch_taxon": "Herrings, sardines nei",
-    "catch_kg": 17975,
-    "catch_percent": 11.459124382
+    "catch_kg": 18190,
+    "catch_percent": 11.670999633
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fa1",
+    "_id": "6a9e2fc9cf1b3a686d0d9421",
+    "landing_site": "Olumbe",
+    "catch_taxon": "Scads nei",
+    "catch_kg": 14624.663621286,
+    "catch_percent": 9.383421867
+  },
+  {
+    "_id": "6a9e2fc9cf1b3a686d0d9422",
     "landing_site": "Pamunda",
     "catch_taxon": "Grunts, sweetlips nei",
     "catch_kg": 70,
     "catch_percent": 100
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fa2",
+    "_id": "6a9e2fc9cf1b3a686d0d9423",
     "landing_site": "Pamunda",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 0,
     "catch_percent": 0
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fa3",
+    "_id": "6a9e2fc9cf1b3a686d0d9424",
     "landing_site": "Panchina",
     "catch_taxon": "Surgeonfishes nei",
-    "catch_kg": 22.207135425,
-    "catch_percent": 100
+    "catch_kg": 21.739554373,
+    "catch_percent": 92.045809749
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fa4",
+    "_id": "6a9e2fc9cf1b3a686d0d9425",
     "landing_site": "Panchina",
     "catch_taxon": "Parrotfishes nei",
-    "catch_kg": 0,
-    "catch_percent": 0
+    "catch_kg": 1.878635779,
+    "catch_percent": 7.954190251
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fa5",
+    "_id": "6a9e2fc9cf1b3a686d0d9426",
     "landing_site": "Quelimane",
     "catch_taxon": "Other",
-    "catch_kg": 28315.782508758,
-    "catch_percent": 33.718812394
+    "catch_kg": 28424.54062312,
+    "catch_percent": 33.657298378
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fa6",
+    "_id": "6a9e2fc9cf1b3a686d0d9427",
     "landing_site": "Quelimane",
     "catch_taxon": "Mojarras(=Silver-biddies) nei",
-    "catch_kg": 17709.999111717,
-    "catch_percent": 21.089303725
+    "catch_kg": 17710.543857719,
+    "catch_percent": 20.970930259
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fa7",
+    "_id": "6a9e2fc9cf1b3a686d0d9428",
     "landing_site": "Quelimane",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 13973.080708884,
-    "catch_percent": 16.639331328
+    "catch_kg": 13968.835356042,
+    "catch_percent": 16.540399572
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fa8",
+    "_id": "6a9e2fc9cf1b3a686d0d9429",
     "landing_site": "Quelimane",
     "catch_taxon": "Herrings, sardines nei",
     "catch_kg": 12600,
-    "catch_percent": 15.004248462
+    "catch_percent": 14.919571267
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fa9",
+    "_id": "6a9e2fc9cf1b3a686d0d942a",
     "landing_site": "Quelimane",
     "catch_taxon": "Parrotfishes nei",
-    "catch_kg": 6921,
-    "catch_percent": 8.241619334
+    "catch_kg": 7292.556079062,
+    "catch_percent": 8.635064297
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058faa",
+    "_id": "6a9e2fc9cf1b3a686d0d942b",
     "landing_site": "Quelimane",
     "catch_taxon": "Scads nei",
     "catch_kg": 4456.353019547,
-    "catch_percent": 5.306684757
+    "catch_percent": 5.276736227
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fab",
+    "_id": "6a9e2fc9cf1b3a686d0d942c",
     "landing_site": "Quifuque",
     "catch_taxon": "Other",
-    "catch_kg": 20774.013170141,
-    "catch_percent": 44.527546705
+    "catch_kg": 21073.849504657,
+    "catch_percent": 43.432672982
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fac",
+    "_id": "6a9e2fc9cf1b3a686d0d942d",
     "landing_site": "Quifuque",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 12510.98098274,
-    "catch_percent": 26.816353945
+    "catch_kg": 12485.121222901,
+    "catch_percent": 25.731520342
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fad",
+    "_id": "6a9e2fc9cf1b3a686d0d942e",
+    "landing_site": "Quifuque",
+    "catch_taxon": "Parrotfishes nei",
+    "catch_kg": 5339.456917765,
+    "catch_percent": 11.004486207
+  },
+  {
+    "_id": "6a9e2fc9cf1b3a686d0d942f",
     "landing_site": "Quifuque",
     "catch_taxon": "Scads nei",
     "catch_kg": 4065.401278273,
-    "catch_percent": 8.713884208
+    "catch_percent": 8.378689628
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fae",
-    "landing_site": "Quifuque",
-    "catch_taxon": "Parrotfishes nei",
-    "catch_kg": 3747,
-    "catch_percent": 8.031414832
-  },
-  {
-    "_id": "6a9b8e76b6ee61fc50058faf",
+    "_id": "6a9e2fc9cf1b3a686d0d9430",
     "landing_site": "Quifuque",
     "catch_taxon": "Quoy's garfish",
     "catch_kg": 2808.758859424,
-    "catch_percent": 6.020364976
+    "catch_percent": 5.788781257
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fb0",
+    "_id": "6a9e2fc9cf1b3a686d0d9431",
     "landing_site": "Quifuque",
     "catch_taxon": "Barracudas nei",
     "catch_kg": 2748.141100559,
-    "catch_percent": 5.890435334
+    "catch_percent": 5.663849583
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fb1",
+    "_id": "6a9e2fc9cf1b3a686d0d9432",
     "landing_site": "Quionga",
     "catch_taxon": "Other",
-    "catch_kg": 40079,
-    "catch_percent": 52.12443589
+    "catch_kg": 40194,
+    "catch_percent": 52.195932784
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fb2",
+    "_id": "6a9e2fc9cf1b3a686d0d9433",
     "landing_site": "Quionga",
     "catch_taxon": "Quoy's garfish",
     "catch_kg": 8399,
-    "catch_percent": 10.923254997
+    "catch_percent": 10.906942316
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fb3",
+    "_id": "6a9e2fc9cf1b3a686d0d9434",
     "landing_site": "Quionga",
     "catch_taxon": "Parrotfishes nei",
     "catch_kg": 8317,
-    "catch_percent": 10.816610527
+    "catch_percent": 10.800457107
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fb4",
+    "_id": "6a9e2fc9cf1b3a686d0d9435",
     "landing_site": "Quionga",
     "catch_taxon": "Fusiliers nei",
     "catch_kg": 7146,
-    "catch_percent": 9.293675463
+    "catch_percent": 9.27979638
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fb5",
+    "_id": "6a9e2fc9cf1b3a686d0d9436",
     "landing_site": "Quionga",
     "catch_taxon": "Snappers nei",
     "catch_kg": 6658,
-    "catch_percent": 8.659010808
+    "catch_percent": 8.646079526
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fb6",
+    "_id": "6a9e2fc9cf1b3a686d0d9437",
     "landing_site": "Quionga",
     "catch_taxon": "Mojarras(=Silver-biddies) nei",
     "catch_kg": 6292,
-    "catch_percent": 8.183012316
+    "catch_percent": 8.170791886
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fb7",
+    "_id": "6a9e2fc9cf1b3a686d0d9438",
     "landing_site": "Quirinde",
     "catch_taxon": "Other",
     "catch_kg": 14292.82462186,
     "catch_percent": 41.332843004
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fb8",
+    "_id": "6a9e2fc9cf1b3a686d0d9439",
     "landing_site": "Quirinde",
     "catch_taxon": "Parrotfishes nei",
     "catch_kg": 8549,
     "catch_percent": 24.722508265
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fb9",
+    "_id": "6a9e2fc9cf1b3a686d0d943a",
     "landing_site": "Quirinde",
     "catch_taxon": "Octopuses nei",
     "catch_kg": 6164,
     "catch_percent": 17.825422967
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fba",
+    "_id": "6a9e2fc9cf1b3a686d0d943b",
     "landing_site": "Quirinde",
     "catch_taxon": "Snappers nei",
     "catch_kg": 2336,
     "catch_percent": 6.755384174
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fbb",
+    "_id": "6a9e2fc9cf1b3a686d0d943c",
     "landing_site": "Quirinde",
     "catch_taxon": "Goatfishes",
     "catch_kg": 1761,
     "catch_percent": 5.092564868
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fbc",
+    "_id": "6a9e2fc9cf1b3a686d0d943d",
     "landing_site": "Quirinde",
     "catch_taxon": "Damselfishes",
     "catch_kg": 1477,
     "catch_percent": 4.271276723
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fbd",
+    "_id": "6a9e2fc9cf1b3a686d0d943e",
     "landing_site": "Quivure",
     "catch_taxon": "Other",
-    "catch_kg": 2609.012737096,
-    "catch_percent": 38.060188727
+    "catch_kg": 2636.943019525,
+    "catch_percent": 38.114004679
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fbe",
+    "_id": "6a9e2fc9cf1b3a686d0d943f",
     "landing_site": "Quivure",
     "catch_taxon": "Parrotfishes nei",
-    "catch_kg": 1307,
-    "catch_percent": 19.066471374
+    "catch_kg": 1320.524458009,
+    "catch_percent": 19.086675365
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fbf",
+    "_id": "6a9e2fc9cf1b3a686d0d9440",
     "landing_site": "Quivure",
     "catch_taxon": "Herrings, sardines nei",
     "catch_kg": 1026,
-    "catch_percent": 14.967252968
+    "catch_percent": 14.829660145
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fc0",
+    "_id": "6a9e2fc9cf1b3a686d0d9441",
     "landing_site": "Quivure",
     "catch_taxon": "Surgeonfishes nei",
-    "catch_kg": 822,
-    "catch_percent": 11.991307934
+    "catch_kg": 829,
+    "catch_percent": 11.982249766
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fc1",
-    "landing_site": "Quivure",
-    "catch_taxon": "Snappers nei",
-    "catch_kg": 545.952580585,
-    "catch_percent": 7.964337605
-  },
-  {
-    "_id": "6a9b8e76b6ee61fc50058fc2",
+    "_id": "6a9e2fc9cf1b3a686d0d9442",
     "landing_site": "Quivure",
     "catch_taxon": "Fusiliers nei",
-    "catch_kg": 545,
-    "catch_percent": 7.950441392
+    "catch_kg": 562.49620621,
+    "catch_percent": 8.130241297
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fc3",
+    "_id": "6a9e2fc9cf1b3a686d0d9443",
+    "landing_site": "Quivure",
+    "catch_taxon": "Snappers nei",
+    "catch_kg": 543.603498481,
+    "catch_percent": 7.857168748
+  },
+  {
+    "_id": "6a9e2fc9cf1b3a686d0d9444",
+    "landing_site": "Quiwia",
+    "catch_taxon": "Parrotfishes nei",
+    "catch_kg": 11578.681887679,
+    "catch_percent": 33.255245428
+  },
+  {
+    "_id": "6a9e2fc9cf1b3a686d0d9445",
     "landing_site": "Quiwia",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 10892.093237712,
-    "catch_percent": 44.630640627
+    "catch_kg": 10786.254258579,
+    "catch_percent": 30.979306289
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fc4",
+    "_id": "6a9e2fc9cf1b3a686d0d9446",
     "landing_site": "Quiwia",
     "catch_taxon": "Carangids nei",
-    "catch_kg": 4749.909378842,
-    "catch_percent": 19.462879529
+    "catch_kg": 4701.988513839,
+    "catch_percent": 13.504627171
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fc5",
+    "_id": "6a9e2fc9cf1b3a686d0d9447",
     "landing_site": "Quiwia",
     "catch_taxon": "Other",
-    "catch_kg": 3789.539740156,
-    "catch_percent": 15.527739489
+    "catch_kg": 4051.322766014,
+    "catch_percent": 11.635843717
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fc6",
+    "_id": "6a9e2fc9cf1b3a686d0d9448",
     "landing_site": "Quiwia",
     "catch_taxon": "Emperors(=Scavengers) nei",
-    "catch_kg": 2343.263695152,
-    "catch_percent": 9.601585076
+    "catch_kg": 2355.122468859,
+    "catch_percent": 6.764170263
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fc7",
+    "_id": "6a9e2fc9cf1b3a686d0d9449",
     "landing_site": "Quiwia",
     "catch_taxon": "Barracudas nei",
     "catch_kg": 1344.24079682,
-    "catch_percent": 5.508062281
+    "catch_percent": 3.860807132
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fc8",
-    "landing_site": "Quiwia",
-    "catch_taxon": "Wrasses, hogfishes, etc. nei",
-    "catch_kg": 1285.920421749,
-    "catch_percent": 5.269092999
-  },
-  {
-    "_id": "6a9b8e76b6ee61fc50058fc9",
+    "_id": "6a9e2fc9cf1b3a686d0d944a",
     "landing_site": "Suavo",
     "catch_taxon": "Marine crabs nei",
     "catch_kg": 15,
     "catch_percent": 78.947368421
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fca",
+    "_id": "6a9e2fc9cf1b3a686d0d944b",
     "landing_site": "Suavo",
     "catch_taxon": "Miscellaneous fish",
     "catch_kg": 4,
     "catch_percent": 21.052631579
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fcb",
+    "_id": "6a9e2fc9cf1b3a686d0d944c",
     "landing_site": "Vamizi",
     "catch_taxon": "Other",
-    "catch_kg": 44376.053961913,
-    "catch_percent": 50.507790483
+    "catch_kg": 39714.026435357,
+    "catch_percent": 47.178192228
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fcc",
+    "_id": "6a9e2fc9cf1b3a686d0d944d",
     "landing_site": "Vamizi",
     "catch_taxon": "Snappers nei",
-    "catch_kg": 11856.391105566,
-    "catch_percent": 13.494668056
+    "catch_kg": 11696.89373641,
+    "catch_percent": 13.895299739
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fcd",
+    "_id": "6a9e2fc9cf1b3a686d0d944e",
     "landing_site": "Vamizi",
     "catch_taxon": "Miscellaneous fish",
-    "catch_kg": 11716,
-    "catch_percent": 13.334878171
+    "catch_kg": 11676,
+    "catch_percent": 13.87047907
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fce",
-    "landing_site": "Vamizi",
-    "catch_taxon": "Fusiliers nei",
-    "catch_kg": 7211,
-    "catch_percent": 8.207392155
-  },
-  {
-    "_id": "6a9b8e76b6ee61fc50058fcf",
+    "_id": "6a9e2fc9cf1b3a686d0d944f",
     "landing_site": "Vamizi",
     "catch_taxon": "Parrotfishes nei",
-    "catch_kg": 6797,
-    "catch_percent": 7.736187003
+    "catch_kg": 9240.606593904,
+    "catch_percent": 10.977358715
   },
   {
-    "_id": "6a9b8e76b6ee61fc50058fd0",
+    "_id": "6a9e2fc9cf1b3a686d0d9450",
     "landing_site": "Vamizi",
-    "catch_taxon": "Surgeonfishes nei",
-    "catch_kg": 5903.37524534,
-    "catch_percent": 6.719084132
+    "catch_taxon": "Fusiliers nei",
+    "catch_kg": 7411.888118194,
+    "catch_percent": 8.804936538
+  },
+  {
+    "_id": "6a9e2fc9cf1b3a686d0d9451",
+    "landing_site": "Vamizi",
+    "catch_taxon": "Emperors(=Scavengers) nei",
+    "catch_kg": 4439.364674792,
+    "catch_percent": 5.273733711
   }
 ]
